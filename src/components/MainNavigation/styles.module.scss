@@ -1,0 +1,18 @@
+.MainNavigation {
+
+	.List {
+		padding: 0;
+		margin: 0;
+	}
+
+	.ListItem {
+		display: inline-block;
+	}
+
+	.ListItemLink {
+
+		&.ListItemLinkActive {
+			color: red;
+		}
+	}
+}
