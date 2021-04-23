@@ -4,9 +4,11 @@
         "paths": {
             "@/components/*": ["components/*"],
             "@/pages/*": ["pages/*"],
+            "@/data/*": ["data/*"],
             "@/shared/*": ["shared/*"],
             "@/i18n/*": ["i18n/*"],
             "@/layouts/*": ["layouts/*"],
+            "@/utils": ["utils/index.js"],
         }
     }
 }

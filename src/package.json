@@ -3,14 +3,15 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "npm run i18n:flatten && next dev",
-        "dist": "npm run i18n:flatten && clear:dist:parent clear:dist:next build copy:dist clear:dist:next",
-        "build": "npm run i18n:flatten && next build",
-        "start": "npm run i18n:flatten && next start",
+        "dev": "npm-run-all i18n:flatten buildDynamicImports && next dev",
+        "dist": "npm-run-all i18n:flatten buildDynamicImports && clear:dist:parent clear:dist:next build copy:dist clear:dist:next",
+        "build": "npm-run-all i18n:flatten buildDynamicImports && next build",
+        "start": "npm-run-all i18n:flatten buildDynamicImports && next start",
         "clear:dist:parent": "rimraf ../.dist",
         "clear:dist:next": "rimraf ./.dist",
         "copy:dist": "cpy ./.dist ../dist",
-        "i18n:flatten": "node ./tasks/i18n.flatten.js"
+        "i18n:flatten": "node ./tasks/i18n.flatten.js",
+        "buildDynamicImports": "node ./tasks/dynamic.imports.js"
     },
     "dependencies": {
         "carbon-components": "^10.33.0",
@@ -37,6 +38,7 @@
         "eslint-plugin-standard": "^5.0.0",
         "eslint-plugin-unused-imports": "^1.1.1",
         "file-loader": "^6.0.0",
+        "glob": "^7.1.6",
         "html-entities": "^2.3.2",
         "markdown-to-jsx": "^7.0.0",
         "npm-run-all": "^4.1.5",

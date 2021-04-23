@@ -29,3 +29,4 @@ yarn-error.log*
 /i18n/*.flat.json
 
 .dist
+shared/DynamicImports/index.js
