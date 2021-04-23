@@ -3,15 +3,19 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "npm-run-all i18n:flatten buildDynamicImports && next dev",
+        "dev": "npm-run-all i18n:flatten buildDynamicImports && npm-run-all -p watch:components next:dev",
         "dist": "npm-run-all i18n:flatten buildDynamicImports && clear:dist:parent clear:dist:next build copy:dist clear:dist:next",
-        "build": "npm-run-all i18n:flatten buildDynamicImports && next build",
-        "start": "npm-run-all i18n:flatten buildDynamicImports && next start",
+        "build": "npm-run-all i18n:flatten buildDynamicImports next:build",
+        "start": "npm-run-all i18n:flatten buildDynamicImports next:start",
         "clear:dist:parent": "rimraf ../.dist",
         "clear:dist:next": "rimraf ./.dist",
         "copy:dist": "cpy ./.dist ../dist",
         "i18n:flatten": "node ./tasks/i18n.flatten.js",
-        "buildDynamicImports": "node ./tasks/dynamic.imports.js"
+        "buildDynamicImports": "node ./tasks/dynamic.imports.js",
+        "watch:components": "nodemon --watch 'components/**/*' -e js --exec 'npm run buildDynamicImports'",
+        "next:dev": "next dev",
+        "next:build": "next build",
+        "next:start": "next start"
     },
     "dependencies": {
         "carbon-components": "^10.33.0",
@@ -42,6 +46,7 @@
         "glob": "^7.1.6",
         "html-entities": "^2.3.2",
         "markdown-to-jsx": "^7.0.0",
+        "nodemon": "^2.0.7",
         "npm-run-all": "^4.1.5",
         "prettier": "^2.0.5",
         "prettier-eslint": "^12.0.0",

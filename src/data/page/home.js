@@ -41,6 +41,10 @@ module.exports = req => {
 					],
 				},
 			},
+			{
+				name: 'Stage',
+				props: {},
+			},
 		],
 	};
 };
