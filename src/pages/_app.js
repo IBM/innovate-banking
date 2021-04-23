@@ -27,10 +27,8 @@ function MyApp({ Component, pageProps, pageData, locale, messages }) {
 MyApp.getInitialProps = async appContext => {
 	// calls page's `getInitialProps` and fills `appProps.pageProps`
 	const appProps = await App.getInitialProps(appContext);
-
-	const pageDataReq = await fetch(
-		cleanUrl(`${process.env.NEXT_ABSOLUTE_APP_URL}/api/page/${appContext.router.pathname}`)
-	);
+	const pageName = typeof appContext.router.query.name !== 'undefined' ? appContext.router.query.name : 'home';
+	const pageDataReq = await fetch(cleanUrl(`${process.env.NEXT_ABSOLUTE_APP_URL}/api/page/${pageName}`));
 
 	let pageData = {};
 
