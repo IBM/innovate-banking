@@ -1,3 +1,5 @@
+const truncate = require("lodash.truncate");
+
 /* eslint-disable max-len */
 module.exports = req => {
 	return {
@@ -105,6 +107,9 @@ module.exports = req => {
 					titles: {
 						left: '<p>Herausforderungen begegnen, Mehrwerte schaffen.</p>',
 					},
+					noSpace: {
+						bottom: true,
+					},
 					images: {
 						bottom: {
 							src: '/img/section-bg-plattform-solutions.png',
@@ -199,13 +204,16 @@ module.exports = req => {
 			{
 				name: 'Section',
 				props: {
+					condensed: {
+						bottom: true,
+					},
 					images: {
 						left: {
 							src: '/img/section-banking-pulse-left.svg',
 							width: 192,
 							height: 192,
 							alt: 'Banking am Puls der Zeit',
-							layout: 'fixed',
+							layout: 'intrinsic',
 						},
 					},
 					children: [

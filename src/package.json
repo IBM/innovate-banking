@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "npm-run-all i18n:flatten buildDynamicImports:* && npm-run-all -p watch:components next:dev",
-        "dist": "npm-run-all i18n:flatten buildDynamicImports:* && clear:dist:parent clear:dist:next build copy:dist clear:dist:next",
+        "dist": "npm-run-all i18n:flatten buildDynamicImports:* clear:dist:parent clear:dist:next build copy:dist clear:dist:next",
         "build": "npm-run-all i18n:flatten buildDynamicImports:* next:build",
         "start": "npm-run-all i18n:flatten buildDynamicImports:* next:start",
         "clear:dist:parent": "rimraf ../.dist",

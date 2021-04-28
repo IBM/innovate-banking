@@ -39,20 +39,19 @@ const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, da
 
 	return (
 		<Column sm={smSizeOuter} md={mdSizeOuter} lg={lgSizeOuter} className={clsx(Styles.FocusTeaserColumn)}>
-			<div className={clsx(Styles.FocusTeaser, dark && Styles.IsDark)}>
+			<Link
+				className={clsx(Styles.FocusTeaser, dark && Styles.IsDark, link.url === undefined && Styles.IsInactive)}
+				href={link.url}
+				title={link.title}
+			>
 				<Column sm={smSizeLeft} md={mdSizeLeft} lg={lgSizeLeft} className={Styles.LeftColumn}>
 					<h5 className={Styles.Headline}>{headline}</h5>
 					<RichText content={text} className={Styles.RichText} />
 					{link && (
-						<Link
-							href={link.url}
-							title={link.title}
-							className={Styles.Link}
-							disabled={link.url === undefined}
-						>
+						<span className={Styles.Link}>
 							{link.title}
 							{IconComponent && <IconComponent className={Styles.Icon} />}
-						</Link>
+						</span>
 					)}
 				</Column>
 				{image && image.simulate !== true && (
@@ -65,7 +64,7 @@ const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, da
 						/>
 					</Column>
 				)}
-			</div>
+			</Link>
 		</Column>
 	);
 };

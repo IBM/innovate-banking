@@ -116,7 +116,7 @@ const Section = ({
 								{images && images.left && (
 									<div
 										className={Styles.LeftImage}
-										stlye={{
+										style={{
 											margin: images.left.margin,
 										}}
 									>

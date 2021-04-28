@@ -8,9 +8,30 @@ $solutionTeaserStreakLength: 175px;
 // TODO: remove streaks on md
 
 .SolutionTeaserCol {
-	// @include bp('md') {
-	// 	padding-top: $solutionTeaserStreakLength / 2;
-	// }
+	padding-top: $spacing-06;
+
+	@include bp('md', true) {
+		&:first-child {
+			padding-top: 0;
+		}
+	}
+
+	@include bp('md') {
+		&:first-child,
+		&:nth-child(2) {
+			padding-top: 0;
+		}
+	}
+
+	@include bp('lg') {
+		padding-top: $solutionTeaserStreakLength / 2;
+
+		&:first-child,
+		&:nth-child(2) {
+			padding-top: $solutionTeaserStreakLength / 2;
+		}
+	}
+
 }
 
 .SolutionTeaser {
@@ -33,7 +54,7 @@ $solutionTeaserStreakLength: 175px;
 		height: $solutionTeaserStreakLength;
 		display: none;
 
-		@include bp('md') {
+		@include bp('lg') {
 			display: block;
 		}
 	}
