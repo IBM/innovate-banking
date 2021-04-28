@@ -1,3 +1,11 @@
 {
+    "generic": {
 
+    },
+    "components": {
+        "AnchorNavigation": {
+            "dropdownLabel": "Learn more about",
+            "letsTalkButtonText": "Let's talk"
+        }
+    }
 }

@@ -1,0 +1,125 @@
+@import '~carbon-components/scss/globals/scss/_vars.scss';
+@import '~carbon-components/scss/globals/scss/_typography.scss';
+@import '@/styles/mixins';
+@import '@/styles/functions';
+
+$solutionTeaserStreakLength: 175px;
+
+// TODO: remove streaks on md
+
+.SolutionTeaserCol {
+	// @include bp('md') {
+	// 	padding-top: $solutionTeaserStreakLength / 2;
+	// }
+}
+
+.SolutionTeaser {
+	position: relative;
+	background: $gray-80;
+	padding: $spacing-05;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	&::after {
+		position: absolute;
+		content: '';
+		width: 2px;
+		bottom: 100%;
+		left: 50%;
+		margin-left: -1px;
+		background: linear-gradient(0deg, rgba($gray-80, 1) 0%, rgba($gray-90, 0) 100%);
+		height: $solutionTeaserStreakLength;
+		display: none;
+
+		@include bp('md') {
+			display: block;
+		}
+	}
+
+	&.TeaserIndex0 {
+
+		&::after {
+			@include bp('md') {
+				transform: skewX(-45deg) translateX(9vw);
+			}
+
+			@include bp('max') {
+				transform: skewX(-45deg) translateX(5rem);
+			}
+		}
+	}
+
+	&.TeaserIndex1 {
+
+		&::after {
+			@include bp('md') {
+				transform: skewX(45deg) translateX(-9vw);
+			}
+
+			@include bp('lg') {
+				transform: skewX(-25deg) translateX(2.5rem);
+			}
+
+			@include bp('max') {
+				transform: skewX(-25deg) translateX(2.5rem);
+			}
+		}
+	}
+
+	&.TeaserIndex2 {
+
+		&::after {
+			@include bp('lg') {
+				transform: skewX(25deg) translateX(-2.5rem);
+			}
+
+			@include bp('max') {
+				transform: skewX(25deg) translateX(-2.5rem);
+			}
+		}
+	}
+
+	&.TeaserIndex3 {
+
+		&::after {
+			@include bp('lg') {
+				transform: skewX(45deg) translateX(-5rem);
+			}
+
+			@include bp('max') {
+				transform: skewX(45deg) translateX(-5rem);
+			}
+		}
+	}
+
+	.IconWrapper {
+		margin-bottom: $spacing-05;
+	}
+
+	.Icon {
+		fill: $blue-40;
+	}
+
+	.Headline,
+	.Text {
+		@include carbon--type-style('body-short-01');
+
+		color: $white-0;
+	}
+
+	.Headline {
+		@include carbon--type-style('expressive-heading-03');
+
+		margin-bottom: $spacing-06;
+
+		@include bp('md') {
+			margin-bottom: $spacing-10;
+		}
+	}
+
+	.Text {
+		margin-top: auto;
+	}
+}

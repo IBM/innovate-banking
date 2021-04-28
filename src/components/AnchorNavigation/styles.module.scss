@@ -1,0 +1,116 @@
+@import 'carbon-components/scss/globals/scss/_vars.scss';
+@import '~carbon-components/scss/globals/scss/_typography.scss';
+
+.StickyWrapper {
+	z-index: 1001 !important;
+
+	& > * {
+		z-index: 1001 !important;
+	}
+}
+
+.AnchorNavigation {
+	background: $black-100;
+	z-index: 1001;
+
+	& * {
+		height: auto;
+	}
+
+	.List {
+		display: flex;
+		flex: 1 1 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		align-items: center;
+	}
+
+	.Link {
+		@include carbon--type-style('body-short-01');
+
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		padding: $spacing-04;
+		color: $gray-30;
+		transition: all 250ms ease-in-out;
+
+		&:hover {
+			background: $gray-90;
+			color: $white-0;
+		}
+
+		&:focus,
+		&:active,
+		&.IsActive {
+			background: $blue-70;
+			color: $white-0;
+		}
+
+		&.IsLetsTalkLink {
+			background: $blue-60;
+			color: $white-0;
+
+			&:hover {
+				background: $blue-70;
+			}
+
+			&:active,
+			&:focus {
+				background: $blue-80;
+			}
+		}
+	}
+
+	.ListItem {
+		position: relative;
+
+		&.IsSloganItem {
+			padding-right: $spacing-04 * 2;
+			display: none;
+
+			&::after {
+				content: '';
+				height: 66%;
+				width: 1px;
+				background: $gray-60;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translate3d($spacing-04/-1, -50%, 0);
+			}
+
+			.Link {
+				font-weight: bold;
+				color: $white-0;
+			}
+		}
+
+		&.IsLetsTalkListItem {
+			margin-left: auto;
+		}
+	}
+
+	.LetsTalkIcon {
+		margin-left: $spacing-04;
+	}
+
+	&.IsFixed {
+
+		.ListItem {
+
+			&.IsSloganItem {
+				display: block;
+			}
+		}
+	}
+}
+
+.Dropdown {
+	width: 100%;
+}
+
+.DropdownColumn {
+	margin-top: $spacing-04;
+}

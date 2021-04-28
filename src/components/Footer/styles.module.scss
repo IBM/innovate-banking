@@ -1,0 +1,38 @@
+@import '~carbon-components/scss/globals/scss/_vars.scss';
+@import '~carbon-components/scss/globals/scss/_typography.scss';
+
+.Footer {
+	background: $gray-100;
+	padding: $spacing-10 0;
+
+	.Claim {
+		@include carbon--type-style('body-short-01');
+
+		color: $white-0;
+	}
+
+	.LinkList {
+		margin-top: $spacing-05 * -1;
+	}
+
+	.LinkListItem {
+
+	}
+
+	.Link {
+		padding: $spacing-05 0;
+		color: $gray-40;
+		text-decoration: none;
+
+		&:hover {
+			color: $blue-30;
+			text-decoration: none;
+		}
+
+		&:active,
+		&:focus {
+			text-decoration: none;
+			color: $blue-50;
+		}
+	}
+}

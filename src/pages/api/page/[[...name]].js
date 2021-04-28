@@ -1,12 +1,12 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-const home = require('@/data/page/home.js');
-const prozessTransformation = require('@/data/page/home.js');
+const index = require('@/data/page');
+const prozessTransformation = require('@/data/page/prozess-transformation');
 
-const pageData = { home, 'prozess-transformation': prozessTransformation };
+const pageData = { index, 'prozess-transformation': prozessTransformation };
 
 export default (req, res) => {
-	const pageName = req.query.name || 'home';
+	const pageName = req.query.name || 'index';
 
 	if (typeof pageData[pageName] !== 'undefined') {
 		res.status(200).json(pageData[pageName](req));

@@ -1,0 +1,54 @@
+@import '~carbon-components/scss/globals/scss/_vars.scss';
+@import '~carbon-components/scss/globals/scss/_typography.scss';
+
+.LetsTalkTeaser {
+	background: $gray-90;
+	color: $white-0;
+	min-height: 100%;
+
+	.Content {
+		padding: $spacing-05;
+	}
+
+	.Headline,
+	.Copy {
+		@include carbon--type-style('body-short-01');
+	}
+
+	.Headline {
+		@include carbon--type-style('quotation-01');
+
+		margin-bottom: $spacing-05;
+	}
+
+	.Copy {
+		color: $gray-40;
+		margin-bottom: $spacing-05;
+	}
+
+	.LinkList {
+		margin: 0;
+		padding: 0;
+	}
+
+	.LinkListItem {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.Link {
+		color: $blue-30;
+		padding: $spacing-05 0;
+		width: 100%;
+		text-decoration: none;
+		display: flex;
+		flex: 1 1 100%;
+		justify-content: space-between;
+		align-items: center;
+
+		&:hover,
+		&:active {
+			color: $white-0;
+		}
+	}
+}

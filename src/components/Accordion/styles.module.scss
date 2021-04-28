@@ -1,0 +1,48 @@
+@import '~carbon-components/scss/globals/scss/_vars.scss';
+
+.Accordion {
+	width: 100%;
+
+	.AccordionList {
+
+	}
+
+	.AccordionListItem {
+		margin-bottom: $spacing-03;
+	}
+
+	.AccordionHeader {
+		display: flex;
+		flex: 1 1 auto;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.AccordionContent {
+		background: $gray-80;
+		padding: $spacing-05;
+	}
+
+	.AccordionListItem {
+
+		&.IsOpen {
+
+			.AccordionContent {
+			}
+		}
+	}
+
+	.Icon {
+		color: $blue-40;
+	}
+
+	.RichText {
+		padding: $spacing-06 0;
+	}
+
+	.RichTextHeading {
+		margin-left: $spacing-09;
+		margin-right: auto;
+		padding-right: $spacing-05;
+	}
+}

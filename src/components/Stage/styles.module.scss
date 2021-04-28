@@ -1,0 +1,40 @@
+@import '~carbon-components/scss/globals/scss/_vars.scss';
+@import '~carbon-components/scss/globals/scss/_typography.scss';
+@import '@/styles/mixins';
+@import '@/styles/functions';
+
+.Stage {
+	position: relative;
+	display: block;
+	width: 100vw;
+	height: auto;
+	min-height: 250px;
+
+	@include bp('md') {
+		min-height: 384px;
+	}
+
+	.HeadingWrapper {
+		position: absolute;
+		z-index: 2;
+		top: 65%;
+		transform: translate3d(0, -50%, 0);
+		color: $white-0;
+
+		@include bp('md') {
+			top: 50%;
+		}
+	}
+
+	.Heading {
+		@include carbon--type-style('expressive-heading-05');
+
+		@include bp('md') {
+			@include carbon--type-style('productive-heading-06');
+		}
+	}
+
+	.Subheading {
+		@include carbon--type-style('productive-heading-02');
+	}
+}

@@ -1,0 +1,63 @@
+@import '~carbon-components/scss/globals/scss/_vars.scss';
+@import '~carbon-components/scss/globals/scss/_typography.scss';
+@import '@/styles/mixins';
+
+.FocusTeaserColumn {
+	margin-bottom: $spacing-04;
+
+	@include bp('md') {
+		margin-bottom: $spacing-07;
+	}
+}
+
+.FocusTeaser {
+	background: $gray-10;
+	display: flex;
+	padding: $spacing-05 0;
+	min-height: 100%;
+	// justify-content: space-between;
+
+	.Headline {
+		@include carbon--type-style('expressive-paragraph-01');
+	}
+
+	.RichText {
+		margin: $spacing-06 0;
+	}
+
+	.LeftColumn {
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+	}
+
+	.RightColumn {
+		display: flex;
+		min-height: 100%;
+		justify-content: center;
+	}
+
+	.Link {
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		margin-top: auto;
+
+		.Icon {
+			transition: margin-left 150ms ease-in-out;
+			margin-left: $spacing-02;
+		}
+
+		&:hover {
+
+			.Icon {
+				margin-left: $spacing-03;
+			}
+		}
+	}
+
+	&.IsDark {
+		background: $gray-90;
+		color: $gray-40;
+	}
+}
