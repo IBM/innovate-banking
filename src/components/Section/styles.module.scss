@@ -58,7 +58,7 @@
 	.Title {
 
 		:global(p:not([class])) {
-			@include carbon--type-style('expressive-heading-02');
+			@include carbon--type-style('expressive-heading-02', true);
 		}
 	}
 

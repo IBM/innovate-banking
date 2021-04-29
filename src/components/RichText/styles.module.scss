@@ -6,7 +6,7 @@
 
 	:global(p),
 	:global(.p) {
-		@include carbon--type-style('body-short-01');
+		@include carbon--type-style('body-short-01', true);
 
 		margin-bottom: $spacing-04;
 
@@ -17,84 +17,84 @@
 
 	:global(h1),
 	:global(.h1) {
-		@include carbon--type-style('productive-heading-07');
+		@include carbon--type-style('productive-heading-07', true);
 
 		margin-bottom: $spacing-06;
 	}
 
 	:global(.eh1) {
-		@include carbon--type-style('expressive-heading-06');
+		@include carbon--type-style('expressive-heading-06', true);
 
 		margin-bottom: $spacing-06;
 	}
 
 	:global(h2),
 	:global(.h2) {
-		@include carbon--type-style('productive-heading-06');
+		@include carbon--type-style('productive-heading-06', true);
 
 		margin-bottom: $spacing-05;
 	}
 
 	:global(.eh2) {
-		@include carbon--type-style('expressive-heading-05');
+		@include carbon--type-style('expressive-heading-05', true);
 
 		margin-bottom: $spacing-05;
 	}
 
 	:global(h3),
 	:global(.h3) {
-		@include carbon--type-style('productive-heading-05');
+		@include carbon--type-style('productive-heading-05', true);
 
 		margin-bottom: $spacing-04;
 	}
 
 	:global(.eh3) {
-		@include carbon--type-style('expressive-heading-04');
+		@include carbon--type-style('expressive-heading-04', true);
 
 		margin-bottom: $spacing-04;
 	}
 
 	:global(h4),
 	:global(.h4) {
-		@include carbon--type-style('productive-heading-04');
+		@include carbon--type-style('productive-heading-04', true);
 
 		margin-bottom: $spacing-04;
 	}
 
 	:global(.eh4) {
-		@include carbon--type-style('expressive-heading-03');
+		@include carbon--type-style('expressive-heading-03', true);
 
 		margin-bottom: $spacing-04;
 	}
 
 	:global(h5),
 	:global(.h5) {
-		@include carbon--type-style('productive-heading-03');
+		@include carbon--type-style('productive-heading-03', true);
 
 		margin-bottom: $spacing-04;
 	}
 
 	:global(.eh5) {
-		@include carbon--type-style('expressive-heading-02');
+		@include carbon--type-style('expressive-heading-02', true);
 
 		margin-bottom: $spacing-04;
 	}
 
 	:global(h6),
 	:global(.h6) {
-		@include carbon--type-style('productive-heading-02');
+		@include carbon--type-style('productive-heading-02', true);
 
 		margin-bottom: $spacing-04;
 	}
 
 	:global(.eh5) {
-		@include carbon--type-style('expressive-heading-02');
+		@include carbon--type-style('expressive-heading-02', true);
 
 		margin-bottom: $spacing-04;
 	}
 
 	:global(.d1) {
-		@include carbon--type-style('display-01');
+		@include carbon--type-style('display-01', true);
 
 		margin-bottom: $spacing-07;
 
@@ -104,7 +104,7 @@
 	}
 
 	:global(.d2) {
-		@include carbon--type-style('display-02');
+		@include carbon--type-style('display-02', true);
 
 		margin-bottom: $spacing-07;
 
@@ -114,7 +114,7 @@
 	}
 
 	:global(.d3) {
-		@include carbon--type-style('display-03');
+		@include carbon--type-style('display-03', true);
 
 		margin-bottom: $spacing-07;
 
@@ -124,7 +124,7 @@
 	}
 
 	:global(.d4) {
-		@include carbon--type-style('display-04');
+		@include carbon--type-style('display-04', true);
 
 		&:global(.large) {
 			font-size: carbon--rem(166px);

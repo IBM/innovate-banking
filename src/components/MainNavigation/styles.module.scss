@@ -71,7 +71,7 @@
 	}
 
 	.ListItemLink {
-		@include carbon--type-style('body-short-01');
+		@include carbon--type-style('body-short-01', true);
 
 		display: flex;
 		flex: 1 1 100%;
@@ -86,17 +86,24 @@
 			color: $carbon--blue-30;
 		}
 
-		&:active,
-		&.ListItemLinkActive {
+		&:active {
 			color: $carbon--blue-50;
+		}
+
+		&.ListItemLinkActive {
+			color: $blue-30;
 		}
 	}
 
 	.LogoTitle {
-		display: none;
+		font-weight: bold;
 		flex: 1 1 100%;
 		align-items: center;
-		padding-left: $spacing-04;
+		padding-left: $spacing-06;
+
+		@include bp('md', true) {
+			display: none !important;
+		}
 	}
 
 	.ListItem {
@@ -124,9 +131,9 @@
 				&::after {
 					content: '';
 					position: absolute;
-					height: 33%;
+					height: 25%;
 					width: 1px;
-					background: $white-0;
+					background: $blue-50;
 					right: 0;
 					top: 50%;
 					transform: translate(0, -50%);

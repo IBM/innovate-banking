@@ -25,13 +25,13 @@
 
 	.Headline,
 	.Text {
-		@include carbon--type-style('body-short-01');
+		@include carbon--type-style('body-short-01', true);
 
 		color: $white-0;
 	}
 
 	.Headline {
-		@include carbon--type-style('expressive-heading-03');
+		@include carbon--type-style('expressive-heading-03', true);
 
 		margin-bottom: $spacing-04;
 	}

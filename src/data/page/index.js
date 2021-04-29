@@ -1,5 +1,3 @@
-const truncate = require("lodash.truncate");
-
 /* eslint-disable max-len */
 module.exports = req => {
 	return {
@@ -253,7 +251,7 @@ module.exports = req => {
 											},
 											link: {
 												title: 'Mehr erfahren',
-												url: '/prozesse-transformieren',
+												url: '/prozess-transformation',
 											},
 										},
 									},
@@ -325,7 +323,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="d1">Unsere Plattform-Lösungen</p><p>Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen Sie sich direkt mit Ihnen aus.</p>',
+									'<p class="h4">Unsere Stimme in der Finanzbranche</p><p>Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen Sie sich direkt mit Ihnen aus.</p>',
 							},
 						},
 					],
@@ -360,7 +358,8 @@ module.exports = req => {
 												width: 576,
 												height: 324,
 											},
-											link: '/',
+											link:
+												'https://www.ibm.com/blogs/digitale-perspektive/2021/03/gesamtbanksteuerung-veraenderung-ist-machbar/',
 										},
 									},
 									{
@@ -373,7 +372,8 @@ module.exports = req => {
 												width: 576,
 												height: 324,
 											},
-											link: '/',
+											link:
+												'https://www.ibm.com/blogs/digitale-perspektive/2021/01/end-to-end-digitalisierung-der-kreditprozesse-schafft-mehrwert-fur-unternehmenskunden/',
 										},
 									},
 									{
@@ -386,45 +386,49 @@ module.exports = req => {
 												width: 576,
 												height: 324,
 											},
-											link: '/',
+											link:
+												'https://www.ibm.com/blogs/digitale-perspektive/2020/11/nachhaltigkeit-wege-in-die-zukunft-fur-banken-und-aufsichtsbehorden-2/',
 										},
 									},
 									{
 										name: 'ImageTextTeaser',
 										props: {
-											text: '<p>Gesamtbanksteuerung: Veränderung ist machbar</p>',
+											text:
+												'<p>Analytics – Intelligent Workflows in Banking: Geldwäsche und Betrugsbekämpfung</p>',
 											image: {
 												src: '/img/banking-insights/teaser-4.jpg',
 												width: 576,
 												height: 324,
 											},
-											link: '/',
+											link:
+												'https://www.ibm.com/blogs/digitale-perspektive/2020/10/intelligent-workflows-in-banking-geldwasche-und-betrugsbekampfung/',
 										},
 									},
 									{
 										name: 'ImageTextTeaser',
 										props: {
 											text:
-												'<p>End-to-End Digitalisierung der Kreditprozesse schafft Mehrwert für Unternehmenskunden</p>',
+												'<p>Reinventing Financial Services: Core Banking and Payments Edition</p>',
 											image: {
 												src: '/img/banking-insights/teaser-5.jpg',
 												width: 576,
 												height: 324,
 											},
-											link: '/',
+											link:
+												'https://www.ibm.com/industries/banking-financial-markets/events/reinventing-financial-services',
 										},
 									},
 									{
 										name: 'ImageTextTeaser',
 										props: {
-											text:
-												'<p>Nachhaltigkeit – Wege in die Zukunft für Banken und Aufsichtsbehörden</p>',
+											text: '<p>IBM Institute for Business Value: Banking Industry Insights</p>',
 											image: {
 												src: '/img/banking-insights/teaser-6.jpg',
 												width: 576,
 												height: 324,
 											},
-											link: '/',
+											link:
+												'https://www.ibm.com/thought-leadership/institute-business-value/industry/banking (Übersichtsseite Institute Banking)',
 										},
 									},
 								],
@@ -461,7 +465,7 @@ module.exports = req => {
 												width: 576,
 												height: 324,
 											},
-											link: '/',
+											link: 'https://bank-und-zukunft.podigee.io/',
 										},
 									},
 									{
@@ -474,56 +478,20 @@ module.exports = req => {
 												width: 576,
 												height: 324,
 											},
-											link: '/',
+											link: 'https://www.ibm.com/services/de-de/ibmix/digital-talks/',
 										},
 									},
 									{
 										name: 'ImageTextTeaser',
 										props: {
-											text: '<p>IBM Event: Reinventing Financial Services 2020</p>',
+											text: '<p>IBM Event: Reinventing Financial Services 2020:</p>',
 											image: {
 												src: '/img/banking-talks/teaser-3.jpg',
 												width: 576,
 												height: 324,
 											},
-											link: '/',
-										},
-									},
-									{
-										name: 'ImageTextTeaser',
-										props: {
-											text: '<p>Bank und Zukunft – Der Podcast für die Finanzbranche</p>',
-											image: {
-												src: '/img/banking-talks/teaser-1.jpg',
-												width: 576,
-												height: 324,
-											},
-											link: '/',
-										},
-									},
-									{
-										name: 'ImageTextTeaser',
-										props: {
-											text:
-												'<p>IBM iX Digital Talks: Webcasts zur Digitalisierung in Unternehmen</p>',
-											image: {
-												src: '/img/banking-talks/teaser-2.jpg',
-												width: 576,
-												height: 324,
-											},
-											link: '/',
-										},
-									},
-									{
-										name: 'ImageTextTeaser',
-										props: {
-											text: '<p>IBM Event: Reinventing Financial Services 2020</p>',
-											image: {
-												src: '/img/banking-talks/teaser-3.jpg',
-												width: 576,
-												height: 324,
-											},
-											link: '/',
+											link:
+												'https://www.ibm.com/industries/banking-financial-markets/events/reinventing-financial-services',
 										},
 									},
 								],
@@ -542,6 +510,7 @@ module.exports = req => {
 					},
 					noSpace: {
 						top: true,
+						bottom: true,
 					},
 					images: {
 						top: {
@@ -629,9 +598,6 @@ module.exports = req => {
 						color: '#161616',
 						dark: true,
 					},
-					noSpace: {
-						top: true,
-					},
 					titles: {
 						left:
 							'<p class="h4">Let\'s talk</p><p class="p">Fragen oder Interesse an weiteren Informationen? Sprechen Sie uns an!</p>',
@@ -646,7 +612,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Jean-Henrik Zitterbart',
-											copy: 'Industry Leader Banking & Financial Markets DACH',
+											copy: 'Partner Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/jean.jpg',
 												width: 288,
@@ -662,7 +628,7 @@ module.exports = req => {
 													type: 'email',
 													title: 'Kontakt aufnehmen',
 													url:
-														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking?body=Sehr%20geehrter%20Herr%20Zitterbart%2C%20',
+														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Zitterbart%2C%20',
 												},
 											],
 										},
@@ -687,7 +653,7 @@ module.exports = req => {
 													type: 'email',
 													title: 'Kontakt aufnehmen',
 													url:
-														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking?body=Sehr%20geehrter%20Herr%20Neubauer%2C%20',
+														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Neubauer%2C%20',
 												},
 											],
 										},

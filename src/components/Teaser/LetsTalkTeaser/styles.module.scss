@@ -12,11 +12,11 @@
 
 	.Headline,
 	.Copy {
-		@include carbon--type-style('body-short-01');
+		@include carbon--type-style('body-short-01', true);
 	}
 
 	.Headline {
-		@include carbon--type-style('quotation-01');
+		@include carbon--type-style('quotation-01', true);
 
 		margin-bottom: $spacing-05;
 	}

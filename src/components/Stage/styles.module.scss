@@ -27,14 +27,14 @@
 	}
 
 	.Heading {
-		@include carbon--type-style('expressive-heading-05');
+		@include carbon--type-style('expressive-heading-05', true);
 
 		@include bp('md') {
-			@include carbon--type-style('productive-heading-06');
+			@include carbon--type-style('productive-heading-06', true);
 		}
 	}
 
 	.Subheading {
-		@include carbon--type-style('productive-heading-02');
+		@include carbon--type-style('productive-heading-02', true);
 	}
 }

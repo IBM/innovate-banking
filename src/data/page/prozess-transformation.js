@@ -10,6 +10,7 @@ module.exports = req => {
 			{
 				name: 'MainNavigation',
 				props: {
+					logoTitle: 'Innovate Banking',
 					items: [
 						{
 							name: 'Prozess-Transformation',
@@ -265,7 +266,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Jean-Henrik Zitterbart',
-											copy: 'Industry Leader Banking & Financial Markets DACH',
+											copy: 'Partner Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/jean.jpg',
 												width: 288,
@@ -281,7 +282,7 @@ module.exports = req => {
 													type: 'email',
 													title: 'Kontakt aufnehmen',
 													url:
-														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking?body=Sehr%20geehrter%20Herr%20Zitterbart%2C%20',
+														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Zitterbart%2C%20',
 												},
 											],
 										},
@@ -290,7 +291,8 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Manuel Schuff',
-											copy: 'Managing Consultant Banking & Financial Markets DACH',
+											copy:
+												'Managing Business Transformation Consultant Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/manuel.jpg',
 												width: 288,
@@ -306,7 +308,7 @@ module.exports = req => {
 													type: 'email',
 													title: 'Kontakt aufnehmen',
 													url:
-														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking?body=Sehr%20geehrter%20Herr%20Schuff%2C%20',
+														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Schuff%2C%20',
 												},
 											],
 										},

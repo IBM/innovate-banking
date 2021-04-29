@@ -20,6 +20,7 @@ const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, da
 	const smSizeOuter = 4;
 	let mdSizeOuter = 4;
 	let lgSizeOuter = 8;
+	const maxSizeOuter = 8;
 
 	const smSizeLeft = 4;
 	let mdSizeLeft = 8;
@@ -33,16 +34,23 @@ const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, da
 	}
 
 	if (condensed && image === undefined) {
-		mdSizeOuter = 2;
+		mdSizeOuter = 4;
 		lgSizeOuter = 8;
 	}
 
 	return (
-		<Column sm={smSizeOuter} md={mdSizeOuter} lg={lgSizeOuter} className={clsx(Styles.FocusTeaserColumn)}>
+		<Column
+			sm={smSizeOuter}
+			md={mdSizeOuter}
+			lg={lgSizeOuter}
+			max={maxSizeOuter}
+			className={clsx(Styles.FocusTeaserColumn)}
+		>
 			<Link
 				className={clsx(Styles.FocusTeaser, dark && Styles.IsDark, link.url === undefined && Styles.IsInactive)}
 				href={link.url}
 				title={link.title}
+				target="_blank"
 			>
 				<Column sm={smSizeLeft} md={mdSizeLeft} lg={lgSizeLeft} className={Styles.LeftColumn}>
 					<h5 className={Styles.Headline}>{headline}</h5>

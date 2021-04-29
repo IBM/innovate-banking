@@ -33,6 +33,14 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 		window.location.hash = `#${event.selectedItem.link}`;
 	};
 
+	const mobileItems = [
+		...items,
+		{
+			name: translate(intl, 'components.AnchorNavigation.letsTalkButtonText'),
+			link: 'letstalk',
+		},
+	];
+
 	return (
 		<>
 			<Sticky className={Styles.StickyWrapper} onFixedToggle={onFixedToggle}>
@@ -101,7 +109,7 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 						<Dropdown
 							id="inline"
 							label={translate(intl, 'components.AnchorNavigation.dropdownLabel')}
-							items={items}
+							items={mobileItems}
 							itemToString={item => (item ? item.name : '')}
 							onChange={onDropdownChange}
 							className={Styles.Dropdown}

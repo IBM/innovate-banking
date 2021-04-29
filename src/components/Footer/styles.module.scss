@@ -6,7 +6,7 @@
 	padding: $spacing-10 0;
 
 	.Claim {
-		@include carbon--type-style('body-short-01');
+		@include carbon--type-style('body-short-01', true);
 
 		color: $white-0;
 	}

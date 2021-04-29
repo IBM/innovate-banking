@@ -2,8 +2,9 @@
 
 const index = require('@/data/page');
 const prozessTransformation = require('@/data/page/prozess-transformation');
+const impressum = require('@/data/page/impressum');
 
-const pageData = { index, 'prozess-transformation': prozessTransformation };
+const pageData = { index, 'prozess-transformation': prozessTransformation, impressum };
 
 export default (req, res) => {
 	const pageName = req.query.name || 'index';

@@ -11,7 +11,7 @@ import { ArrowRight24 } from '@carbon/icons-react';
 const ImageTextTeaser = ({ text, image, link }) => {
 	return (
 		<Column sm={2} md={4} lg={8}>
-			<Link href={link} className={Styles.ImageTextTeaser}>
+			<Link href={link} className={Styles.ImageTextTeaser} target="_blank">
 				<Image
 					src={image.src}
 					width={image.width}

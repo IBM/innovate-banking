@@ -8,7 +8,6 @@ import Styles from './styles.module.scss';
 import { Close32, Menu32 } from '@carbon/icons-react';
 
 const MainNavigation = ({ items, logoTitle }) => {
-
 	const [isOpen, setIsOpen] = useState(false);
 	const [lastBodyPos, setLastBodyPos] = useState(0);
 
@@ -21,7 +20,7 @@ const MainNavigation = ({ items, logoTitle }) => {
 			document.body.scrollTop = lastBodyPos;
 		}
 		setIsOpen(!isOpen);
-	}
+	};
 
 	return (
 		<header className={clsx(Styles.NavHeader, isOpen && Styles.IsOpen)}>

@@ -20,7 +20,7 @@
 	// justify-content: space-between;
 
 	.Headline {
-		@include carbon--type-style('expressive-paragraph-01');
+		@include carbon--type-style('expressive-paragraph-01', true);
 	}
 
 	.RichText {
@@ -75,6 +75,7 @@
 
 		&:hover {
 			background: $gray-80;
+			color: $white-0;
 		}
 	}
 
