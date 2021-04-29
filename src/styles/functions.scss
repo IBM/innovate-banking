@@ -1,0 +1,7 @@
+@import '@/styles/carbon-settings.scss';
+
+@function bpWidth($bp) {
+	$bpData: map-get($carbon--grid-breakpoints, $bp);
+
+	@return map-get($bpData, 'width');
+}

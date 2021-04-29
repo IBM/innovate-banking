@@ -1,0 +1,30 @@
+@Library('jenkins-library-acid-base-github@0.45.1') _
+pipeline {
+  agent {
+    label 'ibm-smarter-banking-campaign'
+  }
+  options {
+    disableConcurrentBuilds()
+  }
+  environment {
+    PROJECT_KEY = 'ibm-smarter-banking-campaign'
+    NODEJS_VERSION = 'nodejs14161'
+  }
+  stages {
+    stage ('Build Docker Images') {
+      when {
+        branch 'stage'
+      }
+    }
+    stage ('Deploy Stage') {
+      when {
+        branch 'stage'
+      }
+    }
+  }
+  post {
+     always {
+        cleanWs()
+     }
+  }
+}

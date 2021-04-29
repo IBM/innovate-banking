@@ -6,7 +6,7 @@ const chalk = require('chalk');
 const CWD = process.cwd();
 const SEP = path.sep;
 const COMPONENT_PATH = path.resolve(CWD, 'components');
-const OUTPUT_PATH = path.resolve(CWD, 'shared', 'DynamicImports', 'index.js');
+const OUTPUT_PATH = path.resolve(CWD, 'shared', 'DynamicComponents', 'index.js');
 
 const componentNames = [];
 const files = glob.sync(COMPONENT_PATH + '/**/*');
@@ -24,8 +24,11 @@ const getImportString = filepath => {
 for (let index = 0; index < files.length; index++) {
 	const filepath = files[index];
 	if (fs.lstatSync(filepath).isDirectory()) {
-		const relPath = path.relative(CWD, filepath).replace('components', '@/components').replace(/\\/gi, '/');
-		imports.push(getImportString(relPath));
+		try {
+			const hasIndexFile = fs.lstatSync(`${filepath}${SEP}index.js`).isFile();
+			const relPath = path.relative(CWD, filepath).replace('components', '@/components').replace(/\\/gi, '/');
+			imports.push(getImportString(relPath));
+		} catch (e) {}
 	}
 }
 

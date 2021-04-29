@@ -8,6 +8,7 @@
             "@/shared/*": ["shared/*"],
             "@/i18n/*": ["i18n/*"],
             "@/layouts/*": ["layouts/*"],
+            "@/styles/*": ["styles/*"],
             "@/utils": ["utils/index.js"],
         }
     }
