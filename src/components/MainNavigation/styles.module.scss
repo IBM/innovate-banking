@@ -42,6 +42,16 @@
 	}
 }
 
+.MobileHomeLink {
+	display: inline-block;
+	margin-left: $spacing-05;
+	margin-top: $spacing-02;
+
+	@include bp('md') {
+		display: none;
+	}
+}
+
 .MainNavigation {
 	display: flex;
 	flex: 1 1 100%;
@@ -137,6 +147,7 @@
 		z-index: 1001;
 		position: fixed;
 		background: $gray-100;
+		top: 0;
 		width: 100vw;
 		height: 100vh;
 		left: -100vw;

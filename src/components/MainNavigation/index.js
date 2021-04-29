@@ -5,27 +5,33 @@ import { Row, Grid, Column, Button } from 'carbon-components-react';
 import clsx from 'clsx';
 
 import Styles from './styles.module.scss';
-import { Menu32 } from '@carbon/icons-react';
+import { Close32, Menu32 } from '@carbon/icons-react';
 
 const MainNavigation = ({ items, logoTitle }) => {
 
 	const [isOpen, setIsOpen] = useState(false);
+	const [lastBodyPos, setLastBodyPos] = useState(0);
 
 	const toggleOpenState = () => {
 		if (!isOpen) {
-			document.body.style.position = 'fixed';
-			document.body.style.top = `-${window.scrollY}px`;
+			setLastBodyPos(document.body.scrollTop);
+			document.body.style.overflow = 'hidden';
 		} else {
-			document.body.style.position = null;
-			document.body.style.top = null;
+			document.body.style.overflow = null;
+			document.body.scrollTop = lastBodyPos;
 		}
 		setIsOpen(!isOpen);
 	}
 
 	return (
 		<header className={clsx(Styles.NavHeader, isOpen && Styles.IsOpen)}>
+			<a href="/" className={clsx(Styles.ListItemLink, Styles.MobileHomeLink)}>
+				<img src="/svg/logo.svg" height={42} width={66} />
+				{logoTitle && <span className={Styles.LogoTitle}>{logoTitle}</span>}
+			</a>
 			<Button className={Styles.MobileMenuIcon} onClick={toggleOpenState}>
-				<Menu32 />
+				{!isOpen && <Menu32 />}
+				{isOpen && <Close32 />}
 			</Button>
 			<Grid className={Styles.NavGrid}>
 				<Row>
