@@ -5,18 +5,19 @@ import Image from 'next/image';
 
 import Styles from './styles.module.scss';
 import { Column, Grid, Link, Row } from 'carbon-components-react';
+import clsx from 'clsx';
 
 const Footer = ({ claim, links }) => {
 	return (
 		<footer className={Styles.Footer}>
 			<Grid>
 				<Row>
-					<Column sm={4} md={2} lg={5} className={Styles.Logo}>
+					<Column sm={4} md={2} lg={5} className={clsx(Styles.Logo, Styles.FooterColumn)}>
 						<Link href="/">
 							<Image src="/svg/ibm-logo.svg" width={88} height={35} />
 						</Link>
 					</Column>
-					<Column sm={4} md={2} lg={4} className={Styles.Claim}>
+					<Column sm={4} md={2} lg={4} className={clsx(Styles.Claim, Styles.FooterColumn)}>
 						{claim}
 					</Column>
 					<Column

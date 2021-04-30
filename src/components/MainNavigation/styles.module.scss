@@ -16,6 +16,12 @@
 	& * {
 		height: 100%;
 	}
+
+	.LogoTitle {
+		@include bp('md', true) {
+			display: none;
+		}
+	}
 }
 
 .MobileMenuIcon {
@@ -100,10 +106,6 @@
 		flex: 1 1 100%;
 		align-items: center;
 		padding-left: $spacing-06;
-
-		@include bp('md', true) {
-			display: none !important;
-		}
 	}
 
 	.ListItem {
@@ -140,8 +142,11 @@
 				}
 			}
 
-			.IsFirstLink {
-				padding-left: $spacing-08;
+			@include bp('md') {
+
+				.IsFirstLink {
+					padding-left: $spacing-08;
+				}
 			}
 		}
 

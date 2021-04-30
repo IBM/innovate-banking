@@ -9,7 +9,7 @@ import { Email32, LogoLinkedin32 } from '@carbon/icons-react';
 
 const LetsTalkTeaser = ({ headline, copy, image, links }) => {
 	return (
-		<Column sm={4} md={4} lg={8}>
+		<Column sm={4} md={4} lg={8} className={Styles.LetTalkTeaserColumn}>
 			<div className={Styles.LetsTalkTeaser}>
 				<Image src={image.src} width={image.width} height={image.height} layout="responsive" />
 				<div className={Styles.Content}>

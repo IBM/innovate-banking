@@ -1,5 +1,13 @@
 @import '~carbon-components/scss/globals/scss/_vars.scss';
 @import '~carbon-components/scss/globals/scss/_typography.scss';
+@import '@/styles/mixins';
+@import '@/styles/functions';
+
+.LetTalkTeaserColumn {
+	@include bp('md', true) {
+		margin-bottom: $spacing-05;
+	}
+}
 
 .LetsTalkTeaser {
 	background: $gray-90;
