@@ -9,7 +9,7 @@ pipeline {
   environment {
     PROJECT_KEY = 'smarter-banking-campaign'
     HARBOR_URL = 'acid-harbor.aperto.de'
-    RELEASE_NUMBER = 0.0.1
+    RELEASE_NUMBER = "0.0.1"
   }
   stages {
     stage ('Build Docker Images') {
