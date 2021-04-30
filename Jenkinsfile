@@ -23,7 +23,7 @@ pipeline {
         sh "docker build -t ${HARBOR_URL}/${PROJECT_KEY}:${BRANCH_NAME} ."
       }
     }
-    stage ('Build Docker Images') {
+    stage ('Build Docker Release Image') {
       when {
         branch 'master'
       }
