@@ -7,6 +7,7 @@ pipeline {
     disableConcurrentBuilds()
   }
   environment {
+    APP_KEY = 'node-app'
     PROJECT_KEY = 'smarter-banking-campaign'
     HARBOR_URL = 'acid-harbor.aperto.de'
     RELEASE_NUMBER = "0.0.1"
@@ -29,8 +30,8 @@ pipeline {
           wrap([$class: 'VaultBuildWrapper', vaultSecrets: secrets]) {
             sh '''
               echo "${HARBOR_PASSWORD}" | docker login --username="usr_docker_registry" --password-stdin acid-harbor.aperto.de
-              docker build -t ${HARBOR_URL}/${PROJECT_KEY}:${BRANCH_NAME} .
-              docker push ${HARBOR_URL}/${PROJECT_KEY}:${BRANCH_NAME}
+              docker build -t ${HARBOR_URL}/${PROJECT_KEY}/${APP_KEY}:${BRANCH_NAME} .
+              docker push ${HARBOR_URL}/${PROJECT_KEY}/${APP_KEY}:${BRANCH_NAME}
               docker logout acid-harbor.aperto.de
             '''
           }
@@ -51,8 +52,8 @@ pipeline {
           wrap([$class: 'VaultBuildWrapper', vaultSecrets: secrets]) {
             sh '''
               echo "${HARBOR_PASSWORD}" | docker login --username="usr_docker_registry" --password-stdin acid-harbor.aperto.de
-              docker build -t ${HARBOR_URL}/${PROJECT_KEY}:${RELEASE_NUMBER} .
-              docker push ${HARBOR_URL}/${PROJECT_KEY}:${RELEASE_NUMBER}
+              docker build -t ${HARBOR_URL}/${PROJECT_KEY}/${APP_KEY}:${RELEASE_NUMBER} .
+              docker push ${HARBOR_URL}/${PROJECT_KEY}/${APP_KEY}:${RELEASE_NUMBER}
               docker logout acid-harbor.aperto.de
             '''
           }

@@ -5,7 +5,7 @@ services:
   node-app:
     env_file: .version.env
     container_name: $PROJECT_NAME
-    image: $REPOSITORY_PREFIX/smarter-banking-campaign:$VERSION
+    image: $REPOSITORY_PREFIX/smarter-banking-campaign/node-app:$VERSION
     environment:
       PROJECT_NAME: $PROJECT_NAME
       FQDN: $FQDN
