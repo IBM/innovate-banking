@@ -20,7 +20,21 @@ pipeline {
         }
       }
       steps {
-        sh "docker build -t ${HARBOR_URL}/${PROJECT_KEY}:${BRANCH_NAME} ."
+        script {
+          def secrets = [
+             [$class: 'VaultSecret', path: "se/account/ldap_service_account/usr_docker_registry", secretValues: [
+               [$class: 'VaultSecretValue', envVar: 'HARBOR_PASSWORD', vaultKey: 'usr_docker_registry'],
+             ]]
+          ]
+          wrap([$class: 'VaultBuildWrapper', vaultSecrets: secrets]) {
+            sh '''
+              echo "${HARBOR_PASSWORD}" | docker login --username="usr_docker_registry" --password-stdin acid-harbor.aperto.de
+              docker build -t ${HARBOR_URL}/${PROJECT_KEY}:${BRANCH_NAME} .
+              docker push ${HARBOR_URL}/${PROJECT_KEY}:${BRANCH_NAME}
+              docker logout acid-harbor.aperto.de
+            '''
+          }
+        }
       }
     }
     stage ('Build Docker Release Image') {
@@ -28,7 +42,22 @@ pipeline {
         branch 'master'
       }
       steps {
-        sh "docker build -t ${HARBOR_URL}/${PROJECT_KEY}:${RELEASE_NUMBER} ."
+        script {
+          def secrets = [
+             [$class: 'VaultSecret', path: "se/account/ldap_service_account/usr_docker_registry", secretValues: [
+               [$class: 'VaultSecretValue', envVar: 'HARBOR_PASSWORD', vaultKey: 'usr_docker_registry'],
+             ]]
+          ]
+          wrap([$class: 'VaultBuildWrapper', vaultSecrets: secrets]) {
+            sh '''
+              echo "${HARBOR_PASSWORD}" | docker login --username="usr_docker_registry" --password-stdin acid-harbor.aperto.de
+              docker build -t ${HARBOR_URL}/${PROJECT_KEY}:${RELEASE_NUMBER} .
+              docker push ${HARBOR_URL}/${PROJECT_KEY}:${RELEASE_NUMBER}
+              docker logout acid-harbor.aperto.de
+            '''
+          }
+        }
+      }
       }
     }
     stage ('Deploy Stage') {
@@ -36,7 +65,6 @@ pipeline {
         anyOf {
           branch 'develop'
           branch 'stage'
-
         }
       }
       steps {

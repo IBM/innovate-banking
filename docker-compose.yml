@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+
+  node-app:
+    env_file: .version.env
+    container_name: $PROJECT_NAME
+    image: $REPOSITORY_PREFIX/smarter-banking-campaign:$VERSION
+    environment:
+      PROJECT_NAME: $PROJECT_NAME
+      FQDN: $FQDN
+      APP_ENV: $APP_ENV
+    ports:
+      - "3000:3000"
+    restart: always
+    networks:
+      backend:
+        aliases:
+          - $FQDN
+
+networks:
+  backend:
+    external: true
