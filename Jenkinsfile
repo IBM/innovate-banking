@@ -23,7 +23,7 @@ pipeline {
         script {
           def secrets = [
              [$class: 'VaultSecret', path: "se/account/ldap_service_account/usr_docker_registry", secretValues: [
-               [$class: 'VaultSecretValue', envVar: 'HARBOR_PASSWORD', vaultKey: 'usr_docker_registry'],
+               [$class: 'VaultSecretValue', envVar: 'HARBOR_PASSWORD', vaultKey: 'password'],
              ]]
           ]
           wrap([$class: 'VaultBuildWrapper', vaultSecrets: secrets]) {
@@ -45,7 +45,7 @@ pipeline {
         script {
           def secrets = [
              [$class: 'VaultSecret', path: "se/account/ldap_service_account/usr_docker_registry", secretValues: [
-               [$class: 'VaultSecretValue', envVar: 'HARBOR_PASSWORD', vaultKey: 'usr_docker_registry'],
+               [$class: 'VaultSecretValue', envVar: 'HARBOR_PASSWORD', vaultKey: 'password'],
              ]]
           ]
           wrap([$class: 'VaultBuildWrapper', vaultSecrets: secrets]) {
