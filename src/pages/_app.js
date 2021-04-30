@@ -45,7 +45,7 @@ MyApp.getInitialProps = async appContext => {
 
 	return {
 		locale: appContext.router.locale,
-		messages: { 'de-DE': de_DE, 'en-US': en_US },
+		messages: { de_DE, en_US, 'de-DE': de_DE, 'en-US': en_US },
 	};
 };
 
