@@ -3,20 +3,13 @@ version: '3'
 services:
 
   node-app:
-    env_file: .version.env
-    container_name: $PROJECT_NAME
-    image: $REPOSITORY_PREFIX/smarter-banking-campaign/node-app:$VERSION
-    environment:
-      PROJECT_NAME: $PROJECT_NAME
-      FQDN: $FQDN
-      APP_ENV: $APP_ENV
+    container_name: ibm-sbc
+    image: acid-harbor.aperto.de/smarter-banking-campaign/node-app:$VERSION
     ports:
       - "3000:3000"
     restart: always
     networks:
-      backend:
-        aliases:
-          - $FQDN
+      backend
 
 networks:
   backend:
