@@ -68,7 +68,20 @@ pipeline {
         }
       }
       steps {
-        sh "echo test"
+        acidDeploy(
+          this,
+            [
+              server: 'ibm-smarter-banking-campaign.stage.aperto.systems',
+              user: 'ibm-smarter-banking-campaign',
+              sourceDir: "docker-compose.yml",
+              sourceDirIsDirectory: false,
+              remoteDir: ".",
+              executeCmds: """
+                echo ${BRANCH_NAME} > .version.env
+                docker-compose up -d --force-recreate
+              """
+            ]
+        )
       }
     }
   }
