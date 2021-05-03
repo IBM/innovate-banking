@@ -10,7 +10,6 @@ module.exports = req => {
 			{
 				name: 'MainNavigation',
 				props: {
-					logoTitle: 'Innovate Banking',
 					items: [
 						{
 							name: 'Prozess-Transformation',

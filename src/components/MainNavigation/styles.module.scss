@@ -18,7 +18,7 @@
 	}
 
 	.LogoTitle {
-		@include bp('md', true) {
+		@include bp('md') {
 			display: none;
 		}
 	}

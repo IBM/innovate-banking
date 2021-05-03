@@ -7,7 +7,7 @@ import clsx from 'clsx';
 import Styles from './styles.module.scss';
 import { Close32, Menu32 } from '@carbon/icons-react';
 
-const MainNavigation = ({ items, logoTitle }) => {
+const MainNavigation = ({ items, pageMeta }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [lastBodyPos, setLastBodyPos] = useState(0);
 
@@ -22,11 +22,12 @@ const MainNavigation = ({ items, logoTitle }) => {
 		setIsOpen(!isOpen);
 	};
 
+	console.log(pageMeta);
+
 	return (
 		<header className={clsx(Styles.NavHeader, isOpen && Styles.IsOpen)}>
 			<a href="/" className={clsx(Styles.ListItemLink, Styles.MobileHomeLink)}>
 				<img src="/svg/logo.svg" height={42} width={66} />
-				{logoTitle && <span className={Styles.LogoTitle}>{logoTitle}</span>}
 			</a>
 			<Button className={Styles.MobileMenuIcon} onClick={toggleOpenState}>
 				{!isOpen && <Menu32 />}
@@ -35,12 +36,12 @@ const MainNavigation = ({ items, logoTitle }) => {
 			<Grid className={Styles.NavGrid}>
 				<Row>
 					<Column sm={4}>
-						<nav className={clsx(Styles.MainNavigation, logoTitle && Styles.HasLogoTitle)}>
+						<nav className={clsx(Styles.MainNavigation, !pageMeta.isHome && Styles.HasLogoTitle)}>
 							<ul className={Styles.List}>
-								<li className={clsx(Styles.ListItem, logoTitle && Styles.HasLogoTitle)}>
+								<li className={clsx(Styles.ListItem, !pageMeta.isHome && Styles.HasLogoTitle)}>
 									<a href="/" className={Styles.ListItemLink}>
 										<img src="/svg/logo.svg" height={42} width={66} />
-										{logoTitle && <span className={Styles.LogoTitle}>{logoTitle}</span>}
+										{<span className={Styles.LogoTitle}>{pageMeta.title}</span>}
 									</a>
 								</li>
 								{items.map((item, index) => {
