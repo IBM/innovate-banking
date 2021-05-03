@@ -116,11 +116,14 @@ const Section = props => {
 						<Row>
 							<div
 								className={Styles.TopImage}
-								style={{
-									display: images.top.layout === 'intrinsic' ? 'flex' : null,
-									justifyContent: images.top.layout === 'intrinsic' ? 'center' : null,
-									margin: images.top.margin,
-								}}
+								style={
+									({
+										display: images.top.layout === 'intrinsic' ? 'flex' : null,
+										justifyContent: images.top.layout === 'intrinsic' ? 'center' : null,
+										margin: images.top.margin,
+									},
+									{ ...images.top.style })
+								}
 							>
 								<Image
 									src={images.top.src}
@@ -159,9 +162,12 @@ const Section = props => {
 								{images && images.left && (
 									<div
 										className={Styles.LeftImage}
-										style={{
-											margin: images.left.margin,
-										}}
+										style={
+											({
+												margin: images.left.margin,
+											},
+											{ ...images.left.style })
+										}
 									>
 										<Image
 											src={images.left.src}
@@ -181,7 +187,7 @@ const Section = props => {
 										sm={4}
 										md={hasLeftOrRightContent ? 6 : 12}
 										lg={{
-											span: hasLeftOrRightContent ? 10 : 16,
+											span: hasLeftOrRightContent ? (fullWidth ? 10 : 8) : 16,
 											offset: hasLeftOrRightContent ? 1 : 0,
 										}}
 									>
@@ -221,11 +227,14 @@ const Section = props => {
 						<Row>
 							<div
 								className={Styles.BottomImage}
-								style={{
-									display: images.bottom.layout === 'intrinsic' ? 'flex' : null,
-									justifyContent: images.bottom.layout === 'intrinsic' ? 'center' : null,
-									margin: images.bottom.margin,
-								}}
+								style={
+									({
+										display: images.bottom.layout === 'intrinsic' ? 'flex' : null,
+										justifyContent: images.bottom.layout === 'intrinsic' ? 'center' : null,
+										margin: images.bottom.margin,
+									},
+									{ ...images.bottom.style })
+								}
 							>
 								<Image
 									src={images.bottom.src}
@@ -245,7 +254,7 @@ const Section = props => {
 Section.defaultProps = {
 	colWrapChildren: true,
 	rowWrapChildren: true,
-	fullWidth: true,
+	fullWidth: false,
 };
 
 Section.propTypes = {
@@ -283,6 +292,7 @@ Section.propTypes = {
 			height: PropTypes.number,
 			layout: PropTypes.string,
 			margin: PropTypes.string,
+			style: PropTypes.object,
 		}),
 		right: PropTypes.shape({
 			src: PropTypes.string.isRequired,
@@ -290,6 +300,7 @@ Section.propTypes = {
 			height: PropTypes.number,
 			layout: PropTypes.string,
 			margin: PropTypes.string,
+			style: PropTypes.object,
 		}),
 		bottom: PropTypes.shape({
 			src: PropTypes.string.isRequired,
@@ -297,6 +308,7 @@ Section.propTypes = {
 			height: PropTypes.number,
 			layout: PropTypes.string,
 			margin: PropTypes.string,
+			style: PropTypes.object,
 		}),
 		left: PropTypes.shape({
 			src: PropTypes.string.isRequired,
@@ -304,6 +316,7 @@ Section.propTypes = {
 			height: PropTypes.number,
 			layout: PropTypes.string,
 			margin: PropTypes.string,
+			style: PropTypes.object,
 		}),
 	}),
 	background: PropTypes.shape({

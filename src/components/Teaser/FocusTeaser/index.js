@@ -20,7 +20,7 @@ const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, da
 	const smSizeOuter = 4;
 	let mdSizeOuter = 4;
 	let lgSizeOuter = 8;
-	const maxSizeOuter = 8;
+	let maxSizeOuter = 8;
 
 	const smSizeLeft = 4;
 	let mdSizeLeft = 8;
@@ -31,6 +31,7 @@ const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, da
 		lgSizeOuter = 16;
 		mdSizeLeft = 4;
 		lgSizeLeft = 8;
+		maxSizeOuter = 16;
 	}
 
 	if (condensed && image === undefined) {

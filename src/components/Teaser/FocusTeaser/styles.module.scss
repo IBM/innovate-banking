@@ -21,6 +21,8 @@
 
 	.Headline {
 		@include carbon--type-style('expressive-paragraph-01', true);
+
+		color: $gray-90;
 	}
 
 	.RichText {
@@ -67,7 +69,11 @@
 
 	&.IsDark {
 		background: $gray-90;
-		color: $gray-40;
+		color: $gray-10;
+
+		.Headline {
+			color: $gray-10;
+		}
 
 		.Link {
 			color: $blue-40;
@@ -80,6 +86,7 @@
 	}
 
 	&.IsInactive {
+
 		.Link {
 			color: $gray-60;
 		}

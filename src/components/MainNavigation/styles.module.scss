@@ -21,6 +21,18 @@
 		@include bp('md') {
 			display: none;
 		}
+
+		&.DesktopOnly {
+			display: none;
+
+			@include bp('md') {
+				display: flex;
+			}
+		}
+
+		&.IsHidden {
+			display: none;
+		}
 	}
 }
 
@@ -77,7 +89,7 @@
 	}
 
 	.ListItemLink {
-		@include carbon--type-style('body-short-01', true);
+		@include carbon--type-style('body-short-02', true);
 
 		display: flex;
 		flex: 1 1 100%;
@@ -118,6 +130,12 @@
 				padding-left: 0;
 			}
 		}
+
+		&.MobileOnly {
+			@include bp('md') {
+				display: none;
+			}
+		}
 	}
 
 	&.HasLogoTitle {
@@ -150,9 +168,9 @@
 			}
 		}
 
-		.LogoTitle {
-			display: flex;
-		}
+		// .LogoTitle {
+		// 	display: flex;
+		// }
 	}
 
 	@include bp('md', true) {

@@ -75,7 +75,7 @@ module.exports = req => {
 						},
 						{
 							// eslint-disable-next-line prettier/prettier
-							name: 'Let\'s Talk',
+							name: 'Let’s Talk',
 							link: 'letstalk',
 							isLetsTalkItem: true,
 						},
@@ -96,7 +96,11 @@ module.exports = req => {
 							src: '/img/section-process-transformation.svg',
 							width: 402,
 							height: 363,
-							margin: '0 0 -70px 0',
+							layout: 'responsive',
+							style: {
+								maxWidth: '50%',
+								marginBottom: '-7%',
+							},
 						},
 					},
 					children: [
@@ -149,6 +153,9 @@ module.exports = req => {
 							height: 1556,
 							width: 3200,
 							layout: 'responsive',
+							style: {
+								maxWidth: '73%',
+							},
 						},
 					},
 					background: {
@@ -264,8 +271,9 @@ module.exports = req => {
 					},
 					titles: {
 						left:
-							'<p class="h4">Let\'s talk</p><p class="p">Fragen oder Interesse an weiteren Informationen? Sprechen Sie uns an!</p>',
+							'<p class="h4">Let’s Talk</p><p class="p">Fragen oder Interesse an weiteren Informationen? Sprechen Sie uns an!</p>',
 					},
+					fullWidth: true,
 					children: [
 						{
 							name: 'TeaserList',
@@ -276,7 +284,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Jean-Henrik Zitterbart',
-											copy: 'Partner Banking & Financial Markets DACH',
+											copy: 'Partner<br />Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/jean.jpg',
 												width: 288,
@@ -302,7 +310,7 @@ module.exports = req => {
 										props: {
 											headline: 'Manuel Schuff',
 											copy:
-												'Managing Business Transformation Consultant Banking & Financial Markets DACH',
+												'Managing Business Transformation Consultant<br />Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/manuel.jpg',
 												width: 288,

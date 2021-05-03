@@ -1,4 +1,6 @@
 @import '~carbon-components/scss/globals/scss/_vars.scss';
+@import '~carbon-components/scss/globals/scss/_typography.scss';
+@import '@/styles/mixins';
 
 .Accordion {
 	width: 100%;
@@ -12,15 +14,21 @@
 	}
 
 	.AccordionHeader {
+		@include carbon--type-style('expressive-heading-04', true);
+
 		display: flex;
-		flex: 1 1 auto;
-		align-items: center;
+		flex: 1 1 100%;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	.AccordionContent {
 		background: $gray-80;
 		padding: $spacing-05;
+
+		&:hover {
+			background: $gray-70;
+		}
 	}
 
 	.AccordionListItem {
@@ -34,6 +42,15 @@
 
 	.Icon {
 		color: $blue-40;
+		margin-bottom: $spacing-05;
+
+		@include bp('md') {
+			margin-bottom: 0;
+		}
+	}
+
+	.OpenCloseIcon {
+		margin-left: auto;
 	}
 
 	.RichText {
@@ -41,7 +58,7 @@
 	}
 
 	.RichTextHeading {
-		margin-left: $spacing-09;
+		margin-left: 0;
 		margin-right: auto;
 		padding-right: $spacing-05;
 	}

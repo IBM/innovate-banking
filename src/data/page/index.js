@@ -84,7 +84,7 @@ module.exports = req => {
 						},
 						{
 							// eslint-disable-next-line prettier/prettier
-							name: 'Let\'s Talk',
+							name: 'Let’s Talk',
 							link: 'letstalk',
 							isLetsTalkItem: true,
 						},
@@ -125,7 +125,10 @@ module.exports = req => {
 							alt: 'Plattform Lösungen',
 							height: 367,
 							width: 772,
-							layout: 'intrinsic',
+							layout: 'responsive',
+							style: {
+								maxWidth: '45vw',
+							},
 						},
 					},
 					background: {
@@ -155,6 +158,9 @@ module.exports = req => {
 							height: 1556,
 							width: 3200,
 							layout: 'responsive',
+							style: {
+								maxWidth: '75%',
+							},
 						},
 					},
 					background: {
@@ -243,6 +249,7 @@ module.exports = req => {
 					titles: {
 						left: '<p>Unser Fokus</p>',
 					},
+					fullWidth: true,
 					children: [
 						{
 							name: 'TeaserList',
@@ -353,6 +360,7 @@ module.exports = req => {
 					background: {
 						color: '#F4F4F4',
 					},
+					fullWidth: true,
 					children: [
 						{
 							name: 'TeaserList',
@@ -460,6 +468,7 @@ module.exports = req => {
 					condensed: {
 						top: true,
 					},
+					fullWidth: true,
 					children: [
 						{
 							name: 'TeaserList',
@@ -531,10 +540,10 @@ module.exports = req => {
 							layout: 'intrinsic',
 						},
 					},
+					fullWidth: true,
 					titles: {
 						left:
 							'<p class="h4">Innovative Methoden und Technologien</p><p class="p">Wir arbeiten schon heute an der Finanztechnologie von übermorgen. Entdecken Sie ungeahnte Möglichkeiten und profitieren Sie als erste von Lösungen, die die Welt des Bankings nachhaltig verändern werden.</p>',
-						offsetLeft: '-50%',
 					},
 					children: [
 						{
@@ -560,7 +569,7 @@ module.exports = req => {
 										props: {
 											headline: 'IBM Blockchain',
 											text:
-												'<p>Mit IBM Blockchain können Sie Transaktionen transparent, einfach und effizient halten. Wir ersetzen damit veraltete Prozesse und manuelle Arbeit durch neuartige Kooperation, Innovation und gesteigertes Tempo. IBM Blockchain schafft neue Lösungen und erzielt greifbare Ergebnisse.</p>',
+												'<p>Mit Blockchain können Sie Transaktionen transparent, einfach und effizient halten. Wir ersetzen damit veraltete Prozesse und manuelle Arbeit durch neuartige Kooperation, Innovation und gesteigertes Tempo. Mit Blockchain schaffen wir neue Lösungen und erzielen greifbare Ergebnisse.</p>',
 											link: {
 												url: 'https://www.ibm.com/blockchain/industries/financial-services',
 											},
@@ -573,7 +582,7 @@ module.exports = req => {
 										props: {
 											headline: 'IBM Cloud-Computing',
 											text:
-												'<p>IBM Cloud-Computing konzipiert und implementiert sichere und innovative Cloud-Lösungen für Sie. Unsere Lösungen garantieren höchste Sicherheitsstandards und helfen Ihnen, gesetzliche Bestimmungen durch die IBM Cloud-Plattform und das gesamte Ökosystem einzuhalten.</p>',
+												'<p>Entlang der gesamten Customer Journey ermöglichen wir Banken, sich in hybriden Cloud-Umgebungen neu zu erfinden. Mit kompetenter Beratung, Unterstützung bei der Implementierung und Managed Services unterstützen wir Sie dabei, Ihren Weg in die Cloud zu vereinfachen und zu beschleunigen.</p>',
 											link: {
 												url:
 													'https://www.ibm.com/de-de/industries/banking-financial-markets/cloud-banking',
@@ -587,7 +596,7 @@ module.exports = req => {
 										props: {
 											headline: 'IBM Edge',
 											text:
-												'<p>Mit IBM Edge können Sie große Datenvolumen direkt an der Quelle bearbeiten, indem Unternehmensanwendungen näher an Datenquellen wie IoT Geräte oder lokale Edge-Server rücken. Das führt zu schnelleren Erkenntnissen, kürzeren Reaktionszeiten und besserer Bandbreitenverfügbarkeit.</p>',
+												'<p>Mit Edge-Computing können Sie große Datenvolumen direkt an der Quelle bearbeiten, indem Bankanwendungen näher an Datenquellen wie IoT Geräte oder lokale Edge-Server rücken. Wir helfen Ihnen bei der Optimierung Ihrer Betriebsabläufe und Umsetzung neuer Kundenservices auf Basis dieser neuen technischen Möglichkeit.</p>',
 											link: {
 												url: 'https://www.ibm.com/de-de/cloud/what-is-edge-computing',
 											},
@@ -611,8 +620,9 @@ module.exports = req => {
 					},
 					titles: {
 						left:
-							'<p class="h4">Let\'s talk</p><p class="p">Fragen oder Interesse an weiteren Informationen? Sprechen Sie uns an!</p>',
+							'<p class="h4">Let’s Talk</p><p class="p">Fragen oder Interesse an weiteren Informationen? Sprechen Sie uns an!</p>',
 					},
+					fullWidth: true,
 					children: [
 						{
 							name: 'TeaserList',
@@ -623,7 +633,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Jean-Henrik Zitterbart',
-											copy: 'Partner Banking & Financial Markets DACH',
+											copy: 'Partner<br />Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/jean.jpg',
 												width: 288,
@@ -648,7 +658,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Bernd Neubauer',
-											copy: 'Senior Partner Banking & Financial Markets DACH',
+											copy: 'Senior Partner<br />Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/bernd.jpg',
 												width: 288,

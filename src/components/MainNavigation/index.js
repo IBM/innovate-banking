@@ -39,7 +39,20 @@ const MainNavigation = ({ items, pageMeta }) => {
 								<li className={clsx(Styles.ListItem, !pageMeta.isHome && Styles.HasLogoTitle)}>
 									<a href="/" className={Styles.ListItemLink}>
 										<img src="/svg/logo.svg" height={42} width={66} />
-										{<span className={Styles.LogoTitle}>{pageMeta.title}</span>}
+										<span
+											className={clsx(
+												Styles.LogoTitle,
+												Styles.DesktopOnly,
+												pageMeta.isHome && Styles.IsHidden
+											)}
+										>
+											{pageMeta.title}
+										</span>
+									</a>
+								</li>
+								<li className={clsx(Styles.ListItem, Styles.MobileOnly)}>
+									<a href="/" className={clsx(Styles.ListItemLink, Styles.LogoTitle)}>
+										{pageMeta.title}
 									</a>
 								</li>
 								{items.map((item, index) => {

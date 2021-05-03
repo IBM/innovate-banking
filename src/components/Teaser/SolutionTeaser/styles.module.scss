@@ -11,12 +11,14 @@ $solutionTeaserStreakLength: 175px;
 	padding-top: $spacing-06;
 
 	@include bp('md', true) {
+
 		&:first-child {
 			padding-top: 0;
 		}
 	}
 
 	@include bp('md') {
+
 		&:first-child,
 		&:nth-child(2) {
 			padding-top: 0;
@@ -31,13 +33,12 @@ $solutionTeaserStreakLength: 175px;
 			padding-top: $solutionTeaserStreakLength / 2;
 		}
 	}
-
 }
 
 .SolutionTeaser {
 	position: relative;
 	background: $gray-80;
-	padding: $spacing-05;
+	padding: $spacing-05 $spacing-05 $spacing-08 $spacing-05;
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -125,9 +126,10 @@ $solutionTeaserStreakLength: 175px;
 
 	.Headline,
 	.Text {
-		@include carbon--type-style('body-short-01', true);
+		@include carbon--type-style('body-short-02', true);
 
 		color: $white-0;
+		max-width: 75%;
 	}
 
 	.Headline {

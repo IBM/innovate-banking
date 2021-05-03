@@ -5,7 +5,7 @@
 
 .PictogramTeaser {
 	background: $gray-80;
-	padding: $spacing-05;
+	padding: $spacing-05 $spacing-05 $spacing-08 $spacing-05;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: $spacing-06;
@@ -13,6 +13,10 @@
 	@include bp('lg') {
 		margin-bottom: 0;
 		min-height: 100%;
+	}
+
+	.Content {
+		max-width: 75%;
 	}
 
 	.IconWrapper {
@@ -25,7 +29,7 @@
 
 	.Headline,
 	.Text {
-		@include carbon--type-style('body-short-01', true);
+		@include carbon--type-style('body-short-02', true);
 
 		color: $white-0;
 	}

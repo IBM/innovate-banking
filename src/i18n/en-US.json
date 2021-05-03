@@ -5,7 +5,7 @@
     "components": {
         "AnchorNavigation": {
             "dropdownLabel": "Learn more about",
-            "letsTalkButtonText": "Let's talk"
+            "letsTalkButtonText": "Let’s talk"
         }
     }
 }

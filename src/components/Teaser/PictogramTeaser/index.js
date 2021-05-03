@@ -22,8 +22,10 @@ const PictogramTeaser = ({ icon, headline, text, teaserIndex, teaserCount }) => 
 				<span className={Styles.IconWrapper}>
 					<IconComponent className={Styles.Icon} />
 				</span>
-				<h5 className={Styles.Headline}>{headline}</h5>
-				<p className={Styles.Text}>{text}</p>
+				<div className={Styles.Content}>
+					<h5 className={Styles.Headline}>{headline}</h5>
+					<p className={Styles.Text}>{text}</p>
+				</div>
 			</div>
 		</Column>
 	);

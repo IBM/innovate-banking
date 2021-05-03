@@ -12,31 +12,29 @@ const LetsTalkTeaser = ({ headline, copy, image, links }) => {
 		<Column sm={4} md={4} lg={8} className={Styles.LetTalkTeaserColumn}>
 			<div className={Styles.LetsTalkTeaser}>
 				<Image src={image.src} width={image.width} height={image.height} layout="responsive" />
-				<div className={Styles.Content}>
-					<h5 className={Styles.Headline}>{headline}</h5>
-					<p className={Styles.Copy}>{copy}</p>
-					<ul className={Styles.LinkList}>
-						{links.map((link, index) => {
-							return (
-								<li className={Styles.LinkListItem} key={index}>
-									<a
-										href={link.url}
-										title={link.title}
-										target="_blank"
-										rel="noreferrer"
-										className={Styles.Link}
-									>
-										<span>{link.title}</span>
-										<span>
-											{link.type === 'linkedIn' && <LogoLinkedin32 />}
-											{link.type === 'email' && <Email32 />}
-										</span>
-									</a>
-								</li>
-							);
-						})}
-					</ul>
-				</div>
+				<h5 className={Styles.Headline}>{headline}</h5>
+				<p className={Styles.Copy} dangerouslySetInnerHTML={{ __html: copy }} />
+				<ul className={Styles.LinkList}>
+					{links.map((link, index) => {
+						return (
+							<li className={Styles.LinkListItem} key={index}>
+								<a
+									href={link.url}
+									title={link.title}
+									target="_blank"
+									rel="noreferrer"
+									className={Styles.Link}
+								>
+									<span>{link.title}</span>
+									<span>
+										{link.type === 'linkedIn' && <LogoLinkedin32 />}
+										{link.type === 'email' && <Email32 />}
+									</span>
+								</a>
+							</li>
+						);
+					})}
+				</ul>
 			</div>
 		</Column>
 	);

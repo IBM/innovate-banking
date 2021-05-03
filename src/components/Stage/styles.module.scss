@@ -8,10 +8,14 @@
 	display: block;
 	width: 100vw;
 	height: auto;
-	min-height: 250px;
+	min-height: 75vh;
 
 	@include bp('md') {
-		min-height: 384px;
+		min-height: 55vh;
+	}
+
+	@include bp('lg') {
+		min-height: 55vh;
 	}
 
 	.HeadingWrapper {
@@ -30,6 +34,10 @@
 		@include carbon--type-style('expressive-heading-05', true);
 
 		@include bp('md') {
+			@include carbon--type-style('productive-heading-06', true);
+		}
+
+		@include bp('lg') {
 			@include carbon--type-style('productive-heading-06', true);
 		}
 	}

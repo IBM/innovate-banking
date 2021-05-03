@@ -43,8 +43,6 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 	];
 
 	const onSectionInViewportChangeEvent = event => {
-		console.log(event.detail);
-
 		for (let index = 0; index < items.length; index++) {
 			const item = items[index];
 			if (

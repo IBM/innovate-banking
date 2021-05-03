@@ -1,12 +1,13 @@
 @import '~carbon-components/scss/globals/scss/_vars.scss';
 @import '~carbon-components/scss/globals/scss/_typography.scss';
+@import '@/styles/mixins';
 
 .RichText {
 	color: inherit;
 
 	:global(p),
 	:global(.p) {
-		@include carbon--type-style('body-short-01', true);
+		@include carbon--type-style('body-short-02', true);
 
 		margin-bottom: $spacing-04;
 
@@ -99,7 +100,15 @@
 		margin-bottom: $spacing-07;
 
 		&:global(.large) {
-			font-size: carbon--rem(166px);
+			font-size: carbon--rem(100px);
+
+			@include bp('md') {
+				font-size: carbon--rem(128px);
+			}
+
+			@include bp('lg') {
+				font-size: carbon--rem(166px);
+			}
 		}
 	}
 
@@ -109,7 +118,15 @@
 		margin-bottom: $spacing-07;
 
 		&:global(.large) {
-			font-size: carbon--rem(166px);
+			font-size: carbon--rem(100px);
+
+			@include bp('md') {
+				font-size: carbon--rem(128px);
+			}
+
+			@include bp('lg') {
+				font-size: carbon--rem(166px);
+			}
 		}
 	}
 
@@ -119,7 +136,15 @@
 		margin-bottom: $spacing-07;
 
 		&:global(.large) {
-			font-size: carbon--rem(166px);
+			font-size: carbon--rem(100px);
+
+			@include bp('md') {
+				font-size: carbon--rem(128px);
+			}
+
+			@include bp('lg') {
+				font-size: carbon--rem(166px);
+			}
 		}
 	}
 
@@ -127,7 +152,15 @@
 		@include carbon--type-style('display-04', true);
 
 		&:global(.large) {
-			font-size: carbon--rem(166px);
+			font-size: carbon--rem(100px);
+
+			@include bp('md') {
+				font-size: carbon--rem(128px);
+			}
+
+			@include bp('lg') {
+				font-size: carbon--rem(166px);
+			}
 		}
 	}
 }

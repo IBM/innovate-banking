@@ -55,15 +55,35 @@ const Accordion = ({ items }) => {
 										}}
 										lg={{ span: 14, offset: 1 }}
 									>
-										<span className={Styles.AccordionHeader}>
-											<IconComponent className={Styles.Icon} />
-											<RichText content={item.headline} className={Styles.RichTextHeading} />
-											{index === activeItemIndex && <ChevronUp32 />}
-											{index !== activeItemIndex && <ChevronDown32 />}
-										</span>
-										<AnimateHeight duration={500} height={index === activeItemIndex ? 'auto' : 0}>
-											<RichText content={item.content} className={Styles.RichText} />
-										</AnimateHeight>
+										<Row>
+											<Column sm={4} md={8} lg={2}>
+												<IconComponent className={Styles.Icon} />
+											</Column>
+											<Column
+												sm={4}
+												md={8}
+												lg={{ offset: 1, span: 13 }}
+												className={Styles.AccordionHeader}
+											>
+												<RichText content={item.headline} className={Styles.RichTextHeading} />
+												{index === activeItemIndex && (
+													<ChevronUp32 className={Styles.OpenCloseIcon} />
+												)}
+												{index !== activeItemIndex && (
+													<ChevronDown32 className={Styles.OpenCloseIcon} />
+												)}
+											</Column>
+										</Row>
+										<Row>
+											<Column sm={4} md={7} lg={{ offset: 3, span: 13 }}>
+												<AnimateHeight
+													duration={500}
+													height={index === activeItemIndex ? 'auto' : 0}
+												>
+													<RichText content={item.content} className={Styles.RichText} />
+												</AnimateHeight>
+											</Column>
+										</Row>
 									</Column>
 								</Row>
 							</div>
