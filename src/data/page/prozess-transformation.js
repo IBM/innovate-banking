@@ -2,8 +2,8 @@
 module.exports = req => {
 	return {
 		meta: {
-			title: 'IBM Smarter Banking',
-			slogan: 'Innovate Banking',
+			title: 'Innovate Banking',
+			slogan: 'Eine Initiative von IBM',
 			isHome: false,
 		},
 		components: [
