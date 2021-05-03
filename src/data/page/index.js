@@ -439,7 +439,7 @@ module.exports = req => {
 												height: 324,
 											},
 											link:
-												'https://www.ibm.com/thought-leadership/institute-business-value/industry/banking (Übersichtsseite Institute Banking)',
+												'https://www.ibm.com/thought-leadership/institute-business-value/industry/banking',
 										},
 									},
 								],
