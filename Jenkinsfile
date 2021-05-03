@@ -78,6 +78,7 @@ pipeline {
               remoteDir: ".",
               executeCmds: """
                 echo 'VERSION=${BRANCH_NAME}' > .env
+                docker-compose pull
                 docker-compose up -d --force-recreate
               """
             ]
