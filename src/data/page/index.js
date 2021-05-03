@@ -114,7 +114,7 @@ module.exports = req => {
 				props: {
 					id: 'mehrwert',
 					titles: {
-						left: '<p>Herausforderungen begegnen, Mehrwerte schaffen.</p>',
+						left: '<p>Herausforderungen begegnen,<br/>Mehrwerte schaffen.</p>',
 					},
 					noSpace: {
 						bottom: true,
