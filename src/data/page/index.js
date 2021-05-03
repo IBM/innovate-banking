@@ -620,7 +620,7 @@ module.exports = req => {
 					},
 					titles: {
 						left:
-							'<p class="h4">Let’s Talk</p><p class="p">Fragen oder Interesse an weiteren Informationen? Sprechen Sie uns an!</p>',
+							'<p class="d1">Let’s Talk !</p><p class="p">Fragen oder Interesse an weiteren Informationen? Sprechen Sie uns an!</p>',
 					},
 					fullWidth: true,
 					children: [
