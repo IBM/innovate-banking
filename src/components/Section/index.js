@@ -41,14 +41,14 @@ const Section = ({
 	if (images && images.right) hasLeftOrRightContent = true;
 
 	return (
-		<div
+		<section
 			id={id}
 			style={{
 				background: backgroundStyle,
 			}}
 		>
 			<Grid>
-				<section
+				<div
 					className={clsx(
 						Styles.Section,
 						titles && Styles.Titled,
@@ -193,9 +193,9 @@ const Section = ({
 							</div>
 						</Row>
 					)}
-				</section>
+				</div>
 			</Grid>
-		</div>
+		</section>
 	);
 };
 

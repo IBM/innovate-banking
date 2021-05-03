@@ -14,7 +14,6 @@ const Stage = ({ heading, subheading, image }) => {
 				alt={image.alt}
 				layout="fill"
 				quality="100"
-				priority={true}
 				objectFit="cover"
 				objectPosition="center"
 			/>
