@@ -22,8 +22,6 @@ const MainNavigation = ({ items, pageMeta }) => {
 		setIsOpen(!isOpen);
 	};
 
-	console.log(pageMeta);
-
 	return (
 		<header className={clsx(Styles.NavHeader, isOpen && Styles.IsOpen)}>
 			<a href="/" className={clsx(Styles.ListItemLink, Styles.MobileHomeLink)}>
