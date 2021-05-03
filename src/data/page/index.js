@@ -236,7 +236,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="d1">Banking am Puls der Zeit</p><p>Als Finanzdienstleister befinden Sie sich stetig im Spannungsfeld zwischen Beständigkeit und Fortschritt. Ihre Kunden erwarten eine verlässliche, sichere und gleichzeitig innovative Banking-Erfahrung.</p><p>Um an den entscheidenden Punkten ansetzen zu können, bieten wir Ihnen Lösungen in fünf Kernbereichen. Gemeinsam finden wir die passende Herangehensweise für die Bedürfnisse Ihres Unternehmens. Ganz gleich, ob sie weltweit agieren oder eine Plattform für ein FinTech Start-up aufsetzen möchten.</p>',
+									'<p class="d1">Banking am Puls<br/>der Zeit</p><p>Als Finanzdienstleister befinden Sie sich stetig im Spannungsfeld zwischen Beständigkeit und Fortschritt. Ihre Kunden erwarten eine verlässliche, sichere und gleichzeitig innovative Banking-Erfahrung.</p><p>Um an den entscheidenden Punkten ansetzen zu können, bieten wir Ihnen Lösungen in fünf Kernbereichen. Gemeinsam finden wir die passende Herangehensweise für die Bedürfnisse Ihres Unternehmens. Ganz gleich, ob sie weltweit agieren oder eine Plattform für ein FinTech Start-up aufsetzen möchten.</p>',
 							},
 						},
 					],
@@ -620,7 +620,7 @@ module.exports = req => {
 					},
 					titles: {
 						left:
-							'<p class="d1">Let’s Talk !</p><p class="p">Fragen oder Interesse an weiteren Informationen? Sprechen Sie uns an!</p>',
+							'<p class="d1">Let’s talk !</p><p class="p">Fragen oder Interesse an weiteren Informationen? Sprechen Sie uns an!</p>',
 					},
 					fullWidth: true,
 					children: [
