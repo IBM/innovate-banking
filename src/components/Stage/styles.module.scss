@@ -33,12 +33,18 @@
 	.Heading {
 		@include carbon--type-style('expressive-heading-05', true);
 
+		font-size: carbon--rem(46px);
+
 		@include bp('md') {
 			@include carbon--type-style('productive-heading-06', true);
+
+			font-size: carbon--rem(54px);
 		}
 
 		@include bp('lg') {
 			@include carbon--type-style('productive-heading-06', true);
+
+			font-size: carbon--rem(76px);
 		}
 	}
 
