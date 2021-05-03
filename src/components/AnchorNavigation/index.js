@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Row, Grid, Column, Link, Dropdown } from 'carbon-components-react';
 import Sticky from 'react-sticky-el';
@@ -15,6 +15,7 @@ import { AddComment20 } from '@carbon/icons-react';
 const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 	const sloganListItemRef = React.createRef(null);
 	const [activeItem, setActiveItem] = useState(null);
+	const [sectionInViewportChangeEvent, setSectionInViewportChangeEvent] = useState(false);
 
 	const onAnchorClick = (event, index) => {
 		setActiveItem(index);
@@ -41,6 +42,28 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 		},
 	];
 
+	const onSectionInViewportChangeEvent = event => {
+		console.log(event.detail);
+
+		for (let index = 0; index < items.length; index++) {
+			const item = items[index];
+			if (
+				item.link === event.detail.id &&
+				((event.detail.inViewport === true && event.detail.leave === false) ||
+					(event.detail.inViewport === false && event.detail.enter === true))
+			) {
+				return setActiveItem(index);
+			}
+		}
+	};
+
+	useEffect(() => {
+		if (sectionInViewportChangeEvent === false && window !== undefined) {
+			window.addEventListener('SectionInViewportChange', onSectionInViewportChangeEvent);
+			setSectionInViewportChangeEvent(true);
+		}
+	}, [sectionInViewportChangeEvent]);
+
 	return (
 		<>
 			<Sticky className={Styles.StickyWrapper} onFixedToggle={onFixedToggle}>
@@ -49,54 +72,40 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 						<Row>
 							<Column sm={0} md={8}>
 								<ul className={Styles.List}>
-									{pageMeta && pageMeta.slogan && (
-										<li className={clsx(Styles.ListItem, Styles.IsSloganItem)}>
-											<Link
-												href="#top"
-												title={pageMeta.slogan}
-												className={clsx(Styles.Link, activeItem === null && Styles.IsActive)}
-												onClick={event => {
-													onAnchorClick(event, null);
-												}}
-											>
-												{pageMeta.slogan}
-											</Link>
-										</li>
-									)}
 									{items.map((item, index) => {
 										return (
-											<li key={index} className={Styles.ListItem}>
+											<li
+												key={index}
+												className={clsx(
+													Styles.ListItem,
+													item.isTop && Styles.IsSloganItem,
+													item.isLetsTalkItem && Styles.IsLetsTalkListItem
+												)}
+											>
 												<Link
 													href={`#${item.link}`}
 													className={clsx(
 														Styles.Link,
-														activeItem === index && Styles.IsActive
+														activeItem === index && Styles.IsActive,
+														item.isLetsTalkItem && Styles.IsLetsTalkLink
 													)}
 													onClick={event => {
 														onAnchorClick(event, index);
 													}}
 												>
-													{item.name}
+													{!item.isLetsTalkItem && item.name}
+													{item.isLetsTalkItem &&
+														translate(
+															intl,
+															'components.AnchorNavigation.letsTalkButtonText'
+														)}
+													{item.isLetsTalkItem && (
+														<AddComment20 className={Styles.LetsTalkIcon} />
+													)}
 												</Link>
 											</li>
 										);
 									})}
-									<li className={clsx(Styles.ListItem, Styles.IsLetsTalkListItem)}>
-										<Link
-											href="#letstalk"
-											className={clsx(
-												Styles.Link,
-												Styles.IsLetsTalkLink,
-												activeItem === items.length + 1 && Styles.IsActive
-											)}
-											onClick={event => {
-												onAnchorClick(event, items.length + 1);
-											}}
-										>
-											{translate(intl, 'components.AnchorNavigation.letsTalkButtonText')}
-											<AddComment20 className={Styles.LetsTalkIcon} />
-										</Link>
-									</li>
 								</ul>
 							</Column>
 						</Row>

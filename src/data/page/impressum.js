@@ -57,6 +57,11 @@ module.exports = req => {
 				props: {
 					items: [
 						{
+							name: 'Innovate Banking',
+							link: 'top',
+							isTop: true,
+						},
+						{
 							name: 'Ansprechpartner',
 							link: 'ansprechpartner',
 						},

@@ -58,6 +58,11 @@ module.exports = req => {
 				props: {
 					items: [
 						{
+							name: 'Innovate Banking',
+							link: 'top',
+							isTop: true,
+						},
+						{
 							name: 'Mission',
 							link: 'mission',
 						},
@@ -76,6 +81,12 @@ module.exports = req => {
 						{
 							name: 'Methoden',
 							link: 'methoden',
+						},
+						{
+							// eslint-disable-next-line prettier/prettier
+							name: 'Let\'s Talk',
+							link: 'letstalk',
+							isLetsTalkItem: true,
 						},
 					],
 				},

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
 
@@ -11,20 +11,62 @@ import { Grid, Row, Column } from 'carbon-components-react';
 
 import RichText from '@/components/RichText';
 
-const Section = ({
-	id,
-	titles,
-	children,
-	images,
-	background,
-	colWrapChildren,
-	rowWrapChildren,
-	condensed,
-	noSpace,
-	narrow,
-	fullWidth,
-}) => {
+import { useInViewport } from 'react-in-viewport';
+
+const Section = props => {
+	const {
+		id,
+		titles,
+		children,
+		images,
+		background,
+		colWrapChildren,
+		rowWrapChildren,
+		condensed,
+		noSpace,
+		narrow,
+		fullWidth,
+	} = props;
 	let backgroundStyle = null;
+
+	const sectionRef = useRef();
+	const { inViewport } = useInViewport(
+		sectionRef,
+		{
+			threshold: 0,
+		},
+		{
+			disconnectOnLeave: true,
+		},
+		{
+			onEnterViewport: () => {
+				if (window !== undefined && id !== undefined) {
+					window.dispatchEvent(
+						new CustomEvent('SectionInViewportChange', {
+							detail: {
+								id,
+								inViewport,
+								enter: true,
+							},
+						})
+					);
+				}
+			},
+			onLeaveViewport: () => {
+				if (window !== undefined && id !== undefined) {
+					window.dispatchEvent(
+						new CustomEvent('SectionInViewportChange', {
+							detail: {
+								id,
+								inViewport,
+								leave: true,
+							},
+						})
+					);
+				}
+			},
+		}
+	);
 
 	if (background && background.color) {
 		backgroundStyle = background.color;
@@ -46,6 +88,7 @@ const Section = ({
 			style={{
 				background: backgroundStyle,
 			}}
+			ref={sectionRef}
 		>
 			<Grid>
 				<div
@@ -268,6 +311,7 @@ Section.propTypes = {
 		color: PropTypes.string,
 		gradient: PropTypes.string,
 	}),
+	inViewport: PropTypes.bool,
 };
 
 export default Section;
