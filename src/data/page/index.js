@@ -567,7 +567,7 @@ module.exports = req => {
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'IBM Blockchain',
+											headline: 'Blockchain',
 											text:
 												'<p>Mit Blockchain können Sie Transaktionen transparent, einfach und effizient halten. Wir ersetzen damit veraltete Prozesse und manuelle Arbeit durch neuartige Kooperation, Innovation und gesteigertes Tempo. Mit Blockchain schaffen wir neue Lösungen und erzielen greifbare Ergebnisse.</p>',
 											link: {
@@ -580,7 +580,7 @@ module.exports = req => {
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'IBM Cloud-Computing',
+											headline: 'Cloud-Computing',
 											text:
 												'<p>Entlang der gesamten Customer Journey ermöglichen wir Banken, sich in hybriden Cloud-Umgebungen neu zu erfinden. Mit kompetenter Beratung, Unterstützung bei der Implementierung und Managed Services unterstützen wir Sie dabei, Ihren Weg in die Cloud zu vereinfachen und zu beschleunigen.</p>',
 											link: {
@@ -594,7 +594,7 @@ module.exports = req => {
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'IBM Edge',
+											headline: 'Edge',
 											text:
 												'<p>Mit Edge-Computing können Sie große Datenvolumen direkt an der Quelle bearbeiten, indem Bankanwendungen näher an Datenquellen wie IoT Geräte oder lokale Edge-Server rücken. Wir helfen Ihnen bei der Optimierung Ihrer Betriebsabläufe und Umsetzung neuer Kundenservices auf Basis dieser neuen technischen Möglichkeit.</p>',
 											link: {
