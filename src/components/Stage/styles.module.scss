@@ -50,5 +50,8 @@
 
 	.Subheading {
 		@include carbon--type-style('productive-heading-02', true);
+
+		color: $blue-40;
+		font-weight: normal;
 	}
 }
