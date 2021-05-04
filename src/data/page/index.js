@@ -139,7 +139,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="d1">Unsere Plattform-Lösungen</p><p>Wir sind ihr Partner für die digitale Transformation des Finanzsektors. Denn wir bringen die interne Branchenkenntnis zusammen mit technischen Innovationen und verschiedensten Entwicklungen, die im weltweiten Netzwerk der IBM entstehen.</p>',
+									'<p class="d1">Unsere Plattform-Lösungen</p><p>Wir sind Ihr Partner für die digitale Transformation des Finanzsektors. Denn wir bringen die interne Branchenkenntnis zusammen mit technischen Innovationen und verschiedensten Entwicklungen, die im weltweiten Netzwerk der IBM entstehen.</p>',
 							},
 						},
 					],
@@ -181,7 +181,7 @@ module.exports = req => {
 											icon: 'Touch_132',
 											headline: 'Für Ihre Kund*innen',
 											text:
-												'Mehrwerte zählen – erschaffen Sie eine nachhaltig zeitgemäße Banking-Erfahrung.',
+												'Mehrwerte zählen – Erschaffen Sie eine nachhaltig zeitgemäße Banking-Erfahrung.',
 										},
 									},
 									{
@@ -189,7 +189,7 @@ module.exports = req => {
 										props: {
 											icon: 'Analytics32',
 											headline: 'Für mehr Effizienz',
-											text: 'Kosten reduzieren – strukturell, konsequent, immer transparent.',
+											text: 'Kosten reduzieren – Strukturell, konsequent, immer transparent.',
 										},
 									},
 									{
@@ -207,7 +207,7 @@ module.exports = req => {
 											icon: 'HelpDesk32',
 											headline: 'Für den lokalen Markt',
 											text:
-												'Internationale Expertise – IBM ist global aktiv, aber im deutsch-sprachigen Raum zu Hause.',
+												'Internationale Expertise – IBM ist global aktiv, aber im deutschsprachigen Raum zu Hause.',
 										},
 									},
 								],
@@ -236,7 +236,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="d1">Banking am Puls<br/>der Zeit</p><p>Als Finanzdienstleister befinden Sie sich stetig im Spannungsfeld zwischen Beständigkeit und Fortschritt. Ihre Kunden erwarten eine verlässliche, sichere und gleichzeitig innovative Banking-Erfahrung.</p><p>Um an den entscheidenden Punkten ansetzen zu können, bieten wir Ihnen Lösungen in fünf Kernbereichen. Gemeinsam finden wir die passende Herangehensweise für die Bedürfnisse Ihres Unternehmens. Ganz gleich, ob sie weltweit agieren oder eine Plattform für ein FinTech Start-up aufsetzen möchten.</p>',
+									'<p class="d1">Banking am Puls<br/>der Zeit</p><p>Als Finanzdienstleister befinden Sie sich stetig im Spannungsfeld zwischen Beständigkeit und Fortschritt. Ihre Kunden erwarten eine verlässliche, sichere und gleichzeitig innovative Banking-Erfahrung.</p><p>Um an den entscheidenden Punkten ansetzen zu können, bieten wir Ihnen Lösungen in fünf Kernbereichen. Gemeinsam finden wir die passende Herangehensweise für die Bedürfnisse Ihres Unternehmens. Ganz gleich, ob Sie weltweit agieren oder eine Plattform für ein FinTech Start-up aufsetzen möchten.</p>',
 							},
 						},
 					],
@@ -289,7 +289,7 @@ module.exports = req => {
 										props: {
 											headline: 'Risiken nachhaltig steuern',
 											text:
-												'<p>IBM unterstützt Ihre Bank mit kognitiven Lösungen beim Risikomanagement und bei der Risikomodellierung, Geldwäscheprävention, KYC Prozessen, innovativer RegTech und SubTech.</p>',
+												'<p>IBM unterstützt Ihre Bank mit kognitiven Lösungen beim Risikomanagement und bei der Risikomodellierung, Geldwäscheprävention, KYC-Prozessen, innovativer RegTech und SupTech.</p>',
 											link: {
 												title: 'Coming soon',
 											},
@@ -341,7 +341,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="h4">Unsere Stimme in der Finanzbranche</p><p>Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen Sie sich direkt mit Ihnen aus.</p>',
+									'<p class="h4">Unsere Stimme in der Finanzbranche</p><p>Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen sie sich direkt mit Ihnen aus.</p>',
 							},
 						},
 					],
@@ -504,7 +504,7 @@ module.exports = req => {
 									{
 										name: 'ImageTextTeaser',
 										props: {
-											text: '<p>IBM Event: Reinventing Financial Services 2020:</p>',
+											text: '<p>IBM Event: Reinventing Financial Services 2020</p>',
 											image: {
 												src: '/img/banking-talks/teaser-3.jpg',
 												width: 576,
@@ -543,7 +543,7 @@ module.exports = req => {
 					fullWidth: true,
 					titles: {
 						left:
-							'<p class="h4">Innovative Methoden und Technologien</p><p class="p">Wir arbeiten schon heute an der Finanztechnologie von übermorgen. Entdecken Sie ungeahnte Möglichkeiten und profitieren Sie als erste von Lösungen, die die Welt des Bankings nachhaltig verändern werden.</p>',
+							'<p class="h4">Innovative Methoden und Technologien</p><p class="p">Wir arbeiten schon heute an der Finanztechnologie von übermorgen. Entdecken Sie ungeahnte Möglichkeiten und profitieren Sie als Erste von Lösungen, die die Welt des Bankings nachhaltig verändern werden.</p>',
 					},
 					children: [
 						{
@@ -596,7 +596,7 @@ module.exports = req => {
 										props: {
 											headline: 'Edge',
 											text:
-												'<p>Mit Edge-Computing können Sie große Datenvolumen direkt an der Quelle bearbeiten, indem Bankanwendungen näher an Datenquellen wie IoT Geräte oder lokale Edge-Server rücken. Wir helfen Ihnen bei der Optimierung Ihrer Betriebsabläufe und Umsetzung neuer Kundenservices auf Basis dieser neuen technischen Möglichkeit.</p>',
+												'<p>Mit Edge-Computing können Sie große Datenvolumen direkt an der Quelle bearbeiten, indem Bankanwendungen näher an Datenquellen wie IoT-Geräte oder lokale Edge-Server rücken. Wir helfen Ihnen bei der Optimierung Ihrer Betriebsabläufe und Umsetzung neuer Kundenservices auf Basis dieser neuen technischen Möglichkeit.</p>',
 											link: {
 												url: 'https://www.ibm.com/de-de/cloud/what-is-edge-computing',
 											},
@@ -620,7 +620,7 @@ module.exports = req => {
 					},
 					titles: {
 						left:
-							'<p class="d1">Let’s talk !</p><p class="p">Fragen oder Interesse an weiteren Informationen? Sprechen Sie uns an!</p>',
+							'<p class="d1">Let’s talk!</p><p class="p">Fragen oder Interesse an weiteren Informationen? Sprechen Sie uns an!</p>',
 					},
 					fullWidth: true,
 					children: [

@@ -174,13 +174,13 @@ module.exports = req => {
 										icon: 'UserSearch',
 										headline: 'Mehr Kundenorientierung und Effizienz im Kreditgeschäft',
 										content:
-											'<p>Die Transformation der Kredit-Prozesse in Banken ist ein großer Hebel auf dem Weg zu mehr Effizienz und Kundenakzeptanz. Mit unseren Lösungen verschlanken und automatisieren wir Ihre kundenbezogenen und internen Prozesse. Wir ermöglichen echte Omni-Kanalfähigkeit, verkürzen „time-to-yes“ und „time-to-cash“ signifikant und erhöhen nachhaltig die Kundenzufriedenheit und Ihre Position im Wettbewerb.Dabei richten wir Ihre Prozesse entlang Ihrer Geschäftsstrategie aus und bringen dabei modernste Technologien zum Einsatz, wie z. B. unsere erprobten Content-Intelligent-Lösungen.</p>',
+											'<p>Die Transformation der Kredit-Prozesse in Banken ist ein großer Hebel auf dem Weg zu mehr Effizienz und Kundenakzeptanz. Mit unseren Lösungen verschlanken und automatisieren wir Ihre kundenbezogenen und internen Prozesse. Wir ermöglichen echte Omni-Kanalfähigkeit, verkürzen „Time-to-Yes“ und „Time-to-Cash“ signifikant und erhöhen nachhaltig die Kundenzufriedenheit und Ihre Position im Wettbewerb. Dabei richten wir Ihre Prozesse entlang Ihrer Geschäftsstrategie aus und bringen dabei modernste Technologien zum Einsatz, wie z. B. unsere erprobten Content-Intelligence-Lösungen.</p>',
 									},
 									{
 										icon: 'FinanceStrategy',
 										headline: 'Neue Wege für Core-Banking und Payment-Lösungen',
 										content:
-											'<p>Clevere digitale Lösungen helfen Ihnen, die zunehmende Komplexität in Ihrem Tagesgeschäft zu bewältigen.Sie möchten die Silos Ihrer Legacy-Bankenanwendungen aufbrechen und das Potenzial von Open-Banking-Lösungen nutzen? Oder Sie möchten mit Ihren Payment-Lösungen den Markt noch zukunftssicherer bedienen? Als kompetenter und zuverlässiger Partner begleiten wir Sie durch die Transformation und stellen Ihre Wettbewerbsfähigkeit sicher – von der Konzeption bis zum globalen Roll-out und zur Umsetzung. Wir schrecken vor Komplexität nicht zurück!</p>',
+											'<p>Clevere digitale Lösungen helfen Ihnen, die zunehmende Komplexität in Ihrem Tagesgeschäft zu bewältigen. Sie möchten die Silos Ihrer Legacy-Bankenanwendungen aufbrechen und das Potenzial von Open-Banking-Lösungen nutzen? Oder Sie möchten mit Ihren Payment-Lösungen den Markt noch zukunftssicherer bedienen? Als kompetenter und zuverlässiger Partner begleiten wir Sie durch die Transformation und stellen Ihre Wettbewerbsfähigkeit sicher – von der Konzeption bis zum globalen Roll-out und zur Umsetzung. Wir schrecken vor Komplexität nicht zurück!</p>',
 									},
 									{
 										icon: 'ManagingContractualFlow',
@@ -192,13 +192,13 @@ module.exports = req => {
 										icon: 'GlobalAssetsAndRecovery_01',
 										headline: 'Wachstum durch Digital Asset Banking',
 										content:
-											'<p>Durch Digital Assets können Sie neue Potenziale und zusätzliche Geschäftsfelder erschließen.Die Bank der Zukunft baut ihre Strategien um Digital Assets herum auf. Mit der Nutzung von Tokenisierung können Sie nicht bankenfähige Vermögenswerte digital und sicher verwalten. Durch unsere Partnerschaften mit marktführenden Software-Anbietern bieten wir Ihnen Kompetenz aus einer Hand. Sie erhalten Zugang zu neuester Technologie und einen zuverlässigen Partner bei der Gestaltung und Umsetzung innovativer Custody-Lösungen für das steigende Segment der vermögenden Privatkunden.</p>',
+											'<p>Durch Digital Assets können Sie neue Potenziale und zusätzliche Geschäftsfelder erschließen. Die Bank der Zukunft baut ihre Strategien um Digital Assets herum auf. Mit der Nutzung von Tokenisierung können Sie nicht bankenfähige Vermögenswerte digital und sicher verwalten. Durch unsere Partnerschaften mit marktführenden Software-Anbietern bieten wir Ihnen Kompetenz aus einer Hand. Sie erhalten Zugang zu neuester Technologie und einen zuverlässigen Partner bei der Gestaltung und Umsetzung innovativer Custody-Lösungen für das steigende Segment der vermögenden Privatkunden.</p>',
 									},
 									{
 										icon: 'Analyze',
 										headline: 'Neue Perspektiven für Finance & Controlling',
 										content:
-											'<p>Intelligente Lösungen für Finance und Controlling minimieren Risiken. In einem dynamischen Umfeld muss die Gesamtbanksteuerung schneller und mit geringeren Kosten mehr liefern. Wir helfen Ihnen, den Anforderungen gerecht zu werden und haben dabei alle Dimensionen im Blick: Ihre Daten, die Fachlichkeit, die IT-Landschaft und das zielführende Projekt-Vorgehen. Gemeinsam mit unseren marktführenden Partnern für bankfachliche Software begleiten wir Ihren Weg zur modernen Banksteuerung. Technologienutzung für effizientes Datenmanagement und IT-Services, fachliche Standardmethoden und Agilität bringen Sie auf Erfolgskurs.</p>',
+											'<p>Intelligente Lösungen für Finance und Controlling minimieren Risiken. In einem dynamischen Umfeld muss die Gesamtbanksteuerung schneller und mit geringeren Kosten mehr liefern. Wir helfen Ihnen, den Anforderungen gerecht zu werden und haben dabei alle Dimensionen im Blick: Ihre Daten, die Fachlichkeit, die IT-Landschaft und das zielführende Projektvorgehen. Gemeinsam mit unseren marktführenden Partnern für bankfachliche Software begleiten wir Ihren Weg zur modernen Banksteuerung. Technologienutzung für effizientes Datenmanagement und IT-Services, fachliche Standardmethoden und Agilität bringen Sie auf Erfolgskurs.</p>',
 									},
 								],
 							},
