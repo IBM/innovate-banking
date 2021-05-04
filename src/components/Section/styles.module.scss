@@ -2,8 +2,12 @@
 @import '@/styles/mixins';
 @import '~carbon-components/scss/globals/scss/_typography.scss';
 
+.SectionWrapper {
+	width: 100%;
+}
+
 .Section {
-	padding: $spacing-11 0 $spacing-11 0;
+	padding: $spacing-11 1rem $spacing-11 1rem;
 
 	@include bp('md') {
 		padding: $spacing-11 0 $spacing-13 0;
@@ -11,6 +15,10 @@
 
 	:global([class^='bx--row'] > [class^='bx--col']) {
 		position: relative;
+	}
+
+	& > :global([class^='bx--row']) {
+		width: auto;
 	}
 
 	&.HasBottomImage,

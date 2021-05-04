@@ -89,6 +89,7 @@ const Section = props => {
 				background: backgroundStyle,
 			}}
 			ref={sectionRef}
+			className={Styles.SectionWrapper}
 		>
 			<Grid>
 				<div

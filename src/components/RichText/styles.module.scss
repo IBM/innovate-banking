@@ -4,6 +4,7 @@
 
 .RichText {
 	color: inherit;
+	hyphens: auto;
 
 	:global(p),
 	:global(.p) {
