@@ -9,6 +9,7 @@
 	width: 100vw;
 	height: auto;
 	min-height: 75vh;
+	background: $blue-90;
 
 	@include bp('md') {
 		min-height: 55vh;
