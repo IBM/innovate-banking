@@ -60,7 +60,7 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 		<>
 			<Sticky className={Styles.StickyWrapper} onFixedToggle={onFixedToggle}>
 				<div className={Styles.AnchorNavigation} ref={sloganListItemRef}>
-					<Grid>
+					<Grid className={Styles.Grid}>
 						<Row>
 							<Column sm={0} md={8}>
 								<ul className={Styles.List}>
