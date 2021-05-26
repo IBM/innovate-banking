@@ -58,9 +58,13 @@
 
 	:global(h4),
 	:global(.h4) {
-		@include carbon--type-style('productive-heading-04', true);
+		@include carbon--type-style('expressive-heading-02', true);
 
 		margin-bottom: $spacing-04;
+
+		@include bp('md') {
+			@include carbon--type-style('expressive-heading-04', true);
+		}
 	}
 
 	:global(.eh4) {
