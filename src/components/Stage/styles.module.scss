@@ -21,13 +21,20 @@
 
 	.HeadingWrapper {
 		position: absolute;
-		z-index: 2;
 		top: 65%;
-		transform: translate3d(0, -50%, 0);
+		z-index: 2;
 		color: $white-0;
 
 		@include bp('md') {
+			position: absolute;
 			top: 50%;
+			transform: translate3d(0, -50%, 0);
+		}
+	}
+
+	.HeadingWrapperHome {
+		@include bp('md', true) {
+			top: 15%;
 		}
 	}
 
@@ -47,5 +54,17 @@
 
 		color: $blue-40;
 		font-weight: normal;
+	}
+}
+
+.ImageMobile {
+	@include bp('md') {
+		display: none;
+	}
+}
+
+.ImageHiddenMobile {
+	@include bp('md', true) {
+		display: none;
 	}
 }

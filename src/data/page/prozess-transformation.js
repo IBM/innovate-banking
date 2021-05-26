@@ -50,6 +50,12 @@ module.exports = req => {
 						height: 386,
 						alt: 'Prozess-Transformation im Banking',
 					},
+					imageMobile: {
+						src: '/img/stage-process-transformation-mobile.jpg',
+						width: 672,
+						height: 672,
+						alt: 'Prozess-Transformation im Banking',
+					},
 				},
 			},
 			{
@@ -287,8 +293,8 @@ module.exports = req => {
 											copy: 'Partner<br />Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/jean.jpg',
-												width: 288,
-												height: 288,
+												width: 448,
+												height: 448,
 											},
 											links: [
 												{
@@ -313,8 +319,8 @@ module.exports = req => {
 												'Managing Business Transformation Consultant<br />Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/manuel.jpg',
-												width: 288,
-												height: 288,
+												width: 448,
+												height: 448,
 											},
 											links: [
 												{

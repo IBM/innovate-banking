@@ -15,7 +15,7 @@ module.exports = req => {
 							name: 'Prozess-Transformation',
 							url: 'prozess-transformation',
 							active: true,
-							current: true,
+							current: false,
 						},
 						{
 							name: 'Risikosteuerung',
@@ -48,6 +48,12 @@ module.exports = req => {
 						src: '/img/stage-process-transformation.jpg',
 						width: 1056,
 						height: 386,
+						alt: 'Impressum',
+					},
+					imageMobile: {
+						src: '/img/stage-process-transformation-mobile.jpg',
+						width: 672,
+						height: 672,
 						alt: 'Impressum',
 					},
 				},
