@@ -11,6 +11,7 @@ $solutionTeaserStreakLength: 175px;
 	padding-top: $spacing-06;
 
 	@include bp('md', true) {
+		padding-top: $spacing-03;
 
 		&:first-child {
 			padding-top: 0;
@@ -116,7 +117,16 @@ $solutionTeaserStreakLength: 175px;
 		}
 	}
 
+	.IconHeadlineWrapper {
+		@include bp('md', true) {
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+		}
+	}
+
 	.IconWrapper {
+		display: block;
 		margin-bottom: $spacing-05;
 	}
 

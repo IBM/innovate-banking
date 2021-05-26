@@ -19,10 +19,12 @@ const SolutionTeaser = ({ icon, headline, text, teaserIndex, teaserCount }) => {
 					Styles[`TeaserCount${teaserCount}`]
 				)}
 			>
-				<span className={Styles.IconWrapper}>
-					<IconComponent className={Styles.Icon} />
-				</span>
-				<h5 className={Styles.Headline}>{headline}</h5>
+				<div className={Styles.IconHeadlineWrapper}>
+					<span className={Styles.IconWrapper}>
+						<IconComponent className={Styles.Icon} />
+					</span>
+					<h5 className={Styles.Headline}>{headline}</h5>
+				</div>
 				<p className={Styles.Text}>{text}</p>
 			</div>
 		</Column>
