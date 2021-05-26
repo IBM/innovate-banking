@@ -5,7 +5,7 @@
 
 .PictogramTeaser {
 	background: $gray-80;
-	padding: $spacing-05 $spacing-05 $spacing-08 $spacing-05;
+	padding: $spacing-05 $spacing-05 $spacing-07;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: $spacing-06;
@@ -13,6 +13,7 @@
 	@include bp('lg') {
 		margin-bottom: 0;
 		min-height: 100%;
+		padding: $spacing-08 $spacing-05;
 	}
 
 	.Content {
@@ -20,27 +21,40 @@
 	}
 
 	.IconWrapper {
-		margin-bottom: $spacing-06;
+		margin-bottom: $spacing-05;
+
+		@include bp('lg') {
+			margin-bottom: $spacing-09;
+		}
 	}
 
 	.Icon {
 		fill: $blue-40;
-	}
 
-	.Headline,
-	.Text {
-		@include carbon--type-style('body-short-02', true);
-
-		color: $white-0;
+		@include bp('lg') {
+			width: 5rem;
+			height: 5rem;
+		}
 	}
 
 	.Headline {
 		@include carbon--type-style('expressive-heading-03', true);
 
 		margin-bottom: $spacing-04;
+		color: $white-0;
+
+		@include bp('lg') {
+			@include carbon--type-style('expressive-heading-04', true);
+		}
 	}
 
 	.Text {
+		@include carbon--type-style('body-short-01', true);
 
+		color: $gray-30;
+
+		@include bp('lg') {
+			@include carbon--type-style('body-short-02', true);
+		}
 	}
 }
