@@ -7,7 +7,7 @@
 }
 
 .Section {
-	padding: $spacing-11 0;
+	padding: $spacing-10 0;
 
 	@include bp('md') {
 		padding: $spacing-11 0 $spacing-13;
@@ -55,14 +55,6 @@
 		}
 	}
 
-	.RightSide {
-
-	}
-
-	&.Titled {
-
-	}
-
 	.Title {
 
 		:global(p:not([class])) {
@@ -73,7 +65,7 @@
 	&.HasTopTitle {
 
 		.Title {
-			margin-bottom: $spacing-10;
+			margin-bottom: $spacing-07;
 		}
 	}
 
