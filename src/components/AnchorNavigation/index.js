@@ -34,13 +34,7 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 		window.location.hash = `#${event.selectedItem.link}`;
 	};
 
-	const mobileItems = [
-		...items,
-		{
-			name: translate(intl, 'components.AnchorNavigation.letsTalkButtonText'),
-			link: 'letstalk',
-		},
-	];
+	const mobileItems = items.slice(1);
 
 	const onSectionInViewportChangeEvent = event => {
 		for (let index = 0; index < items.length; index++) {
