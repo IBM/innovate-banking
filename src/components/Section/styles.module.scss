@@ -7,10 +7,10 @@
 }
 
 .Section {
-	padding: $spacing-11 1rem $spacing-11 1rem;
+	padding: $spacing-11 0;
 
 	@include bp('md') {
-		padding: $spacing-11 0 $spacing-13 0;
+		padding: $spacing-11 0 $spacing-13;
 	}
 
 	:global([class^='bx--row'] > [class^='bx--col']) {
