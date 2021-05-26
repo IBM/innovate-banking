@@ -26,6 +26,10 @@
 		background: $gray-80;
 		padding: $spacing-05;
 
+		@include bp('md') {
+			padding: $spacing-07 $spacing-05;
+		}
+
 		&:hover {
 			background: $gray-70;
 		}
