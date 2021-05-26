@@ -149,7 +149,7 @@ module.exports = req => {
 				name: 'Section',
 				props: {
 					titles: {
-						top: '<p>Unsere Plattform-Lösungen:<br/>Bewährt. Dynamisch. Sicher.</p>',
+						top: '<h3 class="h4">Unsere Plattform-Lösungen:<br/>Bewährt. Dynamisch. Sicher.</h3>',
 					},
 					images: {
 						bottom: {
