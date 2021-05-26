@@ -34,18 +34,11 @@
 	.Heading {
 		@include carbon--type-style('expressive-heading-05', true);
 
-		font-size: carbon--rem(46px);
+		margin-bottom: $spacing-05;
+		font-size: 3rem;
 
 		@include bp('md') {
-			@include carbon--type-style('productive-heading-06', true);
-
-			font-size: carbon--rem(54px);
-		}
-
-		@include bp('lg') {
-			@include carbon--type-style('productive-heading-06', true);
-
-			font-size: carbon--rem(76px);
+			font-size: 3rem;
 		}
 	}
 

@@ -43,7 +43,7 @@ module.exports = req => {
 			{
 				name: 'Stage',
 				props: {
-					heading: 'Innovate Banking',
+					heading: 'Innovate<br />Banking',
 					subheading: 'Eine Initiative von IBM',
 					image: {
 						src: '/img/stage-home.jpg',
@@ -161,6 +161,13 @@ module.exports = req => {
 							style: {
 								maxWidth: '75%',
 							},
+						},
+						bottomMobile: {
+							src: '/img/section-bg-plattform-solutions-blue-mobile.svg',
+							alt: 'Plattform Lösungen',
+							height: 392,
+							width: 320,
+							layout: 'responsive',
 						},
 					},
 					background: {
