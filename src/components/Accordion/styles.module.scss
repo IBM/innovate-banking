@@ -14,12 +14,16 @@
 	}
 
 	.AccordionHeader {
-		@include carbon--type-style('expressive-heading-04', true);
+		@include carbon--type-style('expressive-heading-03', true);
 
 		display: flex;
 		flex: 1 1 100%;
 		justify-content: space-between;
 		align-items: center;
+
+		@include bp('lg') {
+			@include carbon--type-style('expressive-heading-04', true);
+		}
 	}
 
 	.AccordionContent {
@@ -45,10 +49,14 @@
 	}
 
 	.Icon {
+		width: 3rem;
+		height: 3rem;
 		color: $blue-40;
 		margin-bottom: $spacing-05;
 
-		@include bp('md') {
+		@include bp('lg') {
+			width: 5rem;
+			height: 5rem;
 			margin-bottom: 0;
 		}
 	}
@@ -59,6 +67,7 @@
 
 	.RichText {
 		padding: $spacing-06 0;
+		color: $gray-10;
 	}
 
 	.RichTextHeading {

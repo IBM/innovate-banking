@@ -1,15 +1,12 @@
-import React, { createRef, useState } from 'react';
-import PropTypes from 'prop-types';
-
-import Styles from './styles.module.scss';
 import RichText from '@/components/RichText';
-import clsx from 'clsx';
-
-import AnimateHeight from 'react-animate-height';
-
-import dynamic from 'next/dynamic';
-import { Column, Grid, Row } from 'carbon-components-react';
 import { ChevronDown32, ChevronUp32 } from '@carbon/icons-react';
+import { Column, Grid, Row } from 'carbon-components-react';
+import clsx from 'clsx';
+import dynamic from 'next/dynamic';
+import PropTypes from 'prop-types';
+import React, { createRef, useState } from 'react';
+import AnimateHeight from 'react-animate-height';
+import Styles from './styles.module.scss';
 
 const Accordion = ({ items }) => {
 	const [activeItemIndex, setActiveItemIndex] = useState(null);
