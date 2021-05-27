@@ -1,11 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import { Column } from 'carbon-components-react';
-
-import dynamic from 'next/dynamic';
-
-import Styles from './styles.module.scss';
 import clsx from 'clsx';
+import dynamic from 'next/dynamic';
+import PropTypes from 'prop-types';
+import React from 'react';
+import Styles from './styles.module.scss';
 
 const SolutionTeaser = ({ icon, headline, text, teaserIndex, teaserCount }) => {
 	const IconComponent = dynamic(() => import('@carbon/icons-react').then(mod => mod[icon]));

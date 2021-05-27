@@ -5,8 +5,6 @@
 
 $solutionTeaserStreakLength: 175px;
 
-// TODO: remove streaks on md
-
 .SolutionTeaserCol {
 	padding-top: $spacing-06;
 
@@ -15,23 +13,6 @@ $solutionTeaserStreakLength: 175px;
 
 		&:first-child {
 			padding-top: 0;
-		}
-	}
-
-	@include bp('md') {
-
-		&:first-child,
-		&:nth-child(2) {
-			padding-top: 0;
-		}
-	}
-
-	@include bp('lg') {
-		padding-top: $solutionTeaserStreakLength / 2;
-
-		&:first-child,
-		&:nth-child(2) {
-			padding-top: $solutionTeaserStreakLength / 2;
 		}
 	}
 }
@@ -46,18 +27,16 @@ $solutionTeaserStreakLength: 175px;
 	justify-content: space-between;
 
 	&::after {
-		position: absolute;
-		content: '';
-		width: 2px;
-		bottom: 100%;
-		left: 50%;
-		margin-left: -1px;
-		background: linear-gradient(0deg, rgba($gray-80, 1) 0%, rgba($gray-90, 0) 100%);
-		height: $solutionTeaserStreakLength;
-		display: none;
-
 		@include bp('lg') {
+			content: '';
+			position: absolute;
+			bottom: 100%;
+			left: 50%;
 			display: block;
+			width: 2px;
+			height: $solutionTeaserStreakLength;
+			margin-left: -1px;
+			background: linear-gradient(0deg, rgba($gray-80, 1) 0%, rgba($gray-90, 0) 100%);
 		}
 	}
 
@@ -136,23 +115,28 @@ $solutionTeaserStreakLength: 175px;
 
 	.Headline,
 	.Text {
-		@include carbon--type-style('body-short-02', true);
-
-		color: $white-0;
 		max-width: 75%;
 	}
 
 	.Headline {
 		@include carbon--type-style('expressive-heading-03', true);
 
-		margin-bottom: $spacing-06;
+		margin-bottom: $spacing-05;
+		color: $white-0;
 
-		@include bp('md') {
+		@include bp('lg') {
 			margin-bottom: $spacing-10;
 		}
 	}
 
 	.Text {
+		@include carbon--type-style('body-short-01', true);
+
 		margin-top: auto;
+		color: $gray-30;
+
+		@include bp('lg') {
+			@include carbon--type-style('body-short-02', true);
+		}
 	}
 }
