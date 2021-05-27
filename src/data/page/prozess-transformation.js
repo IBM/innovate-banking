@@ -163,6 +163,13 @@ module.exports = req => {
 								maxWidth: '73%',
 							},
 						},
+						bottomMobile: {
+							src: '/img/section-bg-plattform-solutions-blue-mobile.svg',
+							alt: 'Unsere Schwerpunktthemen',
+							height: 392,
+							width: 320,
+							layout: 'responsive',
+						},
 					},
 					background: {
 						dark: true,
@@ -277,7 +284,7 @@ module.exports = req => {
 					},
 					titles: {
 						left:
-							'<p class="d1">Let’s talk!</p><p class="p">Fragen oder Interesse an weiteren Informationen? Sprechen Sie uns an!</p>',
+							'<p class="d1">Let’s talk!</p><p class="p">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
 					},
 					fullWidth: true,
 					children: [
