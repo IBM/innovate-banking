@@ -1,8 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-import Styles from './styles.module.scss';
 import clsx from 'clsx';
+import PropTypes from 'prop-types';
+import React from 'react';
+import Styles from './styles.module.scss';
 
 const RichText = ({ content, pageMeta, ...otherProps }) => {
 	const mergedClassName = otherProps.className || null;
