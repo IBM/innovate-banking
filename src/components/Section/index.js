@@ -1,17 +1,12 @@
-import React, { useRef } from 'react';
-import PropTypes from 'prop-types';
-import Image from 'next/image';
-
 import ConditionalWrapper from '@/components/ConditonalWrapper';
-
-import Styles from './styles.module.scss';
-import clsx from 'clsx';
-
-import { Grid, Row, Column } from 'carbon-components-react';
-
 import RichText from '@/components/RichText';
-
+import { Column, Grid, Row } from 'carbon-components-react';
+import clsx from 'clsx';
+import Image from 'next/image';
+import PropTypes from 'prop-types';
+import React, { useRef } from 'react';
 import { useInViewport } from 'react-in-viewport';
+import Styles from './styles.module.scss';
 
 const Section = props => {
 	const {
@@ -227,7 +222,10 @@ const Section = props => {
 					{images && images.bottom && (
 						<Row>
 							<div
-								className={Styles.BottomImage}
+								className={clsx(
+									Styles.BottomImage,
+									images.bottomMobile && Styles.BottomImageHiddenMobile
+								)}
 								style={
 									({
 										display: images.bottom.layout === 'intrinsic' ? 'flex' : null,
@@ -242,6 +240,28 @@ const Section = props => {
 									layout={images.bottom.layout || 'intrinsic'}
 									width={images.bottom.layout !== 'fill' ? images.bottom.width : null}
 									height={images.bottom.layout !== 'fill' ? images.bottom.height : null}
+								/>
+							</div>
+						</Row>
+					)}
+					{images && images.bottomMobile && (
+						<Row>
+							<div
+								className={Styles.BottomImageMobile}
+								style={
+									({
+										display: images.bottomMobile.layout === 'intrinsic' ? 'flex' : null,
+										justifyContent: images.bottomMobile.layout === 'intrinsic' ? 'center' : null,
+										margin: images.bottomMobile.margin,
+									},
+									{ ...images.bottomMobile.style })
+								}
+							>
+								<Image
+									src={images.bottomMobile.src}
+									layout={images.bottomMobile.layout || 'intrinsic'}
+									width={images.bottomMobile.layout !== 'fill' ? images.bottomMobile.width : null}
+									height={images.bottomMobile.layout !== 'fill' ? images.bottomMobile.height : null}
 								/>
 							</div>
 						</Row>
@@ -304,6 +324,14 @@ Section.propTypes = {
 			style: PropTypes.object,
 		}),
 		bottom: PropTypes.shape({
+			src: PropTypes.string.isRequired,
+			width: PropTypes.number,
+			height: PropTypes.number,
+			layout: PropTypes.string,
+			margin: PropTypes.string,
+			style: PropTypes.object,
+		}),
+		bottomMobile: PropTypes.shape({
 			src: PropTypes.string.isRequired,
 			width: PropTypes.number,
 			height: PropTypes.number,

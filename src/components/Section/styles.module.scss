@@ -10,7 +10,7 @@
 	padding: $spacing-10 0;
 
 	@include bp('md') {
-		padding: $spacing-11 0 $spacing-13;
+		padding: $spacing-11 0;
 	}
 
 	:global([class^='bx--row'] > [class^='bx--col']) {
@@ -70,7 +70,8 @@
 	}
 
 	.TopImage,
-	.BottomImage {
+	.BottomImage,
+	.BottomImageMobile {
 		margin: 0 auto;
 		width: 100%;
 		text-align: center;
@@ -78,6 +79,21 @@
 
 	.BottomImage {
 		margin-top: $spacing-10;
+	}
+
+	.BottomImageHiddenMobile {
+		@include bp('md', true) {
+			display: none;
+		}
+	}
+
+	.BottomImageMobile {
+		margin-top: $spacing-10;
+		margin-bottom: $spacing-10;
+
+		@include bp('md', false) {
+			display: none;
+		}
 	}
 
 	.LeftImage {
