@@ -56,6 +56,8 @@
 	}
 
 	.Title {
+		position: relative;
+		z-index: 1;
 
 		:global(p:not([class])) {
 			@include carbon--type-style('expressive-heading-02', true);
@@ -69,12 +71,29 @@
 		}
 	}
 
-	.TopImage,
 	.BottomImage,
 	.BottomImageMobile {
 		margin: 0 auto;
 		width: 100%;
 		text-align: center;
+	}
+
+	.TopImage {
+		display: none;
+
+		@include bp('md') {
+			display: block;
+			margin-left: -9rem;
+			// margin-left: -5rem;
+		}
+
+		@include bp('lg') {
+			margin-left: 10rem;
+		}
+
+		> div {
+			display: block !important;
+		}
 	}
 
 	.BottomImage {
