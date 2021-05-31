@@ -15,13 +15,13 @@ module.exports = req => {
 							name: 'Prozess-Transformation',
 							url: 'prozess-transformation',
 							active: true,
-							current: true,
+							current: false,
 						},
 						{
 							name: 'Risikosteuerung',
 							url: 'risikosteuerung',
 							active: true,
-							current: false,
+							current: true,
 						},
 						{
 							name: 'Kundenerlebnisse',
@@ -30,6 +30,7 @@ module.exports = req => {
 						},
 						{
 							name: 'Technologien',
+							url: 'technologien',
 							active: false,
 							current: false,
 						},
@@ -44,18 +45,18 @@ module.exports = req => {
 			{
 				name: 'Stage',
 				props: {
-					heading: 'Prozess-Transformation<br/> im Banking',
+					heading: 'Risikosteuerung<br /> im Banking',
 					image: {
 						src: '/img/stage-process-transformation.jpg',
 						width: 1056,
 						height: 386,
-						alt: 'Prozess-Transformation im Banking',
+						alt: 'Risikosteuerung im Banking',
 					},
 					imageMobile: {
 						src: '/img/stage-process-transformation-mobile.jpg',
 						width: 672,
 						height: 672,
-						alt: 'Prozess-Transformation im Banking',
+						alt: 'Risikosteuerung im Banking',
 					},
 				},
 			},
@@ -93,7 +94,7 @@ module.exports = req => {
 				name: 'Section',
 				props: {
 					titles: {
-						left: '<p>Ganzheitliche Transformation durch fachliche Expertise und neueste Technologie</p>',
+						left: '<p>Mit Technologie komplexe Prozesse neu denken</p>',
 					},
 					background: {
 						gradient: 'linear-gradient(180deg, #FFFFFF 0%, #EDF5FF 100%)',
@@ -115,7 +116,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p>Mit unserer Banking-Expertise und Technologiekompetenz begleiten wir die Transformation Ihrer End-to-End-Geschäftsabläufe – von der Konzeption bis zur Umsetzung.</p>',
+									'<p>Verlässliches Risikomanagement und das Einhalten regulatorischer Vorgaben ist für Banken essenziell, ist aber im letzten Jahrzehnt immer aufwendiger geworden. Wir machen komplexe Vorgänge einfach.</p>',
 							},
 						},
 					],
@@ -133,14 +134,14 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="h4">Gesteigerte operative Exzellenz und höhere Wettbewerbsfähigkeit mit IBM</h3><p>Unsere Analysen identifizieren in Bankprozessen ein durchschnittliches Einsparungspotenzial von 30% durch die Transformation der Prozesse unter Nutzung neuer Technologien. Dies hat unmittelbaren Einfluss auf eine verbesserte Cost-Income-Ratio.</p>',
+									'<h3 class="h4">Gesteigerte Effizienz durch Analytics, KI und Automatisierung</h3><p>Durch den Einsatz von Analytics, KI und Automatisierung kann im Bereich Risk & Compliance eine Effizienzsteigerung von bis zu 40% erreicht werden.</p>',
 							},
 						},
 						{
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="d1 large">30%</h3><p>Einsparungspotenzial durch Prozess-Transformation im Banking</p>',
+									'<h3 class="d1 large">40%</h3><p>Effizienzsteigerung durch Analytics, KI und Automatisierung im Banking</p>',
 							},
 						},
 					],
@@ -185,34 +186,34 @@ module.exports = req => {
 							props: {
 								items: [
 									{
-										icon: 'UserSearch',
-										headline: 'Mehr Kundenorientierung und Effizienz im Kreditgeschäft',
+										icon: 'GlobalAssetsAndRecovery_01',
+										headline: 'Cleveres Risikomanagement und Risikocontrolling als Erfolgsfaktor',
 										content:
-											'<p>Die Transformation der Kredit-Prozesse in Banken ist ein großer Hebel auf dem Weg zu mehr Effizienz und Kundenakzeptanz. Mit unseren Lösungen verschlanken und automatisieren wir Ihre kundenbezogenen und internen Prozesse. Wir ermöglichen echte Omni-Kanalfähigkeit, verkürzen „Time-to-Yes“ und „Time-to-Cash“ signifikant und erhöhen nachhaltig die Kundenzufriedenheit und Ihre Position im Wettbewerb. Dabei richten wir Ihre Prozesse entlang Ihrer Geschäftsstrategie aus und bringen dabei modernste Technologien zum Einsatz, wie z. B. unsere erprobten Content-Intelligence-Lösungen.</p>',
+											'<p>Risikomanagement und -controlling sind entscheidend für risikoadäquate und profitable Akquise. Mit unseren State-of-the-Art Methoden und Tools können Sie Risiken identifizieren, einschätzen und steuern. Wir unterstützen Sie beispielsweise dabei, eine relevante Datenbasis zu erstellen und eine KI-gestützte Plattform aufzubauen. Unsere hoch qualifizierten Berater begleiten die Konzeption und Umsetzung quantitativer Modelle ebenso wie die Optimierung der Risikoprozesse und stellen sicher, dass sowohl regulatorische Vorgaben als auch interne Reporting- und Steuerungsanforderungen erfüllt werden.</p>',
 									},
 									{
-										icon: 'FinanceStrategy',
-										headline: 'Neue Wege für Core-Banking und Payment-Lösungen',
+										icon: 'UserSearch',
+										headline: 'Mehr Effizienz bei regulatorischen Melde- und Aufsichtsprozessen',
 										content:
-											'<p>Clevere digitale Lösungen helfen Ihnen, die zunehmende Komplexität in Ihrem Tagesgeschäft zu bewältigen. Sie möchten die Silos Ihrer Legacy-Bankenanwendungen aufbrechen und das Potenzial von Open-Banking-Lösungen nutzen? Oder Sie möchten mit Ihren Payment-Lösungen den Markt noch zukunftssicherer bedienen? Als kompetenter und zuverlässiger Partner begleiten wir Sie durch die Transformation und stellen Ihre Wettbewerbsfähigkeit sicher – von der Konzeption bis zum globalen Roll-out und zur Umsetzung. Wir schrecken vor Komplexität nicht zurück!</p>',
+											'<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>',
 									},
 									{
 										icon: 'ManagingContractualFlow',
-										headline: 'Mehr Freiheiten durch ein effektives Back Office',
+										headline: 'Digitale Transformation mit AML- oder KYC-Systemen',
 										content:
-											'<p>Gestraffte Marktfolgeprozesse versprechen ein großes Einsparungspotenzial. Mit der Kombination aus globalen Best Practices und dem Wissen, was aktuell technologisch möglich ist, gelingt die Transformation Ihrer Marktfolge. Wir bieten Ihnen maßgeschneiderte und agile Lösungen mit der Möglichkeit, klein zu starten und schnell zu skalieren. Die Automatisierung von Back-Office-Aufgaben bringt Ihnen zweistellige Einsparpotenziale, größere Mitarbeiter- und Kundenzufriedenheit. Wir begleiten Sie in der Transformation – von der Analyse bis zur Umsetzung.</p>',
+											'<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>',
 									},
 									{
-										icon: 'GlobalAssetsAndRecovery_01',
-										headline: 'Wachstum durch Digital Asset Banking',
+										icon: 'FinanceStrategy',
+										headline: 'Automatisierung bei Trade-Finance-Transaktionen',
 										content:
-											'<p>Durch Digital Assets können Sie neue Potenziale und zusätzliche Geschäftsfelder erschließen. Die Bank der Zukunft baut ihre Strategien um Digital Assets herum auf. Mit der Nutzung von Tokenisierung können Sie nicht bankenfähige Vermögenswerte digital und sicher verwalten. Durch unsere Partnerschaften mit marktführenden Software-Anbietern bieten wir Ihnen Kompetenz aus einer Hand. Sie erhalten Zugang zu neuester Technologie und einen zuverlässigen Partner bei der Gestaltung und Umsetzung innovativer Custody-Lösungen für das steigende Segment der vermögenden Privatkunden.</p>',
+											'<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>',
 									},
 									{
 										icon: 'Analyze',
-										headline: 'Neue Perspektiven für Finance & Controlling',
+										headline: 'Ein umfassender Compliance-Rahmen für Cloud-Lösungen',
 										content:
-											'<p>Intelligente Lösungen für Finance und Controlling minimieren Risiken. In einem dynamischen Umfeld muss die Gesamtbanksteuerung schneller und mit geringeren Kosten mehr liefern. Wir helfen Ihnen, den Anforderungen gerecht zu werden und haben dabei alle Dimensionen im Blick: Ihre Daten, die Fachlichkeit, die IT-Landschaft und das zielführende Projektvorgehen. Gemeinsam mit unseren marktführenden Partnern für bankfachliche Software begleiten wir Ihren Weg zur modernen Banksteuerung. Technologienutzung für effizientes Datenmanagement und IT-Services, fachliche Standardmethoden und Agilität bringen Sie auf Erfolgskurs.</p>',
+											'<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>',
 									},
 								],
 							},
@@ -226,7 +227,7 @@ module.exports = req => {
 					id: 'vorteile',
 					titles: {
 						top:
-							'<p>Ihre Vorteile</p><p class="eh4">Konkrete Vorteile für Ihre Bank durch Prozess-Transformation mit IBM </p>',
+							'<p>Ihre Vorteile</p><p class="eh4">Unser Angebot für Ihren Erfolg im Bereich Risk & Compliance</p>',
 					},
 					background: {
 						dark: true,
@@ -245,28 +246,28 @@ module.exports = req => {
 									{
 										name: 'PictogramTeaser',
 										props: {
-											icon: 'GlobalMarketsBar',
-											headline: 'Expertise',
+											icon: 'GlobalPartner',
+											headline: 'Fundierte Beratung',
 											text:
-												'Wir bringen ein breites und tiefes Verständnis von Bankprozessen mit. Eine Vielzahl unserer Berater in der DACH-Region sind selbst Banker oder Top-Experten für Banking-Technologie.',
+												'Wir beraten Sie zu Target-Operating-Modellen, Prozessanalyse und -optimierung, regulatorischen Fragen und zur digitalen Transformation von Risk & Compliance-Einheiten.',
 										},
 									},
 									{
 										name: 'PictogramTeaser',
 										props: {
 											icon: 'CloudAssets',
-											headline: 'Assets',
+											headline: 'Neuste Technologie',
 											text:
-												'Durch unsere Nähe zur Technologie bringen wir eine Vielzahl von einsatzbereiten Assets und erprobten Methoden mit, die Ihre Transformation beschleunigen. ',
+												'Wir bieten smarte Lösungen zur Digitalisierung komplexer KYC/AML-Prozesse, Datenintegration, Robotics, KI sowie führende Modernisierungs- und Cloud-Transformationstechnologien.',
 										},
 									},
 									{
 										name: 'PictogramTeaser',
 										props: {
-											icon: 'GlobalPartner',
-											headline: 'Partnerschaften',
+											icon: 'GlobalMarketsBar',
+											headline: 'Managed Services',
 											text:
-												'Wir bringen umfangreiche Partnerschaften im Banking-Ecosystem mit, von denen wir gemeinsam profitieren können.',
+												'Unsere maßgeschneiderten Angebote decken die gesamte Risk & Compliance-Wertschöpfungskette ab und können individuell und konkret an Ihre Bedürfnisse angepasst werden.',
 										},
 									},
 								],
@@ -297,10 +298,10 @@ module.exports = req => {
 									{
 										name: 'LetsTalkTeaser',
 										props: {
-											headline: 'Jean-Henrik Zitterbart',
-											copy: 'Partner<br />Banking & Financial Markets DACH',
+											headline: 'Marinela Bilic-Nosic',
+											copy: 'Partnerin<br />Risk & Compliance DACH',
 											image: {
-												src: '/img/people/jean.jpg',
+												src: '/img/people/marinela.jpg',
 												width: 448,
 												height: 448,
 											},
@@ -308,13 +309,13 @@ module.exports = req => {
 												{
 													type: 'linkedIn',
 													title: 'Vernetzen auf Linkedin',
-													url: 'https://www.linkedin.com/in/jean-henrik-zitterbart-b294a39b',
+													url: 'https://www.linkedin.com/in/marinelabilic',
 												},
 												{
 													type: 'email',
 													title: 'Kontakt aufnehmen',
 													url:
-														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Zitterbart%2C%20',
+														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrte%Frau%20Bilic-Nosic%2C%20',
 												},
 											],
 										},
@@ -322,11 +323,11 @@ module.exports = req => {
 									{
 										name: 'LetsTalkTeaser',
 										props: {
-											headline: 'Manuel Schuff',
+											headline: 'Britta Daffner',
 											copy:
-												'Managing Business Transformation Consultant<br />Banking & Financial Markets DACH',
+												'Leader Data & Technology<br />Banking & Financial Markets DACH',
 											image: {
-												src: '/img/people/manuel.jpg',
+												src: '/img/people/britta.jpg',
 												width: 448,
 												height: 448,
 											},
@@ -334,13 +335,13 @@ module.exports = req => {
 												{
 													type: 'linkedIn',
 													title: 'Vernetzen auf Linkedin',
-													url: 'https://www.linkedin.com/in/manuelschuff',
+													url: 'https://www.linkedin.com/in/britta-daffner',
 												},
 												{
 													type: 'email',
 													title: 'Kontakt aufnehmen',
 													url:
-														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Schuff%2C%20',
+														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrte%Frau%Daffner%2C%20',
 												},
 											],
 										},

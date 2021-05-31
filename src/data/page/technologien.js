@@ -15,7 +15,7 @@ module.exports = req => {
 							name: 'Prozess-Transformation',
 							url: 'prozess-transformation',
 							active: true,
-							current: true,
+							current: false,
 						},
 						{
 							name: 'Risikosteuerung',
@@ -30,8 +30,9 @@ module.exports = req => {
 						},
 						{
 							name: 'Technologien',
-							active: false,
-							current: false,
+							url: 'technologien',
+							active: true,
+							current: true,
 						},
 						{
 							name: 'Effizienz',
@@ -44,18 +45,18 @@ module.exports = req => {
 			{
 				name: 'Stage',
 				props: {
-					heading: 'Prozess-Transformation<br/> im Banking',
+					heading: 'Banking durch<br />Technologie<br />transformieren',
 					image: {
 						src: '/img/stage-process-transformation.jpg',
 						width: 1056,
 						height: 386,
-						alt: 'Prozess-Transformation im Banking',
+						alt: 'Risikosteuerung im Banking',
 					},
 					imageMobile: {
 						src: '/img/stage-process-transformation-mobile.jpg',
 						width: 672,
 						height: 672,
-						alt: 'Prozess-Transformation im Banking',
+						alt: 'Risikosteuerung im Banking',
 					},
 				},
 			},
@@ -93,7 +94,7 @@ module.exports = req => {
 				name: 'Section',
 				props: {
 					titles: {
-						left: '<p>Ganzheitliche Transformation durch fachliche Expertise und neueste Technologie</p>',
+						left: '<p>IT-Innovationen für gesteigerte Wettbewerbsfähigkeit</p>',
 					},
 					background: {
 						gradient: 'linear-gradient(180deg, #FFFFFF 0%, #EDF5FF 100%)',
@@ -115,7 +116,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p>Mit unserer Banking-Expertise und Technologiekompetenz begleiten wir die Transformation Ihrer End-to-End-Geschäftsabläufe – von der Konzeption bis zur Umsetzung.</p>',
+									'<p>Ihre IT ist ein entscheidender Erfolgsfaktor für das Banking der Zukunft. Wir zeigen Ihnen den Weg und unterstützen Sie bei der Umsetzung Ihrer Transformationsprojekte.</p>',
 							},
 						},
 					],
@@ -133,14 +134,14 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="h4">Gesteigerte operative Exzellenz und höhere Wettbewerbsfähigkeit mit IBM</h3><p>Unsere Analysen identifizieren in Bankprozessen ein durchschnittliches Einsparungspotenzial von 30% durch die Transformation der Prozesse unter Nutzung neuer Technologien. Dies hat unmittelbaren Einfluss auf eine verbesserte Cost-Income-Ratio.</p>',
+									'<h3 class="h4">Mehr Nutzen und gesteigerte Wettbewerbsfähigkeit mit Hybrid-Cloud-Strategie</h3><p>Eine Hybrid-Cloud-Strategie mit einer Kombination aus Cloud-Lösungen und klassischen IT-Strukturen ermöglicht bis zu 2,5-mal mehr Nutzen im Vergleich zu punktuellen Cloud-Ansätzen.</p>',
 							},
 						},
 						{
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="d1 large">30%</h3><p>Einsparungspotenzial durch Prozess-Transformation im Banking</p>',
+									'<h3 class="d1 large">2,5x</h3><p>mehr Nutzen im Vergleich zu punktuellen Cloud-Ansätzen</p>',
 							},
 						},
 					],
@@ -185,34 +186,22 @@ module.exports = req => {
 							props: {
 								items: [
 									{
-										icon: 'UserSearch',
-										headline: 'Mehr Kundenorientierung und Effizienz im Kreditgeschäft',
+										icon: 'GlobalAssetsAndRecovery_01',
+										headline: 'Mit modernisierten Bank-Anwendungen auf Zukunftskurs',
 										content:
-											'<p>Die Transformation der Kredit-Prozesse in Banken ist ein großer Hebel auf dem Weg zu mehr Effizienz und Kundenakzeptanz. Mit unseren Lösungen verschlanken und automatisieren wir Ihre kundenbezogenen und internen Prozesse. Wir ermöglichen echte Omni-Kanalfähigkeit, verkürzen „Time-to-Yes“ und „Time-to-Cash“ signifikant und erhöhen nachhaltig die Kundenzufriedenheit und Ihre Position im Wettbewerb. Dabei richten wir Ihre Prozesse entlang Ihrer Geschäftsstrategie aus und bringen dabei modernste Technologien zum Einsatz, wie z. B. unsere erprobten Content-Intelligence-Lösungen.</p>',
+											'<p>Ein modernes Core-Banking System erhöht die Agilität der Bank und reduziert dabei Kosten. Die Modernisierung Ihrer Kernanwendungen bringt Sie auf Zukunftskurs und lässt Sie von zahlreichen Vorteilen profitieren. Sie steigern die Agilität Ihres Unternehmens, schaffen die Voraussetzungen für die Interoperabilität im Ökosystem, reduzieren Abhängigkeiten von einzelnen Anbietern und senken dabei sogar Ihre IT-Ausgaben.</p>',
 									},
 									{
 										icon: 'FinanceStrategy',
-										headline: 'Neue Wege für Core-Banking und Payment-Lösungen',
+										headline: 'Front-End-Digitalisierung für gesteigerte Kundenzufriedenheit',
 										content:
-											'<p>Clevere digitale Lösungen helfen Ihnen, die zunehmende Komplexität in Ihrem Tagesgeschäft zu bewältigen. Sie möchten die Silos Ihrer Legacy-Bankenanwendungen aufbrechen und das Potenzial von Open-Banking-Lösungen nutzen? Oder Sie möchten mit Ihren Payment-Lösungen den Markt noch zukunftssicherer bedienen? Als kompetenter und zuverlässiger Partner begleiten wir Sie durch die Transformation und stellen Ihre Wettbewerbsfähigkeit sicher – von der Konzeption bis zum globalen Roll-out und zur Umsetzung. Wir schrecken vor Komplexität nicht zurück!</p>',
-									},
-									{
-										icon: 'ManagingContractualFlow',
-										headline: 'Mehr Freiheiten durch ein effektives Back Office',
-										content:
-											'<p>Gestraffte Marktfolgeprozesse versprechen ein großes Einsparungspotenzial. Mit der Kombination aus globalen Best Practices und dem Wissen, was aktuell technologisch möglich ist, gelingt die Transformation Ihrer Marktfolge. Wir bieten Ihnen maßgeschneiderte und agile Lösungen mit der Möglichkeit, klein zu starten und schnell zu skalieren. Die Automatisierung von Back-Office-Aufgaben bringt Ihnen zweistellige Einsparpotenziale, größere Mitarbeiter- und Kundenzufriedenheit. Wir begleiten Sie in der Transformation – von der Analyse bis zur Umsetzung.</p>',
-									},
-									{
-										icon: 'GlobalAssetsAndRecovery_01',
-										headline: 'Wachstum durch Digital Asset Banking',
-										content:
-											'<p>Durch Digital Assets können Sie neue Potenziale und zusätzliche Geschäftsfelder erschließen. Die Bank der Zukunft baut ihre Strategien um Digital Assets herum auf. Mit der Nutzung von Tokenisierung können Sie nicht bankenfähige Vermögenswerte digital und sicher verwalten. Durch unsere Partnerschaften mit marktführenden Software-Anbietern bieten wir Ihnen Kompetenz aus einer Hand. Sie erhalten Zugang zu neuester Technologie und einen zuverlässigen Partner bei der Gestaltung und Umsetzung innovativer Custody-Lösungen für das steigende Segment der vermögenden Privatkunden.</p>',
+											'<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>',
 									},
 									{
 										icon: 'Analyze',
-										headline: 'Neue Perspektiven für Finance & Controlling',
+										headline: 'Nachhaltige Effizienzsteigerung mit der IBM Banking Platform',
 										content:
-											'<p>Intelligente Lösungen für Finance und Controlling minimieren Risiken. In einem dynamischen Umfeld muss die Gesamtbanksteuerung schneller und mit geringeren Kosten mehr liefern. Wir helfen Ihnen, den Anforderungen gerecht zu werden und haben dabei alle Dimensionen im Blick: Ihre Daten, die Fachlichkeit, die IT-Landschaft und das zielführende Projektvorgehen. Gemeinsam mit unseren marktführenden Partnern für bankfachliche Software begleiten wir Ihren Weg zur modernen Banksteuerung. Technologienutzung für effizientes Datenmanagement und IT-Services, fachliche Standardmethoden und Agilität bringen Sie auf Erfolgskurs.</p>',
+											'<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>',
 									},
 								],
 							},
@@ -226,7 +215,7 @@ module.exports = req => {
 					id: 'vorteile',
 					titles: {
 						top:
-							'<p>Ihre Vorteile</p><p class="eh4">Konkrete Vorteile für Ihre Bank durch Prozess-Transformation mit IBM </p>',
+							'<p>Ihre Vorteile</p><p class="eh4">Ihre Vorteile bei der technologischen Transformation</p>',
 					},
 					background: {
 						dark: true,
@@ -248,16 +237,16 @@ module.exports = req => {
 											icon: 'GlobalMarketsBar',
 											headline: 'Expertise',
 											text:
-												'Wir bringen ein breites und tiefes Verständnis von Bankprozessen mit. Eine Vielzahl unserer Berater in der DACH-Region sind selbst Banker oder Top-Experten für Banking-Technologie.',
+												'Wir kombinieren bankfachliches Wissen mit technologischem Know-how. Dazu gehören auch die Skalierbarkeit bei komplexen Projekten, das Produktwissen unserer Entwicklungslabore und die Expertise unserer Partner.',
 										},
 									},
 									{
 										name: 'PictogramTeaser',
 										props: {
 											icon: 'CloudAssets',
-											headline: 'Assets',
+											headline: 'Rundum-Service',
 											text:
-												'Durch unsere Nähe zur Technologie bringen wir eine Vielzahl von einsatzbereiten Assets und erprobten Methoden mit, die Ihre Transformation beschleunigen. ',
+												'Für unsere Kunden entwerfen wir eine Transformationsroadmap, validieren selektierte Handlungsoptionen über unser Garagen-Modell, entwickeln erste MVPs und führen die Projekte iterativ über unseren Modernization-Factory-Ansatz durch.',
 										},
 									},
 									{
@@ -266,7 +255,7 @@ module.exports = req => {
 											icon: 'GlobalPartner',
 											headline: 'Partnerschaften',
 											text:
-												'Wir bringen umfangreiche Partnerschaften im Banking-Ecosystem mit, von denen wir gemeinsam profitieren können.',
+												'Im Bereich bankfachliche Standardfunktionalität arbeiten wir mit einer Vielzahl von ISVs zusammen, für Cloud-Technologien mit AWS, Google und Microsoft. Auch Anbieter von Analyse-Software, Middleware sowie Support- und Management-Tools gehören zu unserem Öko-System.',
 										},
 									},
 								],
@@ -298,7 +287,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Jean-Henrik Zitterbart',
-											copy: 'Partner<br />Banking & Financial Markets DACH',
+											copy: 'Industry Leader<br />Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/jean.jpg',
 												width: 448,
@@ -322,11 +311,11 @@ module.exports = req => {
 									{
 										name: 'LetsTalkTeaser',
 										props: {
-											headline: 'Manuel Schuff',
+											headline: 'Uwe Gross',
 											copy:
-												'Managing Business Transformation Consultant<br />Banking & Financial Markets DACH',
+												'Partner<br />IBM Global Services, DACH',
 											image: {
-												src: '/img/people/manuel.jpg',
+												src: '/img/people/uwe.jpg',
 												width: 448,
 												height: 448,
 											},
@@ -334,13 +323,13 @@ module.exports = req => {
 												{
 													type: 'linkedIn',
 													title: 'Vernetzen auf Linkedin',
-													url: 'https://www.linkedin.com/in/manuelschuff',
+													url: 'https://www.linkedin.com/in/uwegross',
 												},
 												{
 													type: 'email',
 													title: 'Kontakt aufnehmen',
 													url:
-														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Schuff%2C%20',
+														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%Herr%Gross%2C%20',
 												},
 											],
 										},

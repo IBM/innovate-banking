@@ -19,7 +19,8 @@ module.exports = req => {
 						},
 						{
 							name: 'Risikosteuerung',
-							active: false,
+							url: 'risikosteuerung',
+							active: true,
 							current: false,
 						},
 						{
