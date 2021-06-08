@@ -24,7 +24,7 @@ module.exports = req => {
 							current: false,
 						},
 						{
-							name: 'Kundenerlebnisse',
+							name: 'Kundenerlebnis',
 							active: false,
 							current: false,
 						},
@@ -34,7 +34,7 @@ module.exports = req => {
 							current: false,
 						},
 						{
-							name: 'Effizienz',
+							name: 'Bankingplatform',
 							active: false,
 							current: false,
 						},
@@ -147,7 +147,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="d1">Unsere Plattform-Lösungen</p><p>Wir sind Ihr Partner für die digitale Transformation des Finanzsektors. Denn wir bringen die interne Branchenkenntnis zusammen mit technischen Innovationen und verschiedensten Entwicklungen, die im weltweiten Netzwerk der IBM entstehen.</p>',
+									'<p class="d1">Unsere industrie-<br />spezifischen Lösungen</p><p>Wir sind Ihr Partner für die digitale Transformation des Finanzsektors. Denn wir bringen die interne Branchenkenntnis zusammen mit technischen Innovationen und verschiedensten Entwicklungen, die im weltweiten Netzwerk der IBM entstehen.</p>',
 							},
 						},
 					],
@@ -157,7 +157,8 @@ module.exports = req => {
 				name: 'Section',
 				props: {
 					titles: {
-						top: '<h3 class="h4">Unsere Plattform-Lösungen:<br/>Bewährt. Dynamisch. Sicher.</h3>',
+						top:
+							'<h3 class="h4">Unsere industriespezifischen Lösungen:<br/>Bewährt. Dynamisch. Sicher.</h3>',
 					},
 					images: {
 						bottom: {
@@ -291,7 +292,7 @@ module.exports = req => {
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'Kundenerlebnisse neu gestalten',
+											headline: 'Kundenerlebnis neu erfinden',
 											text:
 												'<p>Zufriedene Kunden sind Ihr wertvollstes Kapital. Erfahren Sie, wie Cloud-basierte Datenauswertung und KI außergewöhnliche Kundenerlebnisse ermöglichen und die Arbeitswelt Ihrer Mitarbeiter*innen revolutioniert.</p>',
 											link: {
@@ -306,25 +307,27 @@ module.exports = req => {
 											text:
 												'<p>IBM unterstützt Ihre Bank mit kognitiven Lösungen beim Risikomanagement und bei der Risikomodellierung, Geldwäscheprävention, KYC-Prozessen, innovativer RegTech und SupTech.</p>',
 											link: {
-												title: 'Coming soon',
+												title: 'Mehr erfahren',
+												url: '/risikosteuerung',
 											},
 										},
 									},
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'Technologien transformieren',
+											headline: 'Anwendungssysteme modernisieren',
 											text:
 												'<p>Mit Innovationen aus der IBM Cloud durch die digitale Transformation: Wir begleiten die Erneuerung Ihrer Infrastruktur mit maßgeschneiderten Lösungen – von der Entwicklung bis zur Installation.</p>',
 											link: {
-												title: 'Coming soon',
+												title: 'Mehr erfahren',
+												url: '/anwendungssysteme',
 											},
 										},
 									},
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'Effizienz steigern',
+											headline: 'Lösungen der IBM Banking Platform nutzen',
 											text:
 												'<p>Gewinnen Sie mit Anwendungen aus unserer Banking Service Plattform an Effizienz und erfahren Sie, wie Business Process Outsourcing von IBM Mehrwerte für Ihre Bank schafft. </p>',
 											link: {
@@ -561,6 +564,13 @@ module.exports = req => {
 							'<p class="h4">Innovative Methoden und Technologien</p><p class="p">Wir arbeiten schon heute an der Finanztechnologie von übermorgen. Entdecken Sie ungeahnte Möglichkeiten und profitieren Sie als Erste von Lösungen, die die Welt des Bankings nachhaltig verändern werden.</p>',
 					},
 					children: [
+						{
+							name: 'VideoButton',
+							props: {
+								title: 'Was ist die IBM Garage?',
+								subtitle: 'Video abspielen (englisch)',
+							},
+						},
 						{
 							name: 'TeaserList',
 							props: {
