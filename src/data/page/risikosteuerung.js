@@ -24,7 +24,7 @@ module.exports = req => {
 							current: true,
 						},
 						{
-							name: 'Kundenerlebnisse',
+							name: 'Kundenerlebnis',
 							active: false,
 							current: false,
 						},
@@ -35,7 +35,7 @@ module.exports = req => {
 							current: false,
 						},
 						{
-							name: 'Effizienz',
+							name: 'Bankingplatform',
 							active: false,
 							current: false,
 						},
@@ -101,13 +101,13 @@ module.exports = req => {
 					},
 					images: {
 						bottom: {
-							src: '/img/section-process-transformation.svg',
+							src: '/img/section-risikosteuerung.svg',
 							width: 402,
-							height: 363,
+							height: 229,
 							layout: 'responsive',
 							style: {
 								maxWidth: '50%',
-								marginBottom: '-7%',
+								marginBottom: '-5.5%',
 							},
 						},
 					},
