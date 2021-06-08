@@ -24,17 +24,18 @@ module.exports = req => {
 							current: false,
 						},
 						{
-							name: 'Kundenerlebnisse',
+							name: 'Kundenerlebnis',
 							active: false,
 							current: false,
 						},
 						{
-							name: 'Technologien',
-							active: false,
+							name: 'Anwendungssysteme',
+							url: 'anwendungssysteme',
+							active: true,
 							current: false,
 						},
 						{
-							name: 'Effizienz',
+							name: 'Bankingplatform',
 							active: false,
 							current: false,
 						},

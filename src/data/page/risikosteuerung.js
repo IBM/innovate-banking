@@ -29,9 +29,9 @@ module.exports = req => {
 							current: false,
 						},
 						{
-							name: 'Technologien',
-							url: 'technologien',
-							active: false,
+							name: 'Anwendungssysteme',
+							url: 'anwendungssysteme',
+							active: true,
 							current: false,
 						},
 						{

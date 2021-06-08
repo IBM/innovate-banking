@@ -3,9 +3,16 @@
 const index = require('@/data/page');
 const prozessTransformation = require('@/data/page/prozess-transformation');
 const risikosteuerung = require('@/data/page/risikosteuerung');
+const anwendungssysteme = require('@/data/page/anwendungssysteme');
 const impressum = require('@/data/page/impressum');
 
-const pageData = { index, 'prozess-transformation': prozessTransformation, risikosteuerung, impressum };
+const pageData = {
+	index,
+	'prozess-transformation': prozessTransformation,
+	risikosteuerung,
+	anwendungssysteme,
+	impressum,
+};
 
 export default (req, res) => {
 	const pageName = req.query.name || 'index';
