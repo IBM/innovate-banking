@@ -1,14 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Image from 'next/image';
-import dynamic from 'next/dynamic';
-
-import { Column, Link } from 'carbon-components-react';
-
 import RichText from '@/components/RichText';
-
-import Styles from './styles.module.scss';
+import { Column, Link } from 'carbon-components-react';
 import clsx from 'clsx';
+import dynamic from 'next/dynamic';
+import Image from 'next/image';
+import PropTypes from 'prop-types';
+import React from 'react';
+import Styles from './styles.module.scss';
 
 const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, dark, condensed }) => {
 	let IconComponent = null;
@@ -51,7 +48,6 @@ const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, da
 				className={clsx(Styles.FocusTeaser, dark && Styles.IsDark, link.url === undefined && Styles.IsInactive)}
 				href={link.url}
 				title={link.title}
-				target="_blank"
 			>
 				<Column sm={smSizeLeft} md={mdSizeLeft} lg={lgSizeLeft} className={Styles.LeftColumn}>
 					<h5 className={Styles.Headline}>{headline}</h5>
