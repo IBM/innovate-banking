@@ -17,12 +17,11 @@
 	min-height: 100%;
 	text-decoration: none;
 	color: inherit;
-	// justify-content: space-between;
 
 	.Headline {
-		@include carbon--type-style('expressive-paragraph-01', true);
+		@include carbon--type-style('expressive-heading-03', true);
 
-		color: $gray-90;
+		color: $text-01;
 	}
 
 	.RichText {
