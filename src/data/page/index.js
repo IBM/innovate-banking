@@ -35,7 +35,7 @@ module.exports = req => {
 							current: false,
 						},
 						{
-							name: 'Bankingplatform',
+							name: 'Banking-Plattform',
 							active: false,
 							current: false,
 						},
@@ -295,9 +295,10 @@ module.exports = req => {
 										props: {
 											headline: 'Kundenerlebnis neu erfinden',
 											text:
-												'<p>Zufriedene Kunden sind Ihr wertvollstes Kapital. Erfahren Sie, wie Cloud-basierte Datenauswertung und KI außergewöhnliche Kundenerlebnisse ermöglichen und die Arbeitswelt Ihrer Mitarbeiter*innen revolutioniert.</p>',
+												'<p>Zufriedene Kunden sind Ihr wertvollstes Kapital. Erfahren Sie, wie Cloud-basierte Datenauswertung und KI ein einzigartiges Kundenerlebnis ermöglichen und die Arbeitswelt Ihrer Mitarbeiter*innen im Front-Office revolutionieren.</p>',
 											link: {
-												title: 'Coming soon',
+												title: 'Mehr erfahren',
+												url: '/kundenerlebnis',
 											},
 										},
 									},
