@@ -1,16 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import { Row, Grid, Column, Link, Dropdown } from 'carbon-components-react';
-import Sticky from 'react-sticky-el';
-import { withRouter } from 'next/router';
-
-import { injectIntl } from 'react-intl';
-import clsx from 'clsx';
-
 import { translate } from '@/utils';
-
-import Styles from './styles.module.scss';
 import { AddComment20 } from '@carbon/icons-react';
+import { Column, Dropdown, Grid, Link, Row } from 'carbon-components-react';
+import clsx from 'clsx';
+import { withRouter } from 'next/router';
+import PropTypes from 'prop-types';
+import React, { useEffect, useState } from 'react';
+import { injectIntl } from 'react-intl';
+import Sticky from 'react-sticky-el';
+import Styles from './styles.module.scss';
 
 const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 	const sloganListItemRef = React.createRef(null);

@@ -33,18 +33,20 @@
 		align-items: center;
 		text-decoration: none;
 		padding: $spacing-04;
+		border-top: 3px solid transparent;
 		color: $gray-30;
 		transition: all 250ms ease-in-out;
 
 		&:hover {
-			background: $gray-90;
+			background: $interactive-02;
 			color: $white-0;
 		}
 
 		&:focus,
 		&:active,
 		&.IsActive {
-			background: $blue-70;
+			background: $interactive-02;
+			border-top-color: $interactive-01;
 			color: $white-0;
 		}
 
@@ -59,6 +61,7 @@
 			&:active,
 			&:focus {
 				background: $blue-80;
+				border-top-color: transparent;
 			}
 		}
 	}
