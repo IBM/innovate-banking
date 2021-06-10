@@ -24,8 +24,8 @@ module.exports = req => {
 							current: false,
 						},
 						{
-							name: 'Risikosteuerung',
-							url: 'risikosteuerung',
+							name: 'Risk & Compliance',
+							url: 'risk-compliance',
 							active: true,
 							current: true,
 						},
@@ -37,7 +37,8 @@ module.exports = req => {
 						},
 						{
 							name: 'Banking-Plattform',
-							active: false,
+							url: 'banking-plattform',
+							active: true,
 							current: false,
 						},
 					],

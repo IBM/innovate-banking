@@ -24,8 +24,8 @@ module.exports = req => {
 							current: false,
 						},
 						{
-							name: 'Risikosteuerung',
-							url: 'risikosteuerung',
+							name: 'Risk & Compliance',
+							url: 'risk-compliance',
 							active: true,
 							current: false,
 						},
@@ -311,7 +311,7 @@ module.exports = req => {
 												'<p>IBM unterstützt Ihre Bank mit kognitiven Lösungen beim Risikomanagement und bei der Risikomodellierung, Geldwäscheprävention, KYC-Prozessen, innovativer RegTech und SupTech.</p>',
 											link: {
 												title: 'Mehr erfahren',
-												url: '/risikosteuerung',
+												url: '/risk-compliance',
 											},
 										},
 									},

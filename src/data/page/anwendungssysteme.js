@@ -24,8 +24,8 @@ module.exports = req => {
 							current: false,
 						},
 						{
-							name: 'Risikosteuerung',
-							url: 'risikosteuerung',
+							name: 'Risk & Compliance',
+							url: 'risk-compliance',
 							active: true,
 							current: false,
 						},
@@ -288,7 +288,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Jean-Henrik Zitterbart',
-											copy: 'Industry Leader<br />Banking & Financial Markets DACH',
+											copy: 'Industry Leader<br />IBM Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/jean.jpg',
 												width: 448,

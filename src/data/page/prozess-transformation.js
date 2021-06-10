@@ -24,8 +24,8 @@ module.exports = req => {
 							current: false,
 						},
 						{
-							name: 'Risikosteuerung',
-							url: 'risikosteuerung',
+							name: 'Risk & Compliance',
+							url: 'risk-compliance',
 							active: true,
 							current: false,
 						},
