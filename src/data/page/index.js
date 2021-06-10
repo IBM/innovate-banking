@@ -18,14 +18,15 @@ module.exports = req => {
 							current: false,
 						},
 						{
-							name: 'Risikosteuerung',
-							url: 'risikosteuerung',
+							name: 'Kundenerlebnis',
+							url: 'kundenerlebnis',
 							active: true,
 							current: false,
 						},
 						{
-							name: 'Kundenerlebnis',
-							active: false,
+							name: 'Risikosteuerung',
+							url: 'risikosteuerung',
+							active: true,
 							current: false,
 						},
 						{

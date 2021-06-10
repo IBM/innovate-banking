@@ -18,14 +18,15 @@ module.exports = req => {
 							current: true,
 						},
 						{
-							name: 'Risikosteuerung',
-							url: 'risikosteuerung',
+							name: 'Kundenerlebnis',
+							url: 'kundenerlebnis',
 							active: true,
 							current: false,
 						},
 						{
-							name: 'Kundenerlebnis',
-							active: false,
+							name: 'Risikosteuerung',
+							url: 'risikosteuerung',
+							active: true,
 							current: false,
 						},
 						{
@@ -35,7 +36,7 @@ module.exports = req => {
 							current: false,
 						},
 						{
-							name: 'Bankingplatform',
+							name: 'Banking-Plattform',
 							active: false,
 							current: false,
 						},

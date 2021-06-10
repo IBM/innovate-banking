@@ -21,13 +21,13 @@ module.exports = req => {
 							name: 'Kundenerlebnis',
 							url: 'kundenerlebnis',
 							active: true,
-							current: false,
+							current: true,
 						},
 						{
 							name: 'Risikosteuerung',
 							url: 'risikosteuerung',
 							active: true,
-							current: true,
+							current: false,
 						},
 						{
 							name: 'Anwendungssysteme',
@@ -46,18 +46,18 @@ module.exports = req => {
 			{
 				name: 'Stage',
 				props: {
-					heading: 'Risikosteuerung<br /> im Banking',
+					heading: 'Kundenerlebnis<br />neu erfinden',
 					image: {
 						src: '/img/stage-process-transformation.jpg',
 						width: 1056,
 						height: 386,
-						alt: 'Risikosteuerung im Banking',
+						alt: 'Kundenerlebnis neu erfinden',
 					},
 					imageMobile: {
 						src: '/img/stage-process-transformation-mobile.jpg',
 						width: 672,
 						height: 672,
-						alt: 'Risikosteuerung im Banking',
+						alt: 'Kundenerlebnis neu erfinden',
 					},
 				},
 			},
@@ -95,7 +95,7 @@ module.exports = req => {
 				name: 'Section',
 				props: {
 					titles: {
-						left: '<p>Mit Technologie komplexe Prozesse neu denken</p>',
+						left: '<p>Mehr Kundenbindung durch ein einzigartiges Kundenerlebnis</p>',
 					},
 					background: {
 						gradient: 'linear-gradient(180deg, #FFFFFF 0%, #EDF5FF 100%)',
@@ -117,7 +117,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p>Verlässliches Risikomanagement und das Einhalten regulatorischer Vorgaben ist für Banken essenziell, ist aber im letzten Jahrzehnt immer aufwendiger geworden. Wir machen komplexe Vorgänge einfach.</p>',
+									'<p>Zufriedene Kunden sind Ihr wertvollstes Kapital. Erfahren Sie, wie Cloud-basierte Datenauswertung und KI ein einzigartiges Kundenerlebnis ermöglichen und die Arbeitswelt Ihrer Mitarbeiter*innen im Front-Office revolutionieren.</p>',
 							},
 						},
 					],
@@ -135,14 +135,21 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="h4">Gesteigerte Effizienz durch Analytics, KI und Automatisierung</h3><p>Durch den Einsatz von Analytics, KI und Automatisierung kann im Bereich Risk & Compliance eine Effizienzsteigerung von bis zu 40% erreicht werden.</p>',
+									'<h3 class="h4">Kundenbedürfnisse erkennen, Zufriedenheit steigern und neue Vertriebschancen identifizieren</h3><p>Unsere Befragungen von Führungskräften von über 400 Banken weltweit zeigen, dass Banken, die sich auf die Transformation von Kundenabläufen konzentrieren, messbare Wettbewerbsvorteile haben – sowohl auf der Kosten- als auch auf der Ertragsseite.</p>',
 							},
 						},
 						{
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="d1 large">40%</h3><p>Effizienzsteigerung durch Analytics, KI und Automatisierung im Banking</p>',
+									'<div class="bx--row" style="margin-bottom: 1.5rem;"><div class="bx--col"><h3 class="d1">+30%</h3><p>Ertrag pro Kunde (Privatkunden, Zins- und Kommissionsgeschäft)</p></div><div class="bx--col"><h3 class="d1">-20%</h3><p>Cost-to-Serve pro Kunde (Retail)</p></div></div>',
+							},
+						},
+						{
+							name: 'RichText',
+							props: {
+								content:
+									'<p class="c1">Quelle: Industrie Benchmarks Banking, IBM Institute for Business Value</p>',
 							},
 						},
 					],
@@ -188,33 +195,27 @@ module.exports = req => {
 								items: [
 									{
 										icon: 'GlobalAssetsAndRecovery_01',
-										headline: 'Cleveres Risikomanagement und Risikocontrolling als Erfolgsfaktor',
+										headline: 'Mehr Kundenorientierung durch kontextuelles Banking',
 										content:
-											'<p>Risikomanagement und -controlling sind entscheidend für risikoadäquate und profitable Akquise.</p><p>Mit unseren State-of-the-Art Methoden und Tools können Sie Risiken identifizieren, einschätzen und steuern. Wir unterstützen Sie beispielsweise dabei, eine relevante Datenbasis zu erstellen und eine KI-gestützte Plattform aufzubauen.<br />Unsere hoch qualifizierten Berater begleiten die Konzeption und Umsetzung quantitativer Modelle ebenso wie die Optimierung der Risikoprozesse und stellen sicher, dass sowohl regulatorische Vorgaben als auch interne Reporting- und Steuerungsanforderungen erfüllt werden.</p>',
-									},
-									{
-										icon: 'UserSearch',
-										headline: 'Mehr Effizienz bei regulatorischen Melde- und Aufsichtsprozessen',
-										content:
-											'<p>Wir helfen Ihnen, den Meldeanforderungen der Aufsichtsbehörden gerecht zu werden und ESG-Kriterien zu implementieren.</p><p>Wir begleiten Banken und Aufsichtsbehörden ganzheitlich bei der strategischen Entwicklung und Umsetzung zeitgemäßer Prozess- und Systemlandschaften unter Berücksichtigung der ESG-Standards. Integrierte Datenlandschaften, innovative Datenplattformen, Plattformökonomien, Cloud-Technologien und KI-gestützte, automatisierte Lösungen sind Treiber für effiziente regulatorische Prozesse, die dabei helfen, ESG-Standards einzuhalten. Unsere Lösungen tragen signifikant zur Automatisierung, Flexibilisierung, Skalierung und Kostenreduzierung bei. Gleichzeitig unterstützen sie unsere Kunden bei ihrem Streben nach Nachhaltigkeit.</p>',
+											'<p>Wir erhöhen Kundenzufriedenheit durch zielgruppenspezifische Angebote – ob für Privat- oder Firmenkunden.</p><p>Wir verschaffen Ihnen Wettbewerbsvorteile an allen Berührungspunkten: Flexible Arbeitsplatzlösungen im Front-Office unterstützen Sie bei der Beratung, innovative Self-Service-Konzepte erweitern das digitale Leistungsangebot, mobiles und dialog-basiertes Banking eröffnet neue Perspektiven in der Kundenansprache.</p><p>Mit einer einheitlichen 360-Grad-Sicht auf den Kunden steigern wir die Effizienz und die Qualität in der Beratung und im Service. Dabei reduzieren wir manuelle Arbeit und liefern Ihnen relevante Erkenntnisse über Ihre Kunden zum richtigen Zeitpunkt.</p>',
 									},
 									{
 										icon: 'ManagingContractualFlow',
-										headline: 'Digitale Transformation mit AML- oder KYC-Systemen',
+										headline: 'Mehr Kundenbindung durch personalisierten Kundendialog',
 										content:
-											'<p>Unser Service-Angebot deckt Ihre Bedürfnisse End-to-End mit führenden Methoden und innovativen Lösungen ab.</p><p>Unsere effizienten Lösungen helfen Ihnen, aufsichtsrechtliche Anforderungen zur Bekämpfung von Geldwäsche (Anti Money Laundering) und Finanzmarktkriminalität zu erfüllen und Know-Your-Customer-Prozesse zu optimieren. Wir konzipieren Target-Operating-Modelle für Sie und implementieren AML- oder KYC-Systeme.<br />Wir beraten Sie bei sämtlichen Fragen der digitalen Transformation und bieten Ihnen auf Ihre Bedürfnisse abgestimmte Managed-Service-Angebote, mit denen wir die gesamte Risk & Compliance-Wertschöpfungskette abdecken.</p>',
+											'<p>Der Schlüssel zu Relevanz und Loyalität liegt in der personalisierten Kundenansprache.</p><p>Wir analysieren Ihre Customer Journeys und identifizieren Verbesserungsmöglichkeiten – von der effizienten Generierung von Interessenten bis zum Abschluss. Dazu bereiten wir komplexe Inhalte zielgruppengerecht auf. Im Rahmen von Kampagnen können diese flexibel auf allen Kanälen für die vertriebliche Ansprache eingesetzt werden. Basierend auf den marktführenden Plattformen unserer Partner implementieren wir individuelle Lösungen zur Ausspielung personalisierter Inhalte, die für alle Kanäle dynamisch optimiert werden.</p>',
 									},
 									{
 										icon: 'FinanceStrategy',
-										headline: 'Automatisierung bei Trade-Finance-Transaktionen',
+										headline: 'Bessere Ansprache durch Marketing-Intelligenz und Automation',
 										content:
-											'<p>Die Komplexität von Trade-Finance-Transaktionen bietet hohes Potenzial zur Effizienzsteigerung durch Automatisierung und KI.</p><p>Ein intelligentes Zusammenspiel zwischen Mensch und Technologie ermöglicht es, komplexe Trade-Finance-Transaktionen einfacher zu bewältigen. IBM Technologien wie Optical Character Recognition (OCR), Künstliche Intelligenz, Robotic Process Automation (RPA) unterstützen Ihre Trade-Finance-Abteilungen.<br />Mit unseren smarten Technologien kreieren wir voll automatisierte End-to-End-Prozesse. Eine wichtige Rolle spielen dabei intelligente Dokumentenerfassung, digitale Plattformökonomie, KI, Robotics und Blockchain-Lösungen sowie intelligente Compliance-Analysen.</p>',
+											'<p>Mit Marketing-Intelligenz und Automation unterstützen wir Sie bei der vertrieblichen Kundenansprache.</p><p>Unsere Lösungen vereinheitlichen Ihre Customer Journeys für eine regelbasierte Steuerung der Kundenansprache. Bewährte KI-Modelle ermöglichen eine dynamische Identifikation von Lebensereignissen, Produktneigung oder Abwanderungswahrscheinlichkeiten Ihrer Kunden.</p><p>Aus den darauf aufbauenden, automatisierten Kundendialogen entstehen neue potenzielle Vertriebschancen (Next Best Action) im dafür am besten geeigneten Vertriebskanal – ob digital, in der Bankfiliale oder über die Service-Hotline.</p>',
 									},
 									{
 										icon: 'Analyze',
-										headline: 'Ein umfassender Compliance-Rahmen für Cloud-Lösungen',
+										headline: 'Marketing und Vertrieb effizient umsetzen und steuern',
 										content:
-											'<p>Wir begleiten unsere Kunden bei ihrer Cloud-Transformation ganzheitlich und haben dabei einen globalen Standard gesetzt.</p><p>Der verstärkte Einsatz von Cloud-Computing zwingt Banken, sich mit den regulatorischen Anforderungen an den sicheren Betrieb von Cloud-Systemen auseinanderzusetzen. Unsere marktführenden Methoden und Tools erstellen einen umfassenden Compliance-Rahmen für Cloud-Lösungen.<br />Dabei werden die gesetzlichen Mindestanforderungen an sicheres Cloud-Computing in Europa ebenso umgesetzt wie deutsche oder globale regulatorische Anforderungen. Dies kann auch um kundeneigene Policy-Vorgaben ergänzt werden.</p>',
+											'<p>Unsere Lösungen ermöglichen die nahtlose Orchestrierung von Kundenkontext, Berührungspunkten und Bankprozessen.</p><p>Unsere Erfolgsfaktoren sind analytische Fähigkeiten, die lückenlose Einbeziehung von Daten und die Aussteuerung relevanter Inhalte auf den geeigneten Zugangspunkt. Die Kombination regelbasierter Ansätze mit spezialisierter KI ermöglicht ein effiziente und intelligente Steuerung Ihrer Kundenbeziehungen.</p><p>Dazu nutzen wir bewährte cloud-basierte Standardplattformen für ein beschleunigtes Time-to-Market, unterstützen Ihren operativen Betrieb bedarfsgerecht mit der benötigten Expertise und ermöglichen Banken so die Neuallokation bestehender Ressourcen.</p>',
 									},
 								],
 							},
@@ -227,8 +228,7 @@ module.exports = req => {
 				props: {
 					id: 'vorteile',
 					titles: {
-						top:
-							'<p>Ihre Vorteile</p><p class="eh4">Unser Angebot für Ihren Erfolg im Bereich Risk & Compliance</p>',
+						top: '<p>Ihre Vorteile</p><p class="eh4">Erfolgsfaktoren für Ihre neuen Kundenerlebnisse</p>',
 					},
 					background: {
 						dark: true,
@@ -247,28 +247,28 @@ module.exports = req => {
 									{
 										name: 'PictogramTeaser',
 										props: {
-											icon: 'GlobalPartner',
-											headline: 'Fundierte Beratung',
+											icon: 'GlobalMarketsBar',
+											headline: 'Unsere Expertise',
 											text:
-												'Wir beraten Sie zu Target-Operating-Modellen, Prozessanalyse und -optimierung, regulatorischen Fragen und zur digitalen Transformation von Risk & Compliance-Einheiten.',
+												'Über 1200 praxiserfahrene Spezialist*innen an 8 Standorten in der DACH-Region bieten das vollständige Spektrum von der Beratung über die Umsetzung bis zum Betrieb unserer Lösungen.',
 										},
 									},
 									{
 										name: 'PictogramTeaser',
 										props: {
 											icon: 'CloudAssets',
-											headline: 'Neuste Technologie',
+											headline: 'Schnelle Umsetzung',
 											text:
-												'Wir bieten smarte Lösungen zur Digitalisierung komplexer KYC/AML-Prozesse, Datenintegration, Robotics, KI sowie führende Modernisierungs- und Cloud-Transformationstechnologien.',
+												'In crossfunktionalen Teams können wir Ihre Ziele schnell verwirklichen. Durch den Einsatz bewährter Lösungsmodule ermöglichen wir eine beschleunigte Umsetzung typischer Fragestellungen – in Wochen, nicht Monaten.',
 										},
 									},
 									{
 										name: 'PictogramTeaser',
 										props: {
-											icon: 'GlobalMarketsBar',
-											headline: 'Managed Services',
+											icon: 'GlobalPartner',
+											headline: 'Partnerschaften',
 											text:
-												'Unsere maßgeschneiderten Angebote decken die gesamte Risk & Compliance-Wertschöpfungskette ab und können individuell und konkret an Ihre Bedürfnisse angepasst werden.',
+												'Gemeinsam mit unseren Technologiepartnern entwickeln wir individuelle Lösungen für Sie, die auf vielfach am Markt bewährten Plattformen basieren.',
 										},
 									},
 								],
@@ -299,10 +299,10 @@ module.exports = req => {
 									{
 										name: 'LetsTalkTeaser',
 										props: {
-											headline: 'Marinela Bilic-Nosic',
-											copy: 'Partnerin<br />Risk & Compliance DACH',
+											headline: 'Ilker Uzkan',
+											copy: 'Banking Lead DACH<br />IBM iX',
 											image: {
-												src: '/img/people/marinela.jpg',
+												src: '/img/people/ilker.jpg',
 												width: 448,
 												height: 448,
 											},
@@ -310,13 +310,13 @@ module.exports = req => {
 												{
 													type: 'linkedIn',
 													title: 'Vernetzen auf Linkedin',
-													url: 'https://www.linkedin.com/in/marinelabilic',
+													url: 'https://www.linkedin.com/in/ilkeruzkan',
 												},
 												{
 													type: 'email',
 													title: 'Kontakt aufnehmen',
 													url:
-														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrte%20Frau%20Bilic-Nosic%2C%20',
+														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Uzkan%2C%20',
 												},
 											],
 										},
@@ -324,10 +324,10 @@ module.exports = req => {
 									{
 										name: 'LetsTalkTeaser',
 										props: {
-											headline: 'Britta Daffner',
-											copy: 'Leader Data & Technology<br />Banking & Financial Markets DACH',
+											headline: 'Jean-Henrik Zitterbart',
+											copy: 'Industry Leader<br />Banking & Financial Markets DACH',
 											image: {
-												src: '/img/people/britta.jpg',
+												src: '/img/people/jean.jpg',
 												width: 448,
 												height: 448,
 											},
@@ -335,13 +335,13 @@ module.exports = req => {
 												{
 													type: 'linkedIn',
 													title: 'Vernetzen auf Linkedin',
-													url: 'https://www.linkedin.com/in/britta-daffner',
+													url: 'https://www.linkedin.com/in/jean-henrik-zitterbart-b294a39b',
 												},
 												{
 													type: 'email',
 													title: 'Kontakt aufnehmen',
 													url:
-														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrte%20Frau%Daffner%2C%20',
+														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Zitterbart%2C%20',
 												},
 											],
 										},
