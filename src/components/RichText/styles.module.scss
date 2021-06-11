@@ -22,12 +22,14 @@
 		@include carbon--type-style('productive-heading-07', true);
 
 		margin-bottom: $spacing-06;
+		hyphens: manual;
 	}
 
 	:global(.eh1) {
 		@include carbon--type-style('expressive-heading-06', true);
 
 		margin-bottom: $spacing-06;
+		hyphens: manual;
 	}
 
 	:global(h2),
@@ -35,12 +37,14 @@
 		@include carbon--type-style('productive-heading-06', true);
 
 		margin-bottom: $spacing-05;
+		hyphens: manual;
 	}
 
 	:global(.eh2) {
 		@include carbon--type-style('expressive-heading-05', true);
 
 		margin-bottom: $spacing-05;
+		hyphens: manual;
 	}
 
 	:global(h3),
@@ -48,12 +52,14 @@
 		@include carbon--type-style('productive-heading-05', true);
 
 		margin-bottom: $spacing-04;
+		hyphens: manual;
 	}
 
 	:global(.eh3) {
 		@include carbon--type-style('expressive-heading-04', true);
 
 		margin-bottom: $spacing-04;
+		hyphens: manual;
 	}
 
 	:global(h4),
@@ -61,6 +67,7 @@
 		@include carbon--type-style('expressive-heading-02', true);
 
 		margin-bottom: $spacing-04;
+		hyphens: manual;
 
 		@include bp('md') {
 			@include carbon--type-style('expressive-heading-04', true);
@@ -71,6 +78,7 @@
 		@include carbon--type-style('expressive-heading-04', true);
 
 		margin-bottom: $spacing-04;
+		hyphens: manual;
 	}
 
 	:global(h5),
@@ -78,12 +86,14 @@
 		@include carbon--type-style('productive-heading-03', true);
 
 		margin-bottom: $spacing-04;
+		hyphens: manual;
 	}
 
 	:global(.eh5) {
 		@include carbon--type-style('expressive-heading-02', true);
 
 		margin-bottom: $spacing-04;
+		hyphens: manual;
 	}
 
 	:global(h6),
@@ -91,18 +101,21 @@
 		@include carbon--type-style('productive-heading-02', true);
 
 		margin-bottom: $spacing-04;
+		hyphens: manual;
 	}
 
 	:global(.eh5) {
 		@include carbon--type-style('expressive-heading-02', true);
 
 		margin-bottom: $spacing-04;
+		hyphens: manual;
 	}
 
 	:global(.d1) {
 		@include carbon--type-style('display-01', true);
 
 		margin-bottom: $spacing-07;
+		hyphens: manual;
 
 		&:global(.large) {
 			font-size: carbon--rem(100px);
@@ -121,6 +134,7 @@
 		@include carbon--type-style('display-02', true);
 
 		margin-bottom: $spacing-07;
+		hyphens: manual;
 
 		&:global(.large) {
 			font-size: carbon--rem(100px);
@@ -139,6 +153,7 @@
 		@include carbon--type-style('display-03', true);
 
 		margin-bottom: $spacing-07;
+		hyphens: manual;
 
 		&:global(.large) {
 			font-size: carbon--rem(100px);
@@ -155,6 +170,8 @@
 
 	:global(.d4) {
 		@include carbon--type-style('display-04', true);
+
+		hyphens: manual;
 
 		&:global(.large) {
 			font-size: carbon--rem(100px);
