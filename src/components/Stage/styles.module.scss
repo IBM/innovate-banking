@@ -8,7 +8,7 @@
 	display: block;
 	width: 100vw;
 	height: auto;
-	min-height: 75vh;
+	min-height: 85vh;
 	background: $blue-90;
 
 	@include bp('md') {
@@ -21,20 +21,22 @@
 
 	.HeadingWrapper {
 		position: absolute;
-		top: 65%;
+		bottom: 10%;
 		z-index: 2;
 		color: $white-0;
 
 		@include bp('md') {
 			position: absolute;
 			top: 50%;
+			bottom: auto;
 			transform: translate3d(0, -50%, 0);
 		}
 	}
 
 	.HeadingWrapperHome {
 		@include bp('md', true) {
-			top: 15%;
+			top: 18%;
+			bottom: auto;
 		}
 	}
 
@@ -42,10 +44,14 @@
 		@include carbon--type-style('expressive-heading-05', true);
 
 		margin-bottom: $spacing-05;
+		font-size: 2.625rem;
+	}
+
+	.HeadingHome {
 		font-size: 3rem;
 
 		@include bp('md') {
-			font-size: 3rem;
+			font-size: 4rem;
 		}
 	}
 

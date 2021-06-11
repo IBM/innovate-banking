@@ -1,10 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Image from 'next/image';
+import { Column, Grid, Row } from 'carbon-components-react';
 import clsx from 'clsx';
-
-import { Row, Grid, Column } from 'carbon-components-react';
-
+import Image from 'next/image';
+import PropTypes from 'prop-types';
+import React from 'react';
 import Styles from './styles.module.scss';
 
 const Stage = ({ heading, subheading, image, imageMobile, isHome }) => {
@@ -36,7 +34,10 @@ const Stage = ({ heading, subheading, image, imageMobile, isHome }) => {
 						<Column sm={4}>
 							<div className={clsx(Styles.HeadingWrapper, isHome && Styles.HeadingWrapperHome)}>
 								{heading && (
-									<h1 className={Styles.Heading} dangerouslySetInnerHTML={{ __html: heading }} />
+									<h1
+										className={clsx(Styles.Heading, isHome && Styles.HeadingHome)}
+										dangerouslySetInnerHTML={{ __html: heading }}
+									/>
 								)}
 								{subheading && (
 									<h2

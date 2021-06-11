@@ -46,18 +46,18 @@ module.exports = req => {
 			{
 				name: 'Stage',
 				props: {
-					heading: 'Prozess-Transformation<br/> im Banking',
+					heading: 'Prozesse<br />transformieren',
 					image: {
 						src: '/img/stage-process-transformation.jpg',
 						width: 1056,
 						height: 386,
-						alt: 'Prozess-Transformation im Banking',
+						alt: 'Prozesse transformieren',
 					},
 					imageMobile: {
 						src: '/img/stage-process-transformation-mobile.jpg',
 						width: 672,
 						height: 672,
-						alt: 'Prozess-Transformation im Banking',
+						alt: 'Prozesse transformieren',
 					},
 				},
 			},

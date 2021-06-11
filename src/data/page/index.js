@@ -661,7 +661,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Jean-Henrik Zitterbart',
-											copy: 'Partner<br />Banking & Financial Markets DACH',
+											copy: 'Industry Leader<br />Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/jean.jpg',
 												width: 288,

@@ -47,18 +47,18 @@ module.exports = req => {
 			{
 				name: 'Stage',
 				props: {
-					heading: 'Risikosteuerung<br /> im Banking',
+					heading: 'Risik & Compliance<br />nachhaltig steuern',
 					image: {
 						src: '/img/stage-process-transformation.jpg',
 						width: 1056,
 						height: 386,
-						alt: 'Risikosteuerung im Banking',
+						alt: 'Risik & Compliance nachhaltig steuern',
 					},
 					imageMobile: {
 						src: '/img/stage-process-transformation-mobile.jpg',
 						width: 672,
 						height: 672,
-						alt: 'Risikosteuerung im Banking',
+						alt: 'Risik & Compliance nachhaltig steuern',
 					},
 				},
 			},

@@ -46,18 +46,18 @@ module.exports = req => {
 			{
 				name: 'Stage',
 				props: {
-					heading: 'Banking durch<br />Technologie<br />transformieren',
+					heading: 'Anwendungs&shy;systeme<br />modernisieren',
 					image: {
 						src: '/img/stage-process-transformation.jpg',
 						width: 1056,
 						height: 386,
-						alt: 'Risikosteuerung im Banking',
+						alt: 'Anwendungssysteme modernisieren',
 					},
 					imageMobile: {
 						src: '/img/stage-process-transformation-mobile.jpg',
 						width: 672,
 						height: 672,
-						alt: 'Risikosteuerung im Banking',
+						alt: 'Anwendungssysteme modernisieren',
 					},
 				},
 			},
