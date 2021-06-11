@@ -54,8 +54,8 @@ const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, da
 					<RichText content={text} className={Styles.RichText} />
 					{link && (
 						<span className={Styles.Link}>
-							{link.title}
-							{IconComponent && <IconComponent className={Styles.Icon} />}
+							{link.title && <span className={Styles.Text}>{link.title}</span>}
+							{IconComponent && <IconComponent />}
 						</span>
 					)}
 				</Column>

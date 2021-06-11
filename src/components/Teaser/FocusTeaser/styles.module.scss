@@ -47,9 +47,8 @@
 		margin-top: auto;
 		color: $blue-70;
 
-		.Icon {
-			transition: margin-left 150ms ease-in-out;
-			margin-left: $spacing-02;
+		.Text {
+			margin-right: $spacing-02;
 		}
 	}
 
@@ -57,13 +56,6 @@
 		text-decoration: none;
 		color: inherit;
 		background: $gray-20;
-
-		.Link {
-
-			.Icon {
-				margin-left: $spacing-03;
-			}
-		}
 	}
 
 	&.IsDark {
