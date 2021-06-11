@@ -1,22 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import { Column } from 'carbon-components-react';
-
-import dynamic from 'next/dynamic';
-
-import Styles from './styles.module.scss';
 import clsx from 'clsx';
+import dynamic from 'next/dynamic';
+import PropTypes from 'prop-types';
+import React from 'react';
+import Styles from './styles.module.scss';
 
-const PictogramTeaser = ({ icon, headline, text, teaserIndex, teaserCount }) => {
+const PictogramTeaser = ({ icon, headline, text, teaserIndex, teaserCount, size }) => {
 	const IconComponent = dynamic(() => import('@carbon/pictograms-react').then(mod => mod[icon]));
 
 	return (
-		<Column sm={4} md={8} lg={5} className={Styles.PictogramTeaserCol}>
+		<Column sm={4} md={8} lg={size === 'sm' ? 4 : 5} className={Styles.PictogramTeaserCol}>
 			<div
 				className={clsx(
 					Styles.PictogramTeaser,
 					Styles[`TeaserIndex${teaserIndex}`],
-					Styles[`TeaserCount${teaserCount}`]
+					Styles[`TeaserCount${teaserCount}`],
+					size === 'sm' && Styles.PictogramTeaserSmall
 				)}
 			>
 				<span className={Styles.IconWrapper}>
@@ -31,12 +30,17 @@ const PictogramTeaser = ({ icon, headline, text, teaserIndex, teaserCount }) => 
 	);
 };
 
+PictogramTeaser.defaultProps = {
+	size: 'md',
+};
+
 PictogramTeaser.propTypes = {
 	icon: PropTypes.string.isRequired,
 	headline: PropTypes.string.isRequired,
 	text: PropTypes.string.isRequired,
 	teaserIndex: PropTypes.number.isRequired,
 	teaserCount: PropTypes.number.isRequired,
+	size: PropTypes.oneOf(['sm', 'md']),
 };
 
 export default PictogramTeaser;

@@ -1,15 +1,12 @@
-import PropTypes from 'prop-types';
-import React, { createRef, useState } from 'react';
-
-import { PaginationNav, Row } from 'carbon-components-react';
-
 import ConditionalWrapper from '@/components/ConditonalWrapper';
-import Styles from './styles.module.scss';
+import { PaginationNav, Row } from 'carbon-components-react';
 import clsx from 'clsx';
+import PropTypes from 'prop-types';
+import React, { useState } from 'react';
+import Styles from './styles.module.scss';
 
 const TeaserList = ({ children, rowWrap, showPagination }) => {
 	const childCount = children.length;
-	const teaserRowRef = createRef(null);
 
 	const [currentPage, setCurrentPage] = useState(0);
 

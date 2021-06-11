@@ -58,3 +58,34 @@
 		}
 	}
 }
+
+.PictogramTeaserSmall {
+	@include bp('lg') {
+		padding: $spacing-06 $spacing-05;
+	}
+
+	.IconWrapper {
+		@include bp('lg') {
+			margin-bottom: $spacing-06;
+		}
+	}
+
+	.Icon {
+		@include bp('lg') {
+			width: 4rem;
+			height: 4rem;
+		}
+	}
+
+	.Headline {
+		@include bp('lg') {
+			@include carbon--type-style('expressive-heading-03', true);
+		}
+	}
+
+	.Text {
+		@include bp('lg') {
+			@include carbon--type-style('body-short-01', true);
+		}
+	}
+}
