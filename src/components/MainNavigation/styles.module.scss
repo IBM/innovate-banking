@@ -18,14 +18,14 @@
 	}
 
 	.LogoTitle {
-		@include bp('md') {
+		@include bp('lg') {
 			display: none;
 		}
 
 		&.DesktopOnly {
 			display: none;
 
-			@include bp('md') {
+			@include bp('lg') {
 				display: flex;
 			}
 		}
@@ -49,13 +49,13 @@
 		position: fixed;
 	}
 
-	@include bp('md') {
+	@include bp('lg') {
 		display: none;
 	}
 }
 
 .NavGrid {
-	@include bp('md', true) {
+	@include bp('lg', true) {
 		padding: 0 1rem;
 	}
 }
@@ -65,7 +65,7 @@
 	margin-left: $spacing-05;
 	margin-top: $spacing-02;
 
-	@include bp('md') {
+	@include bp('lg') {
 		display: none;
 	}
 }
@@ -75,7 +75,7 @@
 	flex: 1 1 100%;
 	align-items: center;
 
-	@include bp('md', true) {
+	@include bp('lg', true) {
 		align-items: flex-start;
 	}
 
@@ -132,7 +132,7 @@
 		}
 
 		&.MobileOnly {
-			@include bp('md') {
+			@include bp('lg') {
 				display: none;
 			}
 		}
@@ -160,20 +160,16 @@
 				}
 			}
 
-			@include bp('md') {
+			@include bp('lg') {
 
 				.IsFirstLink {
 					padding-left: $spacing-08;
 				}
 			}
 		}
-
-		// .LogoTitle {
-		// 	display: flex;
-		// }
 	}
 
-	@include bp('md', true) {
+	@include bp('lg', true) {
 		z-index: 1001;
 		position: fixed;
 		background: $gray-100;
