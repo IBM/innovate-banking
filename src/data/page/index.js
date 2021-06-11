@@ -37,7 +37,8 @@ module.exports = req => {
 						},
 						{
 							name: 'Banking-Plattform',
-							active: false,
+							url: 'banking-plattform',
+							active: true,
 							current: false,
 						},
 					],
@@ -331,7 +332,7 @@ module.exports = req => {
 											text:
 												'<p>Gewinnen Sie mit Anwendungen aus unserer Banking Service Plattform an Effizienz und erfahren Sie, wie Business Process Outsourcing von IBM Mehrwerte für Ihre Bank schafft. </p>',
 											link: {
-												title: 'Coming soon',
+												url: '/banking-plattform',
 											},
 										},
 									},

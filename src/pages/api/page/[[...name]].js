@@ -5,6 +5,7 @@ const prozessTransformation = require('@/data/page/prozess-transformation');
 const kundenerlebnis = require('@/data/page/kundenerlebnis');
 const riskCompliance = require('@/data/page/risk-compliance');
 const anwendungssysteme = require('@/data/page/anwendungssysteme');
+const bankingPlattform = require('@/data/page/banking-plattform');
 const impressum = require('@/data/page/impressum');
 
 const pageData = {
@@ -13,6 +14,7 @@ const pageData = {
 	kundenerlebnis,
 	'risk-compliance': riskCompliance,
 	anwendungssysteme,
+	'banking-plattform': bankingPlattform,
 	impressum,
 };
 

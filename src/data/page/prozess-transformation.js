@@ -37,7 +37,8 @@ module.exports = req => {
 						},
 						{
 							name: 'Banking-Plattform',
-							active: false,
+							url: 'banking-plattform',
+							active: true,
 							current: false,
 						},
 					],
@@ -300,7 +301,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Jean-Henrik Zitterbart',
-											copy: 'Partner<br />Banking & Financial Markets DACH',
+											copy: 'Industry Leader<br />Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/jean.jpg',
 												width: 448,
