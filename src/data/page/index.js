@@ -298,7 +298,6 @@ module.exports = req => {
 											text:
 												'<p>Zufriedene Kunden sind Ihr wertvollstes Kapital. Erfahren Sie, wie Cloud-basierte Datenauswertung und KI ein einzigartiges Kundenerlebnis ermöglichen und die Arbeitswelt Ihrer Mitarbeiter*innen im Front-Office revolutionieren.</p>',
 											link: {
-												title: 'Mehr erfahren',
 												url: '/kundenerlebnis',
 											},
 										},
@@ -310,7 +309,6 @@ module.exports = req => {
 											text:
 												'<p>IBM unterstützt Ihre Bank mit kognitiven Lösungen beim Risikomanagement und bei der Risikomodellierung, Geldwäscheprävention, KYC-Prozessen, innovativer RegTech und SupTech.</p>',
 											link: {
-												title: 'Mehr erfahren',
 												url: '/risk-compliance',
 											},
 										},
@@ -322,7 +320,6 @@ module.exports = req => {
 											text:
 												'<p>Mit Innovationen aus der IBM Cloud durch die digitale Transformation: Wir begleiten die Erneuerung Ihrer Infrastruktur mit maßgeschneiderten Lösungen – von der Entwicklung bis zur Installation.</p>',
 											link: {
-												title: 'Mehr erfahren',
 												url: '/anwendungssysteme',
 											},
 										},
