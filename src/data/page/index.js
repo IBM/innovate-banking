@@ -565,13 +565,13 @@ module.exports = req => {
 							'<p class="h4">Innovative Methoden und Technologien</p><p class="p">Wir arbeiten schon heute an der Finanztechnologie von übermorgen. Entdecken Sie ungeahnte Möglichkeiten und profitieren Sie als Erste von Lösungen, die die Welt des Bankings nachhaltig verändern werden.</p>',
 					},
 					children: [
-						// {
-						// 	name: 'VideoButton',
-						// 	props: {
-						// 		title: 'Was ist die IBM Garage?',
-						// 		subtitle: 'Video abspielen (englisch)',
-						// 	},
-						// },
+						{
+							name: 'VideoButton',
+							props: {
+								title: 'Was ist die IBM Garage?',
+								subtitle: 'Video abspielen (englisch)',
+							},
+						},
 						{
 							name: 'TeaserList',
 							props: {

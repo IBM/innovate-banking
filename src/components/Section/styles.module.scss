@@ -80,12 +80,11 @@
 	}
 
 	.TopImage {
-		display: none;
+		padding-top: $spacing-10;
 
 		@include bp('md') {
-			display: block;
 			margin-left: -9rem;
-			// margin-left: -5rem;
+			padding-top: 0;
 		}
 
 		@include bp('lg') {
@@ -93,7 +92,11 @@
 		}
 
 		> div {
-			display: block !important;
+			display: none !important;
+
+			@include bp('md') {
+				display: block !important;
+			}
 		}
 	}
 
