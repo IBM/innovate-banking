@@ -143,7 +143,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="d1 large">30%</h3><p>Einsparungspotenzial durch Prozess-Transformation im Banking</p>',
+									'<h3 class="d1 large">30%</h3><p>Einsparungspotenzial durch<br />Prozess-Transformation im Banking</p>',
 							},
 						},
 					],
@@ -191,7 +191,7 @@ module.exports = req => {
 										icon: 'UserSearch',
 										headline: 'Mehr Kundenorientierung und Effizienz im Kreditgeschäft',
 										content:
-											'<p>Die Transformation der Kredit-Prozesse in Banken ist ein großer Hebel auf dem Weg zu mehr Effizienz und Kundenakzeptanz. Mit unseren Lösungen verschlanken und automatisieren wir Ihre kundenbezogenen und internen Prozesse. Wir ermöglichen echte Omni-Kanalfähigkeit, verkürzen „Time-to-Yes“ und „Time-to-Cash“ signifikant und erhöhen nachhaltig die Kundenzufriedenheit und Ihre Position im Wettbewerb. Dabei richten wir Ihre Prozesse entlang Ihrer Geschäftsstrategie aus und bringen dabei modernste Technologien zum Einsatz, wie z. B. unsere erprobten Content-Intelligence-Lösungen.</p>',
+											'<p>Die Transformation der Kredit-Prozesse in Banken ist ein großer Hebel auf dem Weg zu mehr Effizienz und Kundenakzeptanz. Mit unseren Lösungen verschlanken und automatisieren wir Ihre kundenbezogenen und internen Prozesse. Wir ermöglichen echte Omni-Kanalfähigkeit, verkürzen "time-to-yes" und "time-to-cash" signifikant und erhöhen nachhaltig die Kundenzufriedenheit und Ihre Position im Wettbewerb. Dabei richten wir Ihre Prozesse entlang Ihrer Geschäftsstrategie aus und bringen modernste Technologien zum Einsatz, wie z. B. unsere erprobten Content-Intelligent-Lösungen.</p>',
 									},
 									{
 										icon: 'FinanceStrategy',
@@ -203,7 +203,7 @@ module.exports = req => {
 										icon: 'ManagingContractualFlow',
 										headline: 'Mehr Freiheiten durch ein effektives Back Office',
 										content:
-											'<p>Gestraffte Marktfolgeprozesse versprechen ein großes Einsparungspotenzial. Mit der Kombination aus globalen Best Practices und dem Wissen, was aktuell technologisch möglich ist, gelingt die Transformation Ihrer Marktfolge. Wir bieten Ihnen maßgeschneiderte und agile Lösungen mit der Möglichkeit, klein zu starten und schnell zu skalieren. Die Automatisierung von Back-Office-Aufgaben bringt Ihnen zweistellige Einsparpotenziale, größere Mitarbeiter- und Kundenzufriedenheit. Wir begleiten Sie in der Transformation – von der Analyse bis zur Umsetzung.</p>',
+											'<p>Gestraffte Marktfolgeprozesse versprechen ein großes Einsparungspotenzial. Mit der Kombination aus globalen Best Practices und dem Wissen, was aktuell technologisch möglich ist, gelingt die Transformation Ihrer Marktfolge. Wir bieten Ihnen maßgeschneiderte und agile Lösungen mit der Möglichkeit, klein zu starten und schnell zu skalieren. Die Automatisierung von Back-Office-Aufgaben bringt Ihnen zweistellige Einsparpotenziale, größere Mitarbeiter- und Kundenzufriedenheit. Wir begleiten Sie in der Transformation  – von der Analyse bis zur Umsetzung.</p>',
 									},
 									{
 										icon: 'GlobalAssetsAndRecovery_01',
@@ -215,7 +215,7 @@ module.exports = req => {
 										icon: 'Analyze',
 										headline: 'Neue Perspektiven für Finance & Controlling',
 										content:
-											'<p>Intelligente Lösungen für Finance und Controlling minimieren Risiken. In einem dynamischen Umfeld muss die Gesamtbanksteuerung schneller und mit geringeren Kosten mehr liefern. Wir helfen Ihnen, den Anforderungen gerecht zu werden und haben dabei alle Dimensionen im Blick: Ihre Daten, die Fachlichkeit, die IT-Landschaft und das zielführende Projektvorgehen. Gemeinsam mit unseren marktführenden Partnern für bankfachliche Software begleiten wir Ihren Weg zur modernen Banksteuerung. Technologienutzung für effizientes Datenmanagement und IT-Services, fachliche Standardmethoden und Agilität bringen Sie auf Erfolgskurs.</p>',
+											'<p>Intelligente Lösungen für Finance und Controlling minimieren Risiken. In einem dynamischen Umfeld muss die Gesamtbanksteuerung schneller und mit geringeren Kosten mehr liefern. Wir helfen Ihnen, den Anforderungen gerecht zu werden und haben dabei alle Dimensionen im Blick: Ihre Daten, die Fachlichkeit, die IT-Landschaft und das zielführende Projekt-Vorgehen. Gemeinsam mit unseren marktführenden Partnern für bankfachliche Software begleiten wir Ihren Weg zur modernen Banksteuerung. Technologienutzung für effizientes Datenmanagement und IT-Services, fachliche Standardmethoden und Agilität bringen Sie auf Erfolgskurs.</p>',
 									},
 								],
 							},
@@ -229,7 +229,7 @@ module.exports = req => {
 					id: 'vorteile',
 					titles: {
 						top:
-							'<p>Ihre Vorteile</p><p class="eh4">Konkrete Vorteile für Ihre Bank durch Prozess-Transformation mit IBM </p>',
+							'<p>Ihre Vorteile</p><p class="eh4">Konkrete Vorteile für Ihre Bank<br />durch Prozess-Transformation mit IBM</p>',
 					},
 					background: {
 						dark: true,
@@ -260,7 +260,7 @@ module.exports = req => {
 											icon: 'CloudAssets',
 											headline: 'Assets',
 											text:
-												'Durch unsere Nähe zur Technologie bringen wir eine Vielzahl von einsatzbereiten Assets und erprobten Methoden mit, die Ihre Transformation beschleunigen. ',
+												'Durch unsere Nähe zur Technologie bringen wir eine Vielzahl von einsatzbereiten Assets und erprobten Methoden mit, die Ihre Transformation beschleunigen.',
 										},
 									},
 									{
@@ -326,8 +326,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Manuel Schuff',
-											copy:
-												'Managing Business Transformation Consultant<br />Banking & Financial Markets DACH',
+											copy: 'Managing Consultant<br />Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/manuel.jpg',
 												width: 448,

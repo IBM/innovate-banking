@@ -190,7 +190,7 @@ module.exports = req => {
 										icon: 'OptimizeCashFlow_01',
 										headline: 'Mehr Effizienz für Ihre Kreditportfolios',
 										content:
-											'<p>Unser Service umfasst den ganzen Kredit-Lebenszyklus.</p><p>Mit unserem erfahrenen Team führen wir alle Geschäftsprozesse im Kreditbereich zuverlässig und effizient aus. Durch unsere jahrelange Expertise können wir einen stabilen Produktionsbetrieb garantieren und sind mit einem breiten Spektrum an Produkten vertraut. Dabei blicken wir auf eine lückenlose Historie erfolgreicher Migrationen zurück. Als Experten in der Bereitstellung und im Betrieb einer global einsetzbaren standardisierten Kredit-Plattform passen wir unsere Plattform ständig an die neuesten Anforderungen und technischen Möglichkeiten an.</p>',
+											'<p>Unser Service umfasst den ganzen Kredit-Lebenszyklus. Mit unserem erfahrenen Team führen wir alle Geschäftsprozesse im Kreditbereich zuverlässig und effizient aus. Durch unsere jahrelange Expertise können wir einen stabilen Produktionsbetrieb garantieren und sind mit einem breiten Spektrum an Produkten vertraut. Dabei blicken wir auf eine lückenlose Historie erfolgreicher Migrationen zurück. Als Experten in der Bereitstellung und im Betrieb einer global einsetzbaren standardisierten Kredit-Plattform passen wir unsere Plattform ständig an die neuesten Anforderungen und technischen Möglichkeiten an.</p>',
 									},
 									{
 										icon: 'FinancialNetworks',
@@ -239,7 +239,7 @@ module.exports = req => {
 				props: {
 					id: 'vorteile',
 					titles: {
-						top: '<p>Ihre Vorteile</p><p class="eh4">Ihr Gewinn durch die IBM Banking Platform</p>',
+						top: '<p>Ihre Vorteile</p><p class="eh4">Ihr Gewinn durch die<br />IBM Banking Platform</p>',
 					},
 					background: {
 						dark: true,

@@ -188,19 +188,19 @@ module.exports = req => {
 							props: {
 								items: [
 									{
-										icon: 'GlobalAssetsAndRecovery_01',
+										icon: 'AppDeveloper',
 										headline: 'Mit modernisierten Bank-Anwendungen auf Zukunftskurs',
 										content:
 											'<p>Ein modernes Core-Banking System erhöht die Agilität der Bank und reduziert dabei Kosten. Die Modernisierung Ihrer Kernanwendungen bringt Sie auf Zukunftskurs und lässt Sie von zahlreichen Vorteilen profitieren. Sie steigern die Agilität Ihres Unternehmens, schaffen die Voraussetzungen für die Interoperabilität im Ökosystem, reduzieren Abhängigkeiten von einzelnen Anbietern und senken dabei sogar Ihre IT-Ausgaben.<br />Wir modernisieren Ihre Core-Banking-Systeme durch die Kombination verschiedener Ansätze wie Rationalisierung/Harmonisierung, Hybrid-Cloud-Transformation und die Einführung von Standardprodukten.</p>',
 									},
 									{
-										icon: 'FinanceStrategy',
+										icon: 'Touch',
 										headline: 'Front-End-Digitalisierung für gesteigerte Kundenzufriedenheit',
 										content:
 											'<p>Smarte Technologie führt zu einem besseren Kundenerlebnis und zu neuen Umsatzströmen. Unsere Lösungen umfassen eine State-of-the-Art IT-Integrationsarchitektur, Design und Erstellung der Application Programming Interfaces (API) sowie die Implementierung von Best-in-Class-Lösungen durch eine breite Palette von Independent Software Vendors (ISVs).<br />Damit ermöglichen wir nicht nur gesteigerte Kundenzufriedenheit, sondern auch eine volle Integration in moderne Ökosysteme und Zugang zu neuen branchenübergreifenden Umsatzströmen.</p>',
 									},
 									{
-										icon: 'Analyze',
+										icon: 'FinanceStrategy',
 										headline: 'Nachhaltige Effizienzsteigerung mit der IBM Banking Platform',
 										content:
 											'<p>Die IBM Banking Platform bietet Ihnen ein Rundum-Paket für Ihre technologische Transformation. Mit den Serviceleistungen der IBM Banking Platform können Sie Kernbankprozesse outsourcen und von Software as a Service für Kredit- und Treasury-Systeme profitieren. Sie können auch die Verwaltung des Administrative Management Service (AMS) und der Cloud nutzen.<br />Dadurch erreichen Sie eine schnelle und nachhaltige Effizienzsteigerung, erhalten sofortigen Zugang zu neuen Technologien und können sicher sein, dass sämtliche gesetzliche Auflagen eingehalten werden.</p>',
@@ -217,7 +217,7 @@ module.exports = req => {
 					id: 'vorteile',
 					titles: {
 						top:
-							'<p>Ihre Vorteile</p><p class="eh4">Ihre Vorteile bei der technologischen Transformation</p>',
+							'<p>Ihre Vorteile</p><p class="eh4">Ihre Vorteile bei der<br />technologischen Transformation</p>',
 					},
 					background: {
 						dark: true,
@@ -288,31 +288,6 @@ module.exports = req => {
 									{
 										name: 'LetsTalkTeaser',
 										props: {
-											headline: 'Jean-Henrik Zitterbart',
-											copy: 'Industry Leader<br />IBM Banking & Financial Markets DACH',
-											image: {
-												src: '/img/people/jean.jpg',
-												width: 448,
-												height: 448,
-											},
-											links: [
-												{
-													type: 'linkedIn',
-													title: 'Vernetzen auf Linkedin',
-													url: 'https://www.linkedin.com/in/jean-henrik-zitterbart-b294a39b',
-												},
-												{
-													type: 'email',
-													title: 'Kontakt aufnehmen',
-													url:
-														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Zitterbart%2C%20',
-												},
-											],
-										},
-									},
-									{
-										name: 'LetsTalkTeaser',
-										props: {
 											headline: 'Uwe Gross',
 											copy: 'Partner<br />IBM Services DACH',
 											image: {
@@ -330,7 +305,32 @@ module.exports = req => {
 													type: 'email',
 													title: 'Kontakt aufnehmen',
 													url:
-														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%Herr%Gross%2C%20',
+														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Gross%2C%20',
+												},
+											],
+										},
+									},
+									{
+										name: 'LetsTalkTeaser',
+										props: {
+											headline: 'Michael Goerlitz',
+											copy: 'Associate Partner<br />IBM Cloud DACH',
+											image: {
+												src: '/img/people/michael.jpg',
+												width: 448,
+												height: 448,
+											},
+											links: [
+												{
+													type: 'linkedIn',
+													title: 'Vernetzen auf Linkedin',
+													url: 'https://www.linkedin.com/in/uwegross',
+												},
+												{
+													type: 'email',
+													title: 'Kontakt aufnehmen',
+													url:
+														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%Herr%Goerlitz%2C%20',
 												},
 											],
 										},

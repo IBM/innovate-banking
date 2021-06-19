@@ -125,7 +125,7 @@ module.exports = req => {
 				props: {
 					id: 'mehrwert',
 					titles: {
-						left: '<p>Herausforderungen begegnen,<br/>Mehrwerte schaffen.</p>',
+						left: '<p>Unsere Lösungen<br/>für Ihre Herausforderungen</p>',
 					},
 					noSpace: {
 						bottom: true,
@@ -150,7 +150,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="d1">Unsere industrie-<br />spezifischen Lösungen</p><p>Wir sind Ihr Partner für die digitale Transformation des Finanzsektors. Denn wir bringen die interne Branchenkenntnis zusammen mit technischen Innovationen und verschiedensten Entwicklungen, die im weltweiten Netzwerk der IBM entstehen.</p>',
+									'<p class="d1">Mit uns die digitale Transformation meistern</p><p>Wir sind Ihr Partner für die digitale Transformation des Finanzsektors. Denn wir vereinen Banking-Know-how mit technischen Innovationen und bieten Ihnen Lösungen, die wir aus dem weltweiten Netzwerk der IBM und unserer Partner beziehen.</p>',
 							},
 						},
 					],
@@ -160,8 +160,7 @@ module.exports = req => {
 				name: 'Section',
 				props: {
 					titles: {
-						top:
-							'<h3 class="h4">Unsere industriespezifischen Lösungen:<br/>Bewährt. Dynamisch. Sicher.</h3>',
+						left: '<p>Unsere Expertise für eine erfolgreiche Transformation</p>',
 					},
 					images: {
 						bottom: {
@@ -190,6 +189,14 @@ module.exports = req => {
 					colWrapChildren: false,
 					rowWrapChildren: false,
 					children: [
+						{
+							name: 'RichText',
+							props: {
+								className: 'bx--col-sm-4 bx--col-md-6 bx--col-lg-8 bx--offset-lg-1',
+								content:
+									'<p style="margin-bottom: 2rem;">Wir unterstützen Sie dabei, relevante Optimierungen vorzunehmen und mit neuen und reformierten Strukturen die Chancen der digitalen Transformation voll auszuschöpfen.</p>',
+							},
+						},
 						{
 							name: 'TeaserList',
 							props: {
@@ -255,7 +262,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="d1">Banking am Puls<br/>der Zeit</p><p>Als Finanzdienstleister befinden Sie sich stetig im Spannungsfeld zwischen Beständigkeit und Fortschritt. Ihre Kunden erwarten eine verlässliche, sichere und gleichzeitig innovative Banking-Erfahrung.</p><p>Um an den entscheidenden Punkten ansetzen zu können, bieten wir Ihnen Lösungen in fünf Kernbereichen. Gemeinsam finden wir die passende Herangehensweise für die Bedürfnisse Ihres Unternehmens. Ganz gleich, ob Sie weltweit agieren oder eine Plattform für ein FinTech Start-up aufsetzen möchten.</p>',
+									'<p class="d1">Banking am<br />Puls der Zeit</p><p>Als Finanzdienstleister befinden Sie sich stetig im Spannungsfeld zwischen Beständigkeit und Fortschritt. Ihre Kunden erwarten eine verlässliche, sichere und gleichzeitig innovative Banking-Erfahrung.</p><p>Um an den entscheidenden Punkten ansetzen zu können, bieten wir Ihnen Lösungen in fünf Kernbereichen. Gemeinsam finden wir die passende Herangehensweise für die Bedürfnisse Ihres Unternehmens. Ganz gleich, ob Sie weltweit agieren oder eine Plattform für ein FinTech Start-up aufsetzen möchten.</p>',
 							},
 						},
 					],
@@ -306,7 +313,7 @@ module.exports = req => {
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'Risiken nachhaltig steuern',
+											headline: 'Risik & Compliance nachhaltig steuern',
 											text:
 												'<p>IBM unterstützt Ihre Bank mit kognitiven Lösungen beim Risikomanagement und bei der Risikomodellierung, Geldwäscheprävention, KYC-Prozessen, innovativer RegTech und SupTech.</p>',
 											link: {
@@ -328,9 +335,9 @@ module.exports = req => {
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'Lösungen der IBM Banking Platform nutzen',
+											headline: 'IBM Banking Platform nutzen',
 											text:
-												'<p>Gewinnen Sie mit Anwendungen aus unserer Banking Service Plattform an Effizienz und erfahren Sie, wie Business Process Outsourcing von IBM Mehrwerte für Ihre Bank schafft. </p>',
+												'<p>Gewinnen Sie mit Anwendungen aus unserer Banking Service Plattform an Effizienz und erfahren Sie, wie Business Process Outsourcing von IBM Mehrwerte für Ihre Bank schafft.</p>',
 											link: {
 												url: '/banking-plattform',
 											},
@@ -360,7 +367,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="h4">Unsere Stimme in der Finanzbranche</p><p>Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen sie sich direkt mit Ihnen aus.</p>',
+									'<p class="h4">Unsere Stimme in der Finanzbranche</p><p>Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen Sie sich direkt mit Ihnen aus.</p>',
 							},
 						},
 					],
@@ -562,7 +569,7 @@ module.exports = req => {
 					fullWidth: true,
 					titles: {
 						left:
-							'<p class="h4">Innovative Methoden und Technologien</p><p class="p">Wir arbeiten schon heute an der Finanztechnologie von übermorgen. Entdecken Sie ungeahnte Möglichkeiten und profitieren Sie als Erste von Lösungen, die die Welt des Bankings nachhaltig verändern werden.</p>',
+							'<p class="h4">Innovative Methoden und Technologien</p><p class="p">Wir arbeiten schon heute an der Finanztechnologie von übermorgen. Entdecken Sie ungeahnte Möglichkeiten und profitieren Sie als erste von Lösungen, die die Welt des Bankings nachhaltig verändern werden.</p>',
 					},
 					children: [
 						{

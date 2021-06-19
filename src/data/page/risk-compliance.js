@@ -96,7 +96,7 @@ module.exports = req => {
 				name: 'Section',
 				props: {
 					titles: {
-						left: '<p>Mit Technologie komplexe Prozesse neu denken</p>',
+						left: '<p>Mit Technologie komplexe<br />Prozesse neu denken</p>',
 					},
 					background: {
 						gradient: 'linear-gradient(180deg, #FFFFFF 0%, #EDF5FF 100%)',
@@ -143,7 +143,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="d1 large">40%</h3><p>Effizienzsteigerung durch Analytics, KI und Automatisierung im Banking</p>',
+									'<h3 class="d1 large">40%</h3><p>Effizienzsteigerung durch Analytics, KI<br />und Automatisierung im Banking</p>',
 							},
 						},
 					],
@@ -191,31 +191,31 @@ module.exports = req => {
 										icon: 'GlobalAssetsAndRecovery_01',
 										headline: 'Cleveres Risikomanagement und Risikocontrolling als Erfolgsfaktor',
 										content:
-											'<p>Risikomanagement und -controlling sind entscheidend für risikoadäquate und profitable Akquise.</p><p>Mit unseren State-of-the-Art Methoden und Tools können Sie Risiken identifizieren, einschätzen und steuern. Wir unterstützen Sie beispielsweise dabei, eine relevante Datenbasis zu erstellen und eine KI-gestützte Plattform aufzubauen.<br />Unsere hoch qualifizierten Berater begleiten die Konzeption und Umsetzung quantitativer Modelle ebenso wie die Optimierung der Risikoprozesse und stellen sicher, dass sowohl regulatorische Vorgaben als auch interne Reporting- und Steuerungsanforderungen erfüllt werden.</p>',
+											'<p>Risikomanagement und -controlling sind entscheidend für risikoadäquate und profitable Akquise. Mit unseren State-of-the-Art Methoden und Tools können Sie Risiken identifizieren, einschätzen und steuern. Wir unterstützen Sie beispielsweise dabei, eine relevante Datenbasis zu erstellen und eine KI-gestützte Plattform aufzubauen. Unsere hoch qualifizierten Berater begleiten die Konzeption und Umsetzung quantitativer Modelle ebenso wie die Optimierung der Risikoprozesse und stellen sicher, dass sowohl regulatorische Vorgaben als auch interne Reporting- und Steuerungsanforderungen erfüllt werden.</p>',
 									},
 									{
 										icon: 'UserSearch',
 										headline: 'Mehr Effizienz bei regulatorischen Melde- und Aufsichtsprozessen',
 										content:
-											'<p>Wir helfen Ihnen, den Meldeanforderungen der Aufsichtsbehörden gerecht zu werden und ESG-Kriterien zu implementieren.</p><p>Wir begleiten Banken und Aufsichtsbehörden ganzheitlich bei der strategischen Entwicklung und Umsetzung zeitgemäßer Prozess- und Systemlandschaften unter Berücksichtigung der ESG-Standards. Integrierte Datenlandschaften, innovative Datenplattformen, Plattformökonomien, Cloud-Technologien und KI-gestützte, automatisierte Lösungen sind Treiber für effiziente regulatorische Prozesse, die dabei helfen, ESG-Standards einzuhalten. Unsere Lösungen tragen signifikant zur Automatisierung, Flexibilisierung, Skalierung und Kostenreduzierung bei. Gleichzeitig unterstützen sie unsere Kunden bei ihrem Streben nach Nachhaltigkeit.</p>',
+											'<p>Wir helfen Ihnen, den Meldeanforderungen der Aufsichtsbehörden gerecht zu werden und ESG-Kriterien zu implementieren. Wir begleiten Banken und Aufsichtsbehörden ganzheitlich bei der strategischen Entwicklung und Umsetzung zeitgemäßer Prozess- und Systemlandschaften unter Berücksichtigung der ESG-Standards. Integrierte Datenlandschaften, innovative Datenplattformen, Plattformökonomien, Cloud-Technologien und KI-gestützte, automatisierte Lösungen sind Treiber für effiziente regulatorische Prozesse, die dabei helfen, ESG-Standards einzuhalten. Unsere Lösungen tragen signifikant zur Automatisierung, Flexibilisierung, Skalierung und Kostenreduzierung bei. Gleichzeitig unterstützen sie unsere Kunden bei ihrem Streben nach Nachhaltigkeit.</p>',
 									},
 									{
 										icon: 'ManagingContractualFlow',
 										headline: 'Digitale Transformation mit AML- oder KYC-Systemen',
 										content:
-											'<p>Unser Service-Angebot deckt Ihre Bedürfnisse End-to-End mit führenden Methoden und innovativen Lösungen ab.</p><p>Unsere effizienten Lösungen helfen Ihnen, aufsichtsrechtliche Anforderungen zur Bekämpfung von Geldwäsche (Anti Money Laundering) und Finanzmarktkriminalität zu erfüllen und Know-Your-Customer-Prozesse zu optimieren. Wir konzipieren Target-Operating-Modelle für Sie und implementieren AML- oder KYC-Systeme.<br />Wir beraten Sie bei sämtlichen Fragen der digitalen Transformation und bieten Ihnen auf Ihre Bedürfnisse abgestimmte Managed-Service-Angebote, mit denen wir die gesamte Risk & Compliance-Wertschöpfungskette abdecken.</p>',
+											'<p>Unser Service-Angebot deckt Ihre Bedürfnisse End-to-End mit führenden Methoden und innovativen Lösungen ab. Unsere effizienten Lösungen helfen Ihnen, aufsichtsrechtliche Anforderungen zur Bekämpfung von Geldwäsche (Anti Money Laundering) und Finanzmarktkriminalität zu erfüllen und Know-Your-Customer-Prozesse zu optimieren. Wir konzipieren Target-Operating-Modelle für Sie und implementieren AML- oder KYC-Systeme. Wir beraten Sie bei sämtlichen Fragen der digitalen Transformation und bieten Ihnen auf Ihre Bedürfnisse abgestimmte Managed-Service-Angebote, mit denen wir die gesamte Risk & Compliance-Wertschöpfungskette abdecken.</p>',
 									},
 									{
 										icon: 'FinanceStrategy',
 										headline: 'Automatisierung bei Trade-Finance-Transaktionen',
 										content:
-											'<p>Die Komplexität von Trade-Finance-Transaktionen bietet hohes Potenzial zur Effizienzsteigerung durch Automatisierung und KI.</p><p>Ein intelligentes Zusammenspiel zwischen Mensch und Technologie ermöglicht es, komplexe Trade-Finance-Transaktionen einfacher zu bewältigen. IBM Technologien wie Optical Character Recognition (OCR), Künstliche Intelligenz, Robotic Process Automation (RPA) unterstützen Ihre Trade-Finance-Abteilungen.<br />Mit unseren smarten Technologien kreieren wir voll automatisierte End-to-End-Prozesse. Eine wichtige Rolle spielen dabei intelligente Dokumentenerfassung, digitale Plattformökonomie, KI, Robotics und Blockchain-Lösungen sowie intelligente Compliance-Analysen.</p>',
+											'<p>Die Komplexität von Trade-Finance-Transaktionen bietet hohes Potenzial zur Effizienzsteigerung durch Automatisierung und KI. Ein intelligentes Zusammenspiel zwischen Mensch und Technologie ermöglicht es, komplexe Trade-Finance-Transaktionen einfacher zu bewältigen. IBM Technologien wie Optical Character Recognition (OCR), Künstliche Intelligenz, Robotic Process Automation (RPA) unterstützen Ihre Trade-Finance-Abteilungen. Mit unseren smarten Technologien kreieren wir voll automatisierte End-to-End-Prozesse. Eine wichtige Rolle spielen dabei intelligente Dokumentenerfassung, digitale Plattformökonomie, KI, Robotics und Blockchain-Lösungen sowie intelligente Compliance-Analysen.</p>',
 									},
 									{
 										icon: 'Analyze',
 										headline: 'Ein umfassender Compliance-Rahmen für Cloud-Lösungen',
 										content:
-											'<p>Wir begleiten unsere Kunden bei ihrer Cloud-Transformation ganzheitlich und haben dabei einen globalen Standard gesetzt.</p><p>Der verstärkte Einsatz von Cloud-Computing zwingt Banken, sich mit den regulatorischen Anforderungen an den sicheren Betrieb von Cloud-Systemen auseinanderzusetzen. Unsere marktführenden Methoden und Tools erstellen einen umfassenden Compliance-Rahmen für Cloud-Lösungen.<br />Dabei werden die gesetzlichen Mindestanforderungen an sicheres Cloud-Computing in Europa ebenso umgesetzt wie deutsche oder globale regulatorische Anforderungen. Dies kann auch um kundeneigene Policy-Vorgaben ergänzt werden.</p>',
+											'<p>Wir begleiten unsere Kunden bei ihrer Cloud-Transformation ganzheitlich und haben dabei einen globalen Standard gesetzt. Der verstärkte Einsatz von Cloud-Computing zwingt Banken, sich mit den regulatorischen Anforderungen an den sicheren Betrieb von Cloud-Systemen auseinanderzusetzen. Unsere marktführenden Methoden und Tools erstellen einen umfassenden Compliance-Rahmen für Cloud-Lösungen. Dabei werden die gesetzlichen Mindestanforderungen an sicheres Cloud-Computing in Europa ebenso umgesetzt wie deutsche oder globale regulatorische Anforderungen. Dies kann auch um kundeneigene Policy-Vorgaben ergänzt werden.</p>',
 									},
 								],
 							},
@@ -229,7 +229,7 @@ module.exports = req => {
 					id: 'vorteile',
 					titles: {
 						top:
-							'<p>Ihre Vorteile</p><p class="eh4">Unser Angebot für Ihren Erfolg im Bereich Risk & Compliance</p>',
+							'<p>Ihre Vorteile</p><p class="eh4">Unser Angebot für Ihren Erfolg<br />im Bereich Risk & Compliance </p>',
 					},
 					background: {
 						dark: true,
@@ -301,7 +301,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Marinela Bilic-Nosic',
-											copy: 'Partnerin<br />Risk & Compliance DACH',
+											copy: 'Partner<br />Risk & Compliance DACH',
 											image: {
 												src: '/img/people/marinela.jpg',
 												width: 448,
@@ -326,7 +326,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Britta Daffner',
-											copy: 'Leader Data & Technology<br />Banking & Financial Markets DACH',
+											copy: 'Lead Data & Technology<br />Banking & Financial Markets DACH',
 											image: {
 												src: '/img/people/britta.jpg',
 												width: 448,

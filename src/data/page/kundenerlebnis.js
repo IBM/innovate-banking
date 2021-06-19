@@ -143,7 +143,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<div class="bx--row" style="margin-bottom: 1.5rem;"><div class="bx--col"><h3 class="d1">+30%</h3><p>Ertrag pro Kunde (Privatkunden, Zins- und Kommissionsgeschäft)</p></div><div class="bx--col"><h3 class="d1">-20%</h3><p>Cost-to-Serve pro Kunde (Retail)</p></div></div>',
+									'<div class="bx--row" style="margin-bottom: 1.5rem;"><div class="bx--col"><h3 class="d1">+30%</h3><p>Ertrag pro Kunde (Privatkunden, Zins- und Kommissionsgeschäft)</p></div><div class="bx--col"><h3 class="d1">–20%</h3><p>Cost-to-Serve pro Kunde (Retail)</p></div></div>',
 							},
 						},
 						{
@@ -325,10 +325,10 @@ module.exports = req => {
 									{
 										name: 'LetsTalkTeaser',
 										props: {
-											headline: 'Jean-Henrik Zitterbart',
-											copy: 'Industry Leader<br />Banking & Financial Markets DACH',
+											headline: 'Holger Horn',
+											copy: 'Senior Partner, Leader<br />IBM iX DACH',
 											image: {
-												src: '/img/people/jean.jpg',
+												src: '/img/people/holger.jpg',
 												width: 448,
 												height: 448,
 											},
@@ -336,13 +336,13 @@ module.exports = req => {
 												{
 													type: 'linkedIn',
 													title: 'Vernetzen auf Linkedin',
-													url: 'https://www.linkedin.com/in/jean-henrik-zitterbart-b294a39b',
+													url: 'https://www.linkedin.com/in/holger-horn-943b8722',
 												},
 												{
 													type: 'email',
 													title: 'Kontakt aufnehmen',
 													url:
-														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Zitterbart%2C%20',
+														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Horn%2C%20',
 												},
 											],
 										},
