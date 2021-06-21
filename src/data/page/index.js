@@ -138,7 +138,7 @@ module.exports = req => {
 							width: 772,
 							layout: 'responsive',
 							style: {
-								maxWidth: '45vw',
+								maxWidth: '50vw',
 							},
 						},
 					},
