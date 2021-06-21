@@ -344,8 +344,7 @@ module.exports = req => {
 			{
 				name: 'Footer',
 				props: {
-					claim:
-						'Innovate Banking ist eine Initiative von IBM zur digitalen Transformation des Finanzsektors.',
+					claim: 'Innovate Banking ist eine Initiative von IBM zur digitalen Transformation.',
 					links: [
 						{
 							title: 'Datenschutz',
