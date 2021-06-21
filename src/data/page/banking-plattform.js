@@ -136,13 +136,13 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="h4">Konzentration auf die Kernkompetenzen durch gesteigerte Effizienz</h3><p>Die IBM Banking Plattform macht Bankprozesse effizienter und ermöglicht somit um bis zu 40 % niedrigere Kosten.</p>',
+									'<h3 class="h4">Konzentration auf die Kernkompetenzen durch gesteigerte Effizienz</h3><p>Die IBM Banking Platform macht Bankprozesse effizienter und ermöglicht somit um bis zu 40 % niedrigere Kosten.</p>',
 							},
 						},
 						{
 							name: 'RichText',
 							props: {
-								content: '<h3 class="d1 large">40%</h3><p>bis zu 40% niedrigere Kosten</p>',
+								content: '<h3 class="d1 large">40%</h3><p>bis zu 40 % niedrigere Kosten</p>',
 							},
 						},
 					],
@@ -190,7 +190,7 @@ module.exports = req => {
 										icon: 'OptimizeCashFlow_01',
 										headline: 'Mehr Effizienz für Ihre Kreditportfolios',
 										content:
-											'<p>Unser Service umfasst den ganzen Kredit-Lebenszyklus. Mit unserem erfahrenen Team führen wir alle Geschäftsprozesse im Kreditbereich zuverlässig und effizient aus. Durch unsere jahrelange Expertise können wir einen stabilen Produktionsbetrieb garantieren und sind mit einem breiten Spektrum an Produkten vertraut. Dabei blicken wir auf eine lückenlose Historie erfolgreicher Migrationen zurück. Als Experten in der Bereitstellung und im Betrieb einer global einsetzbaren standardisierten Kredit-Plattform passen wir unsere Plattform ständig an die neuesten Anforderungen und technischen Möglichkeiten an.</p>',
+											'<p>Unser Service umfasst den ganzen Kredit-Lebenszyklus.</p><p>Mit unserem erfahrenen Team führen wir alle Geschäftsprozesse im Kreditbereich zuverlässig und effizient aus. Durch unsere jahrelange Expertise können wir einen stabilen Produktionsbetrieb garantieren und sind mit einem breiten Spektrum an Produkten vertraut.</p><p>Dabei blicken wir auf eine lückenlose Historie erfolgreicher Migrationen zurück. Als Experten in der Bereitstellung und im Betrieb einer global einsetzbaren standardisierten Kreditplattform passen wir unsere Lösungen ständig an die neuesten Anforderungen und technischen Möglichkeiten an.</p>',
 									},
 									{
 										icon: 'FinancialNetworks',
@@ -202,31 +202,31 @@ module.exports = req => {
 										icon: 'GlobalAssetsAndRecovery_01',
 										headline: 'Rundum-Unterstützung bei Risk & Compliance',
 										content:
-											'<p>Wir ermöglichen das Outsourcing Ihrer Prozesse in den Bereichen Know Your Customer (KYC), Risikosteuerung und Rating. Dies reicht von der Entwicklung, Validierung und Optimierung neuer und bestehender Risiko- und Ratingmodelle über die Kreditanalyse bis hin zur Risikoberechnung und zum Risikoreporting.<br />Wir bieten Ihnen auch unsere Modelle und Systeme zur Nutzung an – wie unser Ratingtool, unser Tool zur automatisierten Bilanzauswertung sowie unser KYC-Tool. Alle lassen sich mühelos in Ihre Landschaft integrieren, unterstützen Sie bei der Automatisierung Ihrer Prozesse und machen sie dadurch besser, schneller und auch kostengünstiger.</p>',
+											'<p>Nutzen Sie unsere modernen KI- und Cloud-Lösungen für Ihr Risk & Compliance-Management.</p><p>Wir ermöglichen das Outsourcing Ihrer Prozesse in den Bereichen Know Your Customer (KYC), Risikosteuerung und Rating. Dies reicht von der Entwicklung, Validierung und Optimierung neuer und bestehender Risiko- und Ratingmodelle über die Kreditanalyse bis hin zur Risikoberechnung und zum Risikoreporting. Wir bieten Ihnen auch unsere Modelle und Systeme zur Nutzung an – wie unser Ratingtool, unser Tool zur automatisierten Bilanzauswertung sowie unser KYC-Tool. Alle lassen sich mühelos in Ihre Landschaft integrieren, unterstützen Sie bei der Automatisierung Ihrer Prozesse und machen sie dadurch besser, schneller und auch kostengünstiger.</p>',
 									},
 									{
 										icon: 'GlobalAssetsAndRecovery_02',
 										headline: 'Stammdatenpflege leicht gemacht',
 										content:
-											'<p>Wir bieten Ihnen schlanke Prozesse bei gleichzeitig höchster Datenqualität.</p><p>Die Einführung der europäischen Datenschutz-Grundverordnung (DSGVO) erhöhte für Banken den administrativen Aufwand bei der Verarbeitung von Kundendaten. Unsere  DSGVO-kompatible Stammdateninfrastruktur macht die Pflege Ihrer Kundenstammdaten unkompliziert und regelkonform.</p>',
+											'<p>Wir bieten Ihnen schlanke Prozesse bei gleichzeitig höchster Datenqualität.</p><p>Die Einführung der europäischen Datenschutz-Grundverordnung (DSGVO) erhöhte für Banken den administrativen Aufwand bei der Verarbeitung von Kundendaten. Unsere DSGVO-kompatible Stammdateninfrastruktur macht die Pflege Ihrer Kundenstammdaten unkompliziert und regelkonform.</p>',
 									},
 									{
 										icon: 'ManagingContractualFlow',
 										headline: 'Kosteneffizienz beim regulatorischen Meldewesen',
 										content:
-											'<p>Mit uns bewältigen Sie die Herausforderung des Meldewesens spielend.</p><p>Wir erstellen und betreuen deutsche und europäische Meldungen für Sie, unterstützen Sie bei regulatorischen Änderungen oder neuen Vorgaben im Meldewesen.<br />Wir bieten Ihnen auch Hilfestellung bei anderen regulatorischen Fragen wie bei der Integration neuer Produkte in das regulatorische Meldewesen, bei Auswirkungsstudien oder anderen Anfragen von Behörden.</p>',
+											'<p>Mit uns bewältigen Sie die Herausforderung des Meldewesens spielend.</p><p>Wir erstellen und betreuen deutsche und europäische Meldungen für Sie und unterstützen Sie bei regulatorischen Änderungen oder neuen Vorgaben im Meldewesen. Wir bieten Ihnen auch Hilfestellung bei anderen regulatorischen Fragen wie bei der Integration neuer Produkte in das regulatorische Meldewesen, bei Auswirkungsstudien oder anderen Anfragen von Behörden.</p>',
 									},
 									{
 										icon: 'FinanceStrategy',
 										headline: 'Passgenaue Unterstützung für Finance & Controlling',
 										content:
-											'<p>Transformieren Sie Ihre Finance & Controlling-Prozesse mit der richtigen Technologie.</p><p>Als Finance-Experten bieten wir die Rechnungslegung nach dem Handelsgesetzbuch (HGB) sowie nach den International Financial Reporting Standards (IFRS) für eine Vielzahl von Bankprodukten und komplexen Strukturen. Basierend auf diesem Know-how können unsere Experten auch das Rechnungswesen für neue kundenspezifische Produkte gestalten.<br />Unser Angebotsportfolio beinhaltet die Bereitstellung einer konsistenten Finance-Plattform sowie einzelner Komponenten, die auch die Anforderungen des Meldewesens abdecken.</p>',
+											'<p>Transformieren Sie Ihre Finance & Controlling-Prozesse mit der richtigen Technologie.</p><p>Als Finance-Experten bieten wir die Rechnungslegung nach dem Handelsgesetzbuch (HGB) sowie nach den International Financial Reporting Standards (IFRS) für eine Vielzahl von Bankprodukten und komplexen Strukturen. Basierend auf diesem Know-how können unsere Experten auch das Rechnungswesen für neue kundenspezifische Produkte gestalten. Unser Angebotsportfolio beinhaltet die Bereitstellung einer konsistenten Finance-Plattform sowie einzelner Komponenten, die auch die Anforderungen des Meldewesens abdecken.</p>',
 									},
 									{
 										icon: 'ConnectedEcosystem',
 										headline: 'Zukunftsorientierte Zahlungsverkehrprozesse',
 										content:
-											'<p>Mit uns erreichen Sie mehr Effizienz im Bereich Payments, Cards & Cash Management.</p><p>Unsere smarten Lösungen helfen Ihnen, im In- und  Auslandszahlungsverkehr Zahlungsaufträge in verschiedenen Währungen effizienter zu kontrollieren und bearbeiten, beleghafte Kunden-Zahlungsaufträge gemäß Weisung zu erfassen und eingehende Zahlungen zuzuordnen und zu bearbeiten.<br />Auch bei der Buchungsverarbeitung von Auslandsschecks bieten wir Ihnen moderne, smarte Lösungen.</p>',
+											'<p>Mit uns erreichen Sie mehr Effizienz im Bereich Payments, Cards & Cash Management.</p><p>Für unsere Kunden führen wir alle Tätigkeiten im In- und  Auslandszahlungsverkehr aus – sowohl im Full Service als auch im Spitzenausgleich. Mit unseren Lösungen für Cash Management und virtuelle Konten können Banken ihren Firmenkunden auch zusätzliche Dienstleistungen anbieten. Die Bandbreite der Möglichkeiten reicht von nationalem und internationalem Zahlungsverkehr, über Cash-Pooling und Forecasting in verschiedenen Währungen bis hin zu Cash-Collection und Payments-Factory-Services auf Basis virtueller Konten.</p>',
 									},
 								],
 							},
@@ -324,7 +324,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Fritz Heimerl',
-											copy: 'Partner<br />IBM Banking & Financial Markets DACH',
+											copy: 'Partner<br />Banking & Financial Markets',
 											image: {
 												src: '/img/people/fritz.jpg',
 												width: 448,
@@ -349,7 +349,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Dr. Felix Buchkremer',
-											copy: 'Lead<br />IBM Risk und Operations Services',
+											copy: 'Associate Partner<br />Banking & Financial Markets',
 											image: {
 												src: '/img/people/placeholder.jpg',
 												width: 448,
@@ -379,8 +379,7 @@ module.exports = req => {
 			{
 				name: 'Footer',
 				props: {
-					claim:
-						'Innovate Banking ist eine Initiative von IBM zur digitalen Transformation.',
+					claim: 'Innovate Banking ist eine Initiative von IBM zur digitalen Transformation.',
 					links: [
 						{
 							title: 'Datenschutz',

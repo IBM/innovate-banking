@@ -203,7 +203,7 @@ module.exports = req => {
 										icon: 'ManagingContractualFlow',
 										headline: 'Mehr Freiheiten durch ein effektives Back Office',
 										content:
-											'<p>Gestraffte Marktfolgeprozesse versprechen ein großes Einsparungspotenzial.</p><p>Mit der Kombination aus globalen Best Practices und dem Wissen, was aktuell technologisch möglich ist, gelingt die Transformation Ihrer Marktfolge. Wir bieten Ihnen maßgeschneiderte und agile Lösungen mit der Möglichkeit, klein zu starten und schnell zu skalieren. Die Automatisierung von Back-Office-Aufgaben bringt Ihnen zweistellige Einsparpotenziale, größere Mitarbeiter- und Kundenzufriedenheit. Wir begleiten Sie in der Transformation  – von der Analyse bis zur Umsetzung.</p>',
+											'<p>Gestraffte Marktfolgeprozesse versprechen ein großes Einsparungspotenzial.</p><p>Wir bieten Ihnen maßgeschneiderte und agile Lösungen mit der Möglichkeit, klein zu starten und schnell zu skalieren. Die Automatisierung von Back-Office-Aufgaben bringt Ihnen zweistellige Einsparpotenziale, größere Mitarbeiter- und Kundenzufriedenheit. Wir begleiten Sie in der Transformation – von der Analyse bis zur Umsetzung.</p>',
 									},
 									{
 										icon: 'GlobalAssetsAndRecovery_01',
