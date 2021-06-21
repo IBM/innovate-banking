@@ -1,11 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-import Styles from './styles.module.scss';
-import { Column } from 'carbon-components-react';
-
-import Image from 'next/image';
 import { Email32, LogoLinkedin32 } from '@carbon/icons-react';
+import { Column } from 'carbon-components-react';
+import Image from 'next/image';
+import PropTypes from 'prop-types';
+import React from 'react';
+import Styles from './styles.module.scss';
 
 const LetsTalkTeaser = ({ headline, copy, image, links }) => {
 	return (

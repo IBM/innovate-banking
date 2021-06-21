@@ -1,12 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-import Styles from './styles.module.scss';
-import { Column, Link } from 'carbon-components-react';
-
 import RichText from '@/components/RichText';
-import Image from 'next/image';
 import { ArrowRight24 } from '@carbon/icons-react';
+import { Column, Link } from 'carbon-components-react';
+import Image from 'next/image';
+import PropTypes from 'prop-types';
+import React from 'react';
+import Styles from './styles.module.scss';
 
 const ImageTextTeaser = ({ text, image, link }) => {
 	return (
