@@ -305,7 +305,7 @@ module.exports = req => {
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'Risik & Compliance nachhaltig steuern',
+											headline: 'Risk & Compliance nachhaltig steuern',
 											text:
 												'<p>IBM unterstützt Ihre Bank mit kognitiven Lösungen beim Risikomanagement und bei der Risikomodellierung, bei Geldwäscheprävention, KYC-Prozessen, innovativer RegTech und SupTech.</p>',
 											link: {
