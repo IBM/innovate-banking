@@ -229,7 +229,7 @@ module.exports = req => {
 				props: {
 					id: 'vorteile',
 					titles: {
-						top: '<p>Ihre Vorteile</p><p class="eh4">Erfolgsfaktoren für Ihre neuen Kundenerlebnisse</p>',
+						top: '<p>Ihre Vorteile</p><p class="eh4">Erfolgsfaktoren für<br />Ihr neues Kundenerlebnis</p>',
 					},
 					background: {
 						dark: true,
@@ -326,7 +326,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Holger Horn',
-											copy: 'Senior Partner, Leader<br />IBM iX DACH',
+											copy: 'Senior Partner<br />IBM iX',
 											image: {
 												src: '/img/people/holger.jpg',
 												width: 448,
@@ -356,8 +356,7 @@ module.exports = req => {
 			{
 				name: 'Footer',
 				props: {
-					claim:
-						'Innovate Banking ist eine Initiative von IBM zur digitalen Transformation des Finanzsektors.',
+					claim: 'Innovate Banking ist eine Initiative von IBM zur digitalen Transformation.',
 					links: [
 						{
 							title: 'Datenschutz',
