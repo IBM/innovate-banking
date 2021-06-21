@@ -150,7 +150,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="d1">Mit uns die digitale Transformation meistern</p><p>Wir sind Ihr Partner für die digitale Transformation des Finanzsektors. Denn wir vereinen Banking-Know-how mit technischen Innovationen und bieten Ihnen Lösungen, die wir aus dem weltweiten Netzwerk der IBM und unserer Partner beziehen.</p>',
+									'<p class="d1">Mit uns die digitale Transformation meistern</p><p>Wir sind Ihr Partner für die digitale Transformation. Denn wir vereinen Banking-Know-how mit technischen Innovationen und bieten Ihnen individualisierte Lösungen aus unserem weltweiten Netzwerk.</p>',
 							},
 						},
 					],
@@ -160,7 +160,7 @@ module.exports = req => {
 				name: 'Section',
 				props: {
 					titles: {
-						left: '<p>Unsere Expertise für eine erfolgreiche Transformation</p>',
+						top: '<p class="h4">Unsere Expertise für eine<br />erfolgreiche Transformation</p>',
 					},
 					images: {
 						bottom: {
@@ -190,14 +190,6 @@ module.exports = req => {
 					rowWrapChildren: false,
 					children: [
 						{
-							name: 'RichText',
-							props: {
-								className: 'bx--col-sm-4 bx--col-md-6 bx--col-lg-8 bx--offset-lg-1',
-								content:
-									'<p style="margin-bottom: 2rem;">Wir unterstützen Sie dabei, relevante Optimierungen vorzunehmen und mit neuen und reformierten Strukturen die Chancen der digitalen Transformation voll auszuschöpfen.</p>',
-							},
-						},
-						{
 							name: 'TeaserList',
 							props: {
 								children: [
@@ -207,7 +199,7 @@ module.exports = req => {
 											icon: 'Touch_132',
 											headline: 'Für Ihre Kund*innen',
 											text:
-												'Mehrwerte zählen – Erschaffen Sie eine nachhaltig zeitgemäße Banking-Erfahrung.',
+												'Mehrwerte zählen – erschaffen Sie eine nachhaltige und zeitgemäße Banking-Erfahrung.',
 										},
 									},
 									{
@@ -215,7 +207,7 @@ module.exports = req => {
 										props: {
 											icon: 'Analytics32',
 											headline: 'Für mehr Effizienz',
-											text: 'Kosten reduzieren – Strukturell, konsequent, immer transparent.',
+											text: 'Kosten reduzieren – strukturell, konsequent, immer transparent.',
 										},
 									},
 									{
@@ -262,7 +254,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="d1">Banking am<br />Puls der Zeit</p><p>Als Finanzdienstleister befinden Sie sich stetig im Spannungsfeld zwischen Beständigkeit und Fortschritt. Ihre Kunden erwarten eine verlässliche, sichere und gleichzeitig innovative Banking-Erfahrung.</p><p>Um an den entscheidenden Punkten ansetzen zu können, bieten wir Ihnen Lösungen in fünf Kernbereichen. Gemeinsam finden wir die passende Herangehensweise für die Bedürfnisse Ihres Unternehmens. Ganz gleich, ob Sie weltweit agieren oder eine Plattform für ein FinTech Start-up aufsetzen möchten.</p>',
+									'<p class="d1">Banking am<br />Puls der Zeit</p><p>Als Finanzdienstleister befinden Sie sich stetig im Spannungsfeld zwischen Beständigkeit und Fortschritt. Ihre Kunden erwarten eine verlässliche, sichere und gleichzeitig innovative Banking-Erfahrung.</p><p>Um an den entscheidenden Punkten ansetzen zu können, bieten wir Ihnen Lösungen in fünf Kernbereichen. Gemeinsam finden wir die passende Herangehensweise für die Bedürfnisse Ihres Unternehmens – ganz gleich, ob Sie lokal, regional oder weltweit agieren.</p>',
 							},
 						},
 					],
@@ -315,7 +307,7 @@ module.exports = req => {
 										props: {
 											headline: 'Risik & Compliance nachhaltig steuern',
 											text:
-												'<p>IBM unterstützt Ihre Bank mit kognitiven Lösungen beim Risikomanagement und bei der Risikomodellierung, Geldwäscheprävention, KYC-Prozessen, innovativer RegTech und SupTech.</p>',
+												'<p>IBM unterstützt Ihre Bank mit kognitiven Lösungen beim Risikomanagement und bei der Risikomodellierung, bei Geldwäscheprävention, KYC-Prozessen, innovativer RegTech und SupTech.</p>',
 											link: {
 												url: '/risk-compliance',
 											},
@@ -337,7 +329,7 @@ module.exports = req => {
 										props: {
 											headline: 'IBM Banking Platform nutzen',
 											text:
-												'<p>Gewinnen Sie mit Anwendungen aus unserer Banking Service Plattform an Effizienz und erfahren Sie, wie Business Process Outsourcing von IBM Mehrwerte für Ihre Bank schafft.</p>',
+												'<p>Gewinnen Sie mit Anwendungen aus unserer Banking-Service-Plattform an Effizienz und erfahren Sie, wie Business Process Outsourcing von IBM Mehrwerte für Ihre Bank schafft.</p>',
 											link: {
 												url: '/banking-plattform',
 											},
@@ -367,7 +359,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="h4">Unsere Stimme in der Finanzbranche</p><p>Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen Sie sich direkt mit Ihnen aus.</p>',
+									'<p class="h4">Unsere Stimme<br />in der Finanzbranche</p><p>Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen Sie sich direkt mit Ihnen aus.</p>',
 							},
 						},
 					],
@@ -569,7 +561,7 @@ module.exports = req => {
 					fullWidth: true,
 					titles: {
 						left:
-							'<p class="h4">Innovative Methoden und Technologien</p><p class="p">Wir arbeiten schon heute an der Finanztechnologie von übermorgen. Entdecken Sie ungeahnte Möglichkeiten und profitieren Sie als erste von Lösungen, die die Welt des Bankings nachhaltig verändern werden.</p>',
+							'<p class="h4">Innovative Methoden und Technologien</p><p class="p">Wir arbeiten schon heute an der Finanztechnologie von übermorgen. Entdecken Sie ungeahnte Möglichkeiten und profitieren Sie als Erste von Lösungen, die die Welt des Bankings nachhaltig verändern werden.</p>',
 					},
 					children: [
 						{
@@ -629,7 +621,7 @@ module.exports = req => {
 										props: {
 											headline: 'Edge',
 											text:
-												'<p>Mit Edge-Computing können Sie große Datenvolumen direkt an der Quelle bearbeiten, indem Bankanwendungen näher an Datenquellen wie IoT-Geräte oder lokale Edge-Server rücken. Wir helfen Ihnen bei der Optimierung Ihrer Betriebsabläufe und Umsetzung neuer Kundenservices auf Basis dieser neuen technischen Möglichkeit.</p>',
+												'<p>Mit Edge-Computing können Sie große Datenvolumen direkt an der Quelle bearbeiten, da Bankanwednungen näher an Datenquellen wie IoT-Geräte oder lokale Edge-Server rücken. Wir helfen Ihnen bei der Optimierung Ihrer Betriebsabläufe und der Erneuerung von Kundenservices auf Basis dieser technischen Innovation.</p>',
 											link: {
 												url: 'https://www.ibm.com/de-de/cloud/what-is-edge-computing',
 											},
@@ -666,7 +658,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Jean-Henrik Zitterbart',
-											copy: 'Industry Leader<br />Banking & Financial Markets DACH',
+											copy: 'Partner<br />Banking & Financial Markets',
 											image: {
 												src: '/img/people/jean.jpg',
 												width: 288,
@@ -691,7 +683,7 @@ module.exports = req => {
 										name: 'LetsTalkTeaser',
 										props: {
 											headline: 'Bernd Neubauer',
-											copy: 'Senior Partner<br />Banking & Financial Markets DACH',
+											copy: 'Senior Partner<br />Banking & Financial Markets',
 											image: {
 												src: '/img/people/bernd.jpg',
 												width: 288,
@@ -721,8 +713,7 @@ module.exports = req => {
 			{
 				name: 'Footer',
 				props: {
-					claim:
-						'Innovate Banking ist eine Initiative von IBM zur digitalen Transformation des Finanzsektors.',
+					claim: 'Innovate Banking ist eine Initiative von IBM zur digitalen Transformation.',
 					links: [
 						{
 							title: 'Datenschutz',
