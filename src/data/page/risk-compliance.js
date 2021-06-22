@@ -143,7 +143,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="d1 large">40%</h3><p>Effizienzsteigerung durch Analytics, KI<br />und Automatisierung im Banking</p>',
+									'<h3 class="d1 large">40%</h3><p>Effizienzsteigerung durch Analytics, KI und Automatisierung im Banking</p>',
 							},
 						},
 					],
