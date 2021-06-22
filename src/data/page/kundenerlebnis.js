@@ -196,13 +196,13 @@ module.exports = req => {
 								items: [
 									{
 										icon: 'GlobalAssetsAndRecovery_01',
-										headline: 'Mehr Kundenorientierung durch kontextuelles Banking',
+										headline: 'Mehr Kundenorientierung durch kontextuelles&nbsp;Banking',
 										content:
 											'<p>Wir erhöhen Kundenzufriedenheit durch zielgruppenspezifische Angebote – ob für Privat- oder Firmenkunden.</p><p>Wir verschaffen Ihnen Wettbewerbsvorteile an allen Berührungspunkten: Flexible Arbeitsplatzlösungen im Front-Office unterstützen Sie bei der Beratung, innovative Self-Service-Konzepte erweitern das digitale Leistungsangebot, mobiles und dialog-basiertes Banking eröffnet neue Perspektiven in der Kundenansprache.</p><p>Mit einer einheitlichen 360-Grad-Sicht auf den Kunden steigern wir die Effizienz und die Qualität in der Beratung und im Service. Dabei reduzieren wir manuelle Arbeit und liefern Ihnen relevante Erkenntnisse über Ihre Kunden zum richtigen Zeitpunkt.</p>',
 									},
 									{
 										icon: 'ManagingContractualFlow',
-										headline: 'Mehr Kundenbindung durch personalisierten Kundendialog',
+										headline: 'Mehr Kundenbindung durch personalisierten&nbsp;Kundendialog',
 										content:
 											'<p>Der Schlüssel zu Relevanz und Loyalität liegt in der personalisierten Kundenansprache.</p><p>Wir analysieren Ihre Customer Journeys und identifizieren Verbesserungsmöglichkeiten – von der effizienten Generierung von Interessenten bis zum Abschluss. Dazu bereiten wir komplexe Inhalte zielgruppengerecht auf. Im Rahmen von Kampagnen können diese flexibel auf allen Kanälen für die vertriebliche Ansprache eingesetzt werden. Basierend auf den marktführenden Plattformen unserer Partner implementieren wir individuelle Lösungen zur Ausspielung personalisierter Inhalte, die für alle Kanäle dynamisch optimiert werden.</p>',
 									},
@@ -214,7 +214,7 @@ module.exports = req => {
 									},
 									{
 										icon: 'Analyze',
-										headline: 'Marketing und Vertrieb effizient umsetzen und steuern',
+										headline: 'Marketing und Vertrieb effizient umsetzen&nbsp;und&nbsp;steuern',
 										content:
 											'<p>Unsere Lösungen ermöglichen die nahtlose Orchestrierung von Kundenkontext, Berührungspunkten und Bankprozessen.</p><p>Unsere Erfolgsfaktoren sind analytische Fähigkeiten, die lückenlose Einbeziehung von Daten und die Aussteuerung relevanter Inhalte auf den geeigneten Zugangspunkt. Die Kombination regelbasierter Ansätze mit spezialisierter KI ermöglicht ein effiziente und intelligente Steuerung Ihrer Kundenbeziehungen.</p><p>Dazu nutzen wir bewährte cloud-basierte Standardplattformen für ein beschleunigtes Time-to-Market, unterstützen Ihren operativen Betrieb bedarfsgerecht mit der benötigten Expertise und ermöglichen Banken so die Neuallokation bestehender Ressourcen.</p>',
 									},
@@ -288,7 +288,7 @@ module.exports = req => {
 					},
 					titles: {
 						left:
-							'<p class="d1">Let’s talk!</p><p class="p">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
+							'<p class="d1">Let’s talk!</p><p class="p" style="max-width: 200px;">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
 					},
 					fullWidth: true,
 					children: [

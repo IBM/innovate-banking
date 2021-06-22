@@ -23,7 +23,7 @@ const PictogramTeaser = ({ icon, headline, text, teaserIndex, teaserCount, size 
 				</span>
 				<div className={Styles.Content}>
 					<h5 className={Styles.Headline}>{headline}</h5>
-					<p className={Styles.Text}>{text}</p>
+					<p className={Styles.Text} dangerouslySetInnerHTML={{ __html: text }} />
 				</div>
 			</div>
 		</Column>

@@ -50,7 +50,7 @@ const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, da
 				title={link.title}
 			>
 				<Column sm={smSizeLeft} md={mdSizeLeft} lg={lgSizeLeft} className={Styles.LeftColumn}>
-					<h5 className={Styles.Headline}>{headline}</h5>
+					<h5 className={Styles.Headline} dangerouslySetInnerHTML={{ __html: headline }} />
 					<RichText content={text} className={Styles.RichText} />
 					{link && (
 						<span className={Styles.Link}>

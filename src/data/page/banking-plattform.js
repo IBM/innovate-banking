@@ -292,7 +292,7 @@ module.exports = req => {
 											icon: 'GlobalPartner',
 											headline: 'Perspektiven für Mitarbeiter',
 											text:
-												'Im Rahmen des Outsourcings kann IBM die Mitarbeiter der Bereiche übernehmen und ihnen vielfältige Entwicklungsmöglichkeiten und nachhaltige Beschäftigungsperspektiven bieten.',
+												'Im Rahmen des Outsourcings kann IBM die Mitarbeiter der Bereiche übernehmen und ihnen vielfältige Entwicklungs&shy;möglichkeiten und nachhaltige Beschäftigungs&shy;perspektiven bieten.',
 										},
 									},
 								],
@@ -311,7 +311,7 @@ module.exports = req => {
 					},
 					titles: {
 						left:
-							'<p class="d1">Let’s talk!</p><p class="p">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
+							'<p class="d1">Let’s talk!</p><p class="p" style="max-width: 200px;">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
 					},
 					fullWidth: true,
 					children: [

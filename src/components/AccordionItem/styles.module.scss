@@ -50,6 +50,7 @@
 }
 
 .RichText {
+	max-width: 544px;
 	padding: $spacing-06 0;
 	color: $gray-10;
 }
@@ -58,5 +59,8 @@
 	margin-left: 0;
 	margin-right: auto;
 	padding-right: $spacing-05;
-	hyphens: manual;
+
+	@include bp('lg') {
+		padding-right: $spacing-10;
+	}
 }

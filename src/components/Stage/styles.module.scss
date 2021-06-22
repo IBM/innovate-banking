@@ -15,10 +15,6 @@
 		min-height: 55vh;
 	}
 
-	@include bp('lg') {
-		min-height: 55vh;
-	}
-
 	.HeadingWrapper {
 		position: absolute;
 		bottom: 10%;
@@ -58,6 +54,7 @@
 	.Subheading {
 		@include carbon--type-style('productive-heading-02', true);
 
+		padding-left: .375rem;
 		color: $blue-40;
 		font-weight: normal;
 	}

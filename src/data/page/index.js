@@ -114,7 +114,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p>IBM ist für zahlreiche Banken im deutschsprachigen Markt aktiv - viele von uns sind selbst Banker. Ihre fachlichen Anforderungen bringen wir in Einklang mit Technologien wie Cloud und Künstlicher Intelligenz. Wir begleiten Sie ganzheitlich durch die digitale Transformation hin zu einem ganz neuen Banking-Erlebnis.</p>',
+									'<p style="max-width: 544px;">IBM ist für zahlreiche Banken im deutschsprachigen Markt aktiv - viele von uns sind selbst Banker. Ihre fachlichen Anforderungen bringen wir in Einklang mit Technologien wie Cloud und Künstlicher Intelligenz. Wir begleiten Sie ganzheitlich durch die digitale Transformation hin zu einem ganz neuen Banking-Erlebnis.</p>',
 							},
 						},
 					],
@@ -150,7 +150,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="d1">Mit uns die digitale Transformation meistern</p><p>Wir sind Ihr Partner für die digitale Transformation. Denn wir vereinen Banking-Know-how mit technischen Innovationen und bieten Ihnen individualisierte Lösungen aus unserem weltweiten Netzwerk.</p>',
+									'<p class="h2" style="max-width: 544px; font-weight: 400;">Mit uns die digitale Transformation meistern</p><p style="max-width: 544px;">Wir sind Ihr Partner für die digitale Transformation. Denn wir vereinen Banking-Know-how mit technischen Innovationen und bieten Ihnen individualisierte Lösungen aus unserem weltweiten Netzwerk.</p>',
 							},
 						},
 					],
@@ -225,7 +225,7 @@ module.exports = req => {
 											icon: 'HelpDesk32',
 											headline: 'Für den lokalen Markt',
 											text:
-												'Internationale Expertise – IBM ist global aktiv, aber im deutschsprachigen Raum zu Hause.',
+												'Internationale Expertise – IBM&nbsp;ist global aktiv, aber im deutschsprachigen Raum zu&nbsp;Hause.',
 										},
 									},
 								],
@@ -254,7 +254,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="d1">Banking am<br />Puls der Zeit</p><p>Als Finanzdienstleister befinden Sie sich stetig im Spannungsfeld zwischen Beständigkeit und Fortschritt. Ihre Kunden erwarten eine verlässliche, sichere und gleichzeitig innovative Banking-Erfahrung.</p><p>Um an den entscheidenden Punkten ansetzen zu können, bieten wir Ihnen Lösungen in fünf Kernbereichen. Gemeinsam finden wir die passende Herangehensweise für die Bedürfnisse Ihres Unternehmens – ganz gleich, ob Sie lokal, regional oder weltweit agieren.</p>',
+									'<p class="d1" style="max-width: 544px;">Banking am<br />Puls der Zeit</p><p>Als Finanzdienstleister befinden Sie sich stetig im Spannungsfeld zwischen Beständigkeit und Fortschritt. Ihre Kunden erwarten eine verlässliche, sichere und gleichzeitig innovative Banking-Erfahrung.</p><p>Um an den entscheidenden Punkten ansetzen zu können, bieten wir Ihnen Lösungen in fünf Kernbereichen. Gemeinsam finden wir die passende Herangehensweise für die Bedürfnisse Ihres Unternehmens – ganz gleich, ob Sie lokal, regional oder weltweit agieren.</p>',
 							},
 						},
 					],
@@ -277,7 +277,7 @@ module.exports = req => {
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'Prozesse transformieren',
+											headline: 'Prozesse<br />transformieren',
 											text:
 												'<p>Vom Kreditantrag bis zur Auszahlung, von der Bestandsverwaltung oder der Zahlungsabwicklung bis zu Finance und Controlling: KI- und datengetriebene Lösungen von IBM optimieren Ihre Prozesse und machen Ihre Bank fit für die Zukunft.</p>',
 											image: {
@@ -294,7 +294,7 @@ module.exports = req => {
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'Kundenerlebnis neu erfinden',
+											headline: 'Kundenerlebnis<br />neu erfinden',
 											text:
 												'<p>Zufriedene Kunden sind Ihr wertvollstes Kapital. Erfahren Sie, wie Cloud-basierte Datenauswertung und KI ein einzigartiges Kundenerlebnis ermöglichen und die Arbeitswelt Ihrer Mitarbeiter*innen im Front-Office revolutionieren.</p>',
 											link: {
@@ -305,7 +305,7 @@ module.exports = req => {
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'Risk & Compliance nachhaltig steuern',
+											headline: 'Risk & Compliance<br />nachhaltig steuern',
 											text:
 												'<p>IBM unterstützt Ihre Bank mit kognitiven Lösungen beim Risikomanagement und bei der Risikomodellierung, bei Geldwäscheprävention, KYC-Prozessen, innovativer RegTech und SupTech.</p>',
 											link: {
@@ -316,7 +316,7 @@ module.exports = req => {
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'Anwendungssysteme modernisieren',
+											headline: 'Anwendungssysteme<br />modernisieren',
 											text:
 												'<p>Mit Innovationen aus der IBM Cloud durch die digitale Transformation: Wir begleiten die Erneuerung Ihrer Infrastruktur mit maßgeschneiderten Lösungen – von der Entwicklung bis zur Installation.</p>',
 											link: {
@@ -327,7 +327,7 @@ module.exports = req => {
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'IBM Banking Platform nutzen',
+											headline: 'IBM Banking Platform<br />nutzen',
 											text:
 												'<p>Gewinnen Sie mit Anwendungen aus unserer Banking-Service-Plattform an Effizienz und erfahren Sie, wie Business Process Outsourcing von IBM Mehrwerte für Ihre Bank schafft.</p>',
 											link: {
@@ -359,7 +359,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="h4">Unsere Stimme<br />in der Finanzbranche</p><p>Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen Sie sich direkt mit Ihnen aus.</p>',
+									'<p class="h4">Unsere Stimme<br />in der Finanzbranche</p><p style="max-width: 544px;">Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen Sie sich direkt mit Ihnen aus.</p>',
 							},
 						},
 					],
@@ -389,7 +389,7 @@ module.exports = req => {
 									{
 										name: 'ImageTextTeaser',
 										props: {
-											text: '<p>Gesamtbanksteuerung: Veränderung ist machbar</p>',
+											text: '<p>Gesamtbanksteuerung:<br />Veränderung ist machbar</p>',
 											image: {
 												src: '/img/banking-insights/teaser-1.jpg',
 												width: 576,
@@ -431,7 +431,7 @@ module.exports = req => {
 										name: 'ImageTextTeaser',
 										props: {
 											text:
-												'<p>Analytics – Intelligent Workflows in Banking: Geldwäsche und Betrugsbekämpfung</p>',
+												'<p>Analytics – Intelligent Workflows in Banking:<br />Geldwäsche und Betrugsbekämpfung</p>',
 											image: {
 												src: '/img/banking-insights/teaser-4.jpg',
 												width: 576,
@@ -445,7 +445,7 @@ module.exports = req => {
 										name: 'ImageTextTeaser',
 										props: {
 											text:
-												'<p>Reinventing Financial Services: Core Banking and Payments Edition</p>',
+												'<p>Reinventing Financial Services:<br />Core Banking and Payments Edition</p>',
 											image: {
 												src: '/img/banking-insights/teaser-5.jpg',
 												width: 576,
@@ -458,7 +458,8 @@ module.exports = req => {
 									{
 										name: 'ImageTextTeaser',
 										props: {
-											text: '<p>IBM Institute for Business Value: Banking Industry Insights</p>',
+											text:
+												'<p>IBM Institute for Business Value:<br />Banking Industry Insights</p>',
 											image: {
 												src: '/img/banking-insights/teaser-6.jpg',
 												width: 576,
@@ -645,7 +646,7 @@ module.exports = req => {
 					},
 					titles: {
 						left:
-							'<p class="d1">Let’s talk!</p><p class="p">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
+							'<p class="d1">Let’s talk!</p><p class="p" style="max-width: 200px;">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
 					},
 					fullWidth: true,
 					children: [

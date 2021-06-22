@@ -26,6 +26,7 @@
 
 	.RichText {
 		margin: $spacing-06 0;
+		max-width: 306px;
 	}
 
 	.LeftColumn {
@@ -45,6 +46,7 @@
 		display: flex;
 		align-items: center;
 		margin-top: auto;
+		padding-top: $spacing-07;
 		color: $blue-70;
 
 		.Text {

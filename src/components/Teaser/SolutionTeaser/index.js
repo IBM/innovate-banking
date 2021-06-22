@@ -23,7 +23,7 @@ const SolutionTeaser = ({ icon, headline, text, teaserIndex, teaserCount }) => {
 					</span>
 					<h5 className={Styles.Headline}>{headline}</h5>
 				</div>
-				<p className={Styles.Text}>{text}</p>
+				<p className={Styles.Text} dangerouslySetInnerHTML={{ __html: text }} />
 			</div>
 		</Column>
 	);

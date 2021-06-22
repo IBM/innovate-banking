@@ -58,7 +58,6 @@
 	.Title {
 		position: relative;
 		z-index: 1;
-		hyphens: manual;
 
 		:global(p:not([class])) {
 			@include carbon--type-style('expressive-heading-02', true);
