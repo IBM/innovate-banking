@@ -21,7 +21,14 @@
 		width: auto;
 	}
 
-	&.HasBottomImage,
+	&.HasBottomImage {
+		padding-bottom: $spacing-06;
+
+		@include bp('md') {
+			margin-bottom: $spacing-07;
+		}
+	}
+
 	&.IsCondensedBottom {
 		padding-bottom: $spacing-06;
 	}
