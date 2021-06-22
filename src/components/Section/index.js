@@ -148,7 +148,7 @@ const Section = props => {
 							<Column sm={4} md={2} lg={4} className={Styles.LeftSide}>
 								{titles && titles.left && (
 									<RichText
-										className={Styles.Title}
+										className={clsx(Styles.Title, Styles.TitleLeft)}
 										content={titles.left !== true ? titles.left : '&nbsp;'}
 										style={{
 											transform: titles.offsetLeft ? `translateY(${titles.offsetLeft})` : null,

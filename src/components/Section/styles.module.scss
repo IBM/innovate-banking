@@ -64,6 +64,12 @@
 		}
 	}
 
+	.TitleLeft {
+		@include bp('lg') {
+			max-width: 320px;
+		}
+	}
+
 	&.HasTopTitle {
 
 		.Title {
