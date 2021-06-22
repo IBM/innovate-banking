@@ -6,9 +6,7 @@ import React from 'react';
 import BackToTopButton from '../BackToTopButton';
 import Styles from './styles.module.scss';
 
-
-
-const Footer = ({ claim, links }) => {
+const Footer = ({ links }) => {
 	return (
 		<>
 			<footer className={Styles.Footer}>
@@ -20,7 +18,11 @@ const Footer = ({ claim, links }) => {
 							</Link>
 						</Column>
 						<Column sm={4} md={2} lg={4} className={clsx(Styles.Claim, Styles.FooterColumn)}>
-							{claim}
+							Innovate Banking ist eine
+							<br />
+							Initiative von IBM zur
+							<br />
+							digitalen Transformation.
 						</Column>
 						<Column
 							sm={4}
@@ -54,7 +56,6 @@ const Footer = ({ claim, links }) => {
 };
 
 Footer.propTypes = {
-	claim: PropTypes.string.isRequired,
 	links: PropTypes.arrayOf(
 		PropTypes.shape({
 			url: PropTypes.string.isRequired,
