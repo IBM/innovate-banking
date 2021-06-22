@@ -118,7 +118,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p>Verlässliches Risikomanagement und das Einhalten regulatorischer Vorgaben ist für Banken essenziell, ist aber im letzten Jahrzehnt immer aufwendiger geworden. Wir machen komplexe Vorgänge einfach.</p>',
+									'<p style="max-width: 544px;">Verlässliches Risikomanagement und das Einhalten regulatorischer Vorgaben ist für Banken essenziell, ist aber im letzten Jahrzehnt immer aufwendiger geworden. Wir machen komplexe Vorgänge einfach.</p>',
 							},
 						},
 					],

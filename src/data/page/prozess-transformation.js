@@ -118,7 +118,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p>Mit unserer Banking-Expertise und Technologiekompetenz begleiten wir die Transformation Ihrer End-to-End-Geschäftsabläufe – von der Konzeption bis zur Umsetzung.</p>',
+									'<p style="max-width: 544px;">Mit unserer Banking-Expertise und Technologiekompetenz begleiten wir die Transformation Ihrer End-to-End-Geschäftsabläufe – von der Konzeption bis zur Umsetzung.</p>',
 							},
 						},
 					],

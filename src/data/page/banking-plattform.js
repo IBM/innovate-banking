@@ -118,7 +118,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p>Die IBM Banking Platform bietet umfassende Lösungen für sämtliche Bankprozesse. Wir nutzen dabei die relevanten Anwendungen unserer Plattform, Produkte unserer Partner sowie alle Möglichkeiten der Digitalisierung.</p>',
+									'<p style="max-width: 544px;">Die IBM Banking Platform bietet umfassende Lösungen für sämtliche Bankprozesse. Wir nutzen dabei die relevanten Anwendungen unserer Plattform, Produkte unserer Partner sowie alle Möglichkeiten der Digitalisierung.</p>',
 							},
 						},
 					],
