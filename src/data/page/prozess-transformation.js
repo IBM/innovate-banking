@@ -12,16 +12,16 @@ module.exports = req => {
 				props: {
 					items: [
 						{
-							name: 'Prozess-Transformation',
-							url: 'prozess-transformation',
-							active: true,
-							current: true,
-						},
-						{
 							name: 'Kundenerlebnis',
 							url: 'kundenerlebnis',
 							active: true,
 							current: false,
+						},
+						{
+							name: 'Prozess-Transformation',
+							url: 'prozess-transformation',
+							active: true,
+							current: true,
 						},
 						{
 							name: 'Risk & Compliance',
