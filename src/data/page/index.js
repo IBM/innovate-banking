@@ -283,7 +283,6 @@ module.exports = req => {
 												height: 242,
 											},
 											link: {
-												title: 'Mehr erfahren',
 												url: '/kundenerlebnis',
 											},
 										},

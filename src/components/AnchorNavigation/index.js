@@ -13,7 +13,7 @@ import Styles from './styles.module.scss';
 const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 	const sloganListItemRef = React.createRef(null);
 	const sloganListSingleItemRef = React.createRef(null);
-	const [sloganListItemWidth, setSloganListItemWidth] = useState(0);
+	const [sloganListItemWidth, setSloganListItemWidth] = useState(180);
 	const [isSloganShown, setIsSloganShown] = useState(false);
 	const [activeItem, setActiveItem] = useState(null);
 	const [sectionInViewportChangeEvent, setSectionInViewportChangeEvent] = useState(false);
