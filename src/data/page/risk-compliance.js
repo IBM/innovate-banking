@@ -136,7 +136,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="h4">Gesteigerte Effizienz durch Analytics, KI und Automatisierung</h3><p>Durch den Einsatz von Analytics, KI und Automatisierung kann im Bereich Risk & Compliance eine Effizienzsteigerung von bis zu 40 % erreicht werden.</p>',
+									'<h3 class="h4">Gesteigerte Effizienz durch Analytics,<br />KI und Automatisierung</h3><p style="max-width: 544px;">Durch den Einsatz von Analytics, KI und Automatisierung kann im Bereich Risk & Compliance eine Effizienzsteigerung von bis zu 40 % erreicht werden.</p>',
 							},
 						},
 						{
@@ -195,19 +195,20 @@ module.exports = req => {
 									},
 									{
 										icon: 'UserSearch',
-										headline: 'Mehr Effizienz bei regulatorischen Melde- und Aufsichtsprozessen',
+										headline:
+											'Mehr Effizienz bei regulatorischen<br />Melde- und Aufsichtsprozessen',
 										content:
 											'<p>Wir helfen Ihnen, den Meldeanforderungen der Aufsichtsbehörden gerecht zu werden und ESG-Kriterien zu implementieren.</p><p>Wir begleiten Banken und Aufsichtsbehörden ganzheitlich bei der strategischen Entwicklung und Umsetzung zeitgemäßer Prozess- und Systemlandschaften unter Berücksichtigung der ESG-Standards. Integrierte Datenlandschaften, innovative Datenplattformen, Plattformökonomien, Cloud-Technologien und KI-gestützte, automatisierte Lösungen sind Treiber für effiziente regulatorische Prozesse, die dabei helfen, ESG-Standards einzuhalten. Unsere Lösungen tragen signifikant zur Automatisierung, Flexibilisierung, Skalierung und Kostenreduzierung bei. Gleichzeitig unterstützen sie unsere Kunden bei ihrem Streben nach Nachhaltigkeit.</p>',
 									},
 									{
 										icon: 'ManagingContractualFlow',
-										headline: 'Digitale Transformation mit AML- oder KYC-Systemen',
+										headline: 'Digitale Transformation mit<br />AML- oder KYC-Systemen',
 										content:
 											'<p>Unser Service-Angebot deckt Ihre Bedürfnisse End-to-End mit führenden Methoden und innovativen Lösungen ab.</p><p>Unsere effizienten Lösungen helfen Ihnen, aufsichtsrechtliche Anforderungen zur Bekämpfung von Geldwäsche (Anti Money Laundering) und Finanzmarktkriminalität zu erfüllen und Know-Your-Customer-Prozesse zu optimieren. Wir konzipieren Target-Operating-Modelle für Sie und implementieren AML- oder KYC-Systeme.</p><p>Wir beraten Sie bei sämtlichen Fragen der digitalen Transformation und bieten Ihnen auf Ihre Bedürfnisse abgestimmte Managed-Service-Angebote, mit denen wir die gesamte Risk & Compliance-Wertschöpfungskette abdecken.</p>',
 									},
 									{
 										icon: 'FinanceStrategy',
-										headline: 'Automatisierung bei Trade-Finance-Transaktionen',
+										headline: 'Automatisierung bei<br />Trade-Finance-Transaktionen',
 										content:
 											'<p>Die Komplexität von Trade-Finance-Transaktionen bietet hohes Potenzial zur Effizienzsteigerung durch Automatisierung und KI.</p><p>Ein intelligentes Zusammenspiel von Mensch und Technologie ermöglicht es, komplexe Trade-Finance-Transaktionen einfacher zu bewältigen. IBM Technologien wie Optical Character Recognition (OCR), Künstliche Intelligenz (KI), Robotic Process Automation (RPA) unterstützen Ihre Trade-Finance-Abteilungen.</p><p>Mit unseren smarten Technologien kreieren wir voll automatisierte End-to-End-Prozesse. Eine wichtige Rolle spielen dabei intelligente Dokumentenerfassung, digitale Plattformökonomie, KI, Robotics und Blockchain-Lösungen sowie Compliance Analysen.</p>',
 									},

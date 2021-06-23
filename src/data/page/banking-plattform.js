@@ -136,7 +136,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="h4">Konzentration auf die Kernkompetenzen durch gesteigerte Effizienz</h3><p>Die IBM Banking Platform macht Bankprozesse effizienter und ermöglicht somit um bis zu 40 % niedrigere Kosten.</p>',
+									'<h3 class="h4">Konzentration auf die Kernkompetenzen<br />durch gesteigerte Effizienz</h3><p style="max-width: 544px;">Die IBM Banking Platform macht Bankprozesse effizienter und ermöglicht somit um bis zu 40 % niedrigere Kosten.</p>',
 							},
 						},
 						{
@@ -194,13 +194,13 @@ module.exports = req => {
 									},
 									{
 										icon: 'FinancialNetworks',
-										headline: 'Smarte Lösungen für Capital Markets & Treasury',
+										headline: 'Smarte Lösungen für Capital&nbsp;Markets&nbsp;&&nbsp;Treasury',
 										content:
 											'<p>Unsere umfassenden Serviceleistungen bringen Ihre Kapitalmarktgeschäfte auf Zukunftskurs.</p><p>Wir bieten Ihnen clevere Back- und Middle-Office-Services für Derivative, Wertpapiere und Geld-/Devisentransaktionen, unterstützen Sie bei der Verifizierung von Handelsgeschäften, bei der Dokumentation und beim Abgleich sowie bei der Abrechnung. Unsere Lösungen decken das gesamte Life-Cycle-Management ab, überwachen Trigger Events, helfen bei Kontenabstimmung und -ausgleich sowie beim regulatorischen Reporting beispielsweise im Rahmen der European Market Infrastructure Regulation (EMIR) und der Meldevorschriften im Außenwirtschaftsverkehr (AWV).</p>',
 									},
 									{
 										icon: 'GlobalAssetsAndRecovery_01',
-										headline: 'Rundum-Unterstützung bei Risk & Compliance',
+										headline: 'Rundum-Unterstützung bei Risk&nbsp;&&nbsp;Compliance',
 										content:
 											'<p>Nutzen Sie unsere modernen KI- und Cloud-Lösungen für Ihr Risk & Compliance-Management.</p><p>Wir ermöglichen das Outsourcing Ihrer Prozesse in den Bereichen Know Your Customer (KYC), Risikosteuerung und Rating. Dies reicht von der Entwicklung, Validierung und Optimierung neuer und bestehender Risiko- und Ratingmodelle über die Kreditanalyse bis hin zur Risikoberechnung und zum Risikoreporting. Wir bieten Ihnen auch unsere Modelle und Systeme zur Nutzung an – wie unser Ratingtool, unser Tool zur automatisierten Bilanzauswertung sowie unser KYC-Tool. Alle lassen sich mühelos in Ihre Landschaft integrieren, unterstützen Sie bei der Automatisierung Ihrer Prozesse und machen sie dadurch besser, schneller und auch kostengünstiger.</p>',
 									},
@@ -212,13 +212,13 @@ module.exports = req => {
 									},
 									{
 										icon: 'ManagingContractualFlow',
-										headline: 'Kosteneffizienz beim regulatorischen Meldewesen',
+										headline: 'Kosteneffizienz beim regulatorischen&nbsp;Meldewesen',
 										content:
 											'<p>Mit uns bewältigen Sie die Herausforderung des Meldewesens spielend.</p><p>Wir erstellen und betreuen deutsche und europäische Meldungen für Sie und unterstützen Sie bei regulatorischen Änderungen oder neuen Vorgaben im Meldewesen. Wir bieten Ihnen auch Hilfestellung bei anderen regulatorischen Fragen wie bei der Integration neuer Produkte in das regulatorische Meldewesen, bei Auswirkungsstudien oder anderen Anfragen von Behörden.</p>',
 									},
 									{
 										icon: 'FinanceStrategy',
-										headline: 'Passgenaue Unterstützung für Finance & Controlling',
+										headline: 'Passgenaue Unterstützung für Finance&nbsp;&&nbsp;Controlling',
 										content:
 											'<p>Transformieren Sie Ihre Finance & Controlling-Prozesse mit der richtigen Technologie.</p><p>Als Finance-Experten bieten wir die Rechnungslegung nach dem Handelsgesetzbuch (HGB) sowie nach den International Financial Reporting Standards (IFRS) für eine Vielzahl von Bankprodukten und komplexen Strukturen. Basierend auf diesem Know-how können unsere Experten auch das Rechnungswesen für neue kundenspezifische Produkte gestalten. Unser Angebotsportfolio beinhaltet die Bereitstellung einer konsistenten Finance-Plattform sowie einzelner Komponenten, die auch die Anforderungen des Meldewesens abdecken.</p>',
 									},

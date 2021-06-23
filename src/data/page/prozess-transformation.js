@@ -189,19 +189,19 @@ module.exports = req => {
 								items: [
 									{
 										icon: 'UserSearch',
-										headline: 'Mehr Kundenorientierung und Effizienz im Kreditgeschäft',
+										headline: 'Mehr Kundenorientierung und Effizienz im&nbsp;Kreditgeschäft',
 										content:
 											'<p>Die Transformation der Kreditprozesse in Banken ist ein wichtiger Faktor auf dem Weg zu mehr Effizienz und Kundenakzeptanz.</p><p>Mit unseren Lösungen verschlanken und automatisieren wir Ihre kundenbezogenen und internen Prozesse. Wir ermöglichen echte Omni-Kanalfähigkeit, verkürzen „time-to-yes“ und „time-to-cash“ signifikant, erhöhen nachhaltig die Kundenzufriedenheit und Ihre Position im Wettbewerb. Dabei richten wir Ihre Prozesse entlang Ihrer Geschäftsstrategie aus und bringen dabei modernste Technologien zum Einsatz, wie z. B. unsere erprobten Content-Intelligent-Lösungen.</p>',
 									},
 									{
 										icon: 'FinanceStrategy',
-										headline: 'Neue Wege für Core-Banking und Payment-Lösungen',
+										headline: 'Neue Wege für Core&#8209;Banking und Payment&#8209;Lösungen',
 										content:
 											'<p>Clevere digitale Lösungen helfen Ihnen, die zunehmende Komplexität in Ihrem Tagesgeschäft zu bewältigen.</p><p>Sie möchten die Silos Ihrer Legacy-Bankenanwendungen aufbrechen und das Potenzial von Open-Banking-Lösungen nutzen? Oder Sie möchten mit Ihren Payment-Lösungen den Markt noch zukunftssicherer bedienen?<br />Als kompetenter und zuverlässiger Partner begleiten wir Sie durch die Transformation und stellen Ihre Wettbewerbsfähigkeit sicher – von der Konzeption bis zum globalen Roll-out und zur Umsetzung. Wir schrecken vor Komplexität nicht zurück!</p>',
 									},
 									{
 										icon: 'ManagingContractualFlow',
-										headline: 'Mehr Freiheiten durch ein effektives Back Office',
+										headline: 'Mehr Freiheiten durch ein effektives Back&nbsp;Office',
 										content:
 											'<p>Gestraffte Marktfolgeprozesse versprechen ein großes Einsparungspotenzial.</p><p>Wir bieten Ihnen maßgeschneiderte und agile Lösungen mit der Möglichkeit, klein zu starten und schnell zu skalieren. Die Automatisierung von Back-Office-Aufgaben bringt Ihnen zweistellige Einsparpotenziale, größere Mitarbeiter- und Kundenzufriedenheit. Wir begleiten Sie in der Transformation – von der Analyse bis zur Umsetzung.</p>',
 									},

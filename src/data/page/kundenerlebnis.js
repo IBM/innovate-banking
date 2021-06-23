@@ -136,7 +136,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="h4">Kundenbedürfnisse erkennen, Zufriedenheit steigern und neue Vertriebschancen identifizieren</h3><p>Unsere Befragungen von Führungskräften von über 400 Banken weltweit zeigen, dass Banken, die sich auf die Transformation von Kundenabläufen konzentrieren, messbare Wettbewerbsvorteile haben – sowohl auf der Kosten- als auch auf der Ertragsseite.</p>',
+									'<h3 class="h4">Kundenbedürfnisse erkennen, Zufriedenheit steigern und neue Vertriebschancen identifizieren</h3><p style="max-width: 544px;">Unsere Befragungen von Führungskräften von über 400 Banken weltweit zeigen, dass Banken, die sich auf die Transformation von Kundenabläufen konzentrieren, messbare Wettbewerbsvorteile haben – sowohl auf der Kosten- als auch auf der Ertragsseite.</p>',
 							},
 						},
 						{

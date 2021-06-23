@@ -118,7 +118,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p style="max-width: 544px;">Ihre IT ist ein entscheidender Erfolgsfaktor für das Banking der Zukunft. Wir zeigen Ihnen den Weg und unterstützen Sie bei der Umsetzung Ihrer Transformationsprojekte.</p>',
+									'<p style="max-width: 544px;">Ihre IT ist ein entscheidender Erfolgsfaktor für das Banking der Zukunft.<br />Wir zeigen Ihnen den Weg und unterstützen Sie bei der Umsetzung Ihrer Transformationsprojekte.</p>',
 							},
 						},
 					],
@@ -136,7 +136,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="h4">Mehr Nutzen und gesteigerte Wettbewerbsfähigkeit mit Hybrid-Cloud-Strategie</h3><p>Eine Hybrid-Cloud-Strategie mit der Kombination aus Cloud-Lösungen und klassischen IT-Strukturen ermöglicht das 2,5-fache an Effizienz sowie verkürzte Time-to-Market-Zyklen im Vergleich zu punktuellen Cloud-Ansätzen.</p>',
+									'<h3 class="h4">Mehr Nutzen und gesteigerte Wettbewerbs&shy;fähigkeit mit Hybrid-Cloud-Strategie</h3><p style="max-width: 544px;">Eine Hybrid-Cloud-Strategie mit der Kombination aus Cloud-Lösungen und klassischen IT-Strukturen ermöglicht das 2,5-fache an Effizienz sowie verkürzte Time-to-Market-Zyklen im Vergleich zu punktuellen Cloud-Ansätzen.</p>',
 							},
 						},
 						{
@@ -189,7 +189,7 @@ module.exports = req => {
 								items: [
 									{
 										icon: 'AppDeveloper',
-										headline: 'Mit modernisierten Bank-Anwendungen auf Zukunftskurs',
+										headline: 'Mit modernisierten Bank-Anwendungen auf&nbsp;Zukunftskurs',
 										content:
 											'<p>Ein modernes Core-Banking-System erhöht die Agilität der Bank und reduziert dabei Kosten.</p><p>Die Modernisierung Ihrer Kernanwendungen bringt Sie auf Zukunftskurs und lässt Sie von zahlreichen Vorteilen profitieren. Sie steigern die Agilität Ihres Unternehmens, schaffen die Voraussetzungen für die Interoperabilität im Ökosystem, reduzieren Abhängigkeiten von einzelnen Anbietern und senken dabei sogar Ihre IT-Ausgaben.</p><p>Wir modernisieren Ihre Core-Banking-Systeme durch die Kombination verschiedener Ansätze wie Rationalisierung/Harmonisierung, Hybrid-Cloud-Transformation und die Einführung von Standardprodukten.</p>',
 									},
@@ -201,7 +201,7 @@ module.exports = req => {
 									},
 									{
 										icon: 'FinanceStrategy',
-										headline: 'Nachhaltige Effizienzsteigerung mit der IBM Banking Platform',
+										headline: 'Nachhaltige Effizienzsteigerung mit der IBM&nbsp;Banking Platform',
 										content:
 											'<p>Die IBM Banking Platform bietet Ihnen ein Rundum-Paket für Ihre technologische Transformation.</p><p>Mit den Serviceleistungen der IBM Banking Platform können Sie Kernbankprozesse outsourcen und von Software as a Service für Kredit- und Treasury-Systeme profitieren. Sie können auch die Verwaltung des Administrative Management Service (AMS) und der Cloud nutzen.</p><p>Dadurch erreichen Sie eine schnelle und nachhaltige Effizienzsteigerung, erhalten sofortigen Zugang zu neuen Technologien und können sicher sein, dass sämtliche gesetzliche Auflagen eingehalten werden.</p>',
 									},
