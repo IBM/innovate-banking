@@ -20,9 +20,7 @@ const Footer = ({ links }) => {
 						<Column sm={4} md={2} lg={4} className={clsx(Styles.Claim, Styles.FooterColumn)}>
 							Innovate Banking ist eine
 							<br />
-							Initiative von IBM zur
-							<br />
-							digitalen Transformation.
+							Initiative von IBM zur&nbsp;digitalen Transformation.
 						</Column>
 						<Column
 							sm={4}
