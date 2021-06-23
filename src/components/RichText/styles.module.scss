@@ -102,7 +102,7 @@
 	:global(.d1) {
 		@include carbon--type-style('display-01', true);
 
-		margin-bottom: $spacing-05;
+		margin-bottom: $spacing-07;
 
 		&:global(.large) {
 			font-size: carbon--rem(100px);
