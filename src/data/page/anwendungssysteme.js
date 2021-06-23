@@ -98,6 +98,7 @@ module.exports = req => {
 					titles: {
 						left: '<p>IT-Innovationen für gesteigerte Wettbewerbsfähigkeit</p>',
 					},
+					marginBottom: true,
 					background: {
 						gradient: 'linear-gradient(180deg, #FFFFFF 0%, #EDF5FF 100%)',
 					},

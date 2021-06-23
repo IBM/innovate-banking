@@ -98,6 +98,7 @@ module.exports = req => {
 					titles: {
 						left: '<p>Ganzheitliche Transformation mit fachlicher Expertise und neuester Technologie</p>',
 					},
+					marginBottom: true,
 					background: {
 						gradient: 'linear-gradient(180deg, #FFFFFF 0%, #EDF5FF 100%)',
 					},

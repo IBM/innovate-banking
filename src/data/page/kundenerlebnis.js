@@ -98,14 +98,15 @@ module.exports = req => {
 					titles: {
 						left: '<p>Mehr Kundenbindung durch ein einzigartiges Kundenerlebnis</p>',
 					},
+					marginBottom: true,
 					background: {
 						gradient: 'linear-gradient(180deg, #FFFFFF 0%, #EDF5FF 100%)',
 					},
 					images: {
 						bottom: {
-							src: '/img/section-risikosteuerung.svg',
+							src: '/img/section-kundenerlebnis.svg',
 							width: 402,
-							height: 229,
+							height: 242,
 							layout: 'responsive',
 							style: {
 								maxWidth: '50%',

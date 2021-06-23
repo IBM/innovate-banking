@@ -98,6 +98,7 @@ module.exports = req => {
 					titles: {
 						left: '<p>Mit Technologie komplexe<br />Prozesse neu denken</p>',
 					},
+					marginBottom: true,
 					background: {
 						gradient: 'linear-gradient(180deg, #FFFFFF 0%, #EDF5FF 100%)',
 					},
@@ -105,7 +106,7 @@ module.exports = req => {
 						bottom: {
 							src: '/img/section-risikosteuerung.svg',
 							width: 402,
-							height: 229,
+							height: 219,
 							layout: 'responsive',
 							style: {
 								maxWidth: '50%',

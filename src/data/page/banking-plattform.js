@@ -98,6 +98,7 @@ module.exports = req => {
 					titles: {
 						left: '<p>Das umfassende Lösungsportfolio der IBM Banking Platform</p>',
 					},
+					marginBottom: true,
 					background: {
 						gradient: 'linear-gradient(180deg, #FFFFFF 0%, #EDF5FF 100%)',
 					},
@@ -105,7 +106,7 @@ module.exports = req => {
 						bottom: {
 							src: '/img/section-banking-plattform.svg',
 							width: 402,
-							height: 254,
+							height: 263,
 							layout: 'responsive',
 							style: {
 								maxWidth: '50%',

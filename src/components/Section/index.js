@@ -20,6 +20,7 @@ const Section = props => {
 		condensed,
 		noSpace,
 		narrow,
+		marginBottom,
 		fullWidth,
 	} = props;
 	let backgroundStyle = null;
@@ -105,7 +106,8 @@ const Section = props => {
 						narrow && narrow.top && Styles.IsNarrowTop,
 						narrow && narrow.bottom && Styles.IsNarrowBottom,
 						noSpace && noSpace.bottom && Styles.IsNoSpaceBottom,
-						noSpace && noSpace.top && Styles.IsNoSpaceTop
+						noSpace && noSpace.top && Styles.IsNoSpaceTop,
+						marginBottom && Styles.HasMarginBottom
 					)}
 				>
 					{images && images.top && (
@@ -306,6 +308,7 @@ Section.propTypes = {
 		top: PropTypes.bool,
 		bottom: PropTypes.bool,
 	}),
+	marginBottom: PropTypes.bool,
 	images: PropTypes.shape({
 		top: PropTypes.shape({
 			src: PropTypes.string.isRequired,
