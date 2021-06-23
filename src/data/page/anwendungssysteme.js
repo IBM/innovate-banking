@@ -109,7 +109,6 @@ module.exports = req => {
 							height: 283,
 							layout: 'responsive',
 							style: {
-								maxWidth: '50%',
 								marginBottom: '-5%',
 							},
 						},
