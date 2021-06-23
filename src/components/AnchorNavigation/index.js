@@ -12,8 +12,6 @@ import Styles from './styles.module.scss';
 
 const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 	const sloganListItemRef = React.createRef(null);
-	const sloganListSingleItemRef = React.createRef(null);
-	const [sloganListItemWidth, setSloganListItemWidth] = useState(180);
 	const [isSloganShown, setIsSloganShown] = useState(false);
 	const [activeItem, setActiveItem] = useState(null);
 	const [sectionInViewportChangeEvent, setSectionInViewportChangeEvent] = useState(false);
@@ -59,17 +57,11 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 		}
 	}, [sectionInViewportChangeEvent]);
 
-	useEffect(() => {
-		if (sloganListSingleItemRef.current) {
-			setSloganListItemWidth(sloganListSingleItemRef.current.offsetWidth);
-		}
-	}, [sloganListSingleItemRef.current]);
-
 	const sloganTransitionStyles = {
-		entering: { marginLeft: (sloganListItemWidth + 1) * -1 },
+		entering: { marginLeft: -180 },
 		entered: { marginLeft: 0 },
 		exiting: { marginLeft: 0 },
-		exited: { marginLeft: (sloganListItemWidth + 1) * -1 },
+		exited: { marginLeft: -180 },
 	};
 
 	return (
@@ -92,7 +84,6 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 																Styles.IsSloganItem,
 																isSloganShown && Styles.IsSloganItemVisible
 															)}
-															ref={sloganListSingleItemRef}
 															style={{
 																...sloganTransitionStyles[state],
 															}}
