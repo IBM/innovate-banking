@@ -13,6 +13,10 @@
 
 	@include bp('md') {
 		min-height: 55vh;
+
+		&.StageHome {
+			min-height: 68vh;
+		}
 	}
 
 	.HeadingWrapper {

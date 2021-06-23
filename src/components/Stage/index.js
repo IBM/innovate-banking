@@ -7,7 +7,7 @@ import Styles from './styles.module.scss';
 
 const Stage = ({ heading, subheading, image, imageMobile, isHome }) => {
 	return (
-		<div className={Styles.Stage}>
+		<div className={clsx(Styles.Stage, isHome && Styles.StageHome)}>
 			<div className={Styles.ImageHiddenMobile}>
 				<Image
 					src={image.src}
