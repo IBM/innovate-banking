@@ -95,7 +95,7 @@ module.exports = req => {
 						},
 						{
 							// eslint-disable-next-line prettier/prettier
-							name: 'Let’s Talk',
+							name: 'Let’s talk',
 							link: 'letstalk',
 							isLetsTalkItem: true,
 						},
