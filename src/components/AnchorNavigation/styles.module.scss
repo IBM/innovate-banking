@@ -71,7 +71,7 @@
 
 		&.IsSloganItem {
 			padding-right: $spacing-04 * 2;
-			display: none;
+			transition: margin 200ms;
 
 			&::after {
 				content: '';
@@ -81,12 +81,20 @@
 				position: absolute;
 				right: 0;
 				top: 50%;
+				opacity: 0;
 				transform: translate3d($spacing-04/-1, -50%, 0);
+				transition: opacity 200ms;
 			}
 
 			.Link {
 				font-weight: bold;
 				color: $white-0;
+			}
+
+			&.IsSloganItemVisible {
+				&::after {
+					opacity: 1;
+				}
 			}
 		}
 

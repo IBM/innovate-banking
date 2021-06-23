@@ -7,10 +7,14 @@ import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import { injectIntl } from 'react-intl';
 import Sticky from 'react-sticky-el';
+import { Transition } from 'react-transition-group';
 import Styles from './styles.module.scss';
 
 const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 	const sloganListItemRef = React.createRef(null);
+	const sloganListSingleItemRef = React.createRef(null);
+	const [sloganListItemWidth, setSloganListItemWidth] = useState(0);
+	const [isSloganShown, setIsSloganShown] = useState(false);
 	const [activeItem, setActiveItem] = useState(null);
 	const [sectionInViewportChangeEvent, setSectionInViewportChangeEvent] = useState(false);
 
@@ -21,8 +25,10 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 	const onFixedToggle = fixed => {
 		if (fixed) {
 			sloganListItemRef.current.classList.add(Styles.IsFixed);
+			setIsSloganShown(true);
 		} else {
 			sloganListItemRef.current.classList.remove(Styles.IsFixed);
+			setIsSloganShown(false);
 		}
 	};
 
@@ -53,6 +59,19 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 		}
 	}, [sectionInViewportChangeEvent]);
 
+	useEffect(() => {
+		if (sloganListSingleItemRef.current) {
+			setSloganListItemWidth(sloganListSingleItemRef.current.offsetWidth);
+		}
+	}, [sloganListSingleItemRef.current]);
+
+	const sloganTransitionStyles = {
+		entering: { marginLeft: (sloganListItemWidth + 1) * -1 },
+		entered: { marginLeft: 0 },
+		exiting: { marginLeft: 0 },
+		exited: { marginLeft: (sloganListItemWidth + 1) * -1 },
+	};
+
 	return (
 		<>
 			<Sticky className={Styles.StickyWrapper} onFixedToggle={onFixedToggle}>
@@ -62,6 +81,40 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 							<Column sm={0} md={8}>
 								<ul className={Styles.List}>
 									{items.map((item, index) => {
+										if (item.isTop) {
+											return (
+												<Transition in={isSloganShown} timeout={0}>
+													{state => (
+														<li
+															key={index}
+															className={clsx(
+																Styles.ListItem,
+																Styles.IsSloganItem,
+																isSloganShown && Styles.IsSloganItemVisible
+															)}
+															ref={sloganListSingleItemRef}
+															style={{
+																...sloganTransitionStyles[state],
+															}}
+														>
+															<Link
+																href={`#${item.link}`}
+																className={clsx(
+																	Styles.Link,
+																	activeItem === index && Styles.IsActive
+																)}
+																onClick={event => {
+																	onAnchorClick(event, index);
+																}}
+															>
+																{item.name}
+															</Link>
+														</li>
+													)}
+												</Transition>
+											);
+										}
+
 										return (
 											<li
 												key={index}
