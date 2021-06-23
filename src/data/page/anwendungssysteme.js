@@ -276,7 +276,7 @@ module.exports = req => {
 					},
 					titles: {
 						left:
-							'<p class="d1">Let’s talk!</p><p class="p" style="max-width: 200px;">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
+							'<p class="d1">Let’s&nbsp;talk!</p><p class="p" style="max-width: 200px;">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
 					},
 					fullWidth: true,
 					children: [
