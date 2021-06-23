@@ -24,7 +24,6 @@ $solutionTeaserStreakLength: 175px;
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 
 	&::after {
 		@include bp('lg') {
@@ -132,7 +131,6 @@ $solutionTeaserStreakLength: 175px;
 	.Text {
 		@include carbon--type-style('body-short-01', true);
 
-		margin-top: auto;
 		color: $gray-30;
 
 		@include bp('lg') {

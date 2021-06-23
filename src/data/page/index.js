@@ -197,7 +197,7 @@ module.exports = req => {
 										name: 'SolutionTeaser',
 										props: {
 											icon: 'Touch_132',
-											headline: 'Für Ihre Kund*innen',
+											headline: 'Für Ihre<br />Kund*innen',
 											text:
 												'Mehrwerte zählen – erschaffen Sie eine nachhaltige und zeitgemäße Banking-Erfahrung.',
 										},
@@ -206,7 +206,7 @@ module.exports = req => {
 										name: 'SolutionTeaser',
 										props: {
 											icon: 'Analytics32',
-											headline: 'Für mehr Effizienz',
+											headline: 'Für mehr<br />Effizienz',
 											text: 'Kosten reduzieren – strukturell, konsequent, immer transparent.',
 										},
 									},
@@ -214,7 +214,7 @@ module.exports = req => {
 										name: 'SolutionTeaser',
 										props: {
 											icon: 'Finance32',
-											headline: 'Für die Zukunft',
+											headline: 'Für die<br />Zukunft',
 											text:
 												'Infrastruktur der nächsten Generation – Compliance und Datensicherheit inklusive.',
 										},
@@ -223,7 +223,7 @@ module.exports = req => {
 										name: 'SolutionTeaser',
 										props: {
 											icon: 'HelpDesk32',
-											headline: 'Für den lokalen Markt',
+											headline: 'Für den<br />lokalen Markt',
 											text:
 												'Internationale Expertise – IBM&nbsp;ist global aktiv, aber im deutschsprachigen Raum zu&nbsp;Hause.',
 										},
@@ -254,7 +254,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="d1" style="max-width: 544px;">Banking am<br />Puls der Zeit</p><p>Als Finanzdienstleister befinden Sie sich stetig im Spannungsfeld zwischen Beständigkeit und Fortschritt. Ihre Kunden erwarten eine verlässliche, sichere und gleichzeitig innovative Banking-Erfahrung.</p><p>Um an den entscheidenden Punkten ansetzen zu können, bieten wir Ihnen Lösungen in fünf Kernbereichen. Gemeinsam finden wir die passende Herangehensweise für die Bedürfnisse Ihres Unternehmens – ganz gleich, ob Sie lokal, regional oder weltweit agieren.</p>',
+									'<p class="d1" style="max-width: 544px;">Banking am<br />Puls der Zeit</p><p style="max-width: 544px;">Als Finanzdienstleister befinden Sie sich stetig im Spannungsfeld zwischen Beständigkeit und Fortschritt. Ihre Kunden erwarten eine verlässliche, sichere und gleichzeitig innovative Banking-Erfahrung.</p><p style="max-width: 544px;">Um an den entscheidenden Punkten ansetzen zu können, bieten wir Ihnen Lösungen in fünf Kernbereichen. Gemeinsam finden wir die passende Herangehensweise für die Bedürfnisse Ihres Unternehmens – ganz gleich, ob Sie lokal, regional oder weltweit agieren.</p>',
 							},
 						},
 					],

@@ -21,7 +21,7 @@ const SolutionTeaser = ({ icon, headline, text, teaserIndex, teaserCount }) => {
 					<span className={Styles.IconWrapper}>
 						<IconComponent className={Styles.Icon} />
 					</span>
-					<h5 className={Styles.Headline}>{headline}</h5>
+					<h5 className={Styles.Headline} dangerouslySetInnerHTML={{ __html: headline }} />
 				</div>
 				<p className={Styles.Text} dangerouslySetInnerHTML={{ __html: text }} />
 			</div>
