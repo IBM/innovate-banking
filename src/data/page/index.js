@@ -274,28 +274,28 @@ module.exports = req => {
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'Prozesse<br />transformieren',
+											headline: 'Kundenerlebnis<br />neu erfinden',
 											text:
-												'<p>Vom Kreditantrag bis zur Auszahlung, von der Bestandsverwaltung oder der Zahlungsabwicklung bis zu Finance und Controlling: KI- und datengetriebene Lösungen von IBM optimieren Ihre Prozesse und machen Ihre Bank fit für die Zukunft.</p>',
+												'<p>Zufriedene Kunden sind Ihr wertvollstes Kapital. Erfahren Sie, wie Cloud-basierte Datenauswertung und KI ein einzigartiges Kundenerlebnis ermöglichen und die Arbeitswelt Ihrer Mitarbeiter*innen im Front-Office revolutionieren.</p>',
 											image: {
-												src: '/img/section-focus-teaser-process-transformation.svg',
-												width: 312,
-												height: 297,
+												src: '/img/section-kundenerlebnis.svg',
+												width: 402,
+												height: 242,
 											},
 											link: {
 												title: 'Mehr erfahren',
-												url: '/prozess-transformation',
+												url: '/kundenerlebnis',
 											},
 										},
 									},
 									{
 										name: 'FocusTeaser',
 										props: {
-											headline: 'Kundenerlebnis<br />neu erfinden',
+											headline: 'Prozesse<br />transformieren',
 											text:
-												'<p>Zufriedene Kunden sind Ihr wertvollstes Kapital. Erfahren Sie, wie Cloud-basierte Datenauswertung und KI ein einzigartiges Kundenerlebnis ermöglichen und die Arbeitswelt Ihrer Mitarbeiter*innen im Front-Office revolutionieren.</p>',
+												'<p>Vom Kreditantrag bis zur Auszahlung, von der Bestandsverwaltung oder der Zahlungsabwicklung bis zu Finance und Controlling: KI- und datengetriebene Lösungen von IBM optimieren Ihre Prozesse und machen Ihre Bank fit für die Zukunft.</p>',
 											link: {
-												url: '/kundenerlebnis',
+												url: '/prozess-transformation',
 											},
 										},
 									},
