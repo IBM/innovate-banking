@@ -17,6 +17,33 @@
 		}
 	}
 
+	:global(a) {
+		color: $link-01;
+		text-decoration: none;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $hover-primary-text;
+			text-decoration: underline;
+		}
+	}
+
+	:global(.ul) {
+		@include carbon--type-style('body-short-02', true);
+
+		list-style-type: disc;
+		padding-inline-start: 1.25rem;
+
+		> li {
+			margin-bottom: $spacing-04;
+
+			&::marker {
+				color: $gray-50;
+			}
+		}
+	}
+
 	:global(h1),
 	:global(.h1) {
 		@include carbon--type-style('productive-heading-07', true);
@@ -173,5 +200,13 @@
 		@include carbon--type-style('caption-01', true);
 
 		color: $gray-50;
+	}
+
+	:global(hr) {
+		height: 1px;
+		margin: $spacing-06 0;
+		color: inherit;
+		background-color: $gray-20;
+		border: 0;
 	}
 }
