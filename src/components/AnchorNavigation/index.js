@@ -75,10 +75,9 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 									{items.map((item, index) => {
 										if (item.isTop) {
 											return (
-												<Transition in={isSloganShown} timeout={0}>
+												<Transition key={index} in={isSloganShown} timeout={0}>
 													{state => (
 														<li
-															key={index}
 															className={clsx(
 																Styles.ListItem,
 																Styles.IsSloganItem,
