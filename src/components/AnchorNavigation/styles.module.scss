@@ -1,5 +1,6 @@
 @import 'carbon-components/scss/globals/scss/_vars.scss';
 @import '~carbon-components/scss/globals/scss/_typography.scss';
+@import '@/styles/mixins';
 
 .StickyWrapper {
 	z-index: 1001 !important;
@@ -21,9 +22,13 @@
 		display: flex;
 		flex: 1 1 100%;
 		height: 100%;
-		padding: 0;
+		padding: 0 0 0 1rem;
 		margin: 0;
 		align-items: center;
+
+		@include bp('lg') {
+			padding-left: 1.75rem;
+		}
 	}
 
 	.Link {
