@@ -50,7 +50,7 @@ module.exports = req => {
 					heading: 'Innovate<br />Banking',
 					subheading: 'Eine Initiative von IBM',
 					image: {
-						src: '/img/stage-home.jpg',
+						src: '/img/stage-home.svg',
 						width: 1056,
 						height: 386,
 						alt: 'IBM Smarter Banking',
