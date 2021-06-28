@@ -71,6 +71,7 @@
 
 		&.IsSloganItem {
 			padding-right: $spacing-04 * 2;
+			opacity: 0;
 			transition: margin 200ms;
 
 			&::after {

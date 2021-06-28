@@ -58,10 +58,10 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 	}, [sectionInViewportChangeEvent]);
 
 	const sloganTransitionStyles = {
-		entering: { marginLeft: -180 },
-		entered: { marginLeft: 0 },
-		exiting: { marginLeft: 0 },
-		exited: { marginLeft: -180 },
+		entering: { marginLeft: -180, opacity: 0 },
+		entered: { marginLeft: 0, opacity: 1 },
+		exiting: { marginLeft: 0, opacity: 1 },
+		exited: { marginLeft: -180, opacity: 0 },
 	};
 
 	return (
