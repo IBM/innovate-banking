@@ -114,7 +114,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p style="max-width: 544px;">IBM ist für zahlreiche Banken im deutschsprachigen Markt aktiv - viele von uns sind selbst Banker. Ihre fachlichen Anforderungen bringen wir in Einklang mit Technologien wie Cloud und Künstlicher Intelligenz. Wir begleiten Sie ganzheitlich durch die digitale Transformation hin zu einem ganz neuen Banking-Erlebnis.</p>',
+									'<p style="max-width: 544px;">IBM ist für zahlreiche Banken im deutschsprachigen Markt aktiv – viele von uns sind selbst Banker. Ihre fachlichen Anforderungen bringen wir in Einklang mit Technologien wie Cloud und Künstlicher Intelligenz. Wir begleiten Sie ganzheitlich durch die digitale Transformation hin zu einem ganz neuen Banking-Erlebnis.</p>',
 							},
 						},
 					],
