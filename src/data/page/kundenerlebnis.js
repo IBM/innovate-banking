@@ -136,14 +136,14 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="h4">Kundenbedürfnisse erkennen, Zufriedenheit steigern und neue Vertriebschancen identifizieren</h3><p style="max-width: 544px;">Unsere Befragungen von Führungskräften von über 400 Banken weltweit zeigen, dass Banken, die sich auf die Transformation von Kundenabläufen konzentrieren, messbare Wettbewerbsvorteile haben – sowohl auf der Kosten- als auch auf der Ertragsseite.</p>',
+									'<h3 class="h4">Kundenbedürfnisse erkennen, Zufriedenheit steigern und neue Vertriebschancen identifizieren</h3><p style="max-width: 544px; margin-bottom: 2rem;">Unsere Befragungen von Führungskräften von über 400 Banken weltweit zeigen, dass Banken, die sich auf die Transformation von Kundenabläufen konzentrieren, messbare Wettbewerbsvorteile haben – sowohl auf der Kosten- als auch auf der Ertragsseite.</p>',
 							},
 						},
 						{
 							name: 'RichText',
 							props: {
 								content:
-									'<div class="bx--row" style="margin-bottom: 1.5rem;"><div class="bx--col"><h3 class="d1">+30%</h3><p>Ertrag pro Kunde (Privatkunden, Zins- und Kommissionsgeschäft)</p></div><div class="bx--col"><h3 class="d1">–20%</h3><p>Cost-to-Serve pro Kunde (Retail)</p></div></div>',
+									'<div class="bx--row" style="margin-bottom: 1.5rem;"><div class="bx--col"><h3 class="d1" style="margin-bottom: 1rem;">+30%</h3><p>Ertrag pro Kunde (Privatkunden, Zins- und Kommissionsgeschäft)</p></div><div class="bx--col"><h3 class="d1" style="margin-bottom: 1rem;">–20%</h3><p>Cost-to-Serve pro Kunde (Retail)</p></div></div>',
 							},
 						},
 						{

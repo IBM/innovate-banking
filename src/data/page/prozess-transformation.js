@@ -136,14 +136,14 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="h4">Gesteigerte operative Exzellenz und höhere Wettbewerbsfähigkeit mit IBM</h3><p>Der richtige Einsatz vorhandener Technologien ermöglicht die Transformation komplexer Prozesse in intelligente Workflows mit Einsparungen von mehr als 50 % der Betriebskosten und eine signifikante Steigerung der Kundenzufriedenheit von über 10 %.</p>',
+									'<h3 class="h4">Gesteigerte operative Exzellenz und höhere Wettbewerbsfähigkeit mit IBM</h3><p style="max-width: 544px; margin-bottom: 2rem;">Der richtige Einsatz vorhandener Technologien ermöglicht die Transformation komplexer Prozesse in intelligente Workflows mit Einsparungen von mehr als 50 % der Betriebskosten und eine signifikante Steigerung der Kundenzufriedenheit von über 10 %.</p>',
 							},
 						},
 						{
 							name: 'RichText',
 							props: {
 								content:
-									'<div class="bx--row" style="margin-bottom: 1.5rem;"><div class="bx--col"><h3 class="d1">50%</h3><p>Kosteneinsparung</p></div><div class="bx--col"><h3 class="d1">10%</h3><p>Steigerung der Kundenzufriedenheit (NPS)</p></div></div>',
+									'<div class="bx--row" style="margin-bottom: 1.5rem;"><div class="bx--col"><h3 class="d1" style="margin-bottom: 1rem;">50%</h3><p>Kosteneinsparung</p></div><div class="bx--col"><h3 class="d1" style="margin-bottom: 1rem;">10%</h3><p>Steigerung der Kundenzufriedenheit (NPS)</p></div></div>',
 							},
 						},
 					],
