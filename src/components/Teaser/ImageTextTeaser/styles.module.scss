@@ -16,15 +16,12 @@
 		background: $gray-20;
 	}
 
-	.Image {
-	}
-
 	.RichText {
-		margin: $spacing-05;
+		margin: $spacing-05 $spacing-05 $spacing-07;
 	}
 
 	.Icon {
-		margin: $spacing-05;
+		margin: auto $spacing-05 $spacing-05;
 		fill: $blue-60;
 	}
 }

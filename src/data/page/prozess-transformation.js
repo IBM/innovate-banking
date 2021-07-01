@@ -136,14 +136,14 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="h4">Gesteigerte operative Exzellenz und höhere Wettbewerbsfähigkeit mit IBM</h3><p>Unsere Analysen identifizieren in Bankprozessen ein durchschnittliches Einsparungspotenzial von 30 % durch die Transformation der Prozesse unter Nutzung neuer Technologien. Dies hat unmittelbaren Einfluss auf eine verbesserte Cost-Income-Ratio.</p>',
+									'<h3 class="h4">Gesteigerte operative Exzellenz und höhere Wettbewerbsfähigkeit mit IBM</h3><p>Der richtige Einsatz vorhandener Technologien ermöglicht die Transformation komplexer Prozesse in intelligente Workflows mit Einsparungen von mehr als 50 % der Betriebskosten und eine signifikante Steigerung der Kundenzufriedenheit von über 10 %.</p>',
 							},
 						},
 						{
 							name: 'RichText',
 							props: {
 								content:
-									'<h3 class="d1 large">30%</h3><p>Einsparungspotenzial durch<br />Prozess-Transformation im Banking</p>',
+									'<div class="bx--row" style="margin-bottom: 1.5rem;"><div class="bx--col"><h3 class="d1">50%</h3><p>Kosteneinsparung</p></div><div class="bx--col"><h3 class="d1">10%</h3><p>Steigerung der Kundenzufriedenheit (NPS)</p></div></div>',
 							},
 						},
 					],
@@ -197,7 +197,7 @@ module.exports = req => {
 										icon: 'FinanceStrategy',
 										headline: 'Neue Wege für Core&#8209;Banking und Payment&#8209;Lösungen',
 										content:
-											'<p>Clevere digitale Lösungen helfen Ihnen, die zunehmende Komplexität in Ihrem Tagesgeschäft zu bewältigen.</p><p>Sie möchten die Silos Ihrer Legacy-Bankenanwendungen aufbrechen und das Potenzial von Open-Banking-Lösungen nutzen? Oder Sie möchten mit Ihren Payment-Lösungen den Markt noch zukunftssicherer bedienen?<br />Als kompetenter und zuverlässiger Partner begleiten wir Sie durch die Transformation und stellen Ihre Wettbewerbsfähigkeit sicher – von der Konzeption bis zum globalen Roll-out und zur Umsetzung. Wir schrecken vor Komplexität nicht zurück!</p>',
+											'<p>Mit einer Prozesslandschaft basierend auf digitalen Lösungen und intelligenten Workflows bringen Sie Ihre Kernleistungen auf Zukunftskurs. Wir finden den passgenauen Ansatz für Ihr Haus.</p><p>Eine Ergänzung oder stufenweise Ablösung von Legacy-Anwendungen macht den Weg frei für innovative Open-Banking-Lösungen. Herausforderungen im Zahlungsverkehr rund um Instant, neue EPI-Karten und digitale Währungen sowie die zeitgleiche Transformation etablierter Infrastrukturen im Markt erfordern umsichtige und schnelle Navigation.</p><p>Als kompetenter, zuverlässiger Partner begleiten wir sie End-to-End bei der Konzeption notwendiger Anpassungen in den Prozessen und Systemen, der Positionierung neuer Produkte sowie der fachlichen und technischen Umsetzung.</p>',
 									},
 									{
 										icon: 'ManagingContractualFlow',

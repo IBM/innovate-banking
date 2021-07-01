@@ -194,16 +194,16 @@ module.exports = req => {
 											'<p>Ein modernes Core-Banking-System erhöht die Agilität der Bank und reduziert dabei Kosten.</p><p>Die Modernisierung Ihrer Kernanwendungen bringt Sie auf Zukunftskurs und lässt Sie von zahlreichen Vorteilen profitieren. Sie steigern die Agilität Ihres Unternehmens, schaffen die Voraussetzungen für die Interoperabilität im Ökosystem, reduzieren Abhängigkeiten von einzelnen Anbietern und senken dabei sogar Ihre IT-Ausgaben.</p><p>Wir modernisieren Ihre Core-Banking-Systeme durch die Kombination verschiedener Ansätze wie Rationalisierung/Harmonisierung, Hybrid-Cloud-Transformation und die Einführung von Standardprodukten.</p>',
 									},
 									{
+										icon: 'FinanceStrategy',
+										headline: 'Höhere Effizienz durch strategische&nbsp;Cloud&#8209;Architekturen',
+										content:
+											'<p>Cloud-Technologien steigern die Effizienz und die Geschwindigkeit in verschiedenen Bereichen Ihrer IT.</p><p>Mit unserer IT-Advisory unterstützen wir Sie bei der Definition Ihrer IT-Architektur und Ihrer Roadmap in die Cloud. Wir begleiten Sie von der Analyse über die Planung bis zur Umsetzung strategischer Architekturen.</p><p>Wir verbinden dabei individuelle, technologische, organisatorische und regulatorische Aspekte und erarbeiten gemeinsam Ihre IT-Strategie.</p>',
+									},
+									{
 										icon: 'Touch',
 										headline: 'Front-End-Digitalisierung für gesteigerte Kundenzufriedenheit',
 										content:
 											'<p>Smarte Technologie führt zu einem besseren Kundenerlebnis und zu neuen Umsatzströmen.</p><p>Unsere Lösungen umfassen eine State-of-the-Art IT-Integrationsarchitektur, Design und Erstellung der Application Programming Interfaces (API) sowie die Implementierung von Best-in-Class-Lösungen durch eine breite Palette von Independent Software Vendors (ISVs).</p><p>Dadurch erreichen wir nicht nur eine gesteigerte Kundenzufriedenheit, sondern auch eine volle Integration in moderne Ökosysteme und Zugang zu neuen branchenübergreifenden Umsatzströmen.</p>',
-									},
-									{
-										icon: 'FinanceStrategy',
-										headline: 'Nachhaltige Effizienzsteigerung mit der IBM&nbsp;Banking Platform',
-										content:
-											'<p>Die IBM Banking Platform bietet Ihnen ein Rundum-Paket für Ihre technologische Transformation.</p><p>Mit den Serviceleistungen der IBM Banking Platform können Sie Kernbankprozesse outsourcen und von Software as a Service für Kredit- und Treasury-Systeme profitieren. Sie können auch die Verwaltung des Administrative Management Service (AMS) und der Cloud nutzen.</p><p>Dadurch erreichen Sie eine schnelle und nachhaltige Effizienzsteigerung, erhalten sofortigen Zugang zu neuen Technologien und können sicher sein, dass sämtliche gesetzliche Auflagen eingehalten werden.</p>',
 									},
 								],
 							},

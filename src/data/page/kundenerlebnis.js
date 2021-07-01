@@ -300,31 +300,6 @@ module.exports = req => {
 									{
 										name: 'LetsTalkTeaser',
 										props: {
-											headline: 'Ilker Uzkan',
-											copy: 'Banking Lead DACH<br />IBM iX',
-											image: {
-												src: '/img/people/ilker.jpg',
-												width: 448,
-												height: 448,
-											},
-											links: [
-												{
-													type: 'linkedIn',
-													title: 'Vernetzen auf Linkedin',
-													url: 'https://www.linkedin.com/in/ilkeruzkan',
-												},
-												{
-													type: 'email',
-													title: 'Kontakt aufnehmen',
-													url:
-														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Uzkan%2C%20',
-												},
-											],
-										},
-									},
-									{
-										name: 'LetsTalkTeaser',
-										props: {
 											headline: 'Holger Horn',
 											copy: 'Senior Partner<br />IBM iX',
 											image: {
@@ -343,6 +318,31 @@ module.exports = req => {
 													title: 'Kontakt aufnehmen',
 													url:
 														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Horn%2C%20',
+												},
+											],
+										},
+									},
+									{
+										name: 'LetsTalkTeaser',
+										props: {
+											headline: 'Ilker Uzkan',
+											copy: 'Banking Lead DACH<br />IBM iX',
+											image: {
+												src: '/img/people/ilker.jpg',
+												width: 448,
+												height: 448,
+											},
+											links: [
+												{
+													type: 'linkedIn',
+													title: 'Vernetzen auf Linkedin',
+													url: 'https://www.linkedin.com/in/ilkeruzkan',
+												},
+												{
+													type: 'email',
+													title: 'Kontakt aufnehmen',
+													url:
+														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Uzkan%2C%20',
 												},
 											],
 										},

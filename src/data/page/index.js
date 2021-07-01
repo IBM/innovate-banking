@@ -147,7 +147,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="h2" style="max-width: 544px; font-weight: 400;">Mit uns die digitale Transformation meistern</p><p style="max-width: 544px;">Wir sind Ihr Partner für die digitale Transformation. Denn wir vereinen Banking-Know-how mit technischen Innovationen und bieten Ihnen individualisierte Lösungen aus unserem weltweiten Netzwerk.</p>',
+									'<p class="h2" style="max-width: 544px; font-weight: 400;">Mit uns die digitale Transformation meistern</p><p style="max-width: 544px;">Wir sind Ihr Partner für nachhaltige digitale Transformation. Denn wir vereinen Banking-Know-how mit technischen Innovationen und bieten Ihnen individualisierte Lösungen aus unserem weltweiten Netzwerk.</p>',
 							},
 						},
 					],
@@ -213,7 +213,7 @@ module.exports = req => {
 											icon: 'Finance32',
 											headline: 'Für die<br />Zukunft',
 											text:
-												'Infrastruktur der nächsten Generation – Compliance und Datensicherheit inklusive.',
+												'IT-Systeme für die nächste Generation – Compliance und Datensicherheit inklusive.',
 										},
 									},
 									{
@@ -222,7 +222,7 @@ module.exports = req => {
 											icon: 'HelpDesk32',
 											headline: 'Für den<br />lokalen Markt',
 											text:
-												'Internationale Expertise – IBM&nbsp;ist global aktiv, aber im deutschsprachigen Raum zu&nbsp;Hause.',
+												'Internationale Expertise – IBM&nbsp;ist global aktiv, aber im deutsch&shy;sprachigen Raum zu&nbsp;Hause und vor&nbsp;Ort.',
 										},
 									},
 								],
@@ -314,7 +314,7 @@ module.exports = req => {
 										props: {
 											headline: 'Anwendungssysteme<br />modernisieren',
 											text:
-												'<p>Mit Innovationen aus der IBM Cloud durch die digitale Transformation: Wir begleiten die Erneuerung Ihrer Infrastruktur mit maßgeschneiderten Lösungen – von der Entwicklung bis zur Installation.</p>',
+												'<p>Mit Cloud-Innovationen durch die digitale Transformation: Wir begleiten die Modernisierung Ihrer Anwendungen und Infrastruktur mit maßgeschneiderten Lösungen – vom Design über die Entwicklung bis hin zum Betrieb.</p>',
 											link: {
 												url: '/anwendungssysteme',
 											},
@@ -654,31 +654,6 @@ module.exports = req => {
 									{
 										name: 'LetsTalkTeaser',
 										props: {
-											headline: 'Jean-Henrik Zitterbart',
-											copy: 'Partner<br />Banking & Financial Markets',
-											image: {
-												src: '/img/people/jean.jpg',
-												width: 288,
-												height: 288,
-											},
-											links: [
-												{
-													type: 'linkedIn',
-													title: 'Vernetzen auf Linkedin',
-													url: 'https://www.linkedin.com/in/jean-henrik-zitterbart-b294a39b',
-												},
-												{
-													type: 'email',
-													title: 'Kontakt aufnehmen',
-													url:
-														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Zitterbart%2C%20',
-												},
-											],
-										},
-									},
-									{
-										name: 'LetsTalkTeaser',
-										props: {
 											headline: 'Bernd Neubauer',
 											copy: 'Senior Partner<br />Banking & Financial Markets',
 											image: {
@@ -697,6 +672,31 @@ module.exports = req => {
 													title: 'Kontakt aufnehmen',
 													url:
 														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Neubauer%2C%20',
+												},
+											],
+										},
+									},
+									{
+										name: 'LetsTalkTeaser',
+										props: {
+											headline: 'Jean-Henrik Zitterbart',
+											copy: 'Partner<br />Banking & Financial Markets',
+											image: {
+												src: '/img/people/jean.jpg',
+												width: 288,
+												height: 288,
+											},
+											links: [
+												{
+													type: 'linkedIn',
+													title: 'Vernetzen auf Linkedin',
+													url: 'https://www.linkedin.com/in/jean-henrik-zitterbart-b294a39b',
+												},
+												{
+													type: 'email',
+													title: 'Kontakt aufnehmen',
+													url:
+														'mailto:bfm.innovation.lab@de.ibm.com?subject=Innovate%20Banking&body=Sehr%20geehrter%20Herr%20Zitterbart%2C%20',
 												},
 											],
 										},
