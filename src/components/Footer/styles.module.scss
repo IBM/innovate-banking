@@ -25,6 +25,22 @@
 
 	.LinkListItem {
 
+		a {
+			padding: $spacing-05 0;
+			color: $gray-40;
+			text-decoration: none;
+
+			&:hover {
+				color: $blue-30;
+				text-decoration: none;
+			}
+
+			&:active,
+			&:focus {
+				text-decoration: none;
+				color: $blue-50;
+			}
+		}
 	}
 
 	.Link {
