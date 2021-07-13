@@ -42,6 +42,9 @@ const Footer = ({ links }) => {
 										</li>
 									);
 								})}
+								<li className={Styles.LinkListItem}>
+									<span id="teconsent" style={{ display: 'none' }} />
+								</li>
 							</ul>
 						</Column>
 					</Row>
