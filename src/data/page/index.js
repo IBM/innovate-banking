@@ -147,7 +147,7 @@ module.exports = req => {
 							name: 'RichText',
 							props: {
 								content:
-									'<p class="h2" style="max-width: 544px; font-weight: 400;">Mit uns die digitale Transformation meistern</p><p style="max-width: 544px;">Wir sind Ihr Partner für nachhaltige digitale Transformation. Denn wir vereinen Banking-Know-how mit technischen Innovationen und bieten Ihnen individualisierte Lösungen aus unserem weltweiten Netzwerk.</p>',
+									'<p class="h2" style="max-width: 544px; font-weight: 400;">Mit uns die digitale Transformation meistern</p><p style="max-width: 544px;">Wir sind Ihr Partner für nachhaltige digitale Transformation, denn wir vereinen Banking-Know-how mit technischen Innovationen und bieten Ihnen individualisierte Lösungen aus unserem weltweiten Netzwerk.</p>',
 							},
 						},
 					],
@@ -618,7 +618,7 @@ module.exports = req => {
 										props: {
 											headline: 'Edge',
 											text:
-												'<p>Mit Edge-Computing können Sie große Datenvolumen direkt an der Quelle bearbeiten, da Bankanwednungen näher an Datenquellen wie IoT-Geräte oder lokale Edge-Server rücken. Wir helfen Ihnen bei der Optimierung Ihrer Betriebsabläufe und der Erneuerung von Kundenservices auf Basis dieser technischen Innovation.</p>',
+												'<p>Mit Edge-Computing können Sie große Datenvolumen direkt an der Quelle bearbeiten, da Bankanwendungen näher an Datenquellen wie IoT-Geräte oder lokale Edge-Server rücken. Wir helfen Ihnen bei der Optimierung Ihrer Betriebsabläufe und der Erneuerung von Kundenservices auf Basis dieser technischen Innovation.</p>',
 											link: {
 												url: 'https://www.ibm.com/de-de/cloud/what-is-edge-computing',
 											},
