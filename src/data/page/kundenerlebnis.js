@@ -216,7 +216,7 @@ module.exports = req => {
 										icon: 'Analyze',
 										headline: 'Marketing und Vertrieb effizient umsetzen&nbsp;und&nbsp;steuern',
 										content:
-											'<p>Unsere Lösungen ermöglichen die nahtlose Orchestrierung von Kundenkontext, Berührungspunkten und Bankprozessen.</p><p>Unsere Erfolgsfaktoren sind analytische Fähigkeiten, die lückenlose Einbeziehung von Daten und die Aussteuerung relevanter Inhalte auf den geeigneten Zugangspunkt. Die Kombination regelbasierter Ansätze mit spezialisierter KI ermöglicht ein effiziente und intelligente Steuerung Ihrer Kundenbeziehungen.</p><p>Dazu nutzen wir bewährte cloud-basierte Standardplattformen für ein beschleunigtes Time-to-Market, unterstützen Ihren operativen Betrieb bedarfsgerecht mit der benötigten Expertise und ermöglichen Banken so die Neuallokation bestehender Ressourcen.</p>',
+											'<p>Unsere Lösungen ermöglichen die nahtlose Orchestrierung von Kundenkontext, Berührungspunkten und Bankprozessen.</p><p>Unsere Erfolgsfaktoren sind analytische Fähigkeiten, die lückenlose Einbeziehung von Daten und die Aussteuerung relevanter Inhalte auf den geeigneten Zugangspunkt. Die Kombination regelbasierter Ansätze mit spezialisierter KI ermöglicht eine effiziente und intelligente Steuerung Ihrer Kundenbeziehungen.</p><p>Dazu nutzen wir bewährte cloud-basierte Standardplattformen für ein beschleunigtes Time-to-Market, unterstützen Ihren operativen Betrieb bedarfsgerecht mit der benötigten Expertise und ermöglichen Banken so die Neuallokation bestehender Ressourcen.</p>',
 									},
 								],
 							},
