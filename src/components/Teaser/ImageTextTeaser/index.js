@@ -8,7 +8,7 @@ import Styles from './styles.module.scss';
 
 const ImageTextTeaser = ({ text, image, link }) => {
 	return (
-		<Column sm={4} lg={8}>
+		<Column sm={4} md={4} lg={8}>
 			<Link href={link} className={Styles.ImageTextTeaser} target="_blank">
 				<Image
 					src={image.src}
