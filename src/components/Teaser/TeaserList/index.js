@@ -7,6 +7,13 @@ import Styles from './styles.module.scss';
 
 const TeaserList = ({ children, rowWrap, showPagination }) => {
 	const childCount = children.length;
+	let breakpointMd = null;
+
+	if (typeof window !== 'undefined') {
+		breakpointMd = window.matchMedia('(min-width: 42rem)');
+	}
+
+	const translationMultiplier = breakpointMd?.matches ? -50 : -100;
 
 	const [currentPage, setCurrentPage] = useState(0);
 
@@ -24,7 +31,7 @@ const TeaserList = ({ children, rowWrap, showPagination }) => {
 			<ConditionalWrapper
 				condition={rowWrap === true}
 				wrapper={wrappedChildren => {
-					const currentTranslation = currentPage * -50;
+					const currentTranslation = currentPage * translationMultiplier;
 
 					return (
 						<>
