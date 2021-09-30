@@ -44,7 +44,7 @@ const VideoButton = ({ title, subtitle }) => {
 				<div className={Styles.Video}>
 					<iframe
 						ref={iFrameRef}
-						src="https://www.youtube-nocookie.com/embed/mm8QhgSBVZM?modestbranding=1"
+						src="https://www.youtube-nocookie.com/embed/U5eK56asMSQ?modestbranding=1"
 						title="Video player"
 						allowFullScreen
 					/>
