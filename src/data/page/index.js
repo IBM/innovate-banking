@@ -52,7 +52,7 @@ module.exports = req => {
 					image: {
 						src: '/img/stage-home.svg',
 						width: 1056,
-						height: 386,
+						height: 504,
 						alt: 'IBM Smarter Banking',
 					},
 					imageMobile: {
