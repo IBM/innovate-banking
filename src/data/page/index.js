@@ -3,7 +3,7 @@ module.exports = req => {
 	return {
 		meta: {
 			title: 'Innovate Banking',
-			slogan: 'Eine Initiative von IBM',
+			slogan: 'Eine Initiative von IBM Consulting',
 			isHome: true,
 		},
 		components: [
@@ -48,7 +48,7 @@ module.exports = req => {
 				name: 'Stage',
 				props: {
 					heading: 'Innovate<br />Banking',
-					subheading: 'Eine Initiative von IBM',
+					subheading: 'Eine Initiative von IBM Consulting',
 					image: {
 						src: '/img/stage-home.svg',
 						width: 1056,
