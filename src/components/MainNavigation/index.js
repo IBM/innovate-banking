@@ -1,11 +1,9 @@
+import { Close32, Menu32 } from '@carbon/icons-react';
+import { Button, Column, Grid, Row } from 'carbon-components-react';
+import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import { Row, Grid, Column, Button } from 'carbon-components-react';
-
-import clsx from 'clsx';
-
 import Styles from './styles.module.scss';
-import { Close32, Menu32 } from '@carbon/icons-react';
 
 const MainNavigation = ({ items, pageMeta }) => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +23,7 @@ const MainNavigation = ({ items, pageMeta }) => {
 	return (
 		<header className={clsx(Styles.NavHeader, isOpen && Styles.IsOpen)}>
 			<a href="/" className={clsx(Styles.ListItemLink, Styles.MobileHomeLink)}>
-				<img src="/svg/logo.svg" height={42} width={66} />
+				<img src="/svg/logo.svg" width={47} height={29} />
 			</a>
 			<Button className={Styles.MobileMenuIcon} onClick={toggleOpenState}>
 				{!isOpen && <Menu32 />}
@@ -38,7 +36,7 @@ const MainNavigation = ({ items, pageMeta }) => {
 							<ul className={Styles.List}>
 								<li className={clsx(Styles.ListItem, !pageMeta.isHome && Styles.HasLogoTitle)}>
 									<a href="/" className={Styles.ListItemLink}>
-										<img src="/svg/logo.svg" height={42} width={66} />
+										<img src="/svg/logo.svg" width={47} height={29} />
 										<span
 											className={clsx(
 												Styles.LogoTitle,
