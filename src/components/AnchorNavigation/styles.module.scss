@@ -11,7 +11,8 @@
 }
 
 .AnchorNavigation {
-	background: $black-100;
+	padding: 0 1rem;
+	background: $gray-10;
 	z-index: 1001;
 
 	& * {
@@ -36,27 +37,27 @@
 	}
 
 	.Link {
-		@include carbon--type-style('body-short-02', true);
+		@include carbon--type-style('body-short-01', true);
 
 		display: flex;
 		align-items: center;
 		text-decoration: none;
-		padding: $spacing-04;
+		padding: $spacing-04 $spacing-05;
 		border-top: 3px solid transparent;
-		color: $gray-30;
+		color: $black-100;
 		transition: all 250ms ease-in-out;
 
 		&:hover {
-			background: $interactive-02;
-			color: $white-0;
+			background: $white-0;
+			color: $black-100;
 		}
 
 		&:focus,
 		&:active,
 		&.IsActive {
-			background: $interactive-02;
+			background: $white-0;
 			border-top-color: $interactive-01;
-			color: $white-0;
+			color: $black-100;
 		}
 
 		&.IsLetsTalkLink {
@@ -98,7 +99,6 @@
 
 			.Link {
 				font-weight: bold;
-				color: $white-0;
 			}
 
 			&.IsSloganItemVisible {
@@ -109,6 +109,7 @@
 		}
 
 		&.IsLetsTalkListItem {
+			margin-right: 1rem;
 			margin-left: auto;
 		}
 	}
