@@ -549,7 +549,7 @@ module.exports = req => {
 					},
 					images: {
 						top: {
-							src: '/img/section-ibm-garage.jpg',
+							src: '/img/section-ibm-garage.svg',
 							width: 608,
 							height: 393,
 							layout: 'intrinsic',
