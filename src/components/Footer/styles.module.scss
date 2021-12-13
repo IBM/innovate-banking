@@ -50,14 +50,14 @@
 		text-decoration: none;
 
 		&:hover {
-			color: $blue-30;
+			color: $cyan-20;
 			text-decoration: none;
 		}
 
 		&:active,
 		&:focus {
 			text-decoration: none;
-			color: $blue-50;
+			color: $blue-60;
 		}
 	}
 }
