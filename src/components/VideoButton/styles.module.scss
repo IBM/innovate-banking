@@ -25,7 +25,7 @@
 
 .Icon {
 	margin-right: $spacing-05;
-	fill: $magenta-40;
+	fill: $blue-60;
 }
 
 .Title {
@@ -33,14 +33,13 @@
 
 	display: block;
 	margin-bottom: $spacing-03;
-	color: $white-0;
 }
 
 .Subtitle {
 	@include carbon--type-style('body-short-01', true);
 
 	display: block;
-	color: $magenta-40;
+	color: $blue-60;
 }
 
 .Modal {
