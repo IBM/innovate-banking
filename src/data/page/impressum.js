@@ -49,13 +49,13 @@ module.exports = req => {
 				props: {
 					heading: 'Impressum',
 					image: {
-						src: '/img/stage-process-transformation.jpg',
+						src: '/img/stage-subpage.png',
 						width: 1056,
 						height: 386,
 						alt: 'Impressum',
 					},
 					imageMobile: {
-						src: '/img/stage-process-transformation-mobile.jpg',
+						src: '/img/stage-subpage-mobile.png',
 						width: 672,
 						height: 672,
 						alt: 'Impressum',

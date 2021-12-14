@@ -49,13 +49,13 @@ module.exports = req => {
 				props: {
 					heading: 'Risk & Compliance<br />nachhaltig steuern',
 					image: {
-						src: '/img/stage-process-transformation.jpg',
+						src: '/img/stage-subpage.png',
 						width: 1056,
 						height: 386,
 						alt: 'Risk & Compliance nachhaltig steuern',
 					},
 					imageMobile: {
-						src: '/img/stage-process-transformation-mobile.jpg',
+						src: '/img/stage-subpage-mobile.png',
 						width: 672,
 						height: 672,
 						alt: 'Risk & Compliance nachhaltig steuern',
@@ -100,7 +100,7 @@ module.exports = req => {
 					},
 					marginBottom: true,
 					background: {
-						gradient: 'linear-gradient(180deg, #FFFFFF 0%, #EDF5FF 100%)',
+						gradient: 'linear-gradient(180deg, #fff 35%, #f4f4f4 100%)',
 					},
 					images: {
 						bottom: {
@@ -176,9 +176,8 @@ module.exports = req => {
 						},
 					},
 					background: {
-						dark: true,
-						gradient:
-							'linear-gradient(180deg, rgba(38,38,38,1) 0%, rgba(38,38,38,1) 25%, rgba(8,21,59,1) 40%, rgba(0,44,154,1) 100%)',
+						dark: false,
+						color: '#dcf2ff',
 					},
 					colWrapChildren: false,
 					rowWrapChildren: false,
@@ -233,8 +232,8 @@ module.exports = req => {
 							'<p>Ihre Vorteile</p><p class="eh4">Unser Angebot für Ihren Erfolg<br />im Bereich Risk & Compliance</p>',
 					},
 					background: {
-						dark: true,
-						color: '#262626',
+						dark: false,
+						color: '#fff',
 					},
 					narrow: {
 						bottom: true,
@@ -284,7 +283,7 @@ module.exports = req => {
 				props: {
 					id: 'letstalk',
 					background: {
-						color: '#161616',
+						color: '#061727',
 						dark: true,
 					},
 					titles: {
