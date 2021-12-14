@@ -42,6 +42,10 @@
 				color: $blue-50;
 			}
 		}
+
+		> span {
+			padding: $spacing-05 0;
+		}
 	}
 
 	.Link {
