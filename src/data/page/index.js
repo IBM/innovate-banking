@@ -385,6 +385,48 @@ module.exports = req => {
 									{
 										name: 'ImageTextTeaser',
 										props: {
+											text:
+												'<p>Finanzindustrie: Was kommt, was bleibt, was geht? Unsere Top 10</p>',
+											image: {
+												src: '/img/banking-insights/teaser-9.jpg',
+												width: 576,
+												height: 324,
+											},
+											link:
+												'https://www.ibm.com/blogs/think/de-de/2021/09/finanzindustrie-top-10/',
+										},
+									},
+									{
+										name: 'ImageTextTeaser',
+										props: {
+											text:
+												'<p>IBM unterstützt Erste Bank bei der Digitalisierung der Bilanzanalyse mit KI und Cloud Technologie</p>',
+											image: {
+												src: '/img/banking-insights/teaser-8.jpg',
+												width: 576,
+												height: 324,
+											},
+											link:
+												'https://de.newsroom.ibm.com/21-02-21_IBM-unterstutzt-Erste-Bank-bei-der-Digitalisierung-der-Bilanzanalyse-mit-KI-und-Cloud-Technologie',
+										},
+									},
+									{
+										name: 'ImageTextTeaser',
+										props: {
+											text:
+												'<p>Künstliche Intelligenz im Banking: Durch gezielte Kundenansprache zum Erfolg</p>',
+											image: {
+												src: '/img/banking-insights/teaser-7.jpg',
+												width: 576,
+												height: 324,
+											},
+											link:
+												'https://www.ibm.com/blogs/think/de-de/2021/07/kuenstliche-intelligenz-im-banking/',
+										},
+									},
+									{
+										name: 'ImageTextTeaser',
+										props: {
 											text: '<p>Gesamtbanksteuerung:<br />Veränderung ist machbar</p>',
 											image: {
 												src: '/img/banking-insights/teaser-1.jpg',
