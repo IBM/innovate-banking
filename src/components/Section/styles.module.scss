@@ -86,6 +86,27 @@
 		}
 	}
 
+	.RightImage,
+	.RightImageMobile {
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+	}
+
+	.RightImageHiddenMobile {
+		@include bp('lg', true) {
+			display: none;
+		}
+	}
+
+	.RightImageMobile {
+		margin-bottom: $spacing-07;
+
+		@include bp('lg', false) {
+			display: none;
+		}
+	}
+
 	.BottomImage,
 	.BottomImageMobile {
 		margin: 0 auto;

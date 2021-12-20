@@ -109,6 +109,20 @@ module.exports = req => {
 					titles: {
 						left: '<p>Stark durch digitale<br/> Transformation</p>',
 					},
+					images: {
+						right: {
+							src: '/img/rebus-v.svg',
+							width: 41,
+							height: 102,
+							layout: 'fixed',
+						},
+						rightMobile: {
+							src: '/img/rebus-h.svg',
+							width: 111,
+							height: 32,
+							layout: 'fixed',
+						},
+					},
 					children: [
 						{
 							name: 'RichText',

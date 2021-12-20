@@ -132,6 +132,28 @@ const Section = props => {
 							</div>
 						</Row>
 					)}
+					{images && images.rightMobile && (
+						<Row>
+							<div
+								className={Styles.RightImageMobile}
+								style={
+									({
+										display: images.rightMobile.layout === 'intrinsic' ? 'flex' : null,
+										justifyContent: images.rightMobile.layout === 'intrinsic' ? 'center' : null,
+										margin: images.rightMobile.margin,
+									},
+									{ ...images.rightMobile.style })
+								}
+							>
+								<Image
+									src={images.rightMobile.src}
+									layout={images.rightMobile.layout || 'intrinsic'}
+									width={images.rightMobile.layout !== 'fill' ? images.rightMobile.width : null}
+									height={images.rightMobile.layout !== 'fill' ? images.rightMobile.height : null}
+								/>
+							</div>
+						</Row>
+					)}
 					{titles && titles.top && (
 						<Row>
 							<Column sm={4} md={6} lg={8}>
@@ -205,6 +227,38 @@ const Section = props => {
 										transform: titles.offsetRight ? `translateY(${titles.offsetRight})` : null,
 									}}
 								/>
+							</Column>
+						)}
+						{images && images.right && (
+							<Column
+								sm={4}
+								md={1}
+								lg={{
+									span: 2,
+									offset: 1,
+								}}
+							>
+								<div
+									className={clsx(
+										Styles.RightImage,
+										images.rightMobile && Styles.RightImageHiddenMobile
+									)}
+									style={
+										({
+											display: images.right.layout === 'intrinsic' ? 'flex' : null,
+											justifyContent: images.right.layout === 'intrinsic' ? 'center' : null,
+											margin: images.right.margin,
+										},
+										{ ...images.right.style })
+									}
+								>
+									<Image
+										src={images.right.src}
+										layout={images.right.layout || 'intrinsic'}
+										width={images.right.layout !== 'fill' ? images.right.width : null}
+										height={images.right.layout !== 'fill' ? images.right.height : null}
+									/>
+								</div>
 							</Column>
 						)}
 					</Row>
@@ -319,6 +373,14 @@ Section.propTypes = {
 			style: PropTypes.object,
 		}),
 		right: PropTypes.shape({
+			src: PropTypes.string.isRequired,
+			width: PropTypes.number,
+			height: PropTypes.number,
+			layout: PropTypes.string,
+			margin: PropTypes.string,
+			style: PropTypes.object,
+		}),
+		rightMobile: PropTypes.shape({
 			src: PropTypes.string.isRequired,
 			width: PropTypes.number,
 			height: PropTypes.number,
