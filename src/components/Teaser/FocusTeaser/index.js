@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Styles from './styles.module.scss';
 
-const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, dark, condensed }) => {
+const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, light, dark, condensed }) => {
 	let IconComponent = null;
 
 	if (link && link.url) {
@@ -45,7 +45,12 @@ const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, da
 			className={clsx(Styles.FocusTeaserColumn)}
 		>
 			<Link
-				className={clsx(Styles.FocusTeaser, dark && Styles.IsDark, link.url === undefined && Styles.IsInactive)}
+				className={clsx(
+					Styles.FocusTeaser,
+					light && Styles.IsLight,
+					dark && Styles.IsDark,
+					link.url === undefined && Styles.IsInactive
+				)}
 				href={link.url}
 				title={link.title}
 			>
@@ -91,6 +96,7 @@ FocusTeaser.propTypes = {
 	}),
 	teaserIndex: PropTypes.number,
 	teaserCount: PropTypes.number,
+	light: PropTypes.bool,
 	dark: PropTypes.bool,
 	condensed: PropTypes.bool,
 };

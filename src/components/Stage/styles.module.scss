@@ -9,7 +9,7 @@
 	width: 100vw;
 	height: auto;
 	min-height: 85vh;
-	background: $blue-90;
+	background: $blue-20;
 
 	@include bp('md') {
 		min-height: 55vh;
@@ -23,7 +23,7 @@
 		position: absolute;
 		bottom: 10%;
 		z-index: 2;
-		color: $white-0;
+		color: $blue-80;
 
 		@include bp('md') {
 			position: absolute;
@@ -59,7 +59,7 @@
 		@include carbon--type-style('productive-heading-02', true);
 
 		padding-left: .375rem;
-		color: $blue-40;
+		color: $blue-80;
 		font-weight: normal;
 	}
 }

@@ -60,6 +60,14 @@
 		background: $gray-20;
 	}
 
+	&.IsLight {
+		background: $white-0;
+
+		&:hover {
+			background: $gray-10;
+		}
+	}
+
 	&.IsDark {
 		background: $gray-90;
 		color: $gray-10;

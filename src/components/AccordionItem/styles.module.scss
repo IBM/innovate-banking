@@ -21,22 +21,18 @@
 }
 
 .AccordionContent {
-	background: $gray-80;
+	background: $white-0;
 	padding: $spacing-05;
 
 	@include bp('md') {
 		padding: $spacing-07 $spacing-05;
-	}
-
-	&:hover {
-		background: $gray-70;
 	}
 }
 
 .Icon {
 	width: 3rem;
 	height: 3rem;
-	color: $blue-40;
+	color: $blue-60;
 	margin-bottom: $spacing-05;
 
 	@include bp('lg') {
@@ -53,7 +49,6 @@
 .RichText {
 	max-width: 544px;
 	padding: $spacing-06 0;
-	color: $gray-10;
 }
 
 .RichTextHeading {

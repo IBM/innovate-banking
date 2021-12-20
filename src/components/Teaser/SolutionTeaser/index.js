@@ -1,5 +1,4 @@
 import { Column } from 'carbon-components-react';
-import clsx from 'clsx';
 import dynamic from 'next/dynamic';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -10,13 +9,7 @@ const SolutionTeaser = ({ icon, headline, text, teaserIndex, teaserCount }) => {
 
 	return (
 		<Column sm={4} md={4} lg={4} className={Styles.SolutionTeaserCol}>
-			<div
-				className={clsx(
-					Styles.SolutionTeaser,
-					Styles[`TeaserIndex${teaserIndex}`],
-					Styles[`TeaserCount${teaserCount}`]
-				)}
-			>
+			<div className={Styles.SolutionTeaser}>
 				<div className={Styles.IconHeadlineWrapper}>
 					<span className={Styles.IconWrapper}>
 						<IconComponent className={Styles.Icon} />

@@ -4,7 +4,7 @@
 @import '@/styles/functions';
 
 .PictogramTeaser {
-	background: $gray-80;
+	background: $gray-10;
 	padding: $spacing-05 $spacing-05 $spacing-07;
 	display: flex;
 	flex-direction: column;
@@ -29,7 +29,7 @@
 	}
 
 	.Icon {
-		fill: $blue-40;
+		fill: $blue-60;
 
 		@include bp('lg') {
 			width: 5rem;
@@ -41,7 +41,7 @@
 		@include carbon--type-style('expressive-heading-03', true);
 
 		margin-bottom: $spacing-04;
-		color: $white-0;
+		color: $black-100;
 
 		@include bp('lg') {
 			@include carbon--type-style('expressive-heading-04', true);
@@ -51,7 +51,7 @@
 	.Text {
 		@include carbon--type-style('body-short-01', true);
 
-		color: $gray-30;
+		color: $gray-100;
 
 		@include bp('lg') {
 			@include carbon--type-style('body-short-02', true);

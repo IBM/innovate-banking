@@ -193,9 +193,9 @@ module.exports = req => {
 						},
 					},
 					background: {
-						dark: true,
-						gradient:
-							'linear-gradient(180deg, rgba(38,38,38,1) 0%, rgba(38,38,38,1) 25%, rgba(8,21,59,1) 40%, rgba(0,44,154,1) 100%)',
+						dark: false,
+						color: '#dcf2ff',
+						// gradient: 'linear-gradient(180deg, #dcf2ff 0%, #dcf2ff 100%)',
 					},
 					colWrapChildren: false,
 					rowWrapChildren: false,
@@ -596,8 +596,8 @@ module.exports = req => {
 				props: {
 					id: 'methoden',
 					background: {
-						color: '#161616',
-						dark: true,
+						color: '#dcf2ff',
+						dark: false,
 					},
 					noSpace: {
 						top: true,
@@ -638,7 +638,7 @@ module.exports = req => {
 											link: {
 												url: 'https://www.ibm.com/de-de/garage',
 											},
-											dark: true,
+											light: true,
 											condensed: true,
 										},
 									},
@@ -651,7 +651,7 @@ module.exports = req => {
 											link: {
 												url: 'https://www.ibm.com/blockchain/industries/financial-services',
 											},
-											dark: true,
+											light: true,
 											condensed: true,
 										},
 									},
@@ -665,7 +665,7 @@ module.exports = req => {
 												url:
 													'https://www.ibm.com/de-de/industries/banking-financial-markets/cloud-banking',
 											},
-											dark: true,
+											light: true,
 											condensed: true,
 										},
 									},
@@ -678,7 +678,7 @@ module.exports = req => {
 											link: {
 												url: 'https://www.ibm.com/de-de/cloud/what-is-edge-computing',
 											},
-											dark: true,
+											light: true,
 											condensed: true,
 										},
 									},
@@ -693,7 +693,7 @@ module.exports = req => {
 				props: {
 					id: 'letstalk',
 					background: {
-						color: '#161616',
+						color: '#061727',
 						dark: true,
 					},
 					titles: {
