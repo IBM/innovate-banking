@@ -10,7 +10,7 @@ class MyDocument extends Document {
 							__html: `
 							window._ibmAnalytics = {
 								settings: {
-									name: "IBM_INNOVATE_BANKING",
+									name: "INNOVATE_BANKING",
 									isSpa: false,
 									tealiumProfileName: "ibm-web-app"
 								}
