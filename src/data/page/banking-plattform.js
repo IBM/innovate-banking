@@ -36,7 +36,7 @@ module.exports = req => {
 							current: false,
 						},
 						{
-							name: 'Banking-Plattform',
+							name: 'IBM Banking Platform',
 							url: 'banking-plattform',
 							active: true,
 							current: true,
@@ -47,7 +47,7 @@ module.exports = req => {
 			{
 				name: 'Stage',
 				props: {
-					heading: 'IBM Banking Platform<br />nutzen',
+					heading: 'IBM Banking<br />Platform',
 					image: {
 						src: '/img/stage-subpage.png',
 						width: 1056,

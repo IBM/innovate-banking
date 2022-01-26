@@ -36,7 +36,7 @@ module.exports = req => {
 							current: false,
 						},
 						{
-							name: 'Banking-Plattform',
+							name: 'IBM Banking Platform',
 							url: 'banking-plattform',
 							active: true,
 							current: false,
