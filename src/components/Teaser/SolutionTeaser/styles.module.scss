@@ -4,62 +4,62 @@
 @import '@/styles/functions';
 
 .SolutionTeaserCol {
-	padding-top: $spacing-06;
+  padding-top: $spacing-06;
 
-	@include bp('md', true) {
-		padding-top: $spacing-03;
+  @include bp('md', true) {
+    padding-top: $spacing-03;
 
-		&:first-child {
-			padding-top: 0;
-		}
-	}
+    &:first-child {
+      padding-top: 0;
+    }
+  }
 }
 
 .SolutionTeaser {
-	position: relative;
-	background: $white-0;
-	padding: $spacing-05 $spacing-05 $spacing-08 $spacing-05;
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: $spacing-05 $spacing-05 $spacing-08 $spacing-05;
+  background: $white-0;
 
-	.IconHeadlineWrapper {
-		@include bp('md', true) {
-			display: flex;
-			flex-direction: row-reverse;
-			justify-content: space-between;
-		}
-	}
+  .IconHeadlineWrapper {
+    @include bp('md', true) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
 
-	.IconWrapper {
-		display: block;
-		margin-bottom: $spacing-05;
-	}
+  .IconWrapper {
+    display: block;
+    margin-bottom: $spacing-05;
+  }
 
-	.Icon {
-		fill: $blue-60;
-	}
+  .Icon {
+    fill: $blue-60;
+  }
 
-	.Headline,
-	.Text {
-		max-width: 75%;
-	}
+  .Headline,
+  .Text {
+    max-width: 75%;
+  }
 
-	.Headline {
-		@include carbon--type-style('expressive-heading-03', true);
+  .Headline {
+    @include carbon--type-style('expressive-heading-03', true);
 
-		margin-bottom: $spacing-05;
+    margin-bottom: $spacing-05;
 
-		@include bp('lg') {
-			margin-bottom: $spacing-10;
-		}
-	}
+    @include bp('lg') {
+      margin-bottom: $spacing-10;
+    }
+  }
 
-	.Text {
-		@include carbon--type-style('body-short-01', true);
+  .Text {
+    @include carbon--type-style('body-short-01', true);
 
-		@include bp('lg') {
-			@include carbon--type-style('body-short-02', true);
-		}
-	}
+    @include bp('lg') {
+      @include carbon--type-style('body-short-02', true);
+    }
+  }
 }

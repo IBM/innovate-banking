@@ -1,20 +1,19 @@
 @import '~carbon-components/scss/globals/scss/_vars.scss';
 
 .TeaserList {
+  &.HasPagination {
+    overflow: hidden;
+  }
 
-	&.HasPagination {
-		overflow: hidden;
-	}
+  .PaginationNav {
+    margin-top: $spacing-05;
 
-	.PaginationNav {
-		margin-top: $spacing-05;
+    :global(ul) {
+      justify-content: flex-end;
+    }
+  }
 
-		:global(ul) {
-			justify-content: flex-end;
-		}
-	}
-
-	.TransitionRow {
-		transition: transform 500ms ease-in-out;
-	}
+  .TransitionRow {
+    transition: transform 500ms ease-in-out;
+  }
 }

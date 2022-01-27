@@ -4,64 +4,63 @@
 @import '@/styles/functions';
 
 .FooterColumn {
-	@include bp('md', true) {
-		margin-bottom: $spacing-07;
-	}
+  @include bp('md', true) {
+    margin-bottom: $spacing-07;
+  }
 }
 
 .Footer {
-	background: $gray-100;
-	padding: $spacing-10 0;
+  padding: $spacing-10 0;
+  background: $gray-100;
 
-	.Claim {
-		@include carbon--type-style('body-short-02', true);
+  .Claim {
+    @include carbon--type-style('body-short-02', true);
 
-		color: $white-0;
-	}
+    color: $white-0;
+  }
 
-	.LinkList {
-		margin-top: $spacing-05 * -1;
-	}
+  .LinkList {
+    margin-top: $spacing-05 * -1;
+  }
 
-	.LinkListItem {
+  .LinkListItem {
+    a {
+      padding: $spacing-05 0;
+      color: $gray-40;
+      font-size: 0.875rem;
+      text-decoration: none;
 
-		a {
-			padding: $spacing-05 0;
-			color: $gray-40;
-			font-size: .875rem;
-			text-decoration: none;
+      &:hover {
+        color: $blue-30;
+        text-decoration: none;
+      }
 
-			&:hover {
-				color: $blue-30;
-				text-decoration: none;
-			}
+      &:active,
+      &:focus {
+        color: $blue-50;
+        text-decoration: none;
+      }
+    }
 
-			&:active,
-			&:focus {
-				text-decoration: none;
-				color: $blue-50;
-			}
-		}
+    > span {
+      padding: $spacing-05 0;
+    }
+  }
 
-		> span {
-			padding: $spacing-05 0;
-		}
-	}
+  .Link {
+    padding: $spacing-05 0;
+    color: $gray-40;
+    text-decoration: none;
 
-	.Link {
-		padding: $spacing-05 0;
-		color: $gray-40;
-		text-decoration: none;
+    &:hover {
+      color: $cyan-20;
+      text-decoration: none;
+    }
 
-		&:hover {
-			color: $cyan-20;
-			text-decoration: none;
-		}
-
-		&:active,
-		&:focus {
-			text-decoration: none;
-			color: $blue-60;
-		}
-	}
+    &:active,
+    &:focus {
+      color: $blue-60;
+      text-decoration: none;
+    }
+  }
 }
