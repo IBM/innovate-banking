@@ -319,7 +319,7 @@ module.exports = (req) => {
                     name: 'LetsTalkTeaser',
                     props: {
                       headline: 'Manuel Schuff',
-                      copy: 'Managing Consultant<br />Banking & Financial Markets',
+                      copy: 'Senior Managing Consultant<br />Banking & Financial Markets',
                       image: {
                         src: '/img/people/manuel.jpg',
                         width: 448,
