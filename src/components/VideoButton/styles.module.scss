@@ -4,70 +4,68 @@
 @import '@/styles/functions';
 
 .VideoButton {
-	display: none;
-	cursor: pointer;
-	text-align: left;
-	background: transparent;
-	border: 0;
-	outline: 0;
+  display: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
 
-	@include bp('md') {
-		position: absolute;
-		top: -14rem;
-		right: 1rem;
-		display: flex;
-	}
+  @include bp('md') {
+    position: absolute;
+    top: -14rem;
+    right: 1rem;
+    display: flex;
+  }
 
-	@include bp('lg') {
-		right: 6rem;
-	}
+  @include bp('lg') {
+    right: 6rem;
+  }
 }
 
 .Icon {
-	margin-right: $spacing-05;
-	fill: $magenta-40;
+  margin-right: $spacing-05;
+  fill: $blue-60;
 }
 
 .Title {
-	@include carbon--type-style('expressive-heading-04', true);
+  @include carbon--type-style('expressive-heading-04', true);
 
-	display: block;
-	margin-bottom: $spacing-03;
-	color: $white-0;
+  display: block;
+  margin-bottom: $spacing-03;
 }
 
 .Subtitle {
-	@include carbon--type-style('body-short-01', true);
+  @include carbon--type-style('body-short-01', true);
 
-	display: block;
-	color: $magenta-40;
+  display: block;
+  color: $blue-60;
 }
 
 .Modal {
-	@include bp('md') {
-
-		:global(.bx--modal-container--lg .bx--modal-content) {
-			padding-right: $spacing-05;
-		}
-	}
+  @include bp('md') {
+    :global(.bx--modal-container--lg .bx--modal-content) {
+      padding-right: $spacing-05;
+    }
+  }
 }
 
 .Video {
-	position: relative;
-	width: 100%;
-	border: 0;
+  position: relative;
+  width: 100%;
+  border: 0;
 
-	&::before {
-		content: '';
-		display: block;
-		padding-top: calc(9 / 16 * 100%);
-	}
+  &::before {
+    content: '';
+    display: block;
+    padding-top: calc(9 / 16 * 100%);
+  }
 
-	> * {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }

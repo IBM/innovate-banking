@@ -4,61 +4,61 @@
 @import '@/styles/functions';
 
 .LetTalkTeaserColumn {
-	@include bp('md', true) {
-		margin-bottom: $spacing-05;
-	}
+  @include bp('md', true) {
+    margin-bottom: $spacing-05;
+  }
 }
 
 .LetsTalkTeaser {
-	background: $gray-90;
-	color: $white-0;
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	flex: 1 1 auto;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 100%;
+  color: $white-0;
+  background: $cyan-90;
 
-	.Headline,
-	.Copy {
-		@include carbon--type-style('body-short-02', true);
+  .Headline,
+  .Copy {
+    @include carbon--type-style('body-short-02', true);
 
-		padding: 0 $spacing-05;
-	}
+    padding: 0 $spacing-05;
+  }
 
-	.Headline {
-		@include carbon--type-style('quotation-01', true);
+  .Headline {
+    @include carbon--type-style('quotation-01', true);
 
-		padding-top: $spacing-05;
-		margin-bottom: $spacing-05;
-	}
+    margin-bottom: $spacing-05;
+    padding-top: $spacing-05;
+  }
 
-	.Copy {
-		color: $gray-40;
-		margin-bottom: $spacing-05;
-	}
+  .Copy {
+    margin-bottom: $spacing-05;
+    color: $gray-40;
+  }
 
-	.LinkList {
-		margin: auto 0 0 0;
-		padding: 0 $spacing-05;
-	}
+  .LinkList {
+    margin: auto 0 0;
+    padding: 0 $spacing-05;
+  }
 
-	.LinkListItem {
-		display: flex;
-		justify-content: space-between;
-	}
+  .LinkListItem {
+    display: flex;
+    justify-content: space-between;
+  }
 
-	.Link {
-		color: $blue-30;
-		padding: $spacing-05 0;
-		width: 100%;
-		text-decoration: none;
-		display: flex;
-		flex: 1 1 100%;
-		justify-content: space-between;
-		align-items: center;
+  .Link {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: $spacing-05 0;
+    color: $cyan-20;
+    text-decoration: none;
 
-		&:hover,
-		&:active {
-			color: $white-0;
-		}
-	}
+    &:hover,
+    &:active {
+      color: $white-0;
+    }
+  }
 }

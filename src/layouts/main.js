@@ -1,13 +1,12 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import Styles from './main.styles.module.scss';
+import PropTypes from 'prop-types'
+import React from 'react'
 
 const MainLayout = ({ children }) => {
-	return <div className={Styles.MainLayout}>{children}</div>;
-};
+  return <div>{children}</div>
+}
 
 MainLayout.propTypes = {
-	children: PropTypes.any,
-};
+  children: PropTypes.any,
+}
 
-export default MainLayout;
+export default MainLayout

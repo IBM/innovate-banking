@@ -3,154 +3,173 @@
 @import '~carbon-components/scss/globals/scss/_typography.scss';
 
 .SectionWrapper {
-	width: 100%;
+  width: 100%;
 }
 
 .Section {
-	padding: $spacing-10 0;
+  padding: $spacing-10 0;
 
-	@include bp('md') {
-		padding: $spacing-11 0;
-	}
+  @include bp('md') {
+    padding: $spacing-11 0;
+  }
 
-	:global([class^='bx--row'] > [class^='bx--col']) {
-		position: relative;
-	}
+  :global([class^='bx--row'] > [class^='bx--col']) {
+    position: relative;
+  }
 
-	& > :global([class^='bx--row']) {
-		width: auto;
-	}
+  & > :global([class^='bx--row']) {
+    width: auto;
+  }
 
-	&.HasBottomImage {
-		padding-bottom: $spacing-06;
-	}
+  &.HasBottomImage {
+    padding-bottom: $spacing-06;
+  }
 
-	&.IsCondensedBottom {
-		padding-bottom: $spacing-06;
-	}
+  &.IsCondensedBottom {
+    padding-bottom: $spacing-06;
+  }
 
-	&.IsCondensedTop {
-		padding-top: $spacing-06;
-	}
+  &.IsCondensedTop {
+    padding-top: $spacing-06;
+  }
 
-	&.IsNarrowTop {
-		padding-top: $spacing-09;
-	}
+  &.IsNarrowTop {
+    padding-top: $spacing-09;
+  }
 
-	&.IsNarrowBottom {
-		padding-bottom: $spacing-09;
-	}
+  &.IsNarrowBottom {
+    padding-bottom: $spacing-09;
+  }
 
-	&.IsNoSpaceTop {
-		padding-top: 0;
-	}
+  &.IsNoSpaceTop {
+    padding-top: 0;
+  }
 
-	&.IsNoSpaceBottom {
-		padding-bottom: 0;
-	}
+  &.IsNoSpaceBottom {
+    padding-bottom: 0;
+  }
 
-	&.HasMarginBottom {
-		@include bp('md') {
-			margin-bottom: $spacing-07;
-		}
-	}
+  &.HasMarginBottom {
+    @include bp('md') {
+      margin-bottom: $spacing-07;
+    }
+  }
 
-	.LeftSide {
-		margin-bottom: $spacing-07;
-		position: relative;
+  .LeftSide {
+    position: relative;
+    margin-bottom: $spacing-07;
 
-		@include bp('md', false) {
-			margin-bottom: 0;
-		}
-	}
+    @include bp('md', false) {
+      margin-bottom: 0;
+    }
+  }
 
-	.Title {
-		position: relative;
-		z-index: 1;
+  .Title {
+    position: relative;
+    z-index: 1;
 
-		:global(p:not([class])) {
-			@include carbon--type-style('expressive-heading-02', true);
-		}
-	}
+    :global(p:not([class])) {
+      @include carbon--type-style('expressive-heading-02', true);
+    }
+  }
 
-	.TitleLeft {
-		@include bp('lg') {
-			max-width: 320px;
-		}
-	}
+  .TitleLeft {
+    @include bp('lg') {
+      max-width: 320px;
+    }
+  }
 
-	&.HasTopTitle {
+  &.HasTopTitle {
+    .Title {
+      margin-bottom: $spacing-07;
+    }
+  }
 
-		.Title {
-			margin-bottom: $spacing-07;
-		}
-	}
+  .RightImage,
+  .RightImageMobile {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-	.BottomImage,
-	.BottomImageMobile {
-		margin: 0 auto;
-		width: 100%;
-		max-width: 90%;
-		text-align: center;
+  .RightImageHiddenMobile {
+    @include bp('lg', true) {
+      display: none;
+    }
+  }
 
-		@include bp('md') {
-			max-width: 50%;
-		}
-	}
+  .RightImageMobile {
+    margin-bottom: $spacing-07;
 
-	.TopImage {
-		padding-top: $spacing-10;
+    @include bp('lg', false) {
+      display: none;
+    }
+  }
 
-		@include bp('md') {
-			margin-left: -9rem;
-			padding-top: 0;
-		}
+  .BottomImage,
+  .BottomImageMobile {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
 
-		@include bp('lg') {
-			margin-left: 10rem;
-		}
+    @include bp('md') {
+      max-width: 50%;
+    }
+  }
 
-		> div {
-			display: none !important;
+  .TopImage {
+    padding-top: $spacing-10;
 
-			@include bp('md') {
-				display: block !important;
-			}
-		}
-	}
+    @include bp('md') {
+      margin-left: -9rem;
+      padding-top: 0;
+    }
 
-	.BottomImage {
-		margin-top: $spacing-10;
-	}
+    @include bp('lg') {
+      margin-left: 10rem;
+    }
 
-	.BottomImageHiddenMobile {
-		@include bp('md', true) {
-			display: none;
-		}
-	}
+    > div {
+      display: none !important;
 
-	.BottomImageMobile {
-		margin-top: $spacing-10;
-		margin-bottom: $spacing-10;
+      @include bp('md') {
+        display: block !important;
+      }
+    }
+  }
 
-		@include bp('md', false) {
-			display: none;
-		}
-	}
+  .BottomImage {
+    margin-top: $spacing-10;
+  }
 
-	.LeftImage {
-		position: relative;
-		top: 50%;
-		left: 50%;
-		transform: translate3d(-50%, -50%, 0);
-		display: inline-block;
-	}
+  .BottomImageHiddenMobile {
+    @include bp('md', true) {
+      display: none;
+    }
+  }
 
-	&.HasDarkBackground {
-		color: $white-0;
+  .BottomImageMobile {
+    margin-top: $spacing-10;
+    margin-bottom: $spacing-10;
 
-		.Title {
-			color: $white-0;
-		}
-	}
+    @include bp('md', false) {
+      display: none;
+    }
+  }
+
+  .LeftImage {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  &.HasDarkBackground {
+    color: $white-0;
+
+    .Title {
+      color: $white-0;
+    }
+  }
 }

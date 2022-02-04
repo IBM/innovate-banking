@@ -3,89 +3,120 @@
 @import '@/styles/mixins';
 @import '@/styles/functions';
 
+.MarginBottom {
+  @include bp('lg') {
+    margin-bottom: $spacing-07;
+  }
+}
+
 .PictogramTeaser {
-	background: $gray-80;
-	padding: $spacing-05 $spacing-05 $spacing-07;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: $spacing-06;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $spacing-06;
+  padding: $spacing-05 $spacing-05 $spacing-07;
+  background: $gray-10;
 
-	@include bp('lg') {
-		margin-bottom: 0;
-		min-height: 100%;
-		padding: $spacing-08 $spacing-05;
-	}
+  &.IsLight {
+    background: $white-0;
+  }
 
-	.Content {
-		max-width: 75%;
-	}
+  @include bp('lg') {
+    min-height: 100%;
+    margin-bottom: 0;
+    padding: $spacing-08 $spacing-05;
+  }
 
-	.IconWrapper {
-		margin-bottom: $spacing-05;
+  .Content {
+    max-width: 75%;
+  }
 
-		@include bp('lg') {
-			margin-bottom: $spacing-09;
-		}
-	}
+  .IconWrapper {
+    margin-bottom: $spacing-05;
 
-	.Icon {
-		fill: $blue-40;
+    @include bp('lg') {
+      margin-bottom: $spacing-09;
+    }
+  }
 
-		@include bp('lg') {
-			width: 5rem;
-			height: 5rem;
-		}
-	}
+  .Icon {
+    fill: $blue-60;
 
-	.Headline {
-		@include carbon--type-style('expressive-heading-03', true);
+    &.IconBlack {
+      fill: $black-100;
+    }
 
-		margin-bottom: $spacing-04;
-		color: $white-0;
+    @include bp('lg') {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
 
-		@include bp('lg') {
-			@include carbon--type-style('expressive-heading-04', true);
-		}
-	}
+  .Headline {
+    @include carbon--type-style('expressive-heading-03', true);
 
-	.Text {
-		@include carbon--type-style('body-short-01', true);
+    margin-bottom: $spacing-04;
+    color: $black-100;
 
-		color: $gray-30;
+    @include bp('lg') {
+      @include carbon--type-style('expressive-heading-04', true);
+    }
+  }
 
-		@include bp('lg') {
-			@include carbon--type-style('body-short-02', true);
-		}
-	}
+  .Text {
+    @include carbon--type-style('body-short-01', true);
+
+    color: $gray-100;
+
+    @include bp('lg') {
+      @include carbon--type-style('body-short-02', true);
+    }
+  }
 }
 
 .PictogramTeaserSmall {
-	@include bp('lg') {
-		padding: $spacing-06 $spacing-05;
-	}
+  @include bp('lg') {
+    padding: $spacing-06 $spacing-05;
+  }
 
-	.IconWrapper {
-		@include bp('lg') {
-			margin-bottom: $spacing-06;
-		}
-	}
+  .IconWrapper {
+    @include bp('lg') {
+      margin-bottom: $spacing-06;
+    }
+  }
 
-	.Icon {
-		@include bp('lg') {
-			width: 4rem;
-			height: 4rem;
-		}
-	}
+  .Icon {
+    @include bp('lg') {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
 
-	.Headline {
-		@include bp('lg') {
-			@include carbon--type-style('expressive-heading-03', true);
-		}
-	}
+  .Headline {
+    @include bp('lg') {
+      @include carbon--type-style('expressive-heading-03', true);
+    }
+  }
 
-	.Text {
-		@include bp('lg') {
-			@include carbon--type-style('body-short-01', true);
-		}
-	}
+  .Text {
+    @include bp('lg') {
+      @include carbon--type-style('body-short-01', true);
+    }
+  }
+}
+
+.PictogramTeaserWhite {
+  background: $white-0;
+}
+
+.Link {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: $spacing-07;
+  color: $blue-60;
+  text-decoration: none;
+
+  .LinkText {
+    margin-right: $spacing-03;
+  }
 }

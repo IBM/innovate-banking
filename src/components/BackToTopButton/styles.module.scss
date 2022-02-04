@@ -4,46 +4,46 @@
 @import '@/styles/functions';
 
 .Button {
-	position: fixed;
-	right: 2rem;
-	bottom: 2rem;
-	display: none;
-	align-items: center;
-	justify-content: center;
-	width: 3rem;
-	height: 3rem;
-	z-index: 99;
-	background: $gray-100;
-	border: 2px solid $gray-60;
-	border-radius: 50%;
-	outline: 0;
-	transition: opacity 200ms;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 99;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background: $gray-100;
+  border: 2px solid $gray-60;
+  border-radius: 50%;
+  outline: 0;
+  transition: opacity 200ms;
 
-	&:hover {
-		background: $gray-80;
-	}
+  &:hover {
+    background: $gray-80;
+  }
 
-	&:focus {
-		background: $gray-80;
-		border-color: $focus;
-	}
+  &:focus {
+    background: $gray-80;
+    border-color: $focus;
+  }
 
-	&:global(.back-to-top-enter) {
-		display: flex;
-		opacity: 0;
-	}
+  &:global(.back-to-top-enter) {
+    display: flex;
+    opacity: 0;
+  }
 
-	&:global(.back-to-top-enter-done) {
-		display: flex;
-		opacity: 1;
-	}
+  &:global(.back-to-top-enter-done) {
+    display: flex;
+    opacity: 1;
+  }
 
-	&:global(.back-to-top-exit-done) {
-		display: flex;
-		opacity: 0;
-	}
+  &:global(.back-to-top-exit-done) {
+    display: flex;
+    opacity: 0;
+  }
 }
 
 .Icon {
-	fill: $white-0;
+  fill: $white-0;
 }

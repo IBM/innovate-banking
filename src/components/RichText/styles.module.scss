@@ -3,210 +3,252 @@
 @import '@/styles/mixins';
 
 .RichText {
-	color: inherit;
-	z-index: 1;
+  z-index: 1;
+  color: inherit;
 
-	:global(p),
-	:global(.p) {
-		@include carbon--type-style('body-short-02', true);
+  :global(p),
+  :global(.p) {
+    @include carbon--type-style('body-short-02', true);
 
-		margin-bottom: $spacing-04;
+    margin-bottom: $spacing-04;
 
-		&:only-child {
-			margin-bottom: 0;
-		}
-	}
+    &:only-child {
+      margin-bottom: 0;
+    }
+  }
 
-	:global(a) {
-		color: $link-01;
-		text-decoration: none;
+  :global(a) {
+    color: $link-01;
+    text-decoration: none;
 
-		&:hover,
-		&:focus,
-		&:active {
-			color: $hover-primary-text;
-			text-decoration: underline;
-		}
-	}
+    &:hover,
+    &:focus,
+    &:active {
+      color: $hover-primary-text;
+      text-decoration: underline;
+    }
+  }
 
-	:global(.ul) {
-		@include carbon--type-style('body-short-02', true);
+  :global(.ul) {
+    @include carbon--type-style('body-short-02', true);
 
-		list-style-type: disc;
-		padding-inline-start: 1.25rem;
+    list-style-type: disc;
+    padding-inline-start: 1.25rem;
 
-		> li {
-			margin-bottom: $spacing-04;
+    > li {
+      margin-bottom: $spacing-04;
 
-			&::marker {
-				color: $gray-50;
-			}
-		}
-	}
+      &::marker {
+        color: $gray-50;
+      }
+    }
+  }
 
-	:global(h1),
-	:global(.h1) {
-		@include carbon--type-style('productive-heading-07', true);
+  :global(.ul-styled) {
+    @include carbon--type-style('body-short-02', true);
 
-		margin-bottom: $spacing-06;
-	}
+    list-style: none;
 
-	:global(.eh1) {
-		@include carbon--type-style('expressive-heading-06', true);
+    > li {
+      display: flex;
+      margin-bottom: $spacing-07;
 
-		margin-bottom: $spacing-06;
-	}
+      &::before {
+        content: '';
+        position: relative;
+        top: 0.65em;
+        display: inline-block;
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 2px;
+        margin-right: 1.5rem;
+        background: $blue-60;
+      }
+    }
+  }
 
-	:global(h2),
-	:global(.h2) {
-		@include carbon--type-style('productive-heading-06', true);
+  :global(h1),
+  :global(.h1) {
+    @include carbon--type-style('productive-heading-07', true);
 
-		margin-bottom: $spacing-07;
-	}
+    margin-bottom: $spacing-06;
+  }
 
-	:global(.eh2) {
-		@include carbon--type-style('expressive-heading-05', true);
+  :global(.eh1) {
+    @include carbon--type-style('expressive-heading-06', true);
 
-		margin-bottom: $spacing-05;
-	}
+    margin-bottom: $spacing-06;
+  }
 
-	:global(h3),
-	:global(.h3) {
-		@include carbon--type-style('productive-heading-05', true);
+  :global(h2),
+  :global(.h2) {
+    @include carbon--type-style('productive-heading-06', true);
 
-		margin-bottom: $spacing-04;
-	}
+    margin-bottom: $spacing-07;
+  }
 
-	:global(.eh3) {
-		@include carbon--type-style('expressive-heading-04', true);
+  :global(.eh2) {
+    @include carbon--type-style('expressive-heading-05', true);
 
-		margin-bottom: $spacing-04;
-	}
+    margin-bottom: $spacing-05;
+  }
 
-	:global(h4),
-	:global(.h4) {
-		@include carbon--type-style('expressive-heading-02', true);
+  :global(h3),
+  :global(.h3) {
+    @include carbon--type-style('productive-heading-05', true);
 
-		margin-bottom: $spacing-07;
+    margin-bottom: $spacing-04;
+  }
 
-		@include bp('md') {
-			@include carbon--type-style('expressive-heading-04', true);
-		}
-	}
+  :global(.eh3) {
+    @include carbon--type-style('expressive-heading-04', true);
 
-	:global(.eh4) {
-		@include carbon--type-style('expressive-heading-04', true);
+    margin-bottom: $spacing-04;
+  }
 
-		margin-bottom: $spacing-04;
-	}
+  :global(h4),
+  :global(.h4) {
+    @include carbon--type-style('expressive-heading-02', true);
 
-	:global(h5),
-	:global(.h5) {
-		@include carbon--type-style('productive-heading-03', true);
+    margin-bottom: $spacing-07;
 
-		margin-bottom: $spacing-04;
-	}
+    @include bp('md') {
+      @include carbon--type-style('expressive-heading-04', true);
+    }
+  }
 
-	:global(.eh5) {
-		@include carbon--type-style('expressive-heading-02', true);
+  :global(.eh4) {
+    @include carbon--type-style('expressive-heading-04', true);
 
-		margin-bottom: $spacing-04;
-	}
+    margin-bottom: $spacing-04;
+  }
 
-	:global(h6),
-	:global(.h6) {
-		@include carbon--type-style('productive-heading-02', true);
+  :global(h5),
+  :global(.h5) {
+    @include carbon--type-style('productive-heading-03', true);
 
-		margin-bottom: $spacing-04;
-	}
+    margin-bottom: $spacing-04;
+  }
 
-	:global(.eh5) {
-		@include carbon--type-style('expressive-heading-02', true);
+  :global(.eh5) {
+    @include carbon--type-style('expressive-heading-02', true);
 
-		margin-bottom: $spacing-04;
-	}
+    margin-bottom: $spacing-04;
+  }
 
-	:global(.d1) {
-		@include carbon--type-style('display-01', true);
+  :global(h6),
+  :global(.h6) {
+    @include carbon--type-style('productive-heading-02', true);
 
-		margin-bottom: $spacing-07;
+    margin-bottom: $spacing-04;
+  }
 
-		&:global(.large) {
-			font-size: carbon--rem(100px);
+  :global(.eh5) {
+    @include carbon--type-style('expressive-heading-02', true);
 
-			@include bp('md') {
-				font-size: carbon--rem(128px);
-			}
+    margin-bottom: $spacing-04;
+  }
 
-			@include bp('lg') {
-				font-size: carbon--rem(144px);
-			}
-		}
-	}
+  :global(.d1) {
+    @include carbon--type-style('display-01', true);
 
-	:global(.d2) {
-		@include carbon--type-style('display-02', true);
+    margin-bottom: $spacing-07;
 
-		margin-bottom: $spacing-07;
+    &:global(.large) {
+      font-size: carbon--rem(100px);
 
-		&:global(.large) {
-			font-size: carbon--rem(100px);
+      @include bp('md') {
+        font-size: carbon--rem(128px);
+      }
 
-			@include bp('md') {
-				font-size: carbon--rem(128px);
-			}
+      @include bp('lg') {
+        font-size: carbon--rem(144px);
+      }
+    }
+  }
 
-			@include bp('lg') {
-				font-size: carbon--rem(166px);
-			}
-		}
-	}
+  :global(.d2) {
+    @include carbon--type-style('display-02', true);
 
-	:global(.d3) {
-		@include carbon--type-style('display-03', true);
+    margin-bottom: $spacing-07;
 
-		margin-bottom: $spacing-07;
+    &:global(.large) {
+      font-size: carbon--rem(100px);
 
-		&:global(.large) {
-			font-size: carbon--rem(100px);
+      @include bp('md') {
+        font-size: carbon--rem(128px);
+      }
 
-			@include bp('md') {
-				font-size: carbon--rem(128px);
-			}
+      @include bp('lg') {
+        font-size: carbon--rem(166px);
+      }
+    }
+  }
 
-			@include bp('lg') {
-				font-size: carbon--rem(166px);
-			}
-		}
-	}
+  :global(.d3) {
+    @include carbon--type-style('display-03', true);
 
-	:global(.d4) {
-		@include carbon--type-style('display-04', true);
+    margin-bottom: $spacing-07;
 
-		&:global(.large) {
-			font-size: carbon--rem(100px);
+    &:global(.large) {
+      font-size: carbon--rem(100px);
 
-			@include bp('md') {
-				font-size: carbon--rem(128px);
-			}
+      @include bp('md') {
+        font-size: carbon--rem(128px);
+      }
 
-			@include bp('lg') {
-				font-size: carbon--rem(166px);
-			}
-		}
-	}
+      @include bp('lg') {
+        font-size: carbon--rem(166px);
+      }
+    }
+  }
 
-	:global(.c1) {
-		@include carbon--type-style('caption-01', true);
+  :global(.d4) {
+    @include carbon--type-style('display-04', true);
 
-		color: $gray-50;
-	}
+    &:global(.large) {
+      font-size: carbon--rem(100px);
 
-	:global(hr) {
-		height: 1px;
-		margin: $spacing-06 0;
-		color: inherit;
-		background-color: $gray-20;
-		border: 0;
-	}
+      @include bp('md') {
+        font-size: carbon--rem(128px);
+      }
+
+      @include bp('lg') {
+        font-size: carbon--rem(166px);
+      }
+    }
+  }
+
+  :global(.c1) {
+    @include carbon--type-style('caption-01', true);
+
+    color: $gray-50;
+  }
+
+  :global(hr) {
+    height: 1px;
+    margin: $spacing-06 0;
+    color: inherit;
+    background-color: $gray-20;
+    border: 0;
+  }
+
+  :global(.embed) {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      content: '';
+      display: block;
+      padding-top: 56.25%;
+    }
+
+    > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

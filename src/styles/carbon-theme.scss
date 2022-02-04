@@ -1,3 +1,4 @@
+/* stylelint-disable */
 @import '~carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/_breakpoint.scss';
 @import '~carbon-components/scss/globals/scss/vendor/@carbon/styles/scss/_reset.scss';
 @import '~carbon-components/scss/globals/scss/_vars.scss';
@@ -12,6 +13,5 @@
 @import '~carbon-components/scss/components/accordion/_accordion.scss';
 @import '~carbon-components/scss/components/dropdown/_dropdown.scss';
 @import '~carbon-components/scss/components/modal/_modal.scss';
-
 @include carbon--type-reset();
 @include carbon--font-face-sans();
