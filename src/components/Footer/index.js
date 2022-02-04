@@ -14,7 +14,7 @@ const Footer = ({ links }) => {
           <Row>
             <Column sm={4} md={2} lg={5} className={clsx(Styles.Logo, Styles.FooterColumn)}>
               <Link href="/">
-                <Image src="/svg/ibm-logo.svg" width={88} height={35} />
+                <Image src="/svg/ibm-logo.svg" width={88} height={35} alt="IBM" />
               </Link>
             </Column>
             <Column sm={4} md={2} lg={4} className={clsx(Styles.Claim, Styles.FooterColumn)}>
