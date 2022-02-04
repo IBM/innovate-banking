@@ -66,7 +66,13 @@ const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, li
         </Column>
         {image && image.simulate !== true && (
           <Column sm={0} md={4} lg={8} className={Styles.RightColumn}>
-            <Image src={image.src} width={image.width} height={image.height} layout={image.layout || 'intrinsic'} />
+            <Image
+              src={image.src}
+              width={image.width}
+              height={image.height}
+              alt=""
+              layout={image.layout || 'intrinsic'}
+            />
           </Column>
         )}
       </Link>

@@ -14,6 +14,7 @@ const ImageTextTeaser = ({ text, image, link }) => {
           src={image.src}
           width={image.width}
           height={image.height}
+          alt=""
           layout={image.layout || 'intrinsic'}
           className={Styles.Image}
         />
