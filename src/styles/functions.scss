@@ -1,7 +1,8 @@
+/* stylelint-disable */
 @import '@/styles/carbon-settings.scss';
 
 @function bpWidth($bp) {
-	$bpData: map-get($carbon--grid-breakpoints, $bp);
+  $bpData: map-get($carbon--grid-breakpoints, $bp);
 
-	@return map-get($bpData, 'width');
+  @return map-get($bpData, 'width');
 }

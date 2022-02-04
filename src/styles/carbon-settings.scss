@@ -1,34 +1,33 @@
+/* stylelint-disable */
 $height-site-nav: 5rem;
 $height-anchor-nav: 3rem;
-
 $feature-flags: (
-	grid-columns-16: true
+  grid-columns-16: true,
 );
-
 $carbon--grid-breakpoints: (
-	sm: (
-		columns: 4,
-		margin: 0,
-		width: carbon--rem(320px),
-	),
-	md: (
-		columns: 8,
-		margin: carbon--rem(16px),
-		width: carbon--rem(672px),
-	),
-	lg: (
-		columns: 16,
-		margin: carbon--rem(16px),
-		width: carbon--rem(1056px),
-	),
-	xlg: (
-		columns: 16,
-		margin: carbon--rem(16px),
-		width: carbon--rem(1312px),
-	),
-	max: (
-		columns: 16,
-		margin: carbon--rem(24px),
-		width: carbon--rem(1584px),
-	),
+  sm: (
+    columns: 4,
+    margin: 0,
+    width: carbon--rem(320px),
+  ),
+  md: (
+    columns: 8,
+    margin: carbon--rem(16px),
+    width: carbon--rem(672px),
+  ),
+  lg: (
+    columns: 16,
+    margin: carbon--rem(16px),
+    width: carbon--rem(1056px),
+  ),
+  xlg: (
+    columns: 16,
+    margin: carbon--rem(16px),
+    width: carbon--rem(1312px),
+  ),
+  max: (
+    columns: 16,
+    margin: carbon--rem(24px),
+    width: carbon--rem(1584px),
+  ),
 );

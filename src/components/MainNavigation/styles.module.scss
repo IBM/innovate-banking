@@ -4,215 +4,207 @@
 @import '@/styles/functions';
 
 .NavHeader {
-	position: absolute;
-	width: 100%;
-	height: 100px;
-	// display: flex;
-	// flex: 1 1 100%;
-	// align-items: center;
-	background: linear-gradient(0deg, rgba($blue-100, 0) 0%, rgba($blue-100, 1) 100%);
-	z-index: 999;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100px;
 
-	& * {
-		height: 100%;
-	}
+  & * {
+    height: 100%;
+  }
 
-	.LogoTitle {
-		@include bp('lg') {
-			display: none;
-		}
+  .LogoTitle {
+    @include bp('lg') {
+      display: none;
+    }
 
-		&.DesktopOnly {
-			display: none;
+    &.DesktopOnly {
+      display: none;
 
-			@include bp('lg') {
-				display: flex;
-			}
-		}
+      @include bp('lg') {
+        display: flex;
+      }
+    }
 
-		&.IsHidden {
-			display: none;
-		}
-	}
+    &.IsHidden {
+      display: none;
+    }
+  }
 }
 
 .MobileMenuIcon {
-	position: absolute;
-	top: $spacing-05;
-	right: $spacing-05;
-	padding: $spacing-05;
-	height: auto;
-	background-color: transparent;
-	z-index: 1002;
+  position: absolute;
+  top: $spacing-05;
+  right: $spacing-05;
+  z-index: 1002;
+  height: auto;
+  padding: $spacing-05;
+  color: $cyan-80;
+  background-color: transparent;
 
-	.IsOpen & {
-		position: fixed;
-	}
+  .IsOpen & {
+    position: fixed;
+  }
 
-	@include bp('lg') {
-		display: none;
-	}
+  @include bp('lg') {
+    display: none;
+  }
 }
 
 .NavGrid {
-	@include bp('lg', true) {
-		padding: 0 1rem;
-	}
+  @include bp('lg', true) {
+    padding: 0 1rem;
+  }
 }
 
 .MobileHomeLink {
-	display: inline-block;
-	margin-left: $spacing-05;
-	margin-top: $spacing-02;
+  display: inline-block;
+  margin-top: $spacing-02;
+  margin-left: $spacing-05;
 
-	@include bp('lg') {
-		display: none;
-	}
+  @include bp('lg') {
+    display: none;
+  }
 }
 
 .MainNavigation {
-	display: flex;
-	flex: 1 1 100%;
-	align-items: center;
+  display: flex;
+  flex: 1 1 100%;
+  align-items: center;
 
-	@include bp('lg', true) {
-		align-items: flex-start;
-	}
+  @include bp('lg', true) {
+    align-items: flex-start;
+  }
 
-	.List {
-		display: flex;
-		flex: 1 1 100%;
-		height: 100%;
-		align-items: center;
-		padding: 0;
-		margin: 0;
-	}
+  .List {
+    display: flex;
+    flex: 1 1 100%;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-	.ListItemLink {
-		@include carbon--type-style('body-short-02', true);
+  .ListItemLink {
+    @include carbon--type-style('body-short-01', true);
 
-		display: flex;
-		flex: 1 1 100%;
-		align-items: center;
-		padding: 0 $spacing-05;
-		color: $white-0;
-		text-decoration: none;
-		transition: color 100ms ease-in-out;
-		outline: 0;
+    display: flex;
+    flex: 1 1 100%;
+    align-items: center;
+    padding: 0 $spacing-05;
+    color: $blue-80;
+    text-decoration: none;
+    outline: 0;
+    transition: color 100ms ease-in-out;
 
-		&:hover {
-			color: $carbon--blue-30;
-		}
+    &:hover {
+      color: $blue-100;
+    }
 
-		&:active {
-			color: $carbon--blue-50;
-		}
+    &:active {
+      color: $blue-100;
+    }
 
-		&.ListItemLinkActive {
-			color: $blue-30;
-		}
-	}
+    &.ListItemLinkActive {
+      color: $blue-100;
+    }
+  }
 
-	.LogoTitle {
-		font-weight: bold;
-		flex: 1 1 100%;
-		align-items: center;
-		padding-left: $spacing-06;
-	}
+  .LogoTitle {
+    flex: 1 1 100%;
+    align-items: center;
+    padding-left: $spacing-06;
+    font-weight: bold;
+  }
 
-	.ListItem {
-		display: flex;
-		position: relative;
+  .ListItem {
+    position: relative;
+    display: flex;
 
-		&:first-child {
+    &:first-child {
+      .ListItemLink {
+        padding-left: 0;
+      }
+    }
 
-			.ListItemLink {
-				padding-left: 0;
-			}
-		}
+    &.MobileOnly {
+      @include bp('lg') {
+        display: none;
+      }
+    }
+  }
 
-		&.MobileOnly {
-			@include bp('lg') {
-				display: none;
-			}
-		}
-	}
+  &.HasLogoTitle {
+    .ListItem {
+      &:first-child {
+        .ListItemLink {
+          padding-right: $spacing-08;
+        }
 
-	&.HasLogoTitle {
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 0;
+          width: 1px;
+          height: 25%;
+          background: $blue-50;
+          transform: translate(0, -50%);
+        }
+      }
 
-		.ListItem {
+      @include bp('lg') {
+        .IsFirstLink {
+          padding-left: $spacing-08;
+        }
+      }
+    }
+  }
 
-			&:first-child {
+  @include bp('lg', true) {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    z-index: 1001;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+    background: $gray-100;
+    transition: left 250ms ease-in-out;
 
-				.ListItemLink {
-					padding-right: $spacing-08;
-				}
+    .IsOpen & {
+      left: 0;
+    }
 
-				&::after {
-					content: '';
-					position: absolute;
-					height: 25%;
-					width: 1px;
-					background: $blue-50;
-					right: 0;
-					top: 50%;
-					transform: translate(0, -50%);
-				}
-			}
+    .List {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      max-height: calc(100vh - #{$spacing-05 + $spacing-12});
+      margin-top: $spacing-12;
+      padding: 0 $spacing-05 $spacing-05 $spacing-05;
+      overflow: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
 
-			@include bp('lg') {
+    .ListItem {
+      width: 100%;
+      height: auto;
 
-				.IsFirstLink {
-					padding-left: $spacing-08;
-				}
-			}
-		}
-	}
+      .ListItemLink {
+        padding: $spacing-05 0;
+      }
 
-	@include bp('lg', true) {
-		z-index: 1001;
-		position: fixed;
-		background: $gray-100;
-		top: 0;
-		width: 100vw;
-		height: 100vh;
-		left: -100vw;
-		overflow: hidden;
-		transition: left 250ms ease-in-out;
-		padding: 0;
+      &:first-child {
+        position: absolute;
+        top: $spacing-07;
+        left: $spacing-05;
 
-		.IsOpen & {
-			left: 0;
-		}
-
-		.List {
-			margin-top: $spacing-12;
-			padding: 0 $spacing-05 $spacing-05 $spacing-05;
-			flex-direction: column;
-			justify-content: flex-start;
-			align-items: flex-start;
-			overflow: scroll;
-			max-height: calc(100vh - #{$spacing-05 + $spacing-12});
-			-webkit-overflow-scrolling: touch;
-		}
-
-		.ListItem {
-			height: auto;
-			width: 100%;
-
-			.ListItemLink {
-				padding: $spacing-05 0;
-			}
-
-			&:first-child {
-				position: absolute;
-				top: $spacing-07;
-				left: $spacing-05;
-
-				.ListItemLink {
-					padding: 0;
-				}
-			}
-		}
-	}
+        .ListItemLink {
+          padding: 0;
+        }
+      }
+    }
+  }
 }

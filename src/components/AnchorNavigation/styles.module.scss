@@ -3,144 +3,143 @@
 @import '@/styles/mixins';
 
 .StickyWrapper {
-	z-index: 1001 !important;
+  z-index: 1001 !important;
 
-	& > * {
-		z-index: 1001 !important;
-	}
+  & > * {
+    z-index: 1001 !important;
+  }
 }
 
 .AnchorNavigation {
-	background: $black-100;
-	z-index: 1001;
+  z-index: 1001;
+  padding: 0 1rem;
+  background: $gray-10;
 
-	& * {
-		height: auto;
-	}
+  & * {
+    height: auto;
+  }
 
-	.List {
-		display: flex;
-		flex: 1 1 100%;
-		height: 100%;
-		padding: 0 0 0 1rem;
-		margin: 0;
-		align-items: center;
+  .List {
+    display: flex;
+    flex: 1 1 100%;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 1rem;
 
-		@include bp('lg') {
-			padding-left: $spacing-02;
-		}
+    @include bp('lg') {
+      padding-left: $spacing-02;
+    }
 
-		@media only screen and (min-width: 99rem) {
-			padding-left: .875rem;
-		}
-	}
+    @media only screen and (min-width: 99rem) {
+      padding-left: 0.875rem;
+    }
+  }
 
-	.Link {
-		@include carbon--type-style('body-short-02', true);
+  .Link {
+    @include carbon--type-style('body-short-01', true);
 
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-		padding: $spacing-04;
-		border-top: 3px solid transparent;
-		color: $gray-30;
-		transition: all 250ms ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: $spacing-04 $spacing-05;
+    color: $black-100;
+    text-decoration: none;
+    border-top: 3px solid transparent;
+    transition: all 250ms ease-in-out;
 
-		&:hover {
-			background: $interactive-02;
-			color: $white-0;
-		}
+    &:hover {
+      color: $black-100;
+      background: $white-0;
+    }
 
-		&:focus,
-		&:active,
-		&.IsActive {
-			background: $interactive-02;
-			border-top-color: $interactive-01;
-			color: $white-0;
-		}
+    &:focus,
+    &:active,
+    &.IsActive {
+      color: $black-100;
+      background: $white-0;
+      border-top-color: $interactive-01;
+    }
 
-		&.IsLetsTalkLink {
-			background: $blue-60;
-			color: $white-0;
+    &.IsLetsTalkLink {
+      color: $white-0;
+      background: $blue-60;
 
-			&:hover {
-				background: $blue-70;
-			}
+      &:hover {
+        background: $blue-70;
+      }
 
-			&:active,
-			&:focus {
-				background: $blue-80;
-				border-top-color: transparent;
-			}
-		}
-	}
+      &:active,
+      &:focus {
+        background: $blue-80;
+        border-top-color: transparent;
+      }
+    }
+  }
 
-	.ListItem {
-		position: relative;
+  .ListItem {
+    position: relative;
 
-		&.IsSloganItem {
-			padding-right: $spacing-04 * 2;
-			opacity: 0;
-			transition: margin 200ms;
+    &.IsSloganItem {
+      padding-right: $spacing-04 * 2;
+      opacity: 0;
+      transition: margin 200ms;
 
-			&::after {
-				content: '';
-				height: 66%;
-				width: 1px;
-				background: $gray-60;
-				position: absolute;
-				right: 0;
-				top: 50%;
-				opacity: 0;
-				transform: translate3d($spacing-04/-1, -50%, 0);
-				transition: opacity 200ms;
-			}
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 1px;
+        height: 66%;
+        background: $gray-60;
+        opacity: 0;
+        transition: opacity 200ms;
+        transform: translate3d($spacing-04/-1, -50%, 0);
+      }
 
-			.Link {
-				font-weight: bold;
-				color: $white-0;
-			}
+      .Link {
+        font-weight: bold;
+      }
 
-			&.IsSloganItemVisible {
-				&::after {
-					opacity: 1;
-				}
-			}
-		}
+      &.IsSloganItemVisible {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
 
-		&.IsLetsTalkListItem {
-			margin-left: auto;
-		}
-	}
+    &.IsLetsTalkListItem {
+      margin-right: 1rem;
+      margin-left: auto;
+    }
+  }
 
-	.LetsTalkIcon {
-		margin-left: $spacing-04;
-	}
+  .LetsTalkIcon {
+    margin-left: $spacing-04;
+  }
 
-	&.IsFixed {
-
-		.ListItem {
-
-			&.IsSloganItem {
-				display: block;
-			}
-		}
-	}
+  &.IsFixed {
+    .ListItem {
+      &.IsSloganItem {
+        display: block;
+      }
+    }
+  }
 }
 
 .Grid {
-	padding-right: 0;
-	padding-left: $spacing-05;
+  padding-right: 0;
+  padding-left: $spacing-05;
 }
 
 .Dropdown {
-	width: 100%;
+  width: 100%;
 
-	&:global(.bx--list-box--expanded .bx--list-box__menu) {
-		max-height: 18rem;
-	}
+  &:global(.bx--list-box--expanded .bx--list-box__menu) {
+    max-height: 18rem;
+  }
 }
 
 .DropdownColumn {
-	margin-top: $spacing-07;
+  margin-top: $spacing-07;
 }
