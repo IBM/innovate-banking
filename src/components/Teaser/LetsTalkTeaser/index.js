@@ -9,7 +9,7 @@ const LetsTalkTeaser = ({ headline, copy, image, links }) => {
   return (
     <Column sm={4} md={4} lg={8} className={Styles.LetTalkTeaserColumn}>
       <div className={Styles.LetsTalkTeaser}>
-        <Image src={image.src} width={image.width} height={image.height} layout="responsive" />
+        <Image src={image.src} width={image.width} height={image.height} alt="" layout="responsive" />
         <h5 className={Styles.Headline}>{headline}</h5>
         <p className={Styles.Copy} dangerouslySetInnerHTML={{ __html: copy }} />
         <ul className={Styles.LinkList}>

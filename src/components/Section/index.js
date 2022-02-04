@@ -128,6 +128,7 @@ const Section = (props) => {
                   layout={images.top.layout || 'intrinsic'}
                   width={images.top.layout !== 'fill' ? images.top.width : null}
                   height={images.top.layout !== 'fill' ? images.top.height : null}
+                  alt=""
                 />
               </div>
             </Row>
@@ -150,6 +151,7 @@ const Section = (props) => {
                   layout={images.rightMobile.layout || 'intrinsic'}
                   width={images.rightMobile.layout !== 'fill' ? images.rightMobile.width : null}
                   height={images.rightMobile.layout !== 'fill' ? images.rightMobile.height : null}
+                  alt=""
                 />
               </div>
             </Row>
@@ -194,6 +196,7 @@ const Section = (props) => {
                       layout={images.left.layout || 'intrinsic'}
                       width={images.left.width || null}
                       height={images.left.height || null}
+                      alt=""
                     />
                   </div>
                 )}
@@ -254,6 +257,7 @@ const Section = (props) => {
                     layout={images.right.layout || 'intrinsic'}
                     width={images.right.layout !== 'fill' ? images.right.width : null}
                     height={images.right.layout !== 'fill' ? images.right.height : null}
+                    alt=""
                   />
                 </div>
               </Column>
@@ -290,6 +294,7 @@ const Section = (props) => {
                   layout={images.bottom.layout || 'intrinsic'}
                   width={images.bottom.layout !== 'fill' ? images.bottom.width : null}
                   height={images.bottom.layout !== 'fill' ? images.bottom.height : null}
+                  alt=""
                 />
               </div>
             </Row>
@@ -312,6 +317,7 @@ const Section = (props) => {
                   layout={images.bottomMobile.layout || 'intrinsic'}
                   width={images.bottomMobile.layout !== 'fill' ? images.bottomMobile.width : null}
                   height={images.bottomMobile.layout !== 'fill' ? images.bottomMobile.height : null}
+                  alt=""
                 />
               </div>
             </Row>
