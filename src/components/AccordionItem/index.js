@@ -3,6 +3,7 @@ import { ChevronDown32, ChevronUp32 } from '@carbon/icons-react'
 import { Column, Row } from 'carbon-components-react'
 import clsx from 'clsx'
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
@@ -52,13 +53,12 @@ const AccordionItem = ({ icon, headline, content, isOpenDefault }) => {
                 {!isOpen && <ChevronDown32 className={Styles.OpenCloseIcon} />}
               </Column>
             </Row>
-            <Row>
-              <Column sm={4} md={7} lg={{ offset: 3, span: 13 }}>
-                <AnimateHeight duration={500} height={isOpen ? 'auto' : 0}>
-                  <RichText content={content} className={Styles.RichText} />
-                </AnimateHeight>
-              </Column>
-            </Row>
+            <AnimateHeight duration={500} height={isOpen ? 'auto' : 0}>
+              <RichText content={content} className={Styles.RichText} />
+              <div className={Styles.Visual}>
+                <Image src="/img/accordion-visual.svg" alt="" layout="intrinsic" width={239} height={199} />
+              </div>
+            </AnimateHeight>
           </Column>
         </Row>
       </div>

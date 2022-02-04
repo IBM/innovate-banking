@@ -127,9 +127,38 @@ module.exports = (req) => {
       {
         name: 'Section',
         props: {
+          id: 'video',
+          titles: {
+            left: '<p>Kundeninteraktion aktiv gestalten – persönlich und effizient im digitalen Zeitalter</p>',
+          },
+          children: [
+            {
+              name: 'RichText',
+              props: {
+                content:
+                  '<p style="max-width: 544px; margin-bottom: 2rem;">Immer mehr Menschen nutzen immer selbstverständlicher digitale Zugangswege um ihre Bankgeschäfte zu erledigen. Der Anspruch an die Beratungs- und Servicequalität der Bank wächst. Wie Banken und ihre Berater durch den Einsatz neuer Technologien eine neue Qualität in der Kundenansprache erreichen können, zeigt die IBM Expertenrunde anhand konkreter Beispiele - von der optimierten Nutzererfahrung, über die personalisierte Beratung bis zur nahtlosen Verknüpfung sämtlicher Zugangswege - auf.</p>',
+              },
+            },
+            {
+              name: 'RichText',
+              props: {
+                content:
+                  '<div class="embed" style="max-width: 544px;"><iframe src="https://www.youtube-nocookie.com/embed/5pVe_nfh6xQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+              },
+            },
+          ],
+        },
+      },
+      {
+        name: 'Section',
+        props: {
           id: 'potenzial',
           titles: {
             left: '<p>Ihr Potenzial</p>',
+          },
+          background: {
+            dark: false,
+            color: '#f4f4f4',
           },
           children: [
             {
@@ -200,7 +229,7 @@ module.exports = (req) => {
                   },
                   {
                     icon: 'ManagingContractualFlow',
-                    headline: 'Mehr Kundenbindung durch personalisierten&nbsp;Kundendialog',
+                    headline: 'Mehr Kundenbindung durch personalisierten Kunden&shy;dialog',
                     content:
                       '<p>Der Schlüssel zu Relevanz und Loyalität liegt in der personalisierten Kundenansprache.</p><p>Wir analysieren Ihre Customer Journeys und identifizieren Verbesserungsmöglichkeiten – von der effizienten Generierung von Interessenten bis zum Abschluss. Dazu bereiten wir komplexe Inhalte zielgruppengerecht auf. Im Rahmen von Kampagnen können diese flexibel auf allen Kanälen für die vertriebliche Ansprache eingesetzt werden. Basierend auf den marktführenden Plattformen unserer Partner implementieren wir individuelle Lösungen zur Ausspielung personalisierter Inhalte, die für alle Kanäle dynamisch optimiert werden.</p>',
                   },

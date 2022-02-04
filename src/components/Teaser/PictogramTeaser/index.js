@@ -5,17 +5,23 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Styles from './styles.module.scss'
 
-const PictogramTeaser = ({ icon, headline, text, teaserIndex, teaserCount, size }) => {
+const PictogramTeaser = ({ icon, headline, text, teaserIndex, teaserCount, size, light }) => {
   const IconComponent = dynamic(() => import('@carbon/pictograms-react').then((mod) => mod[icon]))
 
   return (
-    <Column sm={4} md={8} lg={size === 'sm' ? 4 : 5} className={Styles.PictogramTeaserCol}>
+    <Column
+      sm={4}
+      md={8}
+      lg={size === 'sm' ? 4 : size === 'md' ? 5 : 8}
+      className={clsx(size === 'lg' && Styles.MarginBottom)}
+    >
       <div
         className={clsx(
           Styles.PictogramTeaser,
           Styles[`TeaserIndex${teaserIndex}`],
           Styles[`TeaserCount${teaserCount}`],
-          size === 'sm' && Styles.PictogramTeaserSmall
+          size === 'sm' && Styles.PictogramTeaserSmall,
+          light && Styles.IsLight
         )}
       >
         <span className={Styles.IconWrapper}>
@@ -32,6 +38,7 @@ const PictogramTeaser = ({ icon, headline, text, teaserIndex, teaserCount, size 
 
 PictogramTeaser.defaultProps = {
   size: 'md',
+  light: false,
 }
 
 PictogramTeaser.propTypes = {
@@ -40,7 +47,8 @@ PictogramTeaser.propTypes = {
   text: PropTypes.string.isRequired,
   teaserIndex: PropTypes.number.isRequired,
   teaserCount: PropTypes.number.isRequired,
-  size: PropTypes.oneOf(['sm', 'md']),
+  size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  light: PropTypes.bool,
 }
 
 export default PictogramTeaser

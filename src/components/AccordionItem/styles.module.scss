@@ -17,11 +17,14 @@
 
   @include bp('lg') {
     @include carbon--type-style('expressive-heading-04', true);
+
+    align-items: center;
   }
 }
 
 .AccordionContent {
   padding: $spacing-05;
+  overflow: hidden;
   background: $white-0;
 
   @include bp('md') {
@@ -47,8 +50,11 @@
 }
 
 .RichText {
-  max-width: 544px;
   padding: $spacing-06 0;
+
+  @include bp('lg') {
+    padding-right: 20%;
+  }
 }
 
 .RichTextHeading {
@@ -58,5 +64,33 @@
 
   @include bp('lg') {
     padding-right: $spacing-10;
+  }
+}
+
+.Visual {
+  display: none;
+
+  @include bp('lg') {
+    position: absolute;
+    right: -3.875rem;
+    bottom: -2rem;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+    :global(.rah-animating--down) &,
+    :global(.rah-static--height-auto) & {
+      opacity: 1;
+    }
+
+    :global(.rah-animating--up) &,
+    :global(.rah-static--height-zero) & {
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+  }
+
+  > span {
+    display: block !important;
   }
 }

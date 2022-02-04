@@ -3,12 +3,22 @@
 @import '@/styles/mixins';
 @import '@/styles/functions';
 
+.MarginBottom {
+  @include bp('lg') {
+    margin-bottom: $spacing-07;
+  }
+}
+
 .PictogramTeaser {
   display: flex;
   flex-direction: column;
   margin-bottom: $spacing-06;
   padding: $spacing-05 $spacing-05 $spacing-07;
   background: $gray-10;
+
+  &.IsLight {
+    background: $white-0;
+  }
 
   @include bp('lg') {
     min-height: 100%;
@@ -30,6 +40,10 @@
 
   .Icon {
     fill: $blue-60;
+
+    &.IconBlack {
+      fill: $black-100;
+    }
 
     @include bp('lg') {
       width: 5rem;
@@ -87,5 +101,22 @@
     @include bp('lg') {
       @include carbon--type-style('body-short-01', true);
     }
+  }
+}
+
+.PictogramTeaserWhite {
+  background: $white-0;
+}
+
+.Link {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: $spacing-07;
+  color: $blue-60;
+  text-decoration: none;
+
+  .LinkText {
+    margin-right: $spacing-03;
   }
 }

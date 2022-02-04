@@ -9,15 +9,7 @@ const Accordion = ({ items }) => {
     <Grid className={Styles.Accordion}>
       <Row>
         {items.map((item, index) => {
-          return (
-            <AccordionItem
-              key={index}
-              icon={item.icon}
-              headline={item.headline}
-              content={item.content}
-              isOpenDefault={index === 0}
-            />
-          )
+          return <AccordionItem key={index} icon={item.icon} headline={item.headline} content={item.content} />
         })}
       </Row>
     </Grid>
