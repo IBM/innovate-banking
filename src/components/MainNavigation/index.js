@@ -49,7 +49,9 @@ const MainNavigation = ({ items, pageMeta }) => {
                 </li>
                 <li className={clsx(Styles.ListItem, Styles.MobileOnly)}>
                   <Link href="/">
-                    <a className={clsx(Styles.ListItemLink, Styles.LogoTitle)}>{pageMeta.title}</a>
+                    <a className={clsx(Styles.ListItemLink, Styles.LogoTitle)} onClick={toggleOpenState}>
+                      {pageMeta.title}
+                    </a>
                   </Link>
                 </li>
                 {items.map((item, index) => {
@@ -65,6 +67,7 @@ const MainNavigation = ({ items, pageMeta }) => {
                           style={{
                             display: !item.active ? 'none' : null,
                           }}
+                          onClick={toggleOpenState}
                         >
                           {item.name}
                         </a>
