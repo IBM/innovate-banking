@@ -56,7 +56,7 @@ module.exports = (req) => {
             alt: 'IBM Smarter Banking',
           },
           imageMobile: {
-            src: '/img/stage-home-mobile.png',
+            src: '/img/stage-home-mobile.svg',
             width: 672,
             height: 672,
             alt: 'IBM Smarter Banking',
