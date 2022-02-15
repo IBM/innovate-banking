@@ -44,6 +44,8 @@
 
   .IsOpen & {
     position: fixed;
+    color: $white-0;
+    background-color: $blue-60;
   }
 
   @include bp('lg') {
@@ -95,7 +97,9 @@
     color: $blue-80;
     text-decoration: none;
     outline: 0;
-    transition: color 100ms ease-in-out;
+    transition-timing-function: ease-in-out;
+    transition-duration: 100ms;
+    transition-property: color, background-color;
 
     &:hover {
       color: $blue-100;
@@ -170,7 +174,7 @@
     height: 100vh;
     padding: 0;
     overflow: hidden;
-    background: $gray-100;
+    background: $cyan-20;
     transition: left 250ms ease-in-out;
 
     .IsOpen & {
@@ -183,7 +187,7 @@
       align-items: flex-start;
       max-height: calc(100vh - #{$spacing-05 + $spacing-12});
       margin-top: $spacing-12;
-      padding: 0 $spacing-05 $spacing-05 $spacing-05;
+      padding: 0 0 $spacing-05;
       overflow: scroll;
       -webkit-overflow-scrolling: touch;
     }
@@ -193,7 +197,12 @@
       height: auto;
 
       .ListItemLink {
-        padding: $spacing-05 0;
+        padding: $spacing-05;
+
+        &:active {
+          color: $white-0;
+          background-color: $blue-60;
+        }
       }
 
       &:first-child {
