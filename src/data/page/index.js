@@ -56,7 +56,7 @@ module.exports = (req) => {
             alt: 'IBM Smarter Banking',
           },
           imageMobile: {
-            src: '/img/stage-home-mobile.png',
+            src: '/img/stage-home-mobile.svg',
             width: 672,
             height: 672,
             alt: 'IBM Smarter Banking',
@@ -182,6 +182,7 @@ module.exports = (req) => {
               layout: 'responsive',
               style: {
                 maxWidth: '75%',
+                marginBottom: '2rem',
               },
             },
             bottomMobile: {
@@ -361,7 +362,7 @@ module.exports = (req) => {
               name: 'RichText',
               props: {
                 content:
-                  '<p class="h4">Unsere Stimme<br />in der Finanzbranche</p><p style="max-width: 544px;">Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen Sie sich direkt mit Ihnen aus.</p>',
+                  '<p class="eh4" style="margin-bottom: 1.5rem;">Unsere Stimme<br />in der Finanzbranche</p><p style="max-width: 544px;">Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen Sie sich direkt mit Ihnen aus.</p>',
               },
             },
           ],

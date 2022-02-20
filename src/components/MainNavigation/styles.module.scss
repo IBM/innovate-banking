@@ -44,6 +44,8 @@
 
   .IsOpen & {
     position: fixed;
+    color: $white-0;
+    background-color: $blue-60;
   }
 
   @include bp('lg') {
@@ -95,14 +97,44 @@
     color: $blue-80;
     text-decoration: none;
     outline: 0;
-    transition: color 100ms ease-in-out;
+    transition-timing-function: ease-in-out;
+    transition-duration: 100ms;
+    transition-property: color, background-color;
+
+    @include bp('lg') {
+      &:not(.LogoLink) {
+        &::after {
+          content: '';
+          position: absolute;
+          right: 1rem;
+          bottom: 2rem;
+          left: 1rem;
+          height: 0;
+          background: $blue-100;
+          transition: height 100ms ease-in-out;
+        }
+      }
+    }
 
     &:hover {
       color: $blue-100;
+
+      @include bp('lg') {
+        &::after {
+          height: 2px;
+        }
+      }
     }
 
     &:active {
-      color: $blue-100;
+      color: #353535;
+
+      @include bp('lg') {
+        &::after {
+          height: 2px;
+          background: #353535;
+        }
+      }
     }
 
     &.ListItemLinkActive {
@@ -156,6 +188,10 @@
       @include bp('lg') {
         .IsFirstLink {
           padding-left: $spacing-08;
+
+          &::after {
+            left: $spacing-08;
+          }
         }
       }
     }
@@ -170,7 +206,7 @@
     height: 100vh;
     padding: 0;
     overflow: hidden;
-    background: $gray-100;
+    background: $cyan-20;
     transition: left 250ms ease-in-out;
 
     .IsOpen & {
@@ -183,7 +219,7 @@
       align-items: flex-start;
       max-height: calc(100vh - #{$spacing-05 + $spacing-12});
       margin-top: $spacing-12;
-      padding: 0 $spacing-05 $spacing-05 $spacing-05;
+      padding: 0 0 $spacing-05;
       overflow: scroll;
       -webkit-overflow-scrolling: touch;
     }
@@ -193,7 +229,12 @@
       height: auto;
 
       .ListItemLink {
-        padding: $spacing-05 0;
+        padding: $spacing-05;
+
+        &:active {
+          color: $white-0;
+          background-color: $blue-60;
+        }
       }
 
       &:first-child {

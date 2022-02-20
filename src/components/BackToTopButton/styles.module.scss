@@ -13,19 +13,20 @@
   align-items: center;
   width: 3rem;
   height: 3rem;
-  background: $gray-100;
-  border: 2px solid $gray-60;
+  background: $cyan-20;
+  border: 1px solid $cyan-30;
   border-radius: 50%;
   outline: 0;
-  transition: opacity 200ms;
+  transition: all 200ms;
 
   &:hover {
-    background: $gray-80;
+    background: $cyan-30;
+    border-color: $cyan-70;
   }
 
   &:focus {
-    background: $gray-80;
-    border-color: $focus;
+    background: $cyan-30;
+    border: 2px solid $cyan-70;
   }
 
   &:global(.back-to-top-enter) {
@@ -42,8 +43,4 @@
     display: flex;
     opacity: 0;
   }
-}
-
-.Icon {
-  fill: $white-0;
 }

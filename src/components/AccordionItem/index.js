@@ -9,7 +9,7 @@ import React, { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
 import Styles from './styles.module.scss'
 
-const AccordionItem = ({ icon, headline, content, isOpenDefault }) => {
+const AccordionItem = ({ icon, headline, content, isOpenDefault, showVisual }) => {
   const [isOpen, setIsOpen] = useState(isOpenDefault)
 
   const onHeaderClick = (event) => {
@@ -55,9 +55,11 @@ const AccordionItem = ({ icon, headline, content, isOpenDefault }) => {
             </Row>
             <AnimateHeight duration={500} height={isOpen ? 'auto' : 0}>
               <RichText content={content} className={Styles.RichText} />
-              <div className={Styles.Visual}>
-                <Image src="/img/accordion-visual.svg" alt="" layout="intrinsic" width={239} height={199} />
-              </div>
+              {showVisual && (
+                <div className={Styles.Visual}>
+                  <Image src="/img/accordion-visual.svg" alt="" layout="intrinsic" width={239} height={199} />
+                </div>
+              )}
             </AnimateHeight>
           </Column>
         </Row>
@@ -68,6 +70,7 @@ const AccordionItem = ({ icon, headline, content, isOpenDefault }) => {
 
 AccordionItem.defaultProps = {
   isOpenDefault: false,
+  showVisual: false,
 }
 
 AccordionItem.propTypes = {
@@ -75,6 +78,7 @@ AccordionItem.propTypes = {
   headline: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   isOpenDefault: PropTypes.bool,
+  showVisual: PropTypes.bool,
 }
 
 export default AccordionItem

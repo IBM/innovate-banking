@@ -4,16 +4,28 @@ import React from 'react'
 import AccordionItem from '../AccordionItem'
 import Styles from './styles.module.scss'
 
-const Accordion = ({ items }) => {
+const Accordion = ({ items, showVisual }) => {
   return (
     <Grid className={Styles.Accordion}>
       <Row>
         {items.map((item, index) => {
-          return <AccordionItem key={index} icon={item.icon} headline={item.headline} content={item.content} />
+          return (
+            <AccordionItem
+              key={index}
+              icon={item.icon}
+              headline={item.headline}
+              content={item.content}
+              showVisual={showVisual}
+            />
+          )
         })}
       </Row>
     </Grid>
   )
+}
+
+Accordion.defaultProps = {
+  showVisual: false,
 }
 
 Accordion.propTypes = {
@@ -22,6 +34,7 @@ Accordion.propTypes = {
       icon: PropTypes.string.isRequired,
       headline: PropTypes.string.isRequired,
       content: PropTypes.string.isRequired,
+      showVisual: PropTypes.bool,
     })
   ),
 }

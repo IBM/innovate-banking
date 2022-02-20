@@ -39,7 +39,7 @@ const MainNavigation = ({ items, pageMeta }) => {
               <ul className={Styles.List}>
                 <li className={clsx(Styles.ListItem, !pageMeta.isHome && Styles.HasLogoTitle)}>
                   <Link href="/">
-                    <a className={Styles.ListItemLink}>
+                    <a className={clsx(Styles.ListItemLink, Styles.LogoLink)}>
                       <img src="/svg/logo.svg" width={47} height={29} alt="Innovate Banking" />
                       <span className={clsx(Styles.LogoTitle, Styles.DesktopOnly, pageMeta.isHome && Styles.IsHidden)}>
                         {pageMeta.title}
@@ -49,7 +49,9 @@ const MainNavigation = ({ items, pageMeta }) => {
                 </li>
                 <li className={clsx(Styles.ListItem, Styles.MobileOnly)}>
                   <Link href="/">
-                    <a className={clsx(Styles.ListItemLink, Styles.LogoTitle)}>{pageMeta.title}</a>
+                    <a className={clsx(Styles.ListItemLink, Styles.LogoTitle)} onClick={toggleOpenState}>
+                      {pageMeta.title}
+                    </a>
                   </Link>
                 </li>
                 {items.map((item, index) => {
@@ -65,6 +67,7 @@ const MainNavigation = ({ items, pageMeta }) => {
                           style={{
                             display: !item.active ? 'none' : null,
                           }}
+                          onClick={toggleOpenState}
                         >
                           {item.name}
                         </a>

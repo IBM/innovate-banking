@@ -1,8 +1,7 @@
-import PropTypes from 'prop-types'
-import Head from 'next/head'
 import MainLayout from '@/layouts/main'
-
-import { renderComponent, cleanUrl } from '@/utils'
+import { cleanUrl, renderComponent } from '@/utils'
+import Head from 'next/head'
+import PropTypes from 'prop-types'
 
 const DefaultPage = ({ meta, components }) => {
   let pageTitle = null
@@ -18,6 +17,9 @@ const DefaultPage = ({ meta, components }) => {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta property="og:title" content="Innovate Banking" />
+        <meta property="og:image" content="https://innovate-banking.com/og-image.png" />
+        <meta property="og:url" content="https://innovate-banking.com" />
         <meta name="msapplication-TileColor" content="#5bbad5" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
