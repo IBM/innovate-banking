@@ -39,7 +39,7 @@ const MainNavigation = ({ items, pageMeta }) => {
               <ul className={Styles.List}>
                 <li className={clsx(Styles.ListItem, !pageMeta.isHome && Styles.HasLogoTitle)}>
                   <Link href="/">
-                    <a className={Styles.ListItemLink}>
+                    <a className={clsx(Styles.ListItemLink, Styles.LogoLink)}>
                       <img src="/svg/logo.svg" width={47} height={29} alt="Innovate Banking" />
                       <span className={clsx(Styles.LogoTitle, Styles.DesktopOnly, pageMeta.isHome && Styles.IsHidden)}>
                         {pageMeta.title}
