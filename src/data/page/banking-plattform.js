@@ -140,7 +140,7 @@ module.exports = (req) => {
               name: 'RichText',
               props: {
                 content:
-                  '<h3 class="h4">Konzentration auf die Kernkompetenzen<br />durch gesteigerte Effizienz</h3><p style="max-width: 544px;">Die IBM Banking Platform macht Bankprozesse effizienter und ermöglicht somit um bis zu 40 % niedrigere Kosten.</p>',
+                  '<h3 class="eh4">Konzentration auf die Kernkompetenzen<br />durch gesteigerte Effizienz</h3><p style="max-width: 544px;">Die IBM Banking Platform macht Bankprozesse effizienter und ermöglicht somit um bis zu 40 % niedrigere Kosten.</p>',
               },
             },
             {
