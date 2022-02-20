@@ -119,11 +119,11 @@
   }
 
   .TopImage {
-    padding-top: $spacing-10;
+    margin-bottom: 1.5rem;
 
     @include bp('md') {
+      margin-bottom: 0;
       margin-left: -9rem;
-      padding-top: 0;
     }
 
     @include bp('lg') {
