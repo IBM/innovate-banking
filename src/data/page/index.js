@@ -361,7 +361,7 @@ module.exports = (req) => {
               name: 'RichText',
               props: {
                 content:
-                  '<p class="h4">Unsere Stimme<br />in der Finanzbranche</p><p style="max-width: 544px;">Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen Sie sich direkt mit Ihnen aus.</p>',
+                  '<p class="eh4" style="margin-bottom: 1.5rem;">Unsere Stimme<br />in der Finanzbranche</p><p style="max-width: 544px;">Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen Sie sich direkt mit Ihnen aus.</p>',
               },
             },
           ],
