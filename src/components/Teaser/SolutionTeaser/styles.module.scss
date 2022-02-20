@@ -23,18 +23,20 @@
   padding: $spacing-05 $spacing-05 $spacing-08 $spacing-05;
   background: $white-0;
 
-  &::after {
-    content: '';
-    position: absolute;
-    right: 1.75rem;
-    bottom: -0.5rem;
-    left: 1.75rem;
-    height: 4rem;
-    background: $cyan-40;
-    filter: blur(16px);
-    border-radius: 50%;
-    opacity: 0.4;
-    clip-path: polygon(-100% calc(100% - 0.5rem), 200% calc(100% - 0.5rem), 200% 200%, -100% 200%);
+  @include bp('md', true) {
+    &::after {
+      content: '';
+      position: absolute;
+      right: 1.75rem;
+      bottom: -0.5rem;
+      left: 1.75rem;
+      height: 4rem;
+      background: $cyan-40;
+      filter: blur(16px);
+      border-radius: 50%;
+      opacity: 0.4;
+      clip-path: polygon(-100% calc(100% - 0.5rem), 200% calc(100% - 0.5rem), 200% 200%, -100% 200%);
+    }
   }
 
   .IconHeadlineWrapper {
