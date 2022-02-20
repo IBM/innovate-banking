@@ -182,6 +182,7 @@ module.exports = (req) => {
               layout: 'responsive',
               style: {
                 maxWidth: '75%',
+                marginBottom: '2rem',
               },
             },
             bottomMobile: {
