@@ -163,8 +163,8 @@ module.exports = (req) => {
               height: 263,
               layout: 'responsive',
               style: {
+                display: 'none',
                 marginBottom: '-6%',
-                opacity: 0,
               },
             },
           },
