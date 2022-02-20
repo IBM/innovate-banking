@@ -23,7 +23,7 @@
   padding: $spacing-05 $spacing-05 $spacing-08 $spacing-05;
   background: $white-0;
 
-  @include bp('md', true) {
+  @include bp('md') {
     &::after {
       content: '';
       position: absolute;

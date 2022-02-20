@@ -47,6 +47,16 @@
 
 .OpenCloseIcon {
   margin-left: auto;
+
+  @include bp('lg', true) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @include bp('md', true) {
+    right: 1rem;
+  }
 }
 
 .RichText {
