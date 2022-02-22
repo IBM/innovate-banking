@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import { Content } from '../types'
 
 const content: Content = {

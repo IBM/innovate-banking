@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import { Content } from '../types'
 
 const content: Content = {
@@ -85,7 +84,6 @@ const content: Content = {
             link: 'vorteile',
           },
           {
-            // eslint-disable-next-line prettier/prettier
             name: 'Let’s talk',
             link: 'letstalk',
             isLetsTalkItem: true,
