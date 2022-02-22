@@ -27,6 +27,5 @@ yarn-error.log*
 # vercel
 .vercel
 
-.dist
-shared/DynamicComponents/index.js
+# Dynamic components
 shared/DynamicIcons/index.js

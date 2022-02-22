@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "buildDynamicImports": "node ./tasks/dynamic.project.imports.js && node ./tasks/dynamic.icons.imports.js",
+    "generateDynamicImports": "node ./tasks/dynamic.project.imports.js && node ./tasks/dynamic.icons.imports.js",
     "format": "prettier --write \"{,!(.next)/**/}*.{js, jsx}\"",
     "stylelint": "stylelint '**/*.{css,scss}' '!**/.next/**'"
   },
