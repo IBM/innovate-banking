@@ -172,14 +172,14 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<h3 class="d1">Die IBM Banking Platform</h3><p style="max-width: 544px;">Stehen auch Sie derzeit vor der Herausforderung, Ihre Kosten reduzieren zu müssen und gleichzeitig die steigenden regulatorischen und gesetzlichen Anforderungen in ihren Geschäftsprozessen und IT-Systemen kosteneffizient umzusetzen?</p><p style="max-width: 544px; margin-bottom: 2rem;">Wir von IBM bieten mit der Banking Platform eine Möglichkeit, den aktuellen aber auch den zukünftigen Herausforderungen durch bedarfsorientierte und variabilisierte Serviceleistungen gerecht zu werden. Unsere langjährige Erfahrung zeigt, dass gerade Systeme hohe fixe Wartungs- und Entwicklungskosten erzeugen, da sie teilweise nicht mehr leistungsfähig sind und deshalb nicht immer mit den Innovationen am Markt mithalten können.</p>',
+                '<h3 class="d1" style="max-width: 544px;">Die IBM Banking Platform</h3><p style="max-width: 544px;">Stehen auch Sie derzeit vor der Herausforderung, Ihre Kosten reduzieren zu müssen und gleichzeitig die steigenden regulatorischen und gesetzlichen Anforderungen in ihren Geschäftsprozessen und IT-Systemen kosteneffizient umzusetzen?</p><p style="max-width: 544px; margin-bottom: 2rem;">Wir von IBM bieten mit der Banking Platform eine Möglichkeit, den aktuellen aber auch den zukünftigen Herausforderungen durch bedarfsorientierte und variabilisierte Serviceleistungen gerecht zu werden. Unsere langjährige Erfahrung zeigt, dass gerade Systeme hohe fixe Wartungs- und Entwicklungskosten erzeugen, da sie teilweise nicht mehr leistungsfähig sind und deshalb nicht immer mit den Innovationen am Markt mithalten können.</p>',
             },
           },
           {
             name: 'RichText',
             props: {
               content:
-                '<h4 class="eh4">Neuer Markt, neue<br />Herausforderungen</h4><p style="max-width: 544px;">Durch den Eintritt neuer Wettbewerber*innen, wie z.B. den Fintechs aber auch wegen der strukturellen Transformation des gesamten Bankenmarkts, werden von den Instituten in hohem Maße Innovationsfähigkeit und Agilität gefordert. Und genau dabei können wir Sie unterstützen:</p>',
+                '<h4 class="eh4" style="max-width: 544px;">Neuer Markt, neue<br />Herausforderungen</h4><p style="max-width: 544px;">Durch den Eintritt neuer Wettbewerber*innen, wie z.B. den Fintechs aber auch wegen der strukturellen Transformation des gesamten Bankenmarkts, werden von den Instituten in hohem Maße Innovationsfähigkeit und Agilität gefordert. Und genau dabei können wir Sie unterstützen:</p>',
             },
           },
         ],
@@ -201,14 +201,14 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<h3 class="eh3" style="margin-bottom: 1.5rem;">Gehen Sie mit uns den nächsten Schritt in die Digitalisierung.</h3><p style="max-width: 544px; margin-bottom: 2rem;">Sie profitieren dabei von der langjährigen Erfahrung unserer Expertinnen und Experten und können durch die Umstellung haben Umstellung auf die IBM Banking Platform Ihre Kosten variabilisieren. Zudem wird die Plattform stets an die aktuellen rechtlichen und gesetzlichen Anforderungen angepasst und die Einhaltung derer permanent überwacht.</p>',
+                '<h3 class="eh3" style="max-width: 544px; margin-bottom: 1.5rem;">Gehen Sie mit uns den nächsten Schritt in die Digitalisierung.</h3><p style="max-width: 544px; margin-bottom: 2rem;">Sie profitieren dabei von der langjährigen Erfahrung unserer Expertinnen und Experten und können durch die Umstellung haben Umstellung auf die IBM Banking Platform Ihre Kosten variabilisieren. Zudem wird die Plattform stets an die aktuellen rechtlichen und gesetzlichen Anforderungen angepasst und die Einhaltung derer permanent überwacht.</p>',
             },
           },
           {
             name: 'RichText',
             props: {
               content:
-                '<h3 class="eh3" style="margin-bottom: 1.5rem;">Mit uns als Partner an Ihrer Seite können Sie Ihr Unternehmen für<br />die Zukunft aufstellen.</h3><p style="max-width: 544px;">Wie viele Schritte in Richtung Digitalisierung Sie dabei planen und wie schnell Sie diese umsetzen möchten, liegt ganz bei Ihnen.</p><p style="max-width: 544px;">Die Transition auf unsere Plattform kann nach Ihren Wünschen in kleinen Schritten erfolgen und sogar vorab getestet werden. Gleichzeitig haben Sie die Möglichkeit aufgrund der Modularität einzelne oder komplette Geschäftsprozesse auf die IBM Platform zu übertragen.</p><p style="max-width: 544px;">Sie möchten mehr wissen über die IBM Banking Platform? Dann melden Sie sich gerne bei uns und lassen Sie uns über Ihre Wünsche und Möglichkeiten sprechen.</p>',
+                '<h3 class="eh3" style="max-width: 544px; margin-bottom: 1.5rem;">Mit uns als Partner an Ihrer Seite können Sie Ihr Unternehmen für<br />die Zukunft aufstellen.</h3><p style="max-width: 544px;">Wie viele Schritte in Richtung Digitalisierung Sie dabei planen und wie schnell Sie diese umsetzen möchten, liegt ganz bei Ihnen.</p><p style="max-width: 544px;">Die Transition auf unsere Plattform kann nach Ihren Wünschen in kleinen Schritten erfolgen und sogar vorab getestet werden. Gleichzeitig haben Sie die Möglichkeit aufgrund der Modularität einzelne oder komplette Geschäftsprozesse auf die IBM Platform zu übertragen.</p><p style="max-width: 544px;">Sie möchten mehr wissen über die IBM Banking Platform? Dann melden Sie sich gerne bei uns und lassen Sie uns über Ihre Wünsche und Möglichkeiten sprechen.</p>',
             },
           },
         ],
