@@ -25,10 +25,11 @@
   }
 
   .Headline {
-    @include carbon--type-style('quotation-01', true);
+    @include carbon--type-style('body-short-01', true);
 
     margin-bottom: $spacing-05;
     padding-top: $spacing-05;
+    font-size: 1.375rem;
   }
 
   .Copy {
