@@ -1,5 +1,6 @@
+import pages from '@/data/pages'
 import MainLayout from '@/layouts/main'
-import { cleanUrl, renderComponent } from '@/utils'
+import { renderComponent } from '@/utils'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 
@@ -37,18 +38,20 @@ NamedPage.propTypes = {
   components: PropTypes.array,
 }
 
-export const getServerSideProps = async (context) => {
-  const pageDataReq = await fetch(cleanUrl(`${process.env.NEXT_ABSOLUTE_APP_URL}/api/page/${context.query.name}`))
-
-  let pageData = {}
-
-  if (pageDataReq.status === 200) {
-    pageData = await pageDataReq.json()
+export const getStaticProps = async (context) => {
+  if (!pages[context.params.name]) {
+    return {
+      notFound: true,
+    }
   }
 
   return {
-    props: pageData,
+    props: pages[context.params.name],
   }
+}
+
+export const getStaticPaths = async () => {
+  return { paths: [], fallback: 'blocking' }
 }
 
 export default NamedPage

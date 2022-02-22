@@ -1,7 +1,5 @@
 import Components from '@/shared/DynamicComponents'
 
-export const cleanUrl = (url) => url.replace(/(https?:\/\/)|(\/)+/gim, '$1$2')
-
 export const renderComponent = (name, props, index, pageMeta) => {
   if (typeof Components[name] === 'undefined') {
     return <p>ERROR: Component named "{name}" is not defined!</p>
@@ -22,7 +20,6 @@ export const renderComponent = (name, props, index, pageMeta) => {
 }
 
 const Utils = {
-  cleanUrl,
   renderComponent,
 }
 
