@@ -1,4 +1,4 @@
-import * as Components from '@/shared/DynamicComponents'
+import * as Components from '@/components/dynamic'
 
 export const renderComponent = (name, props, index, pageMeta) => {
   if (typeof Components[name] === 'undefined') {
