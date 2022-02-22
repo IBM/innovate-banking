@@ -34,6 +34,7 @@ const MainNavigation = ({ items, pageMeta }: MainNavigationProps) => {
     <header className={clsx(styles.NavHeader, isOpen && styles.IsOpen)}>
       <Link href="/">
         <a className={clsx(styles.ListItemLink, styles.MobileHomeLink)}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/svg/logo.svg" width={47} height={29} alt="Innovate Banking" />
         </a>
       </Link>
@@ -49,6 +50,7 @@ const MainNavigation = ({ items, pageMeta }: MainNavigationProps) => {
                 <li className={clsx(styles.ListItem, !pageMeta.isHome && styles.HasLogoTitle)}>
                   <Link href="/">
                     <a className={clsx(styles.ListItemLink, styles.LogoLink)}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src="/svg/logo.svg" width={47} height={29} alt="Innovate Banking" />
                       <span className={clsx(styles.LogoTitle, styles.DesktopOnly, pageMeta.isHome && styles.IsHidden)}>
                         {pageMeta.title}
