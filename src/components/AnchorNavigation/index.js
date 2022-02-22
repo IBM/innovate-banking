@@ -1,16 +1,14 @@
-import { translate } from '@/utils'
 import { AddComment20 } from '@carbon/icons-react'
 import { Column, Dropdown, Grid, Link, Row } from 'carbon-components-react'
 import clsx from 'clsx'
 import { withRouter } from 'next/router'
 import PropTypes from 'prop-types'
 import React, { useEffect, useState } from 'react'
-import { injectIntl } from 'react-intl'
 import Sticky from 'react-sticky-el'
 import { Transition } from 'react-transition-group'
 import Styles from './styles.module.scss'
 
-const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
+const AnchorNavigation = ({ items }) => {
   const sloganListItemRef = React.createRef(null)
   const [isSloganShown, setIsSloganShown] = useState(false)
   const [activeItem, setActiveItem] = useState(null)
@@ -123,7 +121,7 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
                           }}
                         >
                           {!item.isLetsTalkItem && item.name}
-                          {item.isLetsTalkItem && translate(intl, 'components.AnchorNavigation.letsTalkButtonText')}
+                          {item.isLetsTalkItem && <>Let’s talk</>}
                           {item.isLetsTalkItem && <AddComment20 className={Styles.LetsTalkIcon} />}
                         </Link>
                       </li>
@@ -140,7 +138,7 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
           <Column sm={4} md={0} className={Styles.DropdownColumn}>
             <Dropdown
               id="inline"
-              label={translate(intl, 'components.AnchorNavigation.dropdownLabel')}
+              label="Mehr erfahren über"
               items={mobileItems}
               itemToString={(item) => (item ? item.name : '')}
               onChange={onDropdownChange}
@@ -154,10 +152,8 @@ const AnchorNavigation = ({ intl, items, router, pageMeta }) => {
 }
 
 AnchorNavigation.propTypes = {
-  intl: PropTypes.object.isRequired,
   items: PropTypes.array.isRequired,
-  router: PropTypes.object,
   pageMeta: PropTypes.object,
 }
 
-export default withRouter(injectIntl(AnchorNavigation))
+export default AnchorNavigation

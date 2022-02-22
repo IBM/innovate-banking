@@ -26,7 +26,6 @@ yarn-error.log*
 
 # vercel
 .vercel
-/i18n/*.flat.json
 
 .dist
 shared/DynamicComponents/index.js

@@ -21,19 +21,9 @@ export const renderComponent = (name, props, index, pageMeta) => {
   return <DynamicComponent key={`Component-${name}-${index}`} {...props} pageMeta={pageMeta} />
 }
 
-export const translate = (intl, messageKey, params = {}) => {
-  return intl.formatMessage(
-    {
-      id: messageKey,
-    },
-    params
-  )
-}
-
 const Utils = {
   cleanUrl,
   renderComponent,
-  translate,
 }
 
 export default Utils
