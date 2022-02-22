@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "export": "next export",
     "generateDynamicImports": "node ./tasks/dynamic.project.imports.js && node ./tasks/dynamic.icons.imports.js",
     "format": "prettier --write \"{,!(.next)/**/}*.{js, jsx}\"",
@@ -31,6 +32,12 @@
     "sass": "^1.49.8"
   },
   "devDependencies": {
+    "@types/carbon-components-react": "^7.49.0",
+    "@types/carbon__icons-react": "^10.31.2",
+    "@types/carbon__pictograms-react": "^11.9.1",
+    "@types/node": "^17.0.19",
+    "@types/react": "^17.0.39",
+    "@types/react-transition-group": "^4.4.4",
     "babel-eslint": "^10.1.0",
     "cpy-cli": "^3.1.1",
     "eslint": "7.32.0",
@@ -48,10 +55,10 @@
     "lodash": "^4.17.21",
     "markdown-to-jsx": "^7.1.6",
     "prettier": "^2.5.1",
-    "prop-types": "^15.8.1",
     "shelljs": "^0.8.5",
     "stylelint": "^14.5.1",
     "stylelint-config-standard-scss": "^3.0.0",
-    "stylelint-order": "^5.0.0"
+    "stylelint-order": "^5.0.0",
+    "typescript": "^4.5.5"
   }
 }

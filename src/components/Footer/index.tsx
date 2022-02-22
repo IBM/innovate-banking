@@ -1,12 +1,18 @@
 import { Column, Grid, Link, Row } from 'carbon-components-react'
 import clsx from 'clsx'
 import Image from 'next/image'
-import PropTypes from 'prop-types'
 import React from 'react'
 import BackToTopButton from '../BackToTopButton'
 import Styles from './styles.module.scss'
 
-const Footer = ({ links }) => {
+type FooterProps = {
+  readonly links: ReadonlyArray<{
+    readonly url: string
+    readonly title: string
+  }>
+}
+
+const Footer = ({ links }: FooterProps) => {
   return (
     <>
       <footer className={Styles.Footer}>
@@ -52,15 +58,6 @@ const Footer = ({ links }) => {
       <BackToTopButton />
     </>
   )
-}
-
-Footer.propTypes = {
-  links: PropTypes.arrayOf(
-    PropTypes.shape({
-      url: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-    })
-  ).isRequired,
 }
 
 export default Footer

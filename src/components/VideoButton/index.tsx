@@ -1,11 +1,15 @@
 import { PlayOutline32 } from '@carbon/icons-react'
 import { Modal } from 'carbon-components-react'
-import PropTypes from 'prop-types'
 import React, { useEffect, useRef, useState } from 'react'
-import Styles from './styles.module.scss'
+import styles from './styles.module.scss'
 
-const VideoButton = ({ title, subtitle }) => {
-  const iFrameRef = useRef()
+type VideoButtonProps = {
+  readonly title: string
+  readonly subtitle: string
+}
+
+const VideoButton = ({ title, subtitle }: VideoButtonProps) => {
+  const iFrameRef = useRef<HTMLIFrameElement>()
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
@@ -26,22 +30,22 @@ const VideoButton = ({ title, subtitle }) => {
 
   return (
     <>
-      <button className={Styles.VideoButton} onClick={() => setOpen(true)}>
-        <PlayOutline32 className={Styles.Icon} />
+      <button className={styles.VideoButton} onClick={() => setOpen(true)}>
+        <PlayOutline32 className={styles.Icon} />
         <div>
-          <span className={Styles.Title}>{title}</span>
-          <span className={Styles.Subtitle}>{subtitle}</span>
+          <span className={styles.Title}>{title}</span>
+          <span className={styles.Subtitle}>{subtitle}</span>
         </div>
       </button>
       <Modal
-        className={Styles.Modal}
+        className={styles.Modal}
         open={open}
         passiveModal
         size="lg"
         onRequestClose={() => setOpen(false)}
         modalHeading={title}
       >
-        <div className={Styles.Video}>
+        <div className={styles.Video}>
           <iframe
             ref={iFrameRef}
             src="https://www.youtube-nocookie.com/embed/U5eK56asMSQ?modestbranding=1"
@@ -52,11 +56,6 @@ const VideoButton = ({ title, subtitle }) => {
       </Modal>
     </>
   )
-}
-
-VideoButton.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
 }
 
 export default VideoButton

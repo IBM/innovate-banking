@@ -1,13 +1,23 @@
 import pages from '@/data/pages'
 import MainLayout from '@/layouts/main'
 import { renderComponent } from '@/utils'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
-import PropTypes from 'prop-types'
 
-const DefaultPage = ({ meta, components }) => {
+export type NamedPageProps = {
+  readonly meta?: {
+    readonly title?: string
+    readonly slogan?: string
+    readonly isHome?: boolean
+  }
+  // TODO: use components types
+  readonly components: ReadonlyArray<{ name: string; props: Record<string, unknown> }>
+}
+
+const NamedPage = ({ meta, components }: InferGetStaticPropsType<typeof getStaticProps>) => {
   let pageTitle = null
-  if (meta && meta.title) pageTitle = meta.title
-  if (meta && meta.slogan) pageTitle = pageTitle += ' - ' + meta.slogan
+  if (meta?.title) pageTitle = meta.title
+  if (meta?.slogan) pageTitle = pageTitle += ' - ' + meta.slogan
 
   return (
     <>
@@ -20,35 +30,30 @@ const DefaultPage = ({ meta, components }) => {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta property="og:title" content="Innovate Banking" />
         <meta property="og:image" content="https://innovate-banking.com/og-image.png" />
-        <meta property="og:url" content="https://innovate-banking.com" />
         <meta name="msapplication-TileColor" content="#5bbad5" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <MainLayout>
-        {components &&
-          components.map((componentData, index) =>
-            renderComponent(componentData.name, componentData.props, index, meta)
-          )}
+        {components && components.map(({ name, props }, index) => renderComponent(name, props, index, meta))}
       </MainLayout>
     </>
   )
 }
 
-DefaultPage.propTypes = {
-  meta: PropTypes.object,
-  components: PropTypes.array,
-}
-
-export const getStaticProps = async () => {
-  if (!pages.index) {
+export const getStaticProps: GetStaticProps<NamedPageProps> = async ({ params }) => {
+  if (!pages[params?.name as string]) {
     return {
       notFound: true,
     }
   }
 
   return {
-    props: pages.index,
+    props: pages[params?.name as string],
   }
 }
 
-export default DefaultPage
+export const getStaticPaths = async () => {
+  return { paths: [], fallback: 'blocking' }
+}
+
+export default NamedPage

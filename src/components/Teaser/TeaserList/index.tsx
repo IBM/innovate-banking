@@ -1,11 +1,17 @@
 import ConditionalWrapper from '@/components/ConditonalWrapper'
 import { PaginationNav, Row } from 'carbon-components-react'
 import clsx from 'clsx'
-import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 import Styles from './styles.module.scss'
 
-const TeaserList = ({ children, rowWrap, showPagination }) => {
+type TeaserlistProps = {
+  // TODO: children are content components
+  readonly children: ReadonlyArray<unknown>
+  readonly showPagination?: boolean
+  readonly rowWrap?: boolean
+}
+
+const TeaserList = ({ children, showPagination, rowWrap = false }: TeaserlistProps) => {
   const childCount = children.length
   let breakpointMd = null
 
@@ -17,7 +23,7 @@ const TeaserList = ({ children, rowWrap, showPagination }) => {
 
   const [currentPage, setCurrentPage] = useState(0)
 
-  const onPaginationChange = (index) => {
+  const onPaginationChange = (index: number) => {
     setCurrentPage(index)
   }
 
@@ -58,6 +64,7 @@ const TeaserList = ({ children, rowWrap, showPagination }) => {
         }}
       >
         {children.map((child, childIndex) => {
+          /* @ts-ignore */
           return React.cloneElement(child, {
             teaserIndex: childIndex,
             teaserCount: childCount,
@@ -76,16 +83,6 @@ const TeaserList = ({ children, rowWrap, showPagination }) => {
       </ConditionalWrapper>
     </ConditionalWrapper>
   )
-}
-
-TeaserList.defaultProps = {
-  rowWrap: false,
-}
-
-TeaserList.propTypes = {
-  children: PropTypes.array.isRequired,
-  rowWrap: PropTypes.bool,
-  showPagination: PropTypes.bool,
 }
 
 export default TeaserList

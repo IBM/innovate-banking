@@ -2,11 +2,20 @@ import { Close32, Menu32 } from '@carbon/icons-react'
 import { Button, Column, Grid, Row } from 'carbon-components-react'
 import clsx from 'clsx'
 import Link from 'next/link'
-import PropTypes from 'prop-types'
 import React, { useState } from 'react'
-import Styles from './styles.module.scss'
+import styles from './styles.module.scss'
 
-const MainNavigation = ({ items, pageMeta }) => {
+type MainNavigationProps = {
+  readonly items: ReadonlyArray<{
+    readonly name: string
+    readonly url: string
+    readonly active?: boolean
+    readonly current?: boolean
+  }>
+  readonly pageMeta?: Record<string, unknown>
+}
+
+const MainNavigation = ({ items, pageMeta }: MainNavigationProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const [lastBodyPos, setLastBodyPos] = useState(0)
 
@@ -22,47 +31,47 @@ const MainNavigation = ({ items, pageMeta }) => {
   }
 
   return (
-    <header className={clsx(Styles.NavHeader, isOpen && Styles.IsOpen)}>
+    <header className={clsx(styles.NavHeader, isOpen && styles.IsOpen)}>
       <Link href="/">
-        <a className={clsx(Styles.ListItemLink, Styles.MobileHomeLink)}>
+        <a className={clsx(styles.ListItemLink, styles.MobileHomeLink)}>
           <img src="/svg/logo.svg" width={47} height={29} alt="Innovate Banking" />
         </a>
       </Link>
-      <Button className={Styles.MobileMenuIcon} onClick={toggleOpenState}>
+      <Button className={styles.MobileMenuIcon} onClick={toggleOpenState}>
         {!isOpen && <Menu32 />}
         {isOpen && <Close32 />}
       </Button>
-      <Grid className={Styles.NavGrid}>
+      <Grid className={styles.NavGrid}>
         <Row>
           <Column sm={4}>
-            <nav className={clsx(Styles.MainNavigation, !pageMeta.isHome && Styles.HasLogoTitle)}>
-              <ul className={Styles.List}>
-                <li className={clsx(Styles.ListItem, !pageMeta.isHome && Styles.HasLogoTitle)}>
+            <nav className={clsx(styles.MainNavigation, !pageMeta.isHome && styles.HasLogoTitle)}>
+              <ul className={styles.List}>
+                <li className={clsx(styles.ListItem, !pageMeta.isHome && styles.HasLogoTitle)}>
                   <Link href="/">
-                    <a className={clsx(Styles.ListItemLink, Styles.LogoLink)}>
+                    <a className={clsx(styles.ListItemLink, styles.LogoLink)}>
                       <img src="/svg/logo.svg" width={47} height={29} alt="Innovate Banking" />
-                      <span className={clsx(Styles.LogoTitle, Styles.DesktopOnly, pageMeta.isHome && Styles.IsHidden)}>
+                      <span className={clsx(styles.LogoTitle, styles.DesktopOnly, pageMeta.isHome && styles.IsHidden)}>
                         {pageMeta.title}
                       </span>
                     </a>
                   </Link>
                 </li>
-                <li className={clsx(Styles.ListItem, Styles.MobileOnly)}>
+                <li className={clsx(styles.ListItem, styles.MobileOnly)}>
                   <Link href="/">
-                    <a className={clsx(Styles.ListItemLink, Styles.LogoTitle)} onClick={toggleOpenState}>
+                    <a className={clsx(styles.ListItemLink, styles.LogoTitle)} onClick={toggleOpenState}>
                       {pageMeta.title}
                     </a>
                   </Link>
                 </li>
                 {items.map((item, index) => {
                   return item.active ? (
-                    <li key={index} className={clsx(Styles.ListItem, item.current && Styles.ListItemActive)}>
+                    <li key={index} className={clsx(styles.ListItem, item.current && styles.ListItemActive)}>
                       <Link href={item.url}>
                         <a
                           className={clsx(
-                            Styles.ListItemLink,
-                            item.current && Styles.ListItemLinkActive,
-                            index === 0 && Styles.IsFirstLink
+                            styles.ListItemLink,
+                            item.current && styles.ListItemLinkActive,
+                            index === 0 && styles.IsFirstLink
                           )}
                           style={{
                             display: !item.active ? 'none' : null,
@@ -82,12 +91,6 @@ const MainNavigation = ({ items, pageMeta }) => {
       </Grid>
     </header>
   )
-}
-
-MainNavigation.propTypes = {
-  items: PropTypes.array.isRequired,
-  pageMeta: PropTypes.object,
-  logoTitle: PropTypes.string,
 }
 
 export default MainNavigation

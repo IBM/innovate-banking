@@ -1,5 +1,7 @@
 /* eslint-disable max-len */
-const content = {
+import { Content } from '../types'
+
+const content: Content = {
   meta: {
     title: 'Innovate Banking',
     slogan: 'Eine Initiative von IBM Consulting',
@@ -12,31 +14,31 @@ const content = {
         items: [
           {
             name: 'Kundenerlebnis',
-            url: 'kundenerlebnis',
+            url: '/kundenerlebnis',
             active: true,
             current: false,
           },
           {
             name: 'Prozess-Transformation',
-            url: 'prozess-transformation',
+            url: '/prozess-transformation',
             active: true,
             current: false,
           },
           {
             name: 'Risk & Compliance',
-            url: 'risk-compliance',
+            url: '/risk-compliance',
             active: true,
             current: false,
           },
           {
             name: 'Anwendungssysteme',
-            url: 'anwendungssysteme',
+            url: '/anwendungssysteme',
             active: true,
             current: false,
           },
           {
             name: 'IBM Banking Platform',
-            url: 'banking-plattform',
+            url: '/banking-plattform',
             active: true,
             current: false,
           },
@@ -50,14 +52,10 @@ const content = {
         subheading: 'Eine Initiative von IBM Consulting',
         image: {
           src: '/img/stage-home.svg',
-          width: 1056,
-          height: 504,
           alt: 'IBM Smarter Banking',
         },
         imageMobile: {
           src: '/img/stage-home-mobile.svg',
-          width: 672,
-          height: 672,
           alt: 'IBM Smarter Banking',
         },
         isHome: true,
@@ -198,7 +196,6 @@ const content = {
           // gradient: 'linear-gradient(180deg, #dcf2ff 0%, #dcf2ff 100%)',
         },
         colWrapChildren: false,
-        rowWrapChildren: false,
         children: [
           {
             name: 'TeaserList',

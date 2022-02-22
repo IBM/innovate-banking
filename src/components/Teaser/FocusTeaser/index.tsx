@@ -1,13 +1,33 @@
 import RichText from '@/components/RichText'
 import { Column, Link } from 'carbon-components-react'
+import * as carbonIconsReact from '@carbon/icons-react'
 import clsx from 'clsx'
 import dynamic from 'next/dynamic'
-import Image from 'next/image'
-import PropTypes from 'prop-types'
+import Image, { ImageProps } from 'next/image'
 import React from 'react'
-import Styles from './styles.module.scss'
+import styles from './styles.module.scss'
 
-const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, light, dark, condensed }) => {
+type FocusTeaserProps = {
+  readonly headline: string
+  readonly text: string
+  readonly image?: {
+    readonly src?: string
+    readonly width?: number
+    readonly height?: number
+    readonly layout?: ImageProps['layout']
+    readonly simulate?: boolean
+  }
+  readonly link?: {
+    readonly title?: string
+    readonly url?: string
+    readonly icon?: keyof typeof carbonIconsReact
+  }
+  readonly light?: boolean
+  readonly dark?: boolean
+  readonly condensed?: boolean
+}
+
+const FocusTeaser = ({ headline, text, image, link, light, dark, condensed }: FocusTeaserProps) => {
   let IconComponent = null
 
   if (link && link.url) {
@@ -42,30 +62,30 @@ const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, li
       md={mdSizeOuter}
       lg={lgSizeOuter}
       max={maxSizeOuter}
-      className={clsx(Styles.FocusTeaserColumn)}
+      className={clsx(styles.FocusTeaserColumn)}
     >
       <Link
         className={clsx(
-          Styles.FocusTeaser,
-          light && Styles.IsLight,
-          dark && Styles.IsDark,
-          link.url === undefined && Styles.IsInactive
+          styles.FocusTeaser,
+          light && styles.IsLight,
+          dark && styles.IsDark,
+          link.url === undefined && styles.IsInactive
         )}
         href={link.url}
         title={link.title}
       >
-        <Column sm={smSizeLeft} md={mdSizeLeft} lg={lgSizeLeft} className={Styles.LeftColumn}>
-          <h5 className={Styles.Headline} dangerouslySetInnerHTML={{ __html: headline }} />
-          <RichText content={text} className={Styles.RichText} />
+        <Column sm={smSizeLeft} md={mdSizeLeft} lg={lgSizeLeft} className={styles.LeftColumn}>
+          <h5 className={styles.Headline} dangerouslySetInnerHTML={{ __html: headline }} />
+          <RichText content={text} className={styles.RichText} />
           {link && (
-            <span className={Styles.Link}>
-              {link.title && <span className={Styles.Text}>{link.title}</span>}
+            <span className={styles.Link}>
+              {link.title && <span className={styles.Text}>{link.title}</span>}
               {IconComponent && <IconComponent />}
             </span>
           )}
         </Column>
         {image && image.simulate !== true && (
-          <Column sm={0} md={4} lg={8} className={Styles.RightColumn}>
+          <Column sm={0} md={4} lg={8} className={styles.RightColumn}>
             <Image
               src={image.src}
               width={image.width}
@@ -78,28 +98,6 @@ const FocusTeaser = ({ headline, text, image, link, teaserIndex, teaserCount, li
       </Link>
     </Column>
   )
-}
-
-FocusTeaser.propTypes = {
-  headline: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  image: PropTypes.shape({
-    src: PropTypes.string,
-    width: PropTypes.number,
-    height: PropTypes.number,
-    layout: PropTypes.string,
-    simulate: PropTypes.bool,
-  }),
-  link: PropTypes.shape({
-    title: PropTypes.string,
-    url: PropTypes.string,
-    icon: PropTypes.string,
-  }),
-  teaserIndex: PropTypes.number,
-  teaserCount: PropTypes.number,
-  light: PropTypes.bool,
-  dark: PropTypes.bool,
-  condensed: PropTypes.bool,
 }
 
 export default FocusTeaser

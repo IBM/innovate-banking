@@ -1,3 +1,4 @@
+import { Content } from './types'
 import index from '@/data/page'
 import prozessTransformation from '@/data/page/prozess-transformation'
 import kundenerlebnis from '@/data/page/kundenerlebnis'
@@ -6,7 +7,7 @@ import anwendungssysteme from '@/data/page/anwendungssysteme'
 import bankingPlattform from '@/data/page/banking-plattform'
 import impressum from '@/data/page/impressum'
 
-const pages = {
+const pages: Record<string, Content> = {
   index,
   'prozess-transformation': prozessTransformation,
   kundenerlebnis,

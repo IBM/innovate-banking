@@ -1,29 +1,36 @@
 import { AddComment20 } from '@carbon/icons-react'
 import { Column, Dropdown, Grid, Link, Row } from 'carbon-components-react'
 import clsx from 'clsx'
-import { withRouter } from 'next/router'
-import PropTypes from 'prop-types'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Sticky from 'react-sticky-el'
 import { Transition } from 'react-transition-group'
-import Styles from './styles.module.scss'
+import styles from './styles.module.scss'
 
-const AnchorNavigation = ({ items }) => {
-  const sloganListItemRef = React.createRef(null)
+type AnchorNavigationProps = {
+  readonly items: ReadonlyArray<{
+    readonly link: string
+    readonly name: string
+    readonly isTop?: boolean
+    readonly isLetsTalkItem?: boolean
+  }>
+}
+
+const AnchorNavigation = ({ items }: AnchorNavigationProps) => {
+  const sloganListItemRef = useRef<HTMLDivElement>(null)
   const [isSloganShown, setIsSloganShown] = useState(false)
-  const [activeItem, setActiveItem] = useState(null)
+  const [activeItem, setActiveItem] = useState<number | undefined>(undefined)
   const [sectionInViewportChangeEvent, setSectionInViewportChangeEvent] = useState(false)
 
-  const onAnchorClick = (event, index) => {
+  const onAnchorClick = (_event: unknown, index: number) => {
     setActiveItem(index)
   }
 
-  const onFixedToggle = (fixed) => {
+  const onFixedToggle = (fixed: boolean) => {
     if (fixed) {
-      sloganListItemRef.current.classList.add(Styles.IsFixed)
+      sloganListItemRef.current.classList.add(styles.IsFixed)
       setIsSloganShown(true)
     } else {
-      sloganListItemRef.current.classList.remove(Styles.IsFixed)
+      sloganListItemRef.current.classList.remove(styles.IsFixed)
       setIsSloganShown(false)
     }
   }
@@ -64,12 +71,12 @@ const AnchorNavigation = ({ items }) => {
 
   return (
     <>
-      <Sticky className={Styles.StickyWrapper} onFixedToggle={onFixedToggle}>
-        <div className={Styles.AnchorNavigation} ref={sloganListItemRef}>
-          <Grid className={Styles.Grid}>
+      <Sticky className={styles.StickyWrapper} onFixedToggle={onFixedToggle}>
+        <div className={styles.AnchorNavigation} ref={sloganListItemRef}>
+          <Grid className={styles.Grid}>
             <Row>
               <Column sm={0} md={8}>
-                <ul className={Styles.List}>
+                <ul className={styles.List}>
                   {items.map((item, index) => {
                     if (item.isTop) {
                       return (
@@ -77,9 +84,9 @@ const AnchorNavigation = ({ items }) => {
                           {(state) => (
                             <li
                               className={clsx(
-                                Styles.ListItem,
-                                Styles.IsSloganItem,
-                                isSloganShown && Styles.IsSloganItemVisible
+                                styles.ListItem,
+                                styles.IsSloganItem,
+                                isSloganShown && styles.IsSloganItemVisible
                               )}
                               style={{
                                 ...sloganTransitionStyles[state],
@@ -87,7 +94,7 @@ const AnchorNavigation = ({ items }) => {
                             >
                               <Link
                                 href={`#${item.link}`}
-                                className={clsx(Styles.Link, activeItem === index && Styles.IsActive)}
+                                className={clsx(styles.Link, activeItem === index && styles.IsActive)}
                                 onClick={(event) => {
                                   onAnchorClick(event, index)
                                 }}
@@ -104,17 +111,17 @@ const AnchorNavigation = ({ items }) => {
                       <li
                         key={index}
                         className={clsx(
-                          Styles.ListItem,
-                          item.isTop && Styles.IsSloganItem,
-                          item.isLetsTalkItem && Styles.IsLetsTalkListItem
+                          styles.ListItem,
+                          item.isTop && styles.IsSloganItem,
+                          item.isLetsTalkItem && styles.IsLetsTalkListItem
                         )}
                       >
                         <Link
                           href={`#${item.link}`}
                           className={clsx(
-                            Styles.Link,
-                            activeItem === index && Styles.IsActive,
-                            item.isLetsTalkItem && Styles.IsLetsTalkLink
+                            styles.Link,
+                            activeItem === index && styles.IsActive,
+                            item.isLetsTalkItem && styles.IsLetsTalkLink
                           )}
                           onClick={(event) => {
                             onAnchorClick(event, index)
@@ -122,7 +129,7 @@ const AnchorNavigation = ({ items }) => {
                         >
                           {!item.isLetsTalkItem && item.name}
                           {item.isLetsTalkItem && <>Let’s talk</>}
-                          {item.isLetsTalkItem && <AddComment20 className={Styles.LetsTalkIcon} />}
+                          {item.isLetsTalkItem && <AddComment20 className={styles.LetsTalkIcon} />}
                         </Link>
                       </li>
                     )
@@ -135,25 +142,20 @@ const AnchorNavigation = ({ items }) => {
       </Sticky>
       <Grid>
         <Row>
-          <Column sm={4} md={0} className={Styles.DropdownColumn}>
+          <Column sm={4} md={0} className={styles.DropdownColumn}>
             <Dropdown
               id="inline"
               label="Mehr erfahren über"
               items={mobileItems}
-              itemToString={(item) => (item ? item.name : '')}
+              itemToString={(item) => item?.name ?? ''}
               onChange={onDropdownChange}
-              className={Styles.Dropdown}
+              className={styles.Dropdown}
             />
           </Column>
         </Row>
       </Grid>
     </>
   )
-}
-
-AnchorNavigation.propTypes = {
-  items: PropTypes.array.isRequired,
-  pageMeta: PropTypes.object,
 }
 
 export default AnchorNavigation

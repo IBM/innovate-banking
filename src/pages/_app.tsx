@@ -2,8 +2,9 @@ import '@/styles/reset.css'
 import '@/styles/globals.scss'
 import '@/styles/carbon-theme.scss'
 import Script from 'next/script'
+import type { AppProps } from 'next/app'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Script

@@ -2,27 +2,78 @@ import ConditionalWrapper from '@/components/ConditonalWrapper'
 import RichText from '@/components/RichText'
 import { Column, Grid, Row } from 'carbon-components-react'
 import clsx from 'clsx'
-import Image from 'next/image'
-import PropTypes from 'prop-types'
-import React, { useRef } from 'react'
+import Image, { ImageProps } from 'next/image'
+import React, { CSSProperties, ReactNode, useRef } from 'react'
 import { useInViewport } from 'react-in-viewport'
-import Styles from './styles.module.scss'
+import styles from './styles.module.scss'
 
-const Section = (props) => {
-  const {
-    id,
-    titles,
-    children,
-    images,
-    background,
-    colWrapChildren,
-    rowWrapChildren,
-    condensed,
-    noSpace,
-    narrow,
-    marginBottom,
-    fullWidth,
-  } = props
+type SectionImage = {
+  src: string
+  alt?: string
+  width?: number
+  height?: number
+  layout?: ImageProps['layout']
+  margin?: string
+  style?: CSSProperties
+}
+
+type SectionProps = {
+  readonly id?: string
+  readonly titles?: {
+    readonly top?: string | boolean
+    readonly offsetTop?: number
+    readonly right?: string | boolean
+    readonly offsetRight?: number
+    readonly bottom?: string | boolean
+    readonly offsetBottom?: number
+    readonly left?: string | boolean
+    readonly offsetLeft?: string | boolean
+  }
+  readonly children?: ReactNode
+  readonly images?: {
+    readonly top?: SectionImage
+    readonly right?: SectionImage
+    readonly rightMobile?: SectionImage
+    readonly bottom?: SectionImage
+    readonly bottomMobile?: SectionImage
+    readonly left?: SectionImage
+  }
+  readonly background?: {
+    readonly dark?: boolean
+    readonly color?: string
+    readonly gradient?: string
+  }
+  readonly condensed?: {
+    readonly top?: boolean
+    readonly bottom?: boolean
+  }
+  readonly noSpace?: {
+    readonly top?: boolean
+    readonly bottom?: boolean
+  }
+  readonly narrow?: {
+    readonly top?: boolean
+    readonly bottom?: boolean
+  }
+  readonly marginBottom?: boolean
+  readonly colWrapChildren?: boolean
+  readonly fullWidth?: boolean
+  readonly inViewport?: boolean
+}
+
+const Section = ({
+  id,
+  titles,
+  children,
+  images,
+  background,
+  condensed,
+  noSpace,
+  narrow,
+  marginBottom,
+  colWrapChildren = true,
+  fullWidth = false,
+}: SectionProps) => {
   let backgroundStyle = null
 
   const sectionRef = useRef()
@@ -85,50 +136,48 @@ const Section = (props) => {
         background: backgroundStyle,
       }}
       ref={sectionRef}
-      className={Styles.SectionWrapper}
+      className={styles.SectionWrapper}
     >
       <Grid>
         <div
           className={clsx(
-            Styles.Section,
-            titles && Styles.Titled,
-            titles && titles.top && Styles.HasTopTitle,
-            titles && titles.right && Styles.HasRightTitle,
-            titles && titles.bottom && Styles.HasBottomTitle,
-            titles && titles.left && Styles.HasLeftTitle,
-            images && images.top && Styles.HasTopImage,
-            images && images.right && Styles.HasRightImage,
-            images && images.bottom && Styles.HasBottomImage,
-            images && images.left && Styles.HasLeftImage,
-            background && background.dark && Styles.HasDarkBackground,
-            condensed && condensed.top && Styles.IsCondensedTop,
-            condensed && condensed.bottom && Styles.IsCondensedBottom,
-            narrow && narrow.top && Styles.IsNarrowTop,
-            narrow && narrow.bottom && Styles.IsNarrowBottom,
-            noSpace && noSpace.bottom && Styles.IsNoSpaceBottom,
-            noSpace && noSpace.top && Styles.IsNoSpaceTop,
-            marginBottom && Styles.HasMarginBottom
+            styles.Section,
+            titles && styles.Titled,
+            titles && titles.top && styles.HasTopTitle,
+            titles && titles.right && styles.HasRightTitle,
+            titles && titles.bottom && styles.HasBottomTitle,
+            titles && titles.left && styles.HasLeftTitle,
+            images && images.top && styles.HasTopImage,
+            images && images.right && styles.HasRightImage,
+            images && images.bottom && styles.HasBottomImage,
+            images && images.left && styles.HasLeftImage,
+            background && background.dark && styles.HasDarkBackground,
+            condensed && condensed.top && styles.IsCondensedTop,
+            condensed && condensed.bottom && styles.IsCondensedBottom,
+            narrow && narrow.top && styles.IsNarrowTop,
+            narrow && narrow.bottom && styles.IsNarrowBottom,
+            noSpace && noSpace.bottom && styles.IsNoSpaceBottom,
+            noSpace && noSpace.top && styles.IsNoSpaceTop,
+            marginBottom && styles.HasMarginBottom
           )}
         >
           {images && images.top && (
             <Row>
               <div
-                className={Styles.TopImage}
-                style={
-                  ({
-                    display: images.top.layout === 'intrinsic' ? 'flex' : null,
-                    justifyContent: images.top.layout === 'intrinsic' ? 'center' : null,
-                    margin: images.top.margin,
-                  },
-                  { ...images.top.style })
-                }
+                className={styles.TopImage}
+                style={{
+                  display: images.top.layout === 'intrinsic' ? 'flex' : null,
+                  justifyContent: images.top.layout === 'intrinsic' ? 'center' : null,
+                  margin: images.top.margin,
+                  ...images.top.style,
+                }}
               >
                 <Image
                   src={images.top.src}
                   layout={images.top.layout || 'intrinsic'}
                   width={images.top.layout !== 'fill' ? images.top.width : null}
                   height={images.top.layout !== 'fill' ? images.top.height : null}
-                  alt=""
+                  alt={images.top.alt ?? ''}
                 />
               </div>
             </Row>
@@ -136,22 +185,20 @@ const Section = (props) => {
           {images && images.rightMobile && (
             <Row>
               <div
-                className={Styles.RightImageMobile}
-                style={
-                  ({
-                    display: images.rightMobile.layout === 'intrinsic' ? 'flex' : null,
-                    justifyContent: images.rightMobile.layout === 'intrinsic' ? 'center' : null,
-                    margin: images.rightMobile.margin,
-                  },
-                  { ...images.rightMobile.style })
-                }
+                className={styles.RightImageMobile}
+                style={{
+                  display: images.rightMobile.layout === 'intrinsic' ? 'flex' : null,
+                  justifyContent: images.rightMobile.layout === 'intrinsic' ? 'center' : null,
+                  margin: images.rightMobile.margin,
+                  ...images.rightMobile.style,
+                }}
               >
                 <Image
                   src={images.rightMobile.src}
                   layout={images.rightMobile.layout || 'intrinsic'}
                   width={images.rightMobile.layout !== 'fill' ? images.rightMobile.width : null}
                   height={images.rightMobile.layout !== 'fill' ? images.rightMobile.height : null}
-                  alt=""
+                  alt={images.rightMobile.alt ?? ''}
                 />
               </div>
             </Row>
@@ -160,7 +207,7 @@ const Section = (props) => {
             <Row>
               <Column sm={4} md={6} lg={8}>
                 <RichText
-                  className={Styles.Title}
+                  className={styles.Title}
                   content={titles.top !== true ? titles.top : '&nbsp;'}
                   style={{
                     transform: titles.offsetTop ? `translateY(${titles.offsetTop})` : null,
@@ -171,10 +218,10 @@ const Section = (props) => {
           )}
           <Row>
             {((titles && titles.left) || (images && images.left)) && (
-              <Column sm={4} md={2} lg={4} className={Styles.LeftSide}>
+              <Column sm={4} md={2} lg={4} className={styles.LeftSide}>
                 {titles && titles.left && (
                   <RichText
-                    className={clsx(Styles.Title, Styles.TitleLeft)}
+                    className={clsx(styles.Title, styles.TitleLeft)}
                     content={titles.left !== true ? titles.left : '&nbsp;'}
                     style={{
                       transform: titles.offsetLeft ? `translateY(${titles.offsetLeft})` : null,
@@ -183,20 +230,18 @@ const Section = (props) => {
                 )}
                 {images && images.left && (
                   <div
-                    className={Styles.LeftImage}
-                    style={
-                      ({
-                        margin: images.left.margin,
-                      },
-                      { ...images.left.style })
-                    }
+                    className={styles.LeftImage}
+                    style={{
+                      margin: images.left.margin,
+                      ...images.left.style,
+                    }}
                   >
                     <Image
                       src={images.left.src}
                       layout={images.left.layout || 'intrinsic'}
                       width={images.left.width || null}
                       height={images.left.height || null}
-                      alt=""
+                      alt={images.left.alt ?? ''}
                     />
                   </div>
                 )}
@@ -224,7 +269,7 @@ const Section = (props) => {
             {titles && titles.right && (
               <Column sm={4} md={2} lg={5}>
                 <RichText
-                  className={Styles.Title}
+                  className={styles.Title}
                   content={titles.right !== true ? titles.right : '&nbsp;'}
                   style={{
                     transform: titles.offsetRight ? `translateY(${titles.offsetRight})` : null,
@@ -242,22 +287,20 @@ const Section = (props) => {
                 }}
               >
                 <div
-                  className={clsx(Styles.RightImage, images.rightMobile && Styles.RightImageHiddenMobile)}
-                  style={
-                    ({
-                      display: images.right.layout === 'intrinsic' ? 'flex' : null,
-                      justifyContent: images.right.layout === 'intrinsic' ? 'center' : null,
-                      margin: images.right.margin,
-                    },
-                    { ...images.right.style })
-                  }
+                  className={clsx(styles.RightImage, images.rightMobile && styles.RightImageHiddenMobile)}
+                  style={{
+                    display: images.right.layout === 'intrinsic' ? 'flex' : null,
+                    justifyContent: images.right.layout === 'intrinsic' ? 'center' : null,
+                    margin: images.right.margin,
+                    ...images.right.style,
+                  }}
                 >
                   <Image
                     src={images.right.src}
                     layout={images.right.layout || 'intrinsic'}
                     width={images.right.layout !== 'fill' ? images.right.width : null}
                     height={images.right.layout !== 'fill' ? images.right.height : null}
-                    alt=""
+                    alt={images.right.alt ?? ''}
                   />
                 </div>
               </Column>
@@ -267,7 +310,7 @@ const Section = (props) => {
             <Row>
               <Column sm={4} md={2} lg={5}>
                 <RichText
-                  className={Styles.Title}
+                  className={styles.Title}
                   content={titles.bottom !== true ? titles.bottom : '&nbsp;'}
                   style={{
                     transform: titles.offsetBottom ? `translateY(${titles.offsetBottom})` : null,
@@ -279,22 +322,20 @@ const Section = (props) => {
           {images && images.bottom && (
             <Row>
               <div
-                className={clsx(Styles.BottomImage, images.bottomMobile && Styles.BottomImageHiddenMobile)}
-                style={
-                  ({
-                    display: images.bottom.layout === 'intrinsic' ? 'flex' : null,
-                    justifyContent: images.bottom.layout === 'intrinsic' ? 'center' : null,
-                    margin: images.bottom.margin,
-                  },
-                  { ...images.bottom.style })
-                }
+                className={clsx(styles.BottomImage, images.bottomMobile && styles.BottomImageHiddenMobile)}
+                style={{
+                  display: images.bottom.layout === 'intrinsic' ? 'flex' : null,
+                  justifyContent: images.bottom.layout === 'intrinsic' ? 'center' : null,
+                  margin: images.bottom.margin,
+                  ...images.bottom.style,
+                }}
               >
                 <Image
                   src={images.bottom.src}
                   layout={images.bottom.layout || 'intrinsic'}
                   width={images.bottom.layout !== 'fill' ? images.bottom.width : null}
                   height={images.bottom.layout !== 'fill' ? images.bottom.height : null}
-                  alt=""
+                  alt={images.bottom.alt ?? ''}
                 />
               </div>
             </Row>
@@ -302,22 +343,20 @@ const Section = (props) => {
           {images && images.bottomMobile && (
             <Row>
               <div
-                className={Styles.BottomImageMobile}
-                style={
-                  ({
-                    display: images.bottomMobile.layout === 'intrinsic' ? 'flex' : null,
-                    justifyContent: images.bottomMobile.layout === 'intrinsic' ? 'center' : null,
-                    margin: images.bottomMobile.margin,
-                  },
-                  { ...images.bottomMobile.style })
-                }
+                className={styles.BottomImageMobile}
+                style={{
+                  display: images.bottomMobile.layout === 'intrinsic' ? 'flex' : null,
+                  justifyContent: images.bottomMobile.layout === 'intrinsic' ? 'center' : null,
+                  margin: images.bottomMobile.margin,
+                  ...images.bottomMobile.style,
+                }}
               >
                 <Image
                   src={images.bottomMobile.src}
                   layout={images.bottomMobile.layout || 'intrinsic'}
                   width={images.bottomMobile.layout !== 'fill' ? images.bottomMobile.width : null}
                   height={images.bottomMobile.layout !== 'fill' ? images.bottomMobile.height : null}
-                  alt=""
+                  alt={images.bottomMobile.alt ?? ''}
                 />
               </div>
             </Row>
@@ -326,99 +365,6 @@ const Section = (props) => {
       </Grid>
     </section>
   )
-}
-
-Section.defaultProps = {
-  colWrapChildren: true,
-  rowWrapChildren: true,
-  fullWidth: false,
-}
-
-Section.propTypes = {
-  id: PropTypes.string,
-  titles: PropTypes.shape({
-    top: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-    offsetTop: PropTypes.number,
-    right: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-    offsetRight: PropTypes.number,
-    bottom: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-    offsetBottom: PropTypes.number,
-    left: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-    offsetLeft: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  }),
-  children: PropTypes.any,
-  colWrapChildren: PropTypes.bool,
-  rowWrapChildren: PropTypes.bool,
-  fullWidth: PropTypes.bool,
-  condensed: PropTypes.shape({
-    top: PropTypes.bool,
-    bottom: PropTypes.bool,
-  }),
-  narrow: PropTypes.shape({
-    top: PropTypes.bool,
-    bottom: PropTypes.bool,
-  }),
-  noSpace: PropTypes.shape({
-    top: PropTypes.bool,
-    bottom: PropTypes.bool,
-  }),
-  marginBottom: PropTypes.bool,
-  images: PropTypes.shape({
-    top: PropTypes.shape({
-      src: PropTypes.string.isRequired,
-      width: PropTypes.number,
-      height: PropTypes.number,
-      layout: PropTypes.string,
-      margin: PropTypes.string,
-      style: PropTypes.object,
-    }),
-    right: PropTypes.shape({
-      src: PropTypes.string.isRequired,
-      width: PropTypes.number,
-      height: PropTypes.number,
-      layout: PropTypes.string,
-      margin: PropTypes.string,
-      style: PropTypes.object,
-    }),
-    rightMobile: PropTypes.shape({
-      src: PropTypes.string.isRequired,
-      width: PropTypes.number,
-      height: PropTypes.number,
-      layout: PropTypes.string,
-      margin: PropTypes.string,
-      style: PropTypes.object,
-    }),
-    bottom: PropTypes.shape({
-      src: PropTypes.string.isRequired,
-      width: PropTypes.number,
-      height: PropTypes.number,
-      layout: PropTypes.string,
-      margin: PropTypes.string,
-      style: PropTypes.object,
-    }),
-    bottomMobile: PropTypes.shape({
-      src: PropTypes.string.isRequired,
-      width: PropTypes.number,
-      height: PropTypes.number,
-      layout: PropTypes.string,
-      margin: PropTypes.string,
-      style: PropTypes.object,
-    }),
-    left: PropTypes.shape({
-      src: PropTypes.string.isRequired,
-      width: PropTypes.number,
-      height: PropTypes.number,
-      layout: PropTypes.string,
-      margin: PropTypes.string,
-      style: PropTypes.object,
-    }),
-  }),
-  background: PropTypes.shape({
-    dark: PropTypes.bool,
-    color: PropTypes.string,
-    gradient: PropTypes.string,
-  }),
-  inViewport: PropTypes.bool,
 }
 
 export default Section
