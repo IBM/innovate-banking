@@ -37,7 +37,7 @@ const content: Content = {
           },
           {
             name: 'IBM Banking Platform',
-            url: '/banking-plattform',
+            url: '/banking-platform',
             active: true,
             current: false,
           },
@@ -328,7 +328,7 @@ const content: Content = {
                     headline: 'IBM Banking Platform<br />nutzen',
                     text: '<p>Gewinnen Sie mit Anwendungen aus unserer Banking-Service-Plattform an Effizienz und erfahren Sie, wie Business Process Outsourcing von IBM Mehrwerte für Ihre Bank schafft.</p>',
                     link: {
-                      url: '/banking-plattform',
+                      url: '/banking-platform',
                     },
                   },
                 },

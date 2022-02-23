@@ -37,7 +37,7 @@ const content: Content = {
           },
           {
             name: 'IBM Banking Platform',
-            url: '/banking-plattform',
+            url: '/banking-platform',
             active: true,
             current: false,
           },
