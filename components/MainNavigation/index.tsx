@@ -2,6 +2,7 @@ import { Close32, Menu32 } from '@carbon/icons-react'
 import { Button, Column, Grid, Row } from 'carbon-components-react'
 import clsx from 'clsx'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import styles from './styles.module.scss'
 
@@ -9,8 +10,6 @@ type MainNavigationProps = {
   readonly items: ReadonlyArray<{
     readonly name: string
     readonly url: string
-    readonly active?: boolean
-    readonly current?: boolean
   }>
   readonly pageMeta?: Record<string, unknown>
 }
@@ -18,6 +17,7 @@ type MainNavigationProps = {
 const MainNavigation = ({ items, pageMeta }: MainNavigationProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const [lastBodyPos, setLastBodyPos] = useState(0)
+  const { asPath } = useRouter()
 
   const toggleOpenState = () => {
     if (!isOpen) {
@@ -66,25 +66,21 @@ const MainNavigation = ({ items, pageMeta }: MainNavigationProps) => {
                   </Link>
                 </li>
                 {items.map((item, index) => {
-                  return item.active ? (
-                    <li key={index} className={clsx(styles.ListItem, item.current && styles.ListItemActive)}>
+                  return (
+                    <li key={index} className={clsx(styles.ListItem, { [styles.ListItemActive]: asPath === item.url })}>
                       <Link href={item.url}>
                         <a
-                          className={clsx(
-                            styles.ListItemLink,
-                            item.current && styles.ListItemLinkActive,
-                            index === 0 && styles.IsFirstLink
-                          )}
-                          style={{
-                            display: !item.active ? 'none' : null,
-                          }}
+                          className={clsx(styles.ListItemLink, {
+                            [styles.ListItemLinkActive]: asPath === item.url,
+                            [styles.IsFirstLink]: index === 0,
+                          })}
                           onClick={toggleOpenState}
                         >
                           {item.name}
                         </a>
                       </Link>
                     </li>
-                  ) : null
+                  )
                 })}
               </ul>
             </nav>
