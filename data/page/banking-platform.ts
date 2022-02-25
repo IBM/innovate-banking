@@ -95,7 +95,7 @@ const content: Content = {
       name: 'Section',
       props: {
         titles: {
-          left: '<p>Das umfassende Lösungsportfolio der IBM Banking Platform</p>',
+          left: '<p>Unser umfassendes Lösungsportfolio<br />mit der IBM Banking Platform</p>',
         },
         marginBottom: true,
         background: {
@@ -117,7 +117,7 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<p style="max-width: 544px;">Die IBM Banking Platform bietet umfassende Lösungen für sämtliche Bankprozesse. Wir nutzen dabei die relevanten Anwendungen unserer Plattform, Produkte unserer Partner sowie alle Möglichkeiten der Digitalisierung.</p>',
+                '<p style="max-width: 544px;">Die IBM Banking Platform bietet Ihnen umfassende Lösungen für sämtliche Bankprozesse. Wir vereinen die relevanten Anwendungen unserer Plattform mit den Produkten unserer Partner*innen und allen zeitgenössischen Möglichkeiten der Digitalisierung.</p>',
             },
           },
         ],
@@ -135,13 +135,13 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<h3 class="eh4">Konzentration auf die Kernkompetenzen<br />durch gesteigerte Effizienz</h3><p style="max-width: 544px;">Die IBM Banking Platform macht Bankprozesse effizienter und ermöglicht somit um bis zu 40 % niedrigere Kosten.</p>',
+                '<h3 class="eh4" style="max-width: 422px; margin-bottom: 1.5rem;">Konzentration auf die Kernkompetenzen durch niedrigere Kosten</h3><p style="max-width: 422px;">Durch die IBM Banking Platform kann die Effizienz Ihres Unternehmens immens gesteigert werden und ermöglicht eine Kostenreduktion von bis zu</p>',
             },
           },
           {
             name: 'RichText',
             props: {
-              content: '<h3 class="d1 large">40%</h3><p>bis zu 40 % niedrigere Kosten</p>',
+              content: '<h3 class="d1 large">40%</h3><p>niedrigere Kosten</p>',
             },
           },
         ],
@@ -330,9 +330,9 @@ const content: Content = {
                   name: 'PictogramTeaser',
                   props: {
                     size: 'lg',
-                    icon: 'GlobalPartner',
+                    icon: 'FinanceStrategy',
                     headline: 'Innovation',
-                    text: 'Die Anforderungen der Digitalisierung sind für Einzelinstitute schwer zu bewältigen. Die hohe Innovationskompetenz und der Technologie-Vorsprung von IBM lässt Sie als Partner nachhaltig profitieren.',
+                    text: 'Die Anforderungen der Digitalisierung sind für Einzelinstitute oft nur schwer zu bewältigen. Als unser Partner können Sie nachhaltig von unserer hohen Innovationskompetenz und dem Technologie-Vorsprung von IBM profitieren.',
                     light: true,
                   },
                 },
@@ -341,8 +341,8 @@ const content: Content = {
                   props: {
                     size: 'lg',
                     icon: 'GlobalPartner',
-                    headline: 'Perspektiven für Mitarbeiter',
-                    text: 'Im Rahmen des Outsourcings kann IBM die Mitarbeiter der Bereiche übernehmen und ihnen vielfältige Entwicklungs&shy;möglichkeiten und nachhaltige Beschäftigungs&shy;perspektiven bieten.',
+                    headline: 'Perspektiven für Mitarbeiter*innen',
+                    text: 'Im Rahmen des Outsourcings können wir Mitarbeiter*innen der einzelnen Bereiche übernehmen und ihnen vielfältige Entwicklungsmöglichkeiten und nachhaltige Beschäftigungsperspektiven bieten.',
                     light: true,
                   },
                 },
