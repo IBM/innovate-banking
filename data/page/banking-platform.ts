@@ -83,7 +83,7 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<p style="max-width: 544px;">Die IBM Banking Platform bietet Ihnen umfassende Lösungen für sämtliche Bankprozesse. Wir vereinen die relevanten Anwendungen unserer Plattform mit den Produkten unserer Partner*innen und allen zeitgenössischen Möglichkeiten der Digitalisierung.</p>',
+                '<p style="max-width: 544px;">Die IBM Banking Platform bietet Ihnen umfassende Lösungen für sämtliche Bankprozesse. Wir vereinen die relevanten Anwendungen unserer Plattform mit den Produkten unserer Partner*innen und allen modernen Möglichkeiten der Digitalisierung.</p>',
             },
           },
         ],
@@ -107,7 +107,7 @@ const content: Content = {
           {
             name: 'RichText',
             props: {
-              content: '<h3 class="d1 large">40%</h3><p>niedrigere Kosten</p>',
+              content: '<h3 class="d1 large">40%</h3>',
             },
           },
         ],
