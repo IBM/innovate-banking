@@ -1,4 +1,6 @@
 import { Content } from '../types'
+import { footer } from './shared/footer'
+import { mainNavigation } from './shared/mainNavigation'
 
 const content: Content = {
   meta: {
@@ -7,43 +9,7 @@ const content: Content = {
     isHome: true,
   },
   components: [
-    {
-      name: 'MainNavigation',
-      props: {
-        items: [
-          {
-            name: 'Kundenerlebnis',
-            url: '/kundenerlebnis',
-            active: true,
-            current: false,
-          },
-          {
-            name: 'Prozess-Transformation',
-            url: '/prozess-transformation',
-            active: true,
-            current: false,
-          },
-          {
-            name: 'Risk & Compliance',
-            url: '/risk-compliance',
-            active: true,
-            current: false,
-          },
-          {
-            name: 'Anwendungssysteme',
-            url: '/anwendungssysteme',
-            active: true,
-            current: false,
-          },
-          {
-            name: 'IBM Banking Platform',
-            url: '/banking-plattform',
-            active: true,
-            current: false,
-          },
-        ],
-      },
-    },
+    { ...mainNavigation },
     {
       name: 'Stage',
       props: {
@@ -328,7 +294,7 @@ const content: Content = {
                     headline: 'IBM Banking Platform<br />nutzen',
                     text: '<p>Gewinnen Sie mit Anwendungen aus unserer Banking-Service-Plattform an Effizienz und erfahren Sie, wie Business Process Outsourcing von IBM Mehrwerte für Ihre Bank schafft.</p>',
                     link: {
-                      url: '/banking-plattform',
+                      url: '/banking-platform',
                     },
                   },
                 },
@@ -722,29 +688,7 @@ const content: Content = {
         ],
       },
     },
-    {
-      name: 'Footer',
-      props: {
-        links: [
-          {
-            title: 'Datenschutz',
-            url: '/impressum#datenschutz',
-          },
-          {
-            title: 'Nutzungsbedingungen',
-            url: '/impressum#nutzungsbedingungen',
-          },
-          {
-            title: 'Barrierefreiheit',
-            url: 'https://www.ibm.com/able',
-          },
-          {
-            title: 'Impressum',
-            url: '/impressum',
-          },
-        ],
-      },
-    },
+    { ...footer },
   ],
 }
 

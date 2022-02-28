@@ -1,11 +1,11 @@
-import { Content } from './types'
 import index from '@/data/page'
-import prozessTransformation from '@/data/page/prozess-transformation'
-import kundenerlebnis from '@/data/page/kundenerlebnis'
-import riskCompliance from '@/data/page/risk-compliance'
 import anwendungssysteme from '@/data/page/anwendungssysteme'
-import bankingPlattform from '@/data/page/banking-plattform'
+import bankingPlatform from '@/data/page/banking-platform'
 import impressum from '@/data/page/impressum'
+import kundenerlebnis from '@/data/page/kundenerlebnis'
+import prozessTransformation from '@/data/page/prozess-transformation'
+import riskCompliance from '@/data/page/risk-compliance'
+import { Content } from './types'
 
 const pages: Record<string, Content> = {
   index,
@@ -13,7 +13,7 @@ const pages: Record<string, Content> = {
   kundenerlebnis,
   'risk-compliance': riskCompliance,
   anwendungssysteme,
-  'banking-plattform': bankingPlattform,
+  'banking-platform': bankingPlatform,
   impressum,
 }
 

@@ -1,4 +1,5 @@
 import pages from '@/data/pages'
+import { ContentComponent } from '@/data/types'
 import MainLayout from '@/layouts/main'
 import { renderComponent } from '@/utils'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
@@ -10,8 +11,7 @@ export type NamedPageProps = {
     readonly slogan?: string
     readonly isHome?: boolean
   }
-  // TODO: use components types
-  readonly components: ReadonlyArray<{ name: string; props: Record<string, unknown> }>
+  readonly components: ReadonlyArray<ContentComponent>
 }
 
 const NamedPage = ({ meta, components }: InferGetStaticPropsType<typeof getStaticProps>) => {
