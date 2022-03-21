@@ -102,9 +102,7 @@ const content: Content = {
         titles: {
           left: '<p>Unsere Lösungen<br/>für Ihre Herausforderungen</p>',
         },
-        noSpace: {
-          bottom: true,
-        },
+        paddingBottom: 'no',
         images: {
           bottom: {
             src: '/img/section-bg-plattform-solutions.png',
@@ -206,9 +204,7 @@ const content: Content = {
     {
       name: 'Section',
       props: {
-        condensed: {
-          bottom: true,
-        },
+        paddingBottom: 'condensed',
         images: {
           left: {
             src: '/img/section-banking-pulse-left.svg',
@@ -308,9 +304,7 @@ const content: Content = {
       name: 'Section',
       props: {
         id: 'news',
-        condensed: {
-          bottom: true,
-        },
+        paddingBottom: 'condensed',
         titles: {
           left: true,
         },
@@ -334,10 +328,8 @@ const content: Content = {
         titles: {
           left: '<p>Banking Insights</p>',
         },
-        condensed: {
-          top: true,
-          bottom: true,
-        },
+        paddingTop: 'condensed',
+        paddingBottom: 'condensed',
         background: {
           color: '#F4F4F4',
         },
@@ -472,9 +464,7 @@ const content: Content = {
         background: {
           color: '#F4F4F4',
         },
-        condensed: {
-          top: true,
-        },
+        paddingTop: 'condensed',
         fullWidth: true,
         children: [
           {
@@ -533,10 +523,8 @@ const content: Content = {
           color: '#dcf2ff',
           dark: false,
         },
-        noSpace: {
-          top: true,
-          bottom: true,
-        },
+        paddingTop: 'no',
+        paddingBottom: 'no',
         images: {
           top: {
             src: '/img/section-ibm-garage.svg',

@@ -194,9 +194,7 @@ const content: Content = {
           dark: false,
           color: '#fff',
         },
-        narrow: {
-          bottom: true,
-        },
+        paddingBottom: 'narrow',
         colWrapChildren: false,
         children: [
           {

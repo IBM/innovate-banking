@@ -37,18 +37,8 @@ type SectionProps = {
     readonly color?: string
     readonly gradient?: string
   }
-  readonly condensed?: {
-    readonly top?: boolean
-    readonly bottom?: boolean
-  }
-  readonly noSpace?: {
-    readonly top?: boolean
-    readonly bottom?: boolean
-  }
-  readonly narrow?: {
-    readonly top?: boolean
-    readonly bottom?: boolean
-  }
+  readonly paddingTop?: 'default' | 'narrow' | 'condensed' | 'no'
+  readonly paddingBottom?: 'default' | 'narrow' | 'condensed' | 'no'
   readonly marginBottom?: boolean
   readonly colWrapChildren?: boolean
   readonly fullWidth?: boolean
@@ -61,9 +51,8 @@ const Section = ({
   children,
   images,
   background,
-  condensed,
-  noSpace,
-  narrow,
+  paddingTop,
+  paddingBottom,
   marginBottom,
   colWrapChildren = true,
   fullWidth = false,
@@ -143,12 +132,12 @@ const Section = ({
             images && images.bottom && styles.HasBottomImage,
             images && images.left && styles.HasLeftImage,
             background && background.dark && styles.HasDarkBackground,
-            condensed && condensed.top && styles.IsCondensedTop,
-            condensed && condensed.bottom && styles.IsCondensedBottom,
-            narrow && narrow.top && styles.IsNarrowTop,
-            narrow && narrow.bottom && styles.IsNarrowBottom,
-            noSpace && noSpace.bottom && styles.IsNoSpaceBottom,
-            noSpace && noSpace.top && styles.IsNoSpaceTop,
+            paddingTop === 'condensed' && styles.IsCondensedTop,
+            paddingBottom === 'condensed' && styles.IsCondensedBottom,
+            paddingTop === 'narrow' && styles.IsNarrowTop,
+            paddingBottom === 'narrow' && styles.IsNarrowBottom,
+            paddingTop === 'no' && styles.IsNoSpaceTop,
+            paddingBottom === 'no' && styles.IsNoSpaceBottom,
             marginBottom && styles.HasMarginBottom
           )}
         >
