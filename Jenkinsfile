@@ -1,4 +1,4 @@
-@Library('jenkins-library-acid-base-github@0.49.0') _
+@Library('jenkins-library-acid-base-github@latest') _
 pipeline {
   agent {
     label 'ibmdocker'
