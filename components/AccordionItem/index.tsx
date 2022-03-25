@@ -14,11 +14,12 @@ export type AccordionItemProps = {
   readonly icon: keyof typeof carbonPictograms
   readonly headline: string
   readonly content: string
+  readonly introContent?: string
   readonly isOpenDefault?: boolean
   readonly showVisual?: boolean
 }
 
-const AccordionItem = ({ icon, headline, content, isOpenDefault, showVisual }: AccordionItemProps) => {
+const AccordionItem = ({ icon, headline, content, introContent, isOpenDefault, showVisual }: AccordionItemProps) => {
   const [isOpen, setIsOpen] = useState(isOpenDefault)
 
   const onHeaderClick: MouseEventHandler = (event) => {
@@ -66,6 +67,7 @@ const AccordionItem = ({ icon, headline, content, isOpenDefault, showVisual }: A
               </Column>
             </Row>
             <AnimateHeight duration={500} height={isOpen ? 'auto' : 0}>
+              {introContent && <RichText content={introContent} className={styles.RichTextIntro} />}
               <RichText content={content} className={styles.RichText} />
               {showVisual && (
                 <div className={styles.Visual}>
