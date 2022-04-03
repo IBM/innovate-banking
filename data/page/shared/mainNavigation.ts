@@ -5,20 +5,20 @@ export const mainNavigation: ContentComponent = {
   props: {
     items: [
       {
-        name: 'Kundenerlebnis',
-        url: '/kundenerlebnis',
+        name: 'Customer Experience',
+        url: '/customer-experience',
       },
       {
-        name: 'Prozess-Transformation',
-        url: '/prozess-transformation',
+        name: 'Digitales Banking',
+        url: '/digitales-banking',
       },
       {
-        name: 'Risk & Compliance',
-        url: '/risk-compliance',
+        name: 'Banking Compliance',
+        url: '/banking-compliance',
       },
       {
-        name: 'Anwendungssysteme',
-        url: '/anwendungssysteme',
+        name: 'Core Banking',
+        url: '/core-banking',
       },
       {
         name: 'IBM Banking Platform',

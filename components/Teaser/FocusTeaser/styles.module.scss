@@ -68,24 +68,6 @@
     }
   }
 
-  &.IsDark {
-    color: $gray-10;
-    background: $gray-90;
-
-    .Headline {
-      color: $gray-10;
-    }
-
-    .Link {
-      color: $blue-40;
-    }
-
-    &:hover {
-      color: $white-0;
-      background: $gray-80;
-    }
-  }
-
   &.IsInactive {
     .Link {
       color: $gray-60;

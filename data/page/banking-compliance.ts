@@ -5,7 +5,7 @@ import { mainNavigation } from './shared/mainNavigation'
 const content: Content = {
   meta: {
     title: 'Innovate Banking',
-    slogan: 'Eine Initiative von IBM',
+    slogan: 'Eine Initiative von IBM Consulting',
     isHome: false,
   },
   components: [
@@ -57,7 +57,7 @@ const content: Content = {
       name: 'Section',
       props: {
         titles: {
-          left: '<p>Mit Technologie komplexe<br />Prozesse neu denken</p>',
+          left: '<p>Mit moderner Technologie komplexe<br />Prozesse neu denken</p>',
         },
         marginBottom: true,
         background: {
@@ -79,7 +79,7 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<p style="max-width: 544px;">Verlässliches Risikomanagement und das Einhalten regulatorischer Vorgaben ist für Banken essenziell, ist aber im letzten Jahrzehnt immer aufwendiger geworden. Wir machen komplexe Vorgänge einfach.</p>',
+                '<p style="max-width: 544px;">Verlässliches Risikomanagement und das Einhalten regulatorischer Vorgaben sind essenziell für Ihr Business. Auch wenn die Aufwände dafür im letzten Jahrzehnt immer mehr gestiegen sind, wir vereinfachen die komplexen Vorgänge für Sie.</p>',
             },
           },
         ],
@@ -97,7 +97,7 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<h3 class="h4">Gesteigerte Effizienz durch Analytics,<br />KI und Automatisierung</h3><p style="max-width: 544px;">Durch den Einsatz von Analytics, KI und Automatisierung kann im Bereich Risk & Compliance eine Effizienzsteigerung von bis zu 40 % erreicht werden.</p>',
+                '<h3 class="h4">Effizienz steigern durch Analytics, KI und Automatisierung</h3><p style="max-width: 544px;">Durch den Einsatz von Analytics, KI und Automatisierung kann im Bereich Risk & Compliance eine Effizienzsteigerung von bis zu 40 % erreicht werden.</p>',
             },
           },
           {
@@ -151,31 +151,31 @@ const content: Content = {
                   icon: 'GlobalAssetsAndRecovery_01',
                   headline: 'Cleveres Risikomanagement und Risikocontrolling als Erfolgsfaktor',
                   content:
-                    '<p>Risikomanagement und -controlling sind entscheidend für risikoadäquate und profitable Akquise.</p><p>Mit unseren State-of-the-Art Methoden und Tools können Sie Risiken identifizieren, einschätzen und steuern. Wir unterstützen Sie beispielsweise dabei, eine relevante Datenbasis zu erstellen und eine KI-gestützte Plattform aufzubauen.</p><p>Unsere hoch qualifizierten Berater begleiten die Konzeption und Umsetzung quantitativer Modelle ebenso wie die Optimierung der Risikoprozesse und stellen sicher, dass sowohl regulatorische Vorgaben als auch interne Reporting- und Steuerungsanforderungen erfüllt werden.</p>',
+                    '<p>Risikomanagement und -controlling sind entscheidend für risikoadäquate und profitable Akquise. Mit unseren State-of-the-Art Methoden und Tools können Sie Risiken besser identifizieren, einschätzen und steuern. Wir unterstützen Sie beispielsweise dabei, eine relevante Datenbasis zu erstellen und eine KI-gestützte Plattform aufzubauen.<br />Unsere hoch qualifizierten Berater*innen begleiten die Konzeption und Umsetzung quantitativer Modelle ebenso wie die Optimierung der Risikoprozesse und stellen zusätzlich sicher, dass sowohl regulatorische Vorgaben als auch interne Reporting- und Steuerungsanforderungen erfüllt werden.</p>',
                 },
                 {
                   icon: 'UserSearch',
                   headline: 'Mehr Effizienz bei regulatorischen<br />Melde- und Aufsichtsprozessen',
                   content:
-                    '<p>Wir helfen Ihnen, den Meldeanforderungen der Aufsichtsbehörden gerecht zu werden und ESG-Kriterien zu implementieren.</p><p>Wir begleiten Banken und Aufsichtsbehörden ganzheitlich bei der strategischen Entwicklung und Umsetzung zeitgemäßer Prozess- und Systemlandschaften unter Berücksichtigung der ESG-Standards. Integrierte Datenlandschaften, innovative Datenplattformen, Plattformökonomien, Cloud-Technologien und KI-gestützte, automatisierte Lösungen sind Treiber für effiziente regulatorische Prozesse, die dabei helfen, ESG-Standards einzuhalten. Unsere Lösungen tragen signifikant zur Automatisierung, Flexibilisierung, Skalierung und Kostenreduzierung bei. Gleichzeitig unterstützen sie unsere Kunden bei ihrem Streben nach Nachhaltigkeit.</p>',
+                    '<p>Wir helfen Ihnen, den Meldeanforderungen der Aufsichtsbehörden gerecht zu werden und ESG-Kriterien zu implementieren. Wir begleiten Banken und Aufsichtsbehörden ganzheitlich bei der strategischen Entwicklung und Umsetzung zeitgemäßer Prozess- und Systemlandschaften unter Berücksichtigung der ESG-Standards. Integrierte Datenlandschaften, innovative Datenplattformen, Plattformökonomien, Cloud-Technologien und KI-gestützte, automatisierte Lösungen sind Treiber für effiziente regulatorische Prozesse, die dabei helfen ESG-Standards einzuhalten. Unsere Lösungen tragen signifikant zur Automatisierung, Flexibilisierung, Skalierung und Kostenreduzierung bei. Gleichzeitig unterstützen sie Sie bei ihrem Streben nach Nachhaltigkeit.</p>',
                 },
                 {
                   icon: 'ManagingContractualFlow',
                   headline: 'Digitale Transformation mit<br />AML- oder KYC-Systemen',
                   content:
-                    '<p>Unser Service-Angebot deckt Ihre Bedürfnisse End-to-End mit führenden Methoden und innovativen Lösungen ab.</p><p>Unsere effizienten Lösungen helfen Ihnen, aufsichtsrechtliche Anforderungen zur Bekämpfung von Geldwäsche (Anti Money Laundering) und Finanzmarktkriminalität zu erfüllen und Know-Your-Customer-Prozesse zu optimieren. Wir konzipieren Target-Operating-Modelle für Sie und implementieren AML- oder KYC-Systeme.</p><p>Wir beraten Sie bei sämtlichen Fragen der digitalen Transformation und bieten Ihnen auf Ihre Bedürfnisse abgestimmte Managed-Service-Angebote, mit denen wir die gesamte Risk & Compliance-Wertschöpfungskette abdecken.</p>',
+                    '<p>Unser Service-Angebot deckt Ihre Bedürfnisse End-to-End mit führenden Methoden und innovativen Lösungen ab. Unsere effizienten Lösungen helfen Ihnen, aufsichtsrechtliche Anforderungen zur Bekämpfung von Geldwäsche (Anti Money Laundering) und Finanzmarktkriminalität zu erfüllen und Know-Your-Customer-Prozesse zu optimieren. Wir konzipieren Target-Operating-Modelle für Sie und implementieren AML- oder KYC-Systeme.<br />Wir beraten Sie bei sämtlichen Fragen der digitalen Transformation und bieten Ihnen auf Ihre Bedürfnisse abgestimmte Managed-Service-Angebote, mit denen wir die gesamte Risk & Compliance-Wertschöpfungskette abdecken.</p>',
                 },
                 {
                   icon: 'FinanceStrategy',
                   headline: 'Automatisierung bei<br />Trade-Finance-Transaktionen',
                   content:
-                    '<p>Die Komplexität von Trade-Finance-Transaktionen bietet hohes Potenzial zur Effizienzsteigerung durch Automatisierung und KI.</p><p>Ein intelligentes Zusammenspiel von Mensch und Technologie ermöglicht es, komplexe Trade-Finance-Transaktionen einfacher zu bewältigen. IBM Technologien wie Optical Character Recognition (OCR), Künstliche Intelligenz (KI), Robotic Process Automation (RPA) unterstützen Ihre Trade-Finance-Abteilungen.</p><p>Mit unseren smarten Technologien kreieren wir voll automatisierte End-to-End-Prozesse. Eine wichtige Rolle spielen dabei intelligente Dokumentenerfassung, digitale Plattformökonomie, KI, Robotics und Blockchain-Lösungen sowie Compliance Analysen.</p>',
+                    '<p>Die Komplexität von Trade-Finance-Transaktionen bietet hohes Potenzial zur Effizienzsteigerung durch Automatisierung und KI.<br />Ein intelligentes Zusammenspiel von Menschen und Technologie ermöglicht es, komplexe Trade-Finance-Transaktionen einfacher zu bewältigen. IBM Technologien wie Optical Character Recognition (OCR), Künstliche Intelligenz (KI), Robotic Process Automation (RPA) unterstützen Ihre Trade-Finance-Abteilungen. Mit unseren smarten Technologien kreieren wir voll automatisierte End-to-End-Prozesse. Eine wichtige Rolle spielen dabei intelligente Dokumentenerfassung, digitale Plattformökonomie, KI, Robotics und Blockchain-Lösungen sowie Compliance Analysen.</p>',
                 },
                 {
                   icon: 'Analyze',
                   headline: 'Ein umfassender Compliance-Rahmen für Cloud-Lösungen',
                   content:
-                    '<p>Wir begleiten unsere Kunden bei ihrer Cloud-Transformation ganzheitlich und haben dabei einen globalen Standard gesetzt.</p><p>Der verstärkte Einsatz von Cloud-Computing zwingt Banken, sich mit den regulatorischen Anforderungen an den sicheren Betrieb von Cloud-Systemen auseinanderzusetzen. Unsere marktführenden Methoden und Tools erstellen einen umfassenden Compliance-Rahmen für Cloud-Lösungen.<br />Dabei werden die gesetzlichen Mindestanforderungen an sicheres Cloud-Computing in Europa ebenso umgesetzt wie deutsche oder globale regulatorische Anforderungen. Dies kann auch um kundeneigene Policy-Vorgaben ergänzt werden.</p>',
+                    '<p>Wir begleiten unsere Kund*innen bei ihrer Cloud-Transformation ganzheitlich und haben dabei einen globalen Standard gesetzt. Der verstärkte Einsatz von Cloud-Computing hilft Banken, sich mit den regulatorischen Anforderungen an den sicheren Betrieb von Cloud-Systemen auseinanderzusetzen. Unsere marktführenden Methoden und Tools erstellen einen umfassenden Compliance-Rahmen für Cloud-Lösungen. Dabei werden die gesetzlichen Mindestanforderungen an sicheres Cloud-Computing in Europa ebenso umgesetzt wie deutsche oder globale regulatorische Anforderungen. Dies kann auch um kundeneigene Policy-Vorgaben ergänzt werden.</p>',
                 },
               ],
             },
@@ -188,7 +188,7 @@ const content: Content = {
       props: {
         id: 'vorteile',
         titles: {
-          top: '<p>Ihre Vorteile</p><p class="eh4">Unser Angebot für Ihren Erfolg<br />im Bereich Risk & Compliance</p>',
+          top: '<p>Ihre Vorteile</p><p class="eh4">Unser Angebot für Ihren Erfolg<br />im Bereich Banking Compliance</p>',
         },
         background: {
           dark: false,

@@ -5,7 +5,7 @@ import { mainNavigation } from './shared/mainNavigation'
 const content: Content = {
   meta: {
     title: 'Innovate Banking',
-    slogan: 'Eine Initiative von IBM',
+    slogan: 'Eine Initiative von IBM Consulting',
     isHome: false,
   },
   components: [
@@ -57,7 +57,7 @@ const content: Content = {
       name: 'Section',
       props: {
         titles: {
-          left: '<p>Ganzheitliche Transformation mit fachlicher Expertise und neuester Technologie</p>',
+          left: '<p>Ganzheitliche Transformation mit unserer fachlichen Expertise und neuester Technologie</p>',
         },
         marginBottom: true,
         background: {
@@ -97,7 +97,7 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<h3 class="h4">Gesteigerte operative Exzellenz und höhere Wettbewerbsfähigkeit mit IBM</h3><p style="max-width: 544px; margin-bottom: 2rem;">Der richtige Einsatz vorhandener Technologien ermöglicht die Transformation komplexer Prozesse in intelligente Workflows mit Einsparungen von mehr als 50 % der Betriebskosten und eine signifikante Steigerung der Kundenzufriedenheit von über 10 %.</p>',
+                '<h3 class="h4">Mit unserem Team zu gesteigerter operativer Exzellenz und höherer Wettbewerbsfähigkeit</h3><p style="max-width: 544px; margin-bottom: 2rem;">Der richtige Einsatz vorhandener Technologien ermöglicht die Transformation komplexer Prozesse in intelligente Workflows mit Einsparungen von mehr als 50 % der Betriebskosten und eine signifikante Steigerung der Kundenzufriedenheit von über 10 %.</p>',
             },
           },
           {
@@ -151,31 +151,31 @@ const content: Content = {
                   icon: 'UserSearch',
                   headline: 'Mehr Kundenorientierung und Effizienz im&nbsp;Kreditgeschäft',
                   content:
-                    '<p>Die Transformation der Kreditprozesse in Banken ist ein wichtiger Faktor auf dem Weg zu mehr Effizienz und Kundenakzeptanz.</p><p>Mit unseren Lösungen verschlanken und automatisieren wir Ihre kundenbezogenen und internen Prozesse. Wir ermöglichen echte Omni-Kanalfähigkeit, verkürzen „time-to-yes“ und „time-to-cash“ signifikant, erhöhen nachhaltig die Kundenzufriedenheit und Ihre Position im Wettbewerb. Dabei richten wir Ihre Prozesse entlang Ihrer Geschäftsstrategie aus und bringen dabei modernste Technologien zum Einsatz, wie z. B. unsere erprobten Content-Intelligent-Lösungen.</p>',
+                    '<p>Die Transformation der Kreditprozesse ist ein wichtiger Schritt auf dem Weg zu mehr Effizienz und Kundenakzeptanz. Mit unseren Lösungen verschlanken und automatisieren wir Ihre kundenbezogenen und internen Prozesse. Wir ermöglichen echte Omni-Kanalfähigkeit, verkürzen „time-to-yes“ und „time-to-cash“ signifikant, erhöhen nachhaltig die Kundenzufriedenheit und Ihre Position im Wettbewerb. Dabei richten wir Ihre Prozesse entlang Ihrer Geschäftsstrategie aus und bringen unsere modernen Technologien zum Einsatz, wie z. B. unsere erprobten Content-Intelligent-Lösungen.</p>',
                 },
                 {
                   icon: 'FinanceStrategy',
                   headline: 'Neue Wege für Core&#8209;Banking und Payment&#8209;Lösungen',
                   content:
-                    '<p>Mit einer Prozesslandschaft basierend auf digitalen Lösungen und intelligenten Workflows bringen Sie Ihre Kernleistungen auf Zukunftskurs. Wir finden den passgenauen Ansatz für Ihr Haus.</p><p>Eine Ergänzung oder stufenweise Ablösung von Legacy-Anwendungen macht den Weg frei für innovative Open-Banking-Lösungen. Herausforderungen im Zahlungsverkehr rund um Instant, neue EPI-Karten und digitale Währungen sowie die zeitgleiche Transformation etablierter Infrastrukturen im Markt erfordern umsichtige und schnelle Navigation.</p><p>Als kompetenter, zuverlässiger Partner begleiten wir Sie End-to-End bei der Konzeption notwendiger Anpassungen in den Prozessen und Systemen, der Positionierung neuer Produkte sowie der fachlichen und technischen Umsetzung.</p>',
+                    '<p>Mit einer Prozesslandschaft basierend auf digitalen Lösungen und intelligenten Workflows bringen Sie Ihre Kernleistungen auf Zukunftskurs. Unsere Expert*innen finden den passgenauen Ansatz für Ihr Haus. Eine Ergänzung oder stufenweise Ablösung von Legacy-Anwendungen etwa macht den Weg frei für innovative Open-Banking-Lösungen. Herausforderungen im Zahlungsverkehr rund um Instant, neue EPI-Karten und digitale Währungen sowie die zeitgleiche Transformation etablierter Infrastrukturen im Markt erfordern umsichtige und schnelle Navigation. Als kompetenter, zuverlässiger Partner begleiten wir Sie End-to-End bei der Konzeption notwendiger Anpassungen in den Prozessen und Systemen, der Positionierung neuer Produkte sowie der fachlichen und technischen Umsetzung.</p>',
                 },
                 {
                   icon: 'ManagingContractualFlow',
                   headline: 'Mehr Freiheiten durch ein effektives Back&nbsp;Office',
                   content:
-                    '<p>Gestraffte Marktfolgeprozesse versprechen ein großes Einsparungspotenzial.</p><p>Wir bieten Ihnen maßgeschneiderte und agile Lösungen mit der Möglichkeit, klein zu starten und schnell zu skalieren. Die Automatisierung von Back-Office-Aufgaben bringt Ihnen zweistellige Einsparpotenziale, größere Mitarbeiter- und Kundenzufriedenheit. Wir begleiten Sie in der Transformation – von der Analyse bis zur Umsetzung.</p>',
+                    '<p>Gestraffte Marktfolgeprozesse versprechen ein großes Einsparungspotenzial.<br />Wir bieten Ihnen maßgeschneiderte und agile Lösungen mit der Möglichkeit, klein zu starten und schnell zu skalieren. Die Automatisierung von Back-Office-Aufgaben bringt Ihnen zweistellige Einsparpotenziale, größere Mitarbeiter- und Kundenzufriedenheit. Wir begleiten Sie in der Transformation – von der Analyse bis zur Umsetzung.</p>',
                 },
                 {
                   icon: 'GlobalAssetsAndRecovery_01',
                   headline: 'Wachstum durch Digital Asset Banking',
                   content:
-                    '<p>Durch Digital Assets können Sie neue Potenziale und zusätzliche Geschäftsfelder erschließen.</p><p>Die Bank der Zukunft baut ihre Strategien um Digital Assets herum auf. Mit der Nutzung von Tokenisierung können Sie nicht bankenfähige Vermögenswerte digital und sicher verwalten.<br />Durch unsere Partnerschaften mit marktführenden Software-Anbietern bieten wir Ihnen Kompetenz aus einer Hand. Sie erhalten Zugang zu neuester Technologie und einen zuverlässigen Partner bei der Gestaltung und Umsetzung innovativer Custody-Lösungen für das steigende Segment der vermögenden Privatkunden.</p>',
+                    '<p>Durch Digitalassets können Sie neue Potenziale und zusätzliche Geschäftsfelder erschließen.<br />Durch den Aufbau von Strategien rund um Digitalassets werden Sie zur Bank der Zukunft. Mit der Nutzung von Tokenisierung können Sie nicht bankenfähige Vermögenswerte digital und sicher verwalten. Wir bieten Ihnen Partnerschaften mit marktführenden Software-Anbietern und damit gebündelte Kompetenz aus einer Hand. Sie erhalten Zugang zu neuester Technologie und einen zuverlässigen Partner bei der Gestaltung und Umsetzung innovativer Custody-Lösungen für das steigende Segment der vermögenden Privatkund*innen.</p>',
                 },
                 {
                   icon: 'Analyze',
                   headline: 'Neue Perspektiven für Finance & Controlling',
                   content:
-                    '<p>Intelligente Lösungen für Finance und Controlling minimieren Risiken.</p><p>In einem dynamischen Umfeld muss die Gesamtbanksteuerung schneller und mit geringeren Kosten mehr liefern. Wir helfen Ihnen, den Anforderungen gerecht zu werden und haben dabei alle Dimensionen im Blick: Ihre Daten, die Fachlichkeit, die IT-Landschaft und das zielführende Projekt-Vorgehen.<br />Gemeinsam mit unseren marktführenden Partnern für bankfachliche Software begleiten wir Ihren Weg zur modernen Banksteuerung. Technologienutzung für effizientes Datenmanagement und IT-Services, fachliche Standardmethoden und Agilität bringen Sie auf Erfolgskurs.</p>',
+                    '<p>Intelligente Lösungen für Finance und Controlling minimieren Risiken. In einem dynamischen Umfeld muss die Gesamtbanksteuerung schneller und mit geringeren Kosten mehr liefern. Wir helfen Ihnen, den Anforderungen gerecht zu werden und behalten dabei alle Dimensionen im Blick: Ihre Daten, die Fachlichkeit, die IT-Landschaft und das zielführende Projekt-Vorgehen. Gemeinsam mit unseren marktführenden Partner*innen für bankfachliche Software begleiten wir Ihren Weg zur modernen Banksteuerung. Technologienutzung für effizientes Datenmanagement und IT-Services, fachliche Standardmethoden und Agilität bringen Sie auf Erfolgskurs.</p>',
                 },
               ],
             },
@@ -188,7 +188,7 @@ const content: Content = {
       props: {
         id: 'vorteile',
         titles: {
-          top: '<p>Ihre Vorteile</p><p class="eh4">Konkrete Vorteile für Ihre Bank<br />durch Prozess-Transformation mit IBM</p>',
+          top: '<p>Ihre Vorteile</p><p class="eh4">Das sind die Vorteile für Ihre Bank mit unserer Prozess-Transformation</p>',
         },
         background: {
           dark: false,
@@ -206,7 +206,7 @@ const content: Content = {
                   props: {
                     icon: 'GlobalMarketsBar',
                     headline: 'Expertise',
-                    text: 'Wir bringen ein breites und tiefes Verständnis von Bankprozessen mit. Eine Vielzahl unserer Berater in der DACH-Region sind selbst Banker oder Top-Experten für Banking-Technologie.',
+                    text: 'Wir bringen ein breites und tiefes Verständnis von Bankprozessen mit. Eine Vielzahl unserer Berater*innen in der DACH-Region sind selbst Banker*innen oder Top-Expert*innen für Banking-Technologie.',
                   },
                 },
                 {
