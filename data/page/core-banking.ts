@@ -5,7 +5,7 @@ import { mainNavigation } from './shared/mainNavigation'
 const content: Content = {
   meta: {
     title: 'Innovate Banking',
-    slogan: 'Eine Initiative von IBM',
+    slogan: 'Eine Initiative von IBM Consulting',
     isHome: false,
   },
   components: [
@@ -79,7 +79,7 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<p style="max-width: 544px;">Ihre IT ist ein entscheidender Erfolgsfaktor für das Banking der Zukunft.<br />Wir zeigen Ihnen den Weg und unterstützen Sie bei der Umsetzung Ihrer Transformationsprojekte.</p>',
+                '<p style="max-width: 544px;">Ihre IT ist ein entscheidender Erfolgsfaktor für das Banking der Zukunft. Wir zeigen Ihnen den Weg und unterstützen Sie bei der Umsetzung Ihrer Transformationsprojekte.</p>',
             },
           },
         ],
@@ -97,7 +97,7 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<h3 class="h4">Mehr Nutzen und gesteigerte Wettbewerbs&shy;fähigkeit mit Hybrid-Cloud-Strategie</h3><p style="max-width: 544px;">Eine Hybrid-Cloud-Strategie mit der Kombination aus Cloud-Lösungen und klassischen IT-Strukturen ermöglicht das 2,5-fache an Effizienz sowie verkürzte Time-to-Market-Zyklen im Vergleich zu punktuellen Cloud-Ansätzen.</p>',
+                '<h3 class="h4">Mehr Nutzen und gesteigerte Wettbewerbs&shy;fähigkeit mit Hybrid-Cloud-Strategie</h3><p style="max-width: 544px;">Eine Hybrid-Cloud-Strategie mit der Kombination aus Cloud-Lösungen und klassischen IT-Strukturen steigert die Effizient um das 2,5-fache und verkürzt Time-to-Market-Zyklen im Vergleich zu punktuellen Cloud-Ansätzen.</p>',
             },
           },
           {
@@ -150,19 +150,19 @@ const content: Content = {
                   icon: 'AppDeveloper',
                   headline: 'Mit modernisierten Bank-Anwendungen auf&nbsp;Zukunftskurs',
                   content:
-                    '<p>Ein modernes Core-Banking-System erhöht die Agilität der Bank und reduziert dabei Kosten.</p><p>Die Modernisierung Ihrer Kernanwendungen bringt Sie auf Zukunftskurs und lässt Sie von zahlreichen Vorteilen profitieren. Sie steigern die Agilität Ihres Unternehmens, schaffen die Voraussetzungen für die Interoperabilität im Ökosystem, reduzieren Abhängigkeiten von einzelnen Anbietern und senken dabei sogar Ihre IT-Ausgaben.</p><p>Wir modernisieren Ihre Core-Banking-Systeme durch die Kombination verschiedener Ansätze wie Rationalisierung/Harmonisierung, Hybrid-Cloud-Transformation und die Einführung von Standardprodukten.</p>',
+                    '<p>Ein modernes Core-Banking-System erhöht die Agilität und reduziert Kosten. Die Modernisierung Ihrer Kernanwendungen bringt Sie auf Zukunftskurs und lässt Sie von zahlreichen Vorteilen profitieren. Sie steigern die Agilität Ihres Unternehmens und schaffen die Voraussetzungen für die Interoperabilität im Ökosystem, Sie reduzieren Abhängigkeiten von Anbieter*innen und senken dabei sogar Ihre IT-Ausgaben. Durch die Kombination verschiedener Ansätze wie Rationalisierung/Harmonisierung, Hybrid-Cloud-Transformation und die Einführung von Standardprodukten modernisieren wir Ihre Core-Banking-Systeme.</p>',
                 },
                 {
                   icon: 'FinanceStrategy',
                   headline: 'Höhere Effizienz durch strategische&nbsp;Cloud&#8209;Architekturen',
                   content:
-                    '<p>Cloud-Technologien steigern die Effizienz und die Geschwindigkeit in verschiedenen Bereichen Ihrer IT.</p><p>Mit unserer IT-Advisory unterstützen wir Sie bei der Definition Ihrer IT-Architektur und Ihrer Roadmap in die Cloud. Wir begleiten Sie von der Analyse über die Planung bis zur Umsetzung strategischer Architekturen.</p><p>Wir verbinden dabei individuelle, technologische, organisatorische und regulatorische Aspekte und erarbeiten gemeinsam Ihre IT-Strategie.</p>',
+                    '<p>Cloud-Technologien steigern die Effizienz und die Geschwindigkeit in verschiedenen Bereichen Ihrer IT. Mit unserer IT-Advisory unterstützen wir Sie bei der Definition Ihrer IT-Architektur und Ihrer Roadmap in die Cloud. Wir begleiten Sie von der Analyse über die Planung bis zur Umsetzung strategischer Architekturen. Dabei verbinden wir individuelle, technologische, organisatorische und regulatorische Aspekte und erarbeiten gemeinsam mit Ihnen Ihre IT-Strategie.</p>',
                 },
                 {
                   icon: 'Touch',
                   headline: 'Front-End-Digitalisierung für gesteigerte Kundenzufriedenheit',
                   content:
-                    '<p>Smarte Technologie führt zu einem besseren Kundenerlebnis und zu neuen Umsatzströmen.</p><p>Unsere Lösungen umfassen eine State-of-the-Art IT-Integrationsarchitektur, Design und Erstellung der Application Programming Interfaces (API) sowie die Implementierung von Best-in-Class-Lösungen durch eine breite Palette von Independent Software Vendors (ISVs).</p><p>Dadurch erreichen wir nicht nur eine gesteigerte Kundenzufriedenheit, sondern auch eine volle Integration in moderne Ökosysteme und Zugang zu neuen branchenübergreifenden Umsatzströmen.</p>',
+                    '<p>Smarte Technologie führt zu einer besseren Customer Experience und zu neuen Umsatzströmen. Unsere Lösungen umfassen eine State-of-the-Art IT-Integrationsarchitektur, Design und Erstellung der Application Programming Interfaces (API) sowie die Implementierung von Best-in-Class-Lösungen durch eine breite Palette von Independent Software Vendors (ISVs). Dadurch erreichen wir nicht nur eine gesteigerte Kundenzufriedenheit, sondern auch eine volle Integration in moderne Ökosysteme und Zugang zu neuen branchenübergreifenden Umsatzströmen.</p>',
                 },
               ],
             },
@@ -181,9 +181,7 @@ const content: Content = {
           dark: false,
           color: '#fff',
         },
-        narrow: {
-          bottom: true,
-        },
+        paddingBottom: 'narrow',
         colWrapChildren: false,
         children: [
           {
@@ -195,7 +193,7 @@ const content: Content = {
                   props: {
                     icon: 'GlobalMarketsBar',
                     headline: 'Expertise',
-                    text: 'Wir kombinieren bankfachliches Wissen mit technologischem Know-how. Dazu gehören auch die Skalierbarkeit bei komplexen Projekten, das Produktwissen unserer Entwicklungslabore und die Expertise unserer Partner.',
+                    text: 'Wir kombinieren bankfachliches Wissen mit technologischem Know-how. Dazu gehören auch die Skalierbarkeit bei komplexen Projekten, das Produktwissen unserer Entwicklungslabore und die Expertise unserer Partner*innen.',
                   },
                 },
                 {
@@ -203,7 +201,7 @@ const content: Content = {
                   props: {
                     icon: 'CloudAssets',
                     headline: 'Rundum-Service',
-                    text: 'Für unsere Kunden entwerfen wir eine Transformationsroadmap, validieren selektierte Handlungsoptionen über unser Garagen-Modell, entwickeln erste MVPs und führen die Projekte iterativ über unseren Modernization-Factory-Ansatz durch.',
+                    text: 'Wir entwerfen für Sie eine Transformations-Roadmap, validieren selektierte Handlungsoptionen über unser Garagen-Modell, entwickeln erste MVPs und führen die Projekte iterativ über unseren Modernization-Factory-Ansatz durch.',
                   },
                 },
                 {
@@ -211,7 +209,7 @@ const content: Content = {
                   props: {
                     icon: 'GlobalPartner',
                     headline: 'Partnerschaften',
-                    text: 'Im Bereich bankfachliche Standardfunktionalität arbeiten wir mit einer Vielzahl von ISVs zusammen, für Cloud-Technologien mit AWS, Google und Microsoft. Auch Anbieter von Analyse-Software, Middleware sowie Support- und Management-Tools gehören zu unserem Öko-System.',
+                    text: 'Im Bereich bankfachliche Standardfunktionalität arbeiten wir mit einer Vielzahl von ISVs zusammen, für Cloud-Technologien mit AWS, Google und Microsoft. Auch Anbieter*innen von Analyse-Software, Middleware sowie Support- und Management-Tools gehören zu unserem Öko-System.',
                   },
                 },
               ],

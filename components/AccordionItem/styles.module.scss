@@ -67,6 +67,22 @@
   }
 }
 
+.RichTextIntro {
+  padding: $spacing-06 0 $spacing-05;
+
+  p {
+    font-size: 1.125rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  @include bp('lg') {
+    padding-right: 20%;
+  }
+}
+
 .RichTextHeading {
   margin-right: auto;
   margin-left: 0;

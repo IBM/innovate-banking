@@ -1,18 +1,18 @@
 import index from '@/data/page'
-import anwendungssysteme from '@/data/page/anwendungssysteme'
+import bankingCompliance from '@/data/page/banking-compliance'
 import bankingPlatform from '@/data/page/banking-platform'
+import coreBanking from '@/data/page/core-banking'
+import customerExperience from '@/data/page/customer-experience'
+import digitalesBanking from '@/data/page/digitales-banking'
 import impressum from '@/data/page/impressum'
-import kundenerlebnis from '@/data/page/kundenerlebnis'
-import prozessTransformation from '@/data/page/prozess-transformation'
-import riskCompliance from '@/data/page/risk-compliance'
 import { Content } from './types'
 
 const pages: Record<string, Content> = {
   index,
-  'prozess-transformation': prozessTransformation,
-  kundenerlebnis,
-  'risk-compliance': riskCompliance,
-  anwendungssysteme,
+  'customer-experience': customerExperience,
+  'digitales-banking': digitalesBanking,
+  'banking-compliance': bankingCompliance,
+  'core-banking': coreBanking,
   'banking-platform': bankingPlatform,
   impressum,
 }

@@ -5,7 +5,7 @@ import { mainNavigation } from './shared/mainNavigation'
 const content: Content = {
   meta: {
     title: 'Innovate Banking',
-    slogan: 'Eine Initiative von IBM',
+    slogan: 'Eine Initiative von IBM Consulting',
     isHome: false,
   },
   components: [

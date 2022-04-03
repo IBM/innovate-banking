@@ -68,7 +68,7 @@ const content: Content = {
       props: {
         id: 'mission',
         titles: {
-          left: '<p>Stark durch digitale<br/> Transformation</p>',
+          left: '<p>Gemeinsam stark durch<br/>digitale Transformation</p>',
         },
         images: {
           right: {
@@ -89,7 +89,7 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<p style="max-width: 544px;">IBM ist für zahlreiche Banken im deutschsprachigen Markt aktiv – viele von uns sind selbst Banker. Ihre fachlichen Anforderungen bringen wir in Einklang mit Technologien wie Cloud und Künstlicher Intelligenz. Wir begleiten Sie ganzheitlich durch die digitale Transformation hin zu einem ganz neuen Banking-Erlebnis.</p>',
+                '<p style="max-width: 544px;">Wir sind für zahlreiche Banken im deutschsprachigen Markt aktiv – viele von uns sind selbst Banker*innen. Wir sind geübt darin Ihre spezifischen fachlichen Anforderungen in Einklang mit Technologien wie Cloud und Künstlicher Intelligenz zu bringen. Wir begleiten ganzheitlich durch die digitale Transformation und schaffen gemeinsam ein neues Banking-Erlebnis für Sie und Ihre Kund*innen.</p>',
             },
           },
         ],
@@ -100,11 +100,9 @@ const content: Content = {
       props: {
         id: 'mehrwert',
         titles: {
-          left: '<p>Unsere Lösungen<br/>für Ihre Herausforderungen</p>',
+          left: '<p>Unsere Lösungen für die Branche im Wandel</p>',
         },
-        noSpace: {
-          bottom: true,
-        },
+        paddingBottom: 'no',
         images: {
           bottom: {
             src: '/img/section-bg-plattform-solutions.png',
@@ -122,7 +120,7 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<p class="h2" style="max-width: 544px; font-weight: 400;">Mit uns die digitale Transformation meistern</p><p style="max-width: 544px;">Wir sind Ihr Partner für nachhaltige digitale Transformation, denn wir vereinen Banking-Know-how mit technischen Innovationen und bieten Ihnen individualisierte Lösungen aus unserem weltweiten Netzwerk.</p>',
+                '<p class="h2" style="max-width: 544px; font-weight: 400;">Mit uns die digitale Transformation meistern</p><p style="max-width: 544px;">Wir sind ein zuverlässiger Partner für nachhaltige digitale Transformation, denn wir vereinen Banking-Know-how mit technischen Innovationen und bieten individualisierte Lösungen aus unserem weltweiten Netzwerk.</p>',
             },
           },
         ],
@@ -132,7 +130,7 @@ const content: Content = {
       name: 'Section',
       props: {
         titles: {
-          top: '<p class="h4">Unsere Expertise für eine<br />erfolgreiche Transformation</p>',
+          top: '<p class="h4">Unsere Expertise für Ihre<br />erfolgreiche Transformation</p>',
         },
         images: {
           bottom: {
@@ -170,7 +168,7 @@ const content: Content = {
                   props: {
                     icon: 'Touch_132',
                     headline: 'Für Ihre<br />Kund*innen',
-                    text: 'Mehrwerte zählen – erschaffen Sie eine nachhaltige und zeitgemäße Banking-Erfahrung.',
+                    text: 'Mehrwerte zählen – erschaffen Sie mit uns eine nachhaltige und zeitgemäße Banking-Erfahrung.',
                   },
                 },
                 {
@@ -178,7 +176,7 @@ const content: Content = {
                   props: {
                     icon: 'Analytics32',
                     headline: 'Für mehr<br />Effizienz',
-                    text: 'Kosten reduzieren – strukturell, konsequent, immer transparent.',
+                    text: 'Kosten reduzieren – strukturell, konsequent und an jedem Punkt transparent.',
                   },
                 },
                 {
@@ -194,7 +192,7 @@ const content: Content = {
                   props: {
                     icon: 'HelpDesk32',
                     headline: 'Für den<br />lokalen Markt',
-                    text: 'Internationale Expertise – IBM&nbsp;ist global aktiv, aber im deutsch&shy;sprachigen Raum zu&nbsp;Hause und vor&nbsp;Ort.',
+                    text: 'Internationale Expertise – wir von IBM sind global aktiv, im deutschsprachigen Raum aber zu Hause und vor Ort.',
                   },
                 },
               ],
@@ -206,9 +204,7 @@ const content: Content = {
     {
       name: 'Section',
       props: {
-        condensed: {
-          bottom: true,
-        },
+        paddingBottom: 'condensed',
         images: {
           left: {
             src: '/img/section-banking-pulse-left.svg',
@@ -223,7 +219,7 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<p class="d1" style="max-width: 544px;">Banking am<br />Puls der Zeit</p><p style="max-width: 544px;">Als Finanzdienstleister befinden Sie sich stetig im Spannungsfeld zwischen Beständigkeit und Fortschritt. Ihre Kunden erwarten eine verlässliche, sichere und gleichzeitig innovative Banking-Erfahrung.</p><p style="max-width: 544px;">Um an den entscheidenden Punkten ansetzen zu können, bieten wir Ihnen Lösungen in fünf Kernbereichen. Gemeinsam finden wir die passende Herangehensweise für die Bedürfnisse Ihres Unternehmens – ganz gleich, ob Sie lokal, regional oder weltweit agieren.</p>',
+                '<p class="d1" style="max-width: 544px;">Banking am<br />Puls der Zeit</p><p style="max-width: 544px;">Als Finanzdienstleister befinden Sie sich stetig im Spannungsfeld zwischen Beständigkeit und Fortschritt. Ihre Kund*innen erwarten eine verlässliche, sichere und gleichzeitig innovative Banking-Erfahrung.</p><p style="max-width: 544px;">Um an den entscheidenden Punkten ansetzen zu können, bieten wir Ihnen Lösungen in fünf Kernbereichen. Gemeinsam finden wir die passende Herangehensweise für die Bedürfnisse Ihres Unternehmens – ganz gleich, ob Sie lokal, regional oder weltweit agieren.</p>',
             },
           },
         ],
@@ -234,7 +230,7 @@ const content: Content = {
       props: {
         id: 'fokus',
         titles: {
-          left: '<p>Unser Fokus</p>',
+          left: '<p>Unser Fokus für Ihren Erfolg</p>',
         },
         fullWidth: true,
         children: [
@@ -246,8 +242,8 @@ const content: Content = {
                 {
                   name: 'FocusTeaser',
                   props: {
-                    headline: 'Kundenerlebnis<br />neu erfinden',
-                    text: '<p>Zufriedene Kunden sind Ihr wertvollstes Kapital. Erfahren Sie, wie Cloud-basierte Datenauswertung und KI ein einzigartiges Kundenerlebnis ermöglichen und die Arbeitswelt Ihrer Mitarbeiter*innen im Front-Office revolutionieren.</p>',
+                    headline: 'Customer Experience neu definieren',
+                    text: '<p>Zufriedene Kund*innen sind Ihr wertvollstes Kapital. Wir zeigen Ihnen, wie Cloud-basierte Datenauswertung und KI ein einzigartiges Kundenerlebnis ermöglichen und die Arbeitswelt Ihrer Mitarbeiter*innen im Front-Office revolutionieren.</p>',
                     image: {
                       src: '/img/section-kundenerlebnis.svg',
                       width: 402,
@@ -261,30 +257,30 @@ const content: Content = {
                 {
                   name: 'FocusTeaser',
                   props: {
-                    headline: 'Prozesse<br />transformieren',
-                    text: '<p>Vom Kreditantrag bis zur Auszahlung, von der Bestandsverwaltung oder der Zahlungsabwicklung bis zu Finance und Controlling: KI- und datengetriebene Lösungen von IBM optimieren Ihre Prozesse und machen Ihre Bank fit für die Zukunft.</p>',
+                    headline: 'Transformation Digitales Banking',
+                    text: '<p>Vom Kreditantrag bis zur Auszahlung, von der Bestandsverwaltung über die Zahlungsabwicklung bis zu Finance und Controlling: Unsere KI- und datengetriebenen Lösungen transformieren und optimieren Ihre Prozesse. Damit ist Ihre Bank fit für die Zukunft.</p>',
                     link: {
-                      url: '/prozess-transformation',
+                      url: '/digitales-banking',
                     },
                   },
                 },
                 {
                   name: 'FocusTeaser',
                   props: {
-                    headline: 'Risk & Compliance<br />nachhaltig steuern',
-                    text: '<p>IBM unterstützt Ihre Bank mit kognitiven Lösungen beim Risikomanagement und bei der Risikomodellierung, bei Geldwäscheprävention, KYC-Prozessen, innovativer RegTech und SupTech.</p>',
+                    headline: 'Banking Compliance nachhaltig steuern',
+                    text: '<p>Wir von IBM unterstützen Ihre Bank mit kognitiven Lösungen beim Risikomanagement und bei der Risikomodellierung, bei Geldwäscheprävention, KYC-Prozessen, innovativer RegTech und bei SupTech.</p>',
                     link: {
-                      url: '/risk-compliance',
+                      url: '/banking-compliance',
                     },
                   },
                 },
                 {
                   name: 'FocusTeaser',
                   props: {
-                    headline: 'Anwendungssysteme<br />modernisieren',
-                    text: '<p>Mit Cloud-Innovationen durch die digitale Transformation: Wir begleiten die Modernisierung Ihrer Anwendungen und Infrastruktur mit maßgeschneiderten Lösungen – vom Design über die Entwicklung bis hin zum Betrieb.</p>',
+                    headline: 'Core Banking modernisieren',
+                    text: '<p>Mit unseren Cloud-Innovationen step by step durch die digitale Transformation: Wir begleiten die Modernisierung Ihrer Anwendungen und Ihrer Infrastruktur mit maßgeschneiderten Lösungen - vom Design über die Entwicklung bis hin zum Betrieb.</p>',
                     link: {
-                      url: '/anwendungssysteme',
+                      url: '/core-banking',
                     },
                   },
                 },
@@ -292,7 +288,7 @@ const content: Content = {
                   name: 'FocusTeaser',
                   props: {
                     headline: 'IBM Banking Platform<br />nutzen',
-                    text: '<p>Gewinnen Sie mit Anwendungen aus unserer Banking-Service-Plattform an Effizienz und erfahren Sie, wie Business Process Outsourcing von IBM Mehrwerte für Ihre Bank schafft.</p>',
+                    text: '<p>Mit den Anwendungen unserer IBM Banking Platform gewinnen Sie an Effizienz und schaffen Mehrwerte für Ihre Bank. Erfahren Sie, welche weiteren Vorteile ein Business Process Outsourcing mit sich bringt.</p>',
                     link: {
                       url: '/banking-platform',
                     },
@@ -308,9 +304,7 @@ const content: Content = {
       name: 'Section',
       props: {
         id: 'news',
-        condensed: {
-          bottom: true,
-        },
+        paddingBottom: 'condensed',
         titles: {
           left: true,
         },
@@ -322,7 +316,7 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<p class="eh4" style="margin-bottom: 1.5rem;">Unsere Stimme<br />in der Finanzbranche</p><p style="max-width: 544px;">Erfahren Sie von unseren Experten, wie IBM an der Zukunft des Bankings arbeitet – und tauschen Sie sich direkt mit Ihnen aus.</p>',
+                '<p class="eh4" style="margin-bottom: 1.5rem;">Unsere Stimme<br />in der Finanzbranche</p><p style="max-width: 544px;">Erfahren Sie von unseren Expert*innen wie IBM an der Zukunft des Bankings arbeitet – und wenn Sie möchten, tauschen Sie sich direkt mit ihnen aus.</p>',
             },
           },
         ],
@@ -334,10 +328,8 @@ const content: Content = {
         titles: {
           left: '<p>Banking Insights</p>',
         },
-        condensed: {
-          top: true,
-          bottom: true,
-        },
+        paddingTop: 'condensed',
+        paddingBottom: 'condensed',
         background: {
           color: '#F4F4F4',
         },
@@ -472,9 +464,7 @@ const content: Content = {
         background: {
           color: '#F4F4F4',
         },
-        condensed: {
-          top: true,
-        },
+        paddingTop: 'condensed',
         fullWidth: true,
         children: [
           {
@@ -533,10 +523,8 @@ const content: Content = {
           color: '#dcf2ff',
           dark: false,
         },
-        noSpace: {
-          top: true,
-          bottom: true,
-        },
+        paddingTop: 'no',
+        paddingBottom: 'no',
         images: {
           top: {
             src: '/img/section-ibm-garage.svg',

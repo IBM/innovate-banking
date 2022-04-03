@@ -5,7 +5,7 @@ import { mainNavigation } from './shared/mainNavigation'
 const content: Content = {
   meta: {
     title: 'Innovate Banking',
-    slogan: 'Eine Initiative von IBM',
+    slogan: 'Eine Initiative von IBM Consulting',
     isHome: false,
   },
   components: [
@@ -57,7 +57,7 @@ const content: Content = {
       name: 'Section',
       props: {
         titles: {
-          left: '<p>Mehr Kundenbindung durch ein einzigartiges Kundenerlebnis</p>',
+          left: '<p>Mehr Kundenbindung durch eine<br />top Customer Experience</p>',
         },
         marginBottom: true,
         background: {
@@ -79,7 +79,7 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<p style="max-width: 544px;">Zufriedene Kunden sind Ihr wertvollstes Kapital. Erfahren Sie, wie Cloud-basierte Datenauswertung und KI ein einzigartiges Kundenerlebnis ermöglichen und die Arbeitswelt Ihrer Mitarbeiter*innen im Front-Office revolutionieren.</p>',
+                '<p style="max-width: 544px;">Zufriedene Kund*innen sind Ihr wertvollstes Kapital. Erfahren Sie, wie Cloud-basierte Datenauswertung und KI ein einzigartiges Kundenerlebnis ermöglichen und die Arbeitswelt Ihrer Mitarbeiter*innen im Front-Office revolutionieren.</p>',
             },
           },
         ],
@@ -90,14 +90,14 @@ const content: Content = {
       props: {
         id: 'video',
         titles: {
-          left: '<p>Kundeninteraktion aktiv gestalten – persönlich und effizient im digitalen Zeitalter</p>',
+          left: '<p>Treten Sie mit Ihren Kund*innen in Kontakt – persönlich, effizient, digital</p>',
         },
         children: [
           {
             name: 'RichText',
             props: {
               content:
-                '<p style="max-width: 544px; margin-bottom: 2rem;">Immer mehr Menschen nutzen immer selbstverständlicher digitale Zugangswege um ihre Bankgeschäfte zu erledigen. Der Anspruch an die Beratungs- und Servicequalität der Bank wächst. Wie Banken und ihre Berater durch den Einsatz neuer Technologien eine neue Qualität in der Kundenansprache erreichen können, zeigt die IBM Expertenrunde anhand konkreter Beispiele - von der optimierten Nutzererfahrung, über die personalisierte Beratung bis zur nahtlosen Verknüpfung sämtlicher Zugangswege - auf.</p>',
+                '<p style="max-width: 544px; margin-bottom: 2rem;">Immer mehr Menschen jeden Alters nutzen selbstverständlich digitale Touchpoints, um ihre Bankgeschäfte zu erledigen. Der Anspruch an die digitale Beratungs- und Servicequalität der Banken wächst. Wir von IBM zeigen Ihnen gerne wie Sie und Ihre Berater*innen durch den Einsatz neuer Technologien Ihre Kundenansprache qualitativ stark verbessern können. In unserer Expertenrunde zeigen wir neue Wege anhand konkreter Beispiele auf: von der optimierten Nutzererfahrung über die personalisierte Beratung bis hin zu einer nahtlosen Verknüpfung sämtlicher Zugangswege.</p>',
             },
           },
           {
@@ -126,7 +126,7 @@ const content: Content = {
             name: 'RichText',
             props: {
               content:
-                '<h3 class="h4">Kundenbedürfnisse erkennen, Zufriedenheit steigern und neue Vertriebschancen identifizieren</h3><p style="max-width: 544px; margin-bottom: 2rem;">Unsere Befragungen von Führungskräften von über 400 Banken weltweit zeigen, dass Banken, die sich auf die Transformation von Kundenabläufen konzentrieren, messbare Wettbewerbsvorteile haben – sowohl auf der Kosten- als auch auf der Ertragsseite.</p>',
+                '<h3 class="h4">Kundenbedürfnisse erkennen, Zufriedenheit steigern und neue Vertriebschancen identifizieren</h3><p style="max-width: 544px; margin-bottom: 2rem;">Unsere Befragungen von Führungskräften aus über 400 Banken weltweit zeigen, dass Banken, die sich auf die Transformation von Kundenabläufen konzentrieren, messbare Wettbewerbsvorteile haben – sowohl auf der Kosten- als auch auf der Ertragsseite.</p>',
             },
           },
           {
@@ -186,25 +186,25 @@ const content: Content = {
                   icon: 'GlobalAssetsAndRecovery_01',
                   headline: 'Mehr Kundenorientierung durch kontextuelles&nbsp;Banking',
                   content:
-                    '<p>Wir erhöhen Kundenzufriedenheit durch zielgruppenspezifische Angebote – ob für Privat- oder Firmenkunden.</p><p>Wir verschaffen Ihnen Wettbewerbsvorteile an allen Berührungspunkten: Flexible Arbeitsplatzlösungen im Front-Office unterstützen Sie bei der Beratung, innovative Self-Service-Konzepte erweitern das digitale Leistungsangebot, mobiles und dialog-basiertes Banking eröffnet neue Perspektiven in der Kundenansprache.</p><p>Mit einer einheitlichen 360-Grad-Sicht auf den Kunden steigern wir die Effizienz und die Qualität in der Beratung und im Service. Dabei reduzieren wir manuelle Arbeit und liefern Ihnen relevante Erkenntnisse über Ihre Kunden zum richtigen Zeitpunkt.</p>',
+                    '<p>Wir erhöhen die Zufriedenheit Ihrer Kund*innen durch zielgruppenspezifische Angebote – ob für Privat- oder Firmenkund*innen. Wir verschaffen Ihnen Wettbewerbsvorteile an allen Touchpoints: Flexible Arbeitsplatzlösungen im Front-Office unterstützen Sie bei der Beratung, innovative Self-Service-Konzepte erweitern das digitale Leistungsangebot, mobiles und dialog-basiertes Banking eröffnet neue Perspektiven in der Kundenansprache.<br />Mit einer einheitlichen 360-Grad-Sicht auf Ihre/n Kund*in steigern wir Ihre Effizienz und die Qualität Ihrer Beratung ebenso wie Ihren Service. Dabei reduzieren wir manuelle Arbeit und liefern Ihnen relevante Erkenntnisse über Ihre/n Kund*in zum richtigen Zeitpunkt.</p>',
                 },
                 {
                   icon: 'ManagingContractualFlow',
-                  headline: 'Mehr Kundenbindung durch personalisierten Kunden&shy;dialog',
+                  headline: 'Mehr Kundenbindung durch personalisierten Dialog',
                   content:
-                    '<p>Der Schlüssel zu Relevanz und Loyalität liegt in der personalisierten Kundenansprache.</p><p>Wir analysieren Ihre Customer Journeys und identifizieren Verbesserungsmöglichkeiten – von der effizienten Generierung von Interessenten bis zum Abschluss. Dazu bereiten wir komplexe Inhalte zielgruppengerecht auf. Im Rahmen von Kampagnen können diese flexibel auf allen Kanälen für die vertriebliche Ansprache eingesetzt werden. Basierend auf den marktführenden Plattformen unserer Partner implementieren wir individuelle Lösungen zur Ausspielung personalisierter Inhalte, die für alle Kanäle dynamisch optimiert werden.</p>',
+                    '<p>Der Schlüssel zu Relevanz und Loyalität liegt in der personalisierten Kundenansprache.<br />Wir analysieren Ihre Customer Journeys und identifizieren Verbesserungsmöglichkeiten – von der effizienten Generierung von Interessent*innen bis zum Abschluss. Dazu bereiten wir komplexe Inhalte zielgruppengerecht auf. Im Rahmen von Kampagnen können diese dann flexibel auf all Ihren Kanälen für die vertriebliche Ansprache eingesetzt werden. Basierend auf den marktführenden Plattformen unserer Partner*innen implementieren wir individuelle Lösungen zur Ausspielung personalisierter Inhalte. Diese können dann für alle Kanäle dynamisch optimiert werden.</p>',
                 },
                 {
                   icon: 'FinanceStrategy',
                   headline: 'Bessere Ansprache durch Marketing-Intelligenz und Automation',
                   content:
-                    '<p>Mit Marketing-Intelligenz und Automation unterstützen wir Sie bei der vertrieblichen Kundenansprache.</p><p>Unsere Lösungen vereinheitlichen Ihre Customer Journeys für eine regelbasierte Steuerung der Kundenansprache. Bewährte KI-Modelle ermöglichen eine dynamische Identifikation von Lebensereignissen, Produktneigung oder Abwanderungswahrscheinlichkeiten Ihrer Kunden.</p><p>Aus den darauf aufbauenden, automatisierten Kundendialogen entstehen neue potenzielle Vertriebschancen (Next Best Action) im dafür am besten geeigneten Vertriebskanal – ob digital, in der Bankfiliale oder über die Service-Hotline.</p>',
+                    '<p>Mit Marketing-Intelligenz und Automation unterstützen wir Sie bei der vertrieblichen Kundenansprache. Unsere Lösungen vereinheitlichen Ihre Customer Journeys für eine regelbasierte Steuerung der Kundenansprache. Bewährte KI-Modelle ermöglichen eine dynamische Identifikation von Lebensereignissen, Produktneigung oder Abwanderungswahrscheinlichkeiten Ihrer Kund*innen.<br />Aus den darauf aufbauenden, automatisierten Kundendialogen entstehen neue potenzielle Vertriebschancen (Next Best Action) im dafür am besten geeigneten Vertriebskanal – ob digital, in der Bankfiliale oder über die Service-Hotline.</p>',
                 },
                 {
                   icon: 'Analyze',
                   headline: 'Marketing und Vertrieb effizient umsetzen&nbsp;und&nbsp;steuern',
                   content:
-                    '<p>Unsere Lösungen ermöglichen die nahtlose Orchestrierung von Kundenkontext, Berührungspunkten und Bankprozessen.</p><p>Unsere Erfolgsfaktoren sind analytische Fähigkeiten, die lückenlose Einbeziehung von Daten und die Aussteuerung relevanter Inhalte auf den geeigneten Zugangspunkt. Die Kombination regelbasierter Ansätze mit spezialisierter KI ermöglicht eine effiziente und intelligente Steuerung Ihrer Kundenbeziehungen.</p><p>Dazu nutzen wir bewährte cloud-basierte Standardplattformen für ein beschleunigtes Time-to-Market, unterstützen Ihren operativen Betrieb bedarfsgerecht mit der benötigten Expertise und ermöglichen Banken so die Neuallokation bestehender Ressourcen.</p>',
+                    '<p>Unsere Lösungen ermöglichen die nahtlose Orchestrierung von Kundenkontext, Berührungspunkten und Bankprozessen. Unsere Erfolgsfaktoren sind analytische Fähigkeiten, die lückenlose Einbeziehung von Daten und die Aussteuerung relevanter Inhalte auf den geeigneten Zugangspunkt. Die Kombination regelbasierter Ansätze mit spezialisierter KI ermöglicht eine effiziente und intelligente Steuerung Ihrer Kundenbeziehungen.<br />Dazu nutzen wir bewährte cloud-basierte Standardplattformen für ein beschleunigtes Time-to-Market, unterstützen Ihren operativen Betrieb bedarfsgerecht mit der benötigten Expertise und ermöglichen so die Neuallokation bestehender Ressourcen.</p>',
                 },
               ],
             },
@@ -217,15 +217,13 @@ const content: Content = {
       props: {
         id: 'vorteile',
         titles: {
-          top: '<p>Ihre Vorteile</p><p class="eh4">Erfolgsfaktoren für<br />Ihr neues Kundenerlebnis</p>',
+          top: '<p>Ihre Vorteile</p><p class="eh4">Erfolgsfaktoren für<br />Ihre neue Customer Experience</p>',
         },
         background: {
           dark: false,
           color: '#fff',
         },
-        narrow: {
-          bottom: true,
-        },
+        paddingBottom: 'narrow',
         colWrapChildren: false,
         children: [
           {
@@ -237,7 +235,7 @@ const content: Content = {
                   props: {
                     icon: 'GlobalMarketsBar',
                     headline: 'Unsere Expertise',
-                    text: 'Über 1200 praxiserfahrene Spezialist*innen an 8 Standorten in der DACH-Region bieten das vollständige Spektrum von der Beratung über die Umsetzung bis zum Betrieb unserer Lösungen.',
+                    text: 'Über 1200 praxiserfahrene Spezialist*innen an 8 Standorten in der DACH-Region stehen Ihnen zur Verfügung - von der Beratung über die Umsetzung bis hin zum Betrieb unserer Lösungen.',
                   },
                 },
                 {

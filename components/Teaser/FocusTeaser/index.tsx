@@ -1,6 +1,6 @@
 import RichText from '@/components/RichText'
-import { Column, Link } from 'carbon-components-react'
 import * as carbonIconsReact from '@carbon/icons-react'
+import { Column, Link } from 'carbon-components-react'
 import clsx from 'clsx'
 import dynamic from 'next/dynamic'
 import Image, { ImageProps } from 'next/image'
@@ -23,11 +23,10 @@ type FocusTeaserProps = {
     readonly icon?: keyof typeof carbonIconsReact
   }
   readonly light?: boolean
-  readonly dark?: boolean
   readonly condensed?: boolean
 }
 
-const FocusTeaser = ({ headline, text, image, link, light, dark, condensed }: FocusTeaserProps) => {
+const FocusTeaser = ({ headline, text, image, link, light, condensed }: FocusTeaserProps) => {
   let IconComponent = null
 
   if (link && link.url) {
@@ -65,12 +64,7 @@ const FocusTeaser = ({ headline, text, image, link, light, dark, condensed }: Fo
       className={clsx(styles.FocusTeaserColumn)}
     >
       <Link
-        className={clsx(
-          styles.FocusTeaser,
-          light && styles.IsLight,
-          dark && styles.IsDark,
-          link.url === undefined && styles.IsInactive
-        )}
+        className={clsx(styles.FocusTeaser, light && styles.IsLight, link.url === undefined && styles.IsInactive)}
         href={link.url}
         title={link.title}
       >

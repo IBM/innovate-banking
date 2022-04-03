@@ -21,13 +21,7 @@ type SectionProps = {
   readonly id?: string
   readonly titles?: {
     readonly top?: string | boolean
-    readonly offsetTop?: number
-    readonly right?: string | boolean
-    readonly offsetRight?: number
-    readonly bottom?: string | boolean
-    readonly offsetBottom?: number
     readonly left?: string | boolean
-    readonly offsetLeft?: string | boolean
   }
   readonly children?: ReactNode
   readonly images?: {
@@ -43,18 +37,8 @@ type SectionProps = {
     readonly color?: string
     readonly gradient?: string
   }
-  readonly condensed?: {
-    readonly top?: boolean
-    readonly bottom?: boolean
-  }
-  readonly noSpace?: {
-    readonly top?: boolean
-    readonly bottom?: boolean
-  }
-  readonly narrow?: {
-    readonly top?: boolean
-    readonly bottom?: boolean
-  }
+  readonly paddingTop?: 'default' | 'narrow' | 'condensed' | 'no'
+  readonly paddingBottom?: 'default' | 'narrow' | 'condensed' | 'no'
   readonly marginBottom?: boolean
   readonly colWrapChildren?: boolean
   readonly fullWidth?: boolean
@@ -67,9 +51,8 @@ const Section = ({
   children,
   images,
   background,
-  condensed,
-  noSpace,
-  narrow,
+  paddingTop,
+  paddingBottom,
   marginBottom,
   colWrapChildren = true,
   fullWidth = false,
@@ -125,7 +108,6 @@ const Section = ({
 
   let hasLeftOrRightContent = false
   if (titles && titles.left) hasLeftOrRightContent = true
-  if (titles && titles.right) hasLeftOrRightContent = true
   if (images && images.left) hasLeftOrRightContent = true
   if (images && images.right) hasLeftOrRightContent = true
 
@@ -144,20 +126,18 @@ const Section = ({
             styles.Section,
             titles && styles.Titled,
             titles && titles.top && styles.HasTopTitle,
-            titles && titles.right && styles.HasRightTitle,
-            titles && titles.bottom && styles.HasBottomTitle,
             titles && titles.left && styles.HasLeftTitle,
             images && images.top && styles.HasTopImage,
             images && images.right && styles.HasRightImage,
             images && images.bottom && styles.HasBottomImage,
             images && images.left && styles.HasLeftImage,
             background && background.dark && styles.HasDarkBackground,
-            condensed && condensed.top && styles.IsCondensedTop,
-            condensed && condensed.bottom && styles.IsCondensedBottom,
-            narrow && narrow.top && styles.IsNarrowTop,
-            narrow && narrow.bottom && styles.IsNarrowBottom,
-            noSpace && noSpace.bottom && styles.IsNoSpaceBottom,
-            noSpace && noSpace.top && styles.IsNoSpaceTop,
+            paddingTop === 'condensed' && styles.IsCondensedTop,
+            paddingBottom === 'condensed' && styles.IsCondensedBottom,
+            paddingTop === 'narrow' && styles.IsNarrowTop,
+            paddingBottom === 'narrow' && styles.IsNarrowBottom,
+            paddingTop === 'no' && styles.IsNoSpaceTop,
+            paddingBottom === 'no' && styles.IsNoSpaceBottom,
             marginBottom && styles.HasMarginBottom
           )}
         >
@@ -206,13 +186,7 @@ const Section = ({
           {titles && titles.top && (
             <Row>
               <Column sm={4} md={6} lg={8}>
-                <RichText
-                  className={styles.Title}
-                  content={titles.top !== true ? titles.top : '&nbsp;'}
-                  style={{
-                    transform: titles.offsetTop ? `translateY(${titles.offsetTop})` : null,
-                  }}
-                />
+                <RichText className={styles.Title} content={titles.top !== true ? titles.top : '&nbsp;'} />
               </Column>
             </Row>
           )}
@@ -223,9 +197,6 @@ const Section = ({
                   <RichText
                     className={clsx(styles.Title, styles.TitleLeft)}
                     content={titles.left !== true ? titles.left : '&nbsp;'}
-                    style={{
-                      transform: titles.offsetLeft ? `translateY(${titles.offsetLeft})` : null,
-                    }}
                   />
                 )}
                 {images && images.left && (
@@ -266,17 +237,6 @@ const Section = ({
                 {children}
               </ConditionalWrapper>
             )}
-            {titles && titles.right && (
-              <Column sm={4} md={2} lg={5}>
-                <RichText
-                  className={styles.Title}
-                  content={titles.right !== true ? titles.right : '&nbsp;'}
-                  style={{
-                    transform: titles.offsetRight ? `translateY(${titles.offsetRight})` : null,
-                  }}
-                />
-              </Column>
-            )}
             {images && images.right && (
               <Column
                 sm={4}
@@ -306,19 +266,6 @@ const Section = ({
               </Column>
             )}
           </Row>
-          {titles && titles.bottom && (
-            <Row>
-              <Column sm={4} md={2} lg={5}>
-                <RichText
-                  className={styles.Title}
-                  content={titles.bottom !== true ? titles.bottom : '&nbsp;'}
-                  style={{
-                    transform: titles.offsetBottom ? `translateY(${titles.offsetBottom})` : null,
-                  }}
-                />
-              </Column>
-            </Row>
-          )}
           {images && images.bottom && (
             <Row>
               <div

@@ -1,6 +1,6 @@
+import AccordionItem, { AccordionItemProps } from '@/components/AccordionItem'
 import { Grid, Row } from 'carbon-components-react'
 import React from 'react'
-import AccordionItem, { AccordionItemProps } from '@/components/AccordionItem'
 import styles from './styles.module.scss'
 
 type AccordionProps = {
@@ -19,6 +19,7 @@ const Accordion = ({ items, showVisual }: AccordionProps) => {
               icon={item.icon}
               headline={item.headline}
               content={item.content}
+              introContent={item.introContent}
               showVisual={showVisual}
             />
           )
