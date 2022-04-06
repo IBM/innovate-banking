@@ -67,8 +67,9 @@ const content: Content = {
       name: 'Section',
       props: {
         id: 'mission',
-        titles: {
-          left: '<p>Gemeinsam stark durch<br/>digitale Transformation</p>',
+        title: {
+          text: '<p>Gemeinsam stark durch<br/>digitale Transformation</p>',
+          position: 'left',
         },
         images: {
           right: {
@@ -99,8 +100,9 @@ const content: Content = {
       name: 'Section',
       props: {
         id: 'mehrwert',
-        titles: {
-          left: '<p>Unsere Lösungen für die Branche im Wandel</p>',
+        title: {
+          text: '<p>Unsere Lösungen für die Branche im Wandel</p>',
+          position: 'left',
         },
         paddingBottom: 'no',
         images: {
@@ -129,8 +131,9 @@ const content: Content = {
     {
       name: 'Section',
       props: {
-        titles: {
-          top: '<p class="h4">Unsere Expertise für Ihre<br />erfolgreiche Transformation</p>',
+        title: {
+          text: '<p class="h4">Unsere Expertise für Ihre<br />erfolgreiche Transformation</p>',
+          position: 'top',
         },
         images: {
           bottom: {
@@ -229,8 +232,9 @@ const content: Content = {
       name: 'Section',
       props: {
         id: 'fokus',
-        titles: {
-          left: '<p>Unser Fokus für Ihren Erfolg</p>',
+        title: {
+          text: '<p>Unser Fokus für Ihren Erfolg</p>',
+          position: 'left',
         },
         fullWidth: true,
         children: [
@@ -249,9 +253,7 @@ const content: Content = {
                       width: 402,
                       height: 242,
                     },
-                    link: {
-                      url: '/kundenerlebnis',
-                    },
+                    link: '/kundenerlebnis',
                   },
                 },
                 {
@@ -259,9 +261,7 @@ const content: Content = {
                   props: {
                     headline: 'Transformation Digitales Banking',
                     text: '<p>Vom Kreditantrag bis zur Auszahlung, von der Bestandsverwaltung über die Zahlungsabwicklung bis zu Finance und Controlling: Unsere KI- und datengetriebenen Lösungen transformieren und optimieren Ihre Prozesse. Damit ist Ihre Bank fit für die Zukunft.</p>',
-                    link: {
-                      url: '/digitales-banking',
-                    },
+                    link: '/prozess-transformation',
                   },
                 },
                 {
@@ -269,9 +269,7 @@ const content: Content = {
                   props: {
                     headline: 'Banking Compliance nachhaltig steuern',
                     text: '<p>Wir von IBM unterstützen Ihre Bank mit kognitiven Lösungen beim Risikomanagement und bei der Risikomodellierung, bei Geldwäscheprävention, KYC-Prozessen, innovativer RegTech und bei SupTech.</p>',
-                    link: {
-                      url: '/banking-compliance',
-                    },
+                    link: '/risk-compliance',
                   },
                 },
                 {
@@ -279,9 +277,7 @@ const content: Content = {
                   props: {
                     headline: 'Core Banking modernisieren',
                     text: '<p>Mit unseren Cloud-Innovationen step by step durch die digitale Transformation: Wir begleiten die Modernisierung Ihrer Anwendungen und Ihrer Infrastruktur mit maßgeschneiderten Lösungen - vom Design über die Entwicklung bis hin zum Betrieb.</p>',
-                    link: {
-                      url: '/core-banking',
-                    },
+                    link: '/anwendungssysteme',
                   },
                 },
                 {
@@ -289,9 +285,7 @@ const content: Content = {
                   props: {
                     headline: 'IBM Banking Platform<br />nutzen',
                     text: '<p>Mit den Anwendungen unserer IBM Banking Platform gewinnen Sie an Effizienz und schaffen Mehrwerte für Ihre Bank. Erfahren Sie, welche weiteren Vorteile ein Business Process Outsourcing mit sich bringt.</p>',
-                    link: {
-                      url: '/banking-platform',
-                    },
+                    link: '/banking-platform',
                   },
                 },
               ],
@@ -305,8 +299,9 @@ const content: Content = {
       props: {
         id: 'news',
         paddingBottom: 'condensed',
-        titles: {
-          left: true,
+        title: {
+          text: '&nbsp;',
+          position: 'left',
         },
         background: {
           color: '#F4F4F4',
@@ -325,8 +320,9 @@ const content: Content = {
     {
       name: 'Section',
       props: {
-        titles: {
-          left: '<p>Banking Insights</p>',
+        title: {
+          text: '<p>Banking Insights</p>',
+          position: 'left',
         },
         paddingTop: 'condensed',
         paddingBottom: 'condensed',
@@ -458,8 +454,9 @@ const content: Content = {
     {
       name: 'Section',
       props: {
-        titles: {
-          left: '<p>Banking Talks & Events</p>',
+        title: {
+          text: '<p>Banking Talks & Events</p>',
+          position: 'left',
         },
         background: {
           color: '#F4F4F4',
@@ -534,8 +531,9 @@ const content: Content = {
           },
         },
         fullWidth: true,
-        titles: {
-          left: '<p class="h4">Innovative Methoden und Technologien</p><p class="p">Wir arbeiten schon heute an der Finanztechnologie von übermorgen. Entdecken Sie ungeahnte Möglichkeiten und profitieren Sie als Erste von Lösungen, die die Welt des Bankings nachhaltig verändern werden.</p>',
+        title: {
+          text: '<p class="h4">Innovative Methoden und Technologien</p><p class="p">Wir arbeiten schon heute an der Finanztechnologie von übermorgen. Entdecken Sie ungeahnte Möglichkeiten und profitieren Sie als Erste von Lösungen, die die Welt des Bankings nachhaltig verändern werden.</p>',
+          position: 'left',
         },
         children: [
           {
@@ -555,9 +553,7 @@ const content: Content = {
                   props: {
                     headline: 'IBM Garage',
                     text: '<p>Mit IBM Garage bringen wir Sie technologisch auf den neuesten Stand, damit Sie schnell, bahnbrechend und ähnlich agil wie ein Start-up-Unternehmen arbeiten können. IBM Garage vereint Unternehmensstrategie, Design und Technologie nahtlos in einer End-to-End-Journey.</p>',
-                    link: {
-                      url: 'https://www.ibm.com/de-de/garage',
-                    },
+                    link: 'https://www.ibm.com/de-de/garage',
                     light: true,
                     condensed: true,
                   },
@@ -567,9 +563,7 @@ const content: Content = {
                   props: {
                     headline: 'Blockchain',
                     text: '<p>Mit Blockchain können Sie Transaktionen transparent, einfach und effizient halten. Wir ersetzen damit veraltete Prozesse und manuelle Arbeit durch neuartige Kooperation, Innovation und gesteigertes Tempo. Mit Blockchain schaffen wir neue Lösungen und erzielen greifbare Ergebnisse.</p>',
-                    link: {
-                      url: 'https://www.ibm.com/blockchain/industries/financial-services',
-                    },
+                    link: 'https://www.ibm.com/blockchain/industries/financial-services',
                     light: true,
                     condensed: true,
                   },
@@ -579,9 +573,7 @@ const content: Content = {
                   props: {
                     headline: 'Cloud-Computing',
                     text: '<p>Entlang der gesamten Customer Journey ermöglichen wir Banken, sich in hybriden Cloud-Umgebungen neu zu erfinden. Mit kompetenter Beratung, Unterstützung bei der Implementierung und Managed Services unterstützen wir Sie dabei, Ihren Weg in die Cloud zu vereinfachen und zu beschleunigen.</p>',
-                    link: {
-                      url: 'https://www.ibm.com/de-de/industries/banking-financial-markets/cloud-banking',
-                    },
+                    link: 'https://www.ibm.com/de-de/industries/banking-financial-markets/cloud-banking',
                     light: true,
                     condensed: true,
                   },
@@ -591,9 +583,7 @@ const content: Content = {
                   props: {
                     headline: 'Edge',
                     text: '<p>Mit Edge-Computing können Sie große Datenvolumen direkt an der Quelle bearbeiten, da Bankanwendungen näher an Datenquellen wie IoT-Geräte oder lokale Edge-Server rücken. Wir helfen Ihnen bei der Optimierung Ihrer Betriebsabläufe und der Erneuerung von Kundenservices auf Basis dieser technischen Innovation.</p>',
-                    link: {
-                      url: 'https://www.ibm.com/de-de/cloud/what-is-edge-computing',
-                    },
+                    link: 'https://www.ibm.com/de-de/cloud/what-is-edge-computing',
                     light: true,
                     condensed: true,
                   },
@@ -612,8 +602,9 @@ const content: Content = {
           color: '#061727',
           dark: true,
         },
-        titles: {
-          left: '<p class="d1">Let’s&nbsp;talk!</p><p class="p" style="max-width: 200px;">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
+        title: {
+          text: '<p class="d1">Let’s&nbsp;talk!</p><p class="p" style="max-width: 200px;">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
+          position: 'left',
         },
         fullWidth: true,
         children: [

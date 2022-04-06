@@ -56,8 +56,9 @@ const content: Content = {
     {
       name: 'Section',
       props: {
-        titles: {
-          left: '<p>Ganzheitliche Transformation mit unserer fachlichen Expertise und neuester Technologie</p>',
+        title: {
+          text: '<p>Ganzheitliche Transformation mit unserer fachlichen Expertise und neuester Technologie</p>',
+          position: 'left',
         },
         marginBottom: true,
         background: {
@@ -89,8 +90,9 @@ const content: Content = {
       name: 'Section',
       props: {
         id: 'potenzial',
-        titles: {
-          left: '<p>Ihr Potenzial</p>',
+        title: {
+          text: '<p>Ihr Potenzial</p>',
+          position: 'left',
         },
         children: [
           {
@@ -114,8 +116,9 @@ const content: Content = {
       name: 'Section',
       props: {
         id: 'schwerpunkte',
-        titles: {
-          top: '<p>Unsere Schwerpunktthemen</p>',
+        title: {
+          text: '<p>Unsere Schwerpunktthemen</p>',
+          position: 'top',
         },
         images: {
           bottom: {
@@ -187,8 +190,9 @@ const content: Content = {
       name: 'Section',
       props: {
         id: 'vorteile',
-        titles: {
-          top: '<p>Ihre Vorteile</p><p class="eh4">Das sind die Vorteile für Ihre Bank mit unserer Prozess-Transformation</p>',
+        title: {
+          text: '<p>Ihre Vorteile</p><p class="eh4">Das sind die Vorteile für Ihre Bank mit unserer Prozess-Transformation</p>',
+          position: 'top',
         },
         background: {
           dark: false,
@@ -239,8 +243,9 @@ const content: Content = {
           color: '#061727',
           dark: true,
         },
-        titles: {
-          left: '<p class="d1">Let’s&nbsp;talk!</p><p class="p" style="max-width: 200px;">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
+        title: {
+          text: '<p class="d1">Let’s&nbsp;talk!</p><p class="p" style="max-width: 200px;">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
+          position: 'left',
         },
         fullWidth: true,
         children: [
