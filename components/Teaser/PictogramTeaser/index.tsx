@@ -1,5 +1,5 @@
-import { Column } from 'carbon-components-react'
 import * as carbonPictograms from '@carbon/pictograms-react'
+import { Column } from 'carbon-components-react'
 import clsx from 'clsx'
 import dynamic from 'next/dynamic'
 import React from 'react'
@@ -21,7 +21,7 @@ const PictogramTeaser = ({
   text,
   teaserIndex,
   teaserCount,
-  light,
+  light = false,
   size = 'md',
 }: PictogramTeaserProps) => {
   const IconComponent = dynamic(() => import('@carbon/pictograms-react').then((mod) => mod[icon]))

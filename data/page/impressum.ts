@@ -52,8 +52,9 @@ const content: Content = {
       name: 'Section',
       props: {
         id: 'ansprechpartner',
-        titles: {
-          left: '<p>Ansprechpartner</p>',
+        title: {
+          text: '<p>Ansprechpartner</p>',
+          position: 'left',
         },
         children: [
           {
@@ -70,8 +71,9 @@ const content: Content = {
       name: 'Section',
       props: {
         id: 'nutzungsbedingungen',
-        titles: {
-          left: '<p>Nutzungsbedingungen</p>',
+        title: {
+          text: '<p>Nutzungsbedingungen</p>',
+          position: 'left',
         },
         children: [
           {
@@ -88,8 +90,9 @@ const content: Content = {
       name: 'Section',
       props: {
         id: 'datenschutz',
-        titles: {
-          left: '<p>Datenschutz</p>',
+        title: {
+          text: '<p>Datenschutz</p>',
+          position: 'left',
         },
         children: [
           {
