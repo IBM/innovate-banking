@@ -21,7 +21,7 @@ type FocusTeaserProps = {
   readonly condensed?: boolean
 }
 
-const FocusTeaser = ({ headline, text, image, link, light, condensed }: FocusTeaserProps) => {
+const FocusTeaser = ({ headline, text, image, link, light = false, condensed = false }: FocusTeaserProps) => {
   const smSizeOuter = 4
   let mdSizeOuter = 4
   let lgSizeOuter = 8
