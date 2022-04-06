@@ -1,8 +1,7 @@
 import RichText from '@/components/RichText'
-import * as carbonIconsReact from '@carbon/icons-react'
+import { ArrowRight24 } from '@carbon/icons-react'
 import { Column, Link } from 'carbon-components-react'
 import clsx from 'clsx'
-import dynamic from 'next/dynamic'
 import Image, { ImageProps } from 'next/image'
 import React from 'react'
 import styles from './styles.module.scss'
@@ -17,22 +16,12 @@ type FocusTeaserProps = {
     readonly layout?: ImageProps['layout']
     readonly simulate?: boolean
   }
-  readonly link?: {
-    readonly title?: string
-    readonly url?: string
-    readonly icon?: keyof typeof carbonIconsReact
-  }
+  readonly link?: string
   readonly light?: boolean
   readonly condensed?: boolean
 }
 
 const FocusTeaser = ({ headline, text, image, link, light, condensed }: FocusTeaserProps) => {
-  let IconComponent = null
-
-  if (link && link.url) {
-    IconComponent = dynamic(() => import('@carbon/icons-react').then((mod) => mod[link.icon || 'ArrowRight24']))
-  }
-
   const smSizeOuter = 4
   let mdSizeOuter = 4
   let lgSizeOuter = 8
@@ -64,17 +53,15 @@ const FocusTeaser = ({ headline, text, image, link, light, condensed }: FocusTea
       className={clsx(styles.FocusTeaserColumn)}
     >
       <Link
-        className={clsx(styles.FocusTeaser, light && styles.IsLight, link.url === undefined && styles.IsInactive)}
-        href={link.url}
-        title={link.title}
+        className={clsx(styles.FocusTeaser, light && styles.IsLight, link === undefined && styles.IsInactive)}
+        href={link}
       >
         <Column sm={smSizeLeft} md={mdSizeLeft} lg={lgSizeLeft} className={styles.LeftColumn}>
           <h5 className={styles.Headline} dangerouslySetInnerHTML={{ __html: headline }} />
           <RichText content={text} className={styles.RichText} />
           {link && (
             <span className={styles.Link}>
-              {link.title && <span className={styles.Text}>{link.title}</span>}
-              {IconComponent && <IconComponent />}
+              <ArrowRight24 />
             </span>
           )}
         </Column>
