@@ -19,9 +19,9 @@ type SectionImage = {
 
 type SectionProps = {
   readonly id?: string
-  readonly titles?: {
-    readonly top?: string | boolean
-    readonly left?: string | boolean
+  readonly title?: {
+    readonly text?: string
+    readonly position?: 'top' | 'left'
   }
   readonly children?: ReactNode
   readonly images?: {
@@ -47,7 +47,7 @@ type SectionProps = {
 
 const Section = ({
   id,
-  titles,
+  title,
   children,
   images,
   background,
@@ -107,7 +107,7 @@ const Section = ({
   }
 
   let hasLeftOrRightContent = false
-  if (titles && titles.left) hasLeftOrRightContent = true
+  if (title?.text && title?.position === 'left') hasLeftOrRightContent = true
   if (images && images.left) hasLeftOrRightContent = true
   if (images && images.right) hasLeftOrRightContent = true
 
@@ -124,9 +124,9 @@ const Section = ({
         <div
           className={clsx(
             styles.Section,
-            titles && styles.Titled,
-            titles && titles.top && styles.HasTopTitle,
-            titles && titles.left && styles.HasLeftTitle,
+            title?.text && styles.Titled,
+            title?.text && title?.position === 'top' && styles.HasTopTitle,
+            title?.text && title?.position === 'left' && styles.HasLeftTitle,
             images && images.top && styles.HasTopImage,
             images && images.right && styles.HasRightImage,
             images && images.bottom && styles.HasBottomImage,
@@ -183,21 +183,18 @@ const Section = ({
               </div>
             </Row>
           )}
-          {titles && titles.top && (
+          {title?.text && title?.position === 'top' && (
             <Row>
               <Column sm={4} md={6} lg={8}>
-                <RichText className={styles.Title} content={titles.top !== true ? titles.top : '&nbsp;'} />
+                <RichText className={styles.Title} content={title.text} />
               </Column>
             </Row>
           )}
           <Row>
-            {((titles && titles.left) || (images && images.left)) && (
+            {((title?.text && title?.position === 'left') || (images && images.left)) && (
               <Column sm={4} md={2} lg={4} className={styles.LeftSide}>
-                {titles && titles.left && (
-                  <RichText
-                    className={clsx(styles.Title, styles.TitleLeft)}
-                    content={titles.left !== true ? titles.left : '&nbsp;'}
-                  />
+                {title?.text && title?.position === 'left' && (
+                  <RichText className={clsx(styles.Title, styles.TitleLeft)} content={title.text} />
                 )}
                 {images && images.left && (
                   <div
