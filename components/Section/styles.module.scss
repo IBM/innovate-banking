@@ -4,6 +4,22 @@
 
 .SectionWrapper {
   width: 100%;
+
+  &.greyBg {
+    background: #f4f4f4;
+  }
+
+  &.lightBlueBg {
+    background: #dcf2ff;
+  }
+
+  &.darkBlueBg {
+    background: #061727;
+  }
+
+  &.gradientBg {
+    background: linear-gradient(180deg, #fff 35%, #f4f4f4 100%);
+  }
 }
 
 .Section {
