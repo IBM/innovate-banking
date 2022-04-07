@@ -178,7 +178,7 @@ const content: Content = {
       props: {
         id: 'vorteile',
         title: {
-          left: '<p>Ihre Vorteile</p><p class="eh4">Ihr Nutzen bei der<br />technologischen Transformation</p>',
+          text: '<p>Ihre Vorteile</p><p class="eh4">Ihr Nutzen bei der<br />technologischen Transformation</p>',
           position: 'top',
         },
         background: {
