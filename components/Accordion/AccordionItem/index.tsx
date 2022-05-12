@@ -11,15 +11,22 @@ import AnimateHeight from 'react-animate-height'
 import styles from './styles.module.scss'
 
 export type AccordionItemProps = {
-  readonly icon: keyof typeof carbonPictograms
   readonly headline: string
+  readonly icon: keyof typeof carbonPictograms
   readonly content: string
   readonly introContent?: string
   readonly isOpenDefault?: boolean
   readonly showVisual?: boolean
 }
 
-const AccordionItem = ({ icon, headline, content, introContent, isOpenDefault, showVisual }: AccordionItemProps) => {
+export const AccordionItem = ({
+  headline,
+  icon,
+  content,
+  introContent,
+  isOpenDefault,
+  showVisual,
+}: AccordionItemProps) => {
   const [isOpen, setIsOpen] = useState(isOpenDefault)
 
   const onHeaderClick: MouseEventHandler = (event) => {
@@ -67,11 +74,12 @@ const AccordionItem = ({ icon, headline, content, introContent, isOpenDefault, s
               </Column>
             </Row>
             <AnimateHeight duration={500} height={isOpen ? 'auto' : 0}>
-              {introContent && <RichText content={introContent} className={styles.RichTextIntro} />}
+              {!!introContent && <RichText content={introContent} className={styles.RichTextIntro} />}
               <RichText content={content} className={styles.RichText} />
               {showVisual && (
                 <div className={styles.Visual}>
-                  <Image src="/img/accordion-visual.svg" alt="" layout="intrinsic" width={239} height={199} />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/img/accordion-visual.svg" alt="" width={239} height={199} />
                 </div>
               )}
             </AnimateHeight>
@@ -81,5 +89,3 @@ const AccordionItem = ({ icon, headline, content, introContent, isOpenDefault, s
     </Column>
   )
 }
-
-export default AccordionItem

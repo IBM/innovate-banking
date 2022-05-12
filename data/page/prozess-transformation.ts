@@ -42,6 +42,10 @@ const content: Content = {
             link: 'schwerpunkte',
           },
           {
+            name: 'Projekte',
+            link: 'projekte',
+          },
+          {
             name: 'Vorteile',
             link: 'vorteile',
           },
@@ -174,6 +178,65 @@ const content: Content = {
                   headline: 'Neue Perspektiven für Finance & Controlling',
                   content:
                     '<p>Intelligente Lösungen für Finance und Controlling minimieren Risiken. In einem dynamischen Umfeld muss die Gesamtbanksteuerung schneller und mit geringeren Kosten mehr liefern. Wir helfen Ihnen, den Anforderungen gerecht zu werden und behalten dabei alle Dimensionen im Blick: Ihre Daten, die Fachlichkeit, die IT-Landschaft und das zielführende Projekt-Vorgehen. Gemeinsam mit unseren marktführenden Partner*innen für bankfachliche Software begleiten wir Ihren Weg zur modernen Banksteuerung. Technologienutzung für effizientes Datenmanagement und IT-Services, fachliche Standardmethoden und Agilität bringen Sie auf Erfolgskurs.</p>',
+                },
+              ],
+            },
+          },
+        ],
+      },
+    },
+    {
+      name: 'Section',
+      props: {
+        id: 'projekte',
+        paddingBottom: 'no',
+        title: {
+          text: '&nbsp;',
+          position: 'left',
+        },
+        background: 'grey',
+        children: [
+          {
+            name: 'RichText',
+            props: {
+              content:
+                '<p class="eh4" style="max-width: 544px;">Unsere Cases</p><p style="max-width: 544px;">Effiziente und KI-basierte Assistenzsysteme, optimale Banking-Plattformen, IT-Architekturen – Dank unseres umfangreichen Know-hows konnten wir mit vielseitigen Lösungen bereits einige Kund*innen beim Schritt durch die digitale Transformation begleiten und sie unterstützen.</p>',
+            },
+          },
+        ],
+      },
+    },
+    {
+      name: 'Section',
+      props: {
+        paddingTop: 'narrow',
+        title: {
+          text: '<p style="margin-bottom: -1rem">Projekte</p>',
+          position: 'left',
+        },
+        background: 'grey',
+        children: [
+          {
+            name: 'ImageAccordion',
+            props: {
+              items: [
+                {
+                  image: {
+                    src: '/img/cases/cases1.jpg',
+                  },
+                  headline: 'Credít Mutuel',
+                  introContent: '<p>Qualitätssicherung dank künstlicher Intelligenz</p>',
+                  content:
+                    '<p class="eh5">Herausforderung</p><p>Mit über 5.000 Filialen ist Crédit Mutuel eine der führenden Banken Frankreichs. Täglich gehen hier mehr als 350.000 Online-Anfragen ein – und das Volumen wächst jährlich um etwa 23 % weiter. Um den Wettbewerbsvorteil nicht zu verlieren, muss nicht nur der ständig wachsende Strom an Kund*innen und Anliegen bewältigt werden, sondern auch die Qualität der Kundenbeziehung gesichert sein. Aus diesem Grund war eine Neuerfindung der Rolle des Kundenberaters/der Kundenberaterin unbedingt erforderlich.</p><p class="eh5">Unser Lösungsansatz</p><p>Um die Herausforderung zu meistern, setzten wir von IBM eine auf künstlicher Intelligenz basierende Agenten-Assistentenplattform ein. Durch vier virtuelle Assistenten und einen mit KI ausgestatteten E-Mail-Analysator werden Anfragen deutlich schneller beantwortet. Unsere KI mit dem Namen Watson bearbeitet täglich bis zu 350.000 E-Mails und ermöglicht ein 60% schnelleres Finden von Antworten. Kund*innen können somit zeitnahund umfassend über eine Vielzahl von Angeboten informiert werden – von Auto-, Kranken-und Personenversicherungen bis hin zu einer Reihe von Spar- und Anlageprodukten.<br />Ziel ist es, die KI-Lösung nun schrittweise in 100 % der Bancassurance-Geschäfte einzusetzen und als Wachstumshebel zu nutzen.</p><p class="eh5">Mehrwert</p><p>„KI ersetzt den Menschen nicht, sie unterstützt ihn“, erklärt Nicolas Théry, Präsident der Crédit Mutuel Alliance Fédérale.<br />Dank der KI-basierten Implementierung ist Crédit Mutuel in der Lage, die Interaktionen zwischen Kundenberater*innen und Kund*innen nicht nur aufrecht zu erhalten, sondern zu verbessern.</p>',
+                },
+                {
+                  image: {
+                    src: '/img/cases/cases2.jpg',
+                  },
+                  headline: 'Large retail bank in Germany',
+                  introContent: '<p>Mit Robotern Bank-Prozesse optimieren</p>',
+                  content:
+                    '<p class="eh5">Herausforderung</p><p>Stetig steigender Kostendruck zwingt viele Banken heutzutage zum Umdenken. Eine große Privatkundenbank in Deutschland benötigte eine innovative Lösung, mit der Back-Office-Kosten gesenkt und schnelle Einsparungsergebnisse erzielt werden konnten.<br />Eine einfache Automationstechnik war der Komplexität der Prozesse nicht gewachsen. Viele sich wiederholende administrative Aufgaben wurden manuell mit Hilfe von fünf verschiedenen Client-Systemen erledigt. Es brauchte also einen Weg, der die speziellen Strukturen berücksichtigt.</p><p class="eh5">Unser Lösungsansatz</p><p>Unsere Prozessberater*innen und Entwickler*innen konnten über zwanzig Back-Office-Prozesse automatisieren und unterstützten den Kunden bei der Implementierung von vierzig Robotern auf der Basis von Blue Prism.<br />Wir übernahmen die initiale Analyse potenzieller Prozesskandidaten, das Design der Automatisierungslösung und auch die abschließende Implementierung. Zusätzlich coachten wir mehrere Teams hinsichtlich der Robotic Process Automation (RPA)-Technologie, mit dem Ziel, dass der Kunde zukünftig in der Lage ist, weitere Implementierungen mit seinen eigenen Teams durchzuführen. Darüber hinaus stehen wir mit unserer Expertise weiterhin als Ansprechpartner zur Verfügung, um die Bank auf ihrem kontinuierlichen Weg zu mehr Automatisierung zu unterstützen.</p><p class="eh5">Mehrwert</p><p>Durch die Einführung der RPA-Technologie und der damit verbundenen Automation von Back-Office-Prozessen, konnte unser Kunde die Kosten innerhalb eines Jahres signifikant senken.</p>',
                 },
               ],
             },

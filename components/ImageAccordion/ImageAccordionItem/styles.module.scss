@@ -1,0 +1,79 @@
+@import '~carbon-components/scss/globals/scss/_vars.scss';
+@import '~carbon-components/scss/globals/scss/_typography.scss';
+@import '@/styles/mixins';
+
+.AccordionItem {
+  margin-bottom: $spacing-03;
+  cursor: pointer;
+}
+
+.AccordionHeader {
+  @include carbon--type-style('expressive-heading-03', true);
+
+  position: relative;
+
+  @include bp('md') {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.AccordionImage {
+  flex-shrink: 0;
+  margin-bottom: $spacing-05;
+
+  @include bp('md') {
+    margin-right: $spacing-05;
+    margin-bottom: 0;
+  }
+
+  > * {
+    display: block !important;
+  }
+}
+
+.AccordionContent {
+  overflow: hidden;
+  background: $white-0;
+}
+
+.OpenCloseIcon {
+  margin-right: $spacing-05;
+
+  @include bp('lg', true) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @include bp('md', true) {
+    right: 1rem;
+  }
+}
+
+.RichText {
+  padding: $spacing-09 $spacing-05;
+
+  @include bp('lg') {
+    padding: $spacing-09;
+  }
+}
+
+.RichTextIntro {
+  margin-top: $spacing-05;
+
+  p {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.RichTextHeading {
+  padding-right: $spacing-05;
+
+  @include bp('lg') {
+    padding-right: $spacing-10;
+  }
+}
