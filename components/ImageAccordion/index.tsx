@@ -1,21 +1,19 @@
-import { Grid, Row } from 'carbon-components-react'
 import React from 'react'
 import { ImageAccordionItem, ImageAccordionItemProps } from './ImageAccordionItem'
 import styles from './styles.module.scss'
 
-type AccordionProps = {
-  readonly items: ReadonlyArray<AccordionItemProps>
-  readonly showVisual?: boolean
+type ImageAccordionProps = {
+  readonly items: ReadonlyArray<ImageAccordionItemProps>
 }
 
-const Accordion = ({ items, showVisual }: AccordionProps) => {
+const ImageAccordion = ({ items }: ImageAccordionProps) => {
   return (
     <div className={styles.Accordion}>
       {items.map((item, index) => {
-        return <ImageAccordionItem key={index} showVisual={showVisual} {...item} />
+        return <ImageAccordionItem key={index} {...item} />
       })}
     </div>
   )
 }
 
-export default Accordion
+export default ImageAccordion
