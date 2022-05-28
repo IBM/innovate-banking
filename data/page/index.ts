@@ -114,9 +114,7 @@ const content: Content = {
             layout: 'responsive',
           },
         },
-        background: {
-          color: '#F4F4F4',
-        },
+        background: 'grey',
         children: [
           {
             name: 'RichText',
@@ -155,11 +153,7 @@ const content: Content = {
             layout: 'responsive',
           },
         },
-        background: {
-          dark: false,
-          color: '#dcf2ff',
-          // gradient: 'linear-gradient(180deg, #dcf2ff 0%, #dcf2ff 100%)',
-        },
+        background: 'blue-light',
         colWrapChildren: false,
         children: [
           {
@@ -303,9 +297,7 @@ const content: Content = {
           text: '&nbsp;',
           position: 'left',
         },
-        background: {
-          color: '#F4F4F4',
-        },
+        background: 'grey',
         children: [
           {
             name: 'RichText',
@@ -326,9 +318,7 @@ const content: Content = {
         },
         paddingTop: 'condensed',
         paddingBottom: 'condensed',
-        background: {
-          color: '#F4F4F4',
-        },
+        background: 'grey',
         fullWidth: true,
         children: [
           {
@@ -458,9 +448,7 @@ const content: Content = {
           text: '<p>Banking Talks & Events</p>',
           position: 'left',
         },
-        background: {
-          color: '#F4F4F4',
-        },
+        background: 'grey',
         paddingTop: 'condensed',
         fullWidth: true,
         children: [
@@ -516,10 +504,7 @@ const content: Content = {
       name: 'Section',
       props: {
         id: 'methoden',
-        background: {
-          color: '#dcf2ff',
-          dark: false,
-        },
+        background: 'blue-light',
         paddingTop: 'no',
         paddingBottom: 'no',
         images: {
@@ -598,10 +583,7 @@ const content: Content = {
       name: 'Section',
       props: {
         id: 'letstalk',
-        background: {
-          color: '#061727',
-          dark: true,
-        },
+        background: 'blue-dark',
         title: {
           text: '<p class="d1">Let’s&nbsp;talk!</p><p class="p" style="max-width: 200px;">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
           position: 'left',

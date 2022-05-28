@@ -32,11 +32,7 @@ type SectionProps = {
     readonly bottomMobile?: SectionImage
     readonly left?: SectionImage
   }
-  readonly background?: {
-    readonly dark?: boolean
-    readonly color?: string
-    readonly gradient?: string
-  }
+  readonly background?: 'white' | 'grey' | 'blue-light' | 'blue-dark' | 'gradient'
   readonly paddingTop?: 'default' | 'narrow' | 'condensed' | 'no'
   readonly paddingBottom?: 'default' | 'narrow' | 'condensed' | 'no'
   readonly marginBottom?: boolean
@@ -50,15 +46,13 @@ const Section = ({
   title,
   children,
   images,
-  background,
+  background = 'white',
   paddingTop,
   paddingBottom,
   marginBottom,
   colWrapChildren = true,
   fullWidth = false,
 }: SectionProps) => {
-  let backgroundStyle = null
-
   const sectionRef = useRef()
   const { inViewport } = useInViewport(
     sectionRef,
@@ -98,14 +92,6 @@ const Section = ({
     }
   )
 
-  if (background && background.color) {
-    backgroundStyle = background.color
-  }
-
-  if (background && background.gradient) {
-    backgroundStyle = background.gradient
-  }
-
   let hasLeftOrRightContent = false
   if (title?.text && title?.position === 'left') hasLeftOrRightContent = true
   if (images && images.left) hasLeftOrRightContent = true
@@ -114,11 +100,13 @@ const Section = ({
   return (
     <section
       id={id}
-      style={{
-        background: backgroundStyle,
-      }}
       ref={sectionRef}
-      className={styles.SectionWrapper}
+      className={clsx(styles.SectionWrapper, {
+        [styles.greyBg]: background === 'grey',
+        [styles.lightBlueBg]: background === 'blue-light',
+        [styles.darkBlueBg]: background === 'blue-dark',
+        [styles.gradientBg]: background === 'gradient',
+      })}
     >
       <Grid>
         <div
@@ -131,7 +119,7 @@ const Section = ({
             images && images.right && styles.HasRightImage,
             images && images.bottom && styles.HasBottomImage,
             images && images.left && styles.HasLeftImage,
-            background && background.dark && styles.HasDarkBackground,
+            background === 'blue-dark' && styles.HasDarkBackground,
             paddingTop === 'condensed' && styles.IsCondensedTop,
             paddingBottom === 'condensed' && styles.IsCondensedBottom,
             paddingTop === 'narrow' && styles.IsNarrowTop,

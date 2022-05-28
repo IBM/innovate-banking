@@ -1,7 +1,6 @@
 import dynamic from 'next/dynamic'
 
 export const Accordion = dynamic(() => import('@/components/Accordion'))
-export const AccordionItem = dynamic(() => import('@/components/AccordionItem'))
 export const AnchorNavigation = dynamic(() => import('@/components/AnchorNavigation'))
 export const BackToTopButton = dynamic(() => import('@/components/BackToTopButton'))
 export const ConditonalWrapper = dynamic(() => import('@/components/ConditonalWrapper'))
@@ -11,6 +10,7 @@ export const RichText = dynamic(() => import('@/components/RichText'))
 export const Section = dynamic(() => import('@/components/Section'))
 export const Stage = dynamic(() => import('@/components/Stage'))
 export const FocusTeaser = dynamic(() => import('@/components/Teaser/FocusTeaser'))
+export const ImageAccordion = dynamic(() => import('@/components/ImageAccordion'))
 export const ImageTextTeaser = dynamic(() => import('@/components/Teaser/ImageTextTeaser'))
 export const LetsTalkTeaser = dynamic(() => import('@/components/Teaser/LetsTalkTeaser'))
 export const PictogramTeaser = dynamic(() => import('@/components/Teaser/PictogramTeaser'))

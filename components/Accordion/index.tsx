@@ -1,6 +1,6 @@
-import AccordionItem, { AccordionItemProps } from '@/components/AccordionItem'
 import { Grid, Row } from 'carbon-components-react'
 import React from 'react'
+import { AccordionItem, AccordionItemProps } from './AccordionItem'
 import styles from './styles.module.scss'
 
 type AccordionProps = {
@@ -13,16 +13,7 @@ const Accordion = ({ items, showVisual }: AccordionProps) => {
     <Grid className={styles.Accordion}>
       <Row>
         {items.map((item, index) => {
-          return (
-            <AccordionItem
-              key={index}
-              icon={item.icon}
-              headline={item.headline}
-              content={item.content}
-              introContent={item.introContent}
-              showVisual={showVisual}
-            />
-          )
+          return <AccordionItem key={index} showVisual={showVisual} {...item} />
         })}
       </Row>
     </Grid>

@@ -61,9 +61,7 @@ const content: Content = {
           position: 'left',
         },
         marginBottom: true,
-        background: {
-          gradient: 'linear-gradient(180deg, #fff 35%, #f4f4f4 100%)',
-        },
+        background: 'gradient',
         images: {
           bottom: {
             src: '/img/section-risikosteuerung.svg',
@@ -140,10 +138,7 @@ const content: Content = {
             layout: 'responsive',
           },
         },
-        background: {
-          dark: false,
-          color: '#dcf2ff',
-        },
+        background: 'blue-light',
         colWrapChildren: false,
         children: [
           {
@@ -194,10 +189,6 @@ const content: Content = {
           text: '<p>Ihre Vorteile</p><p class="eh4">Unser Angebot für Ihren Erfolg<br />im Bereich Banking Compliance</p>',
           position: 'top',
         },
-        background: {
-          dark: false,
-          color: '#fff',
-        },
         paddingBottom: 'narrow',
         colWrapChildren: false,
         children: [
@@ -239,10 +230,7 @@ const content: Content = {
       name: 'Section',
       props: {
         id: 'letstalk',
-        background: {
-          color: '#061727',
-          dark: true,
-        },
+        background: 'blue-dark',
         title: {
           text: '<p class="d1">Let’s&nbsp;talk!</p><p class="p" style="max-width: 200px;">Fragen oder Interesse an weiteren Informationen?<br />Sprechen Sie uns an!</p>',
           position: 'left',
