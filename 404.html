@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="0;url=https://innovate-banking.com/${window.location.pathname}">
+    <script>
+      const path = window.location.pathname;
+      const redirectUrl = "https://www.example.com/new-page" + path;
+      window.location.href = redirectUrl;
+    </script>
     <title>Innovate Banking - Eine Initiative von IBM</title>
     <style>
       * {
